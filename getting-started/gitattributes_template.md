@@ -1,0 +1,297 @@
+# README 180526
+# This applies to Git and ideally covers:
+# Windows, MacOS, MATLAB, Python, and R
+# NB: There is some known (and hopefully harmless) redundancy in this file.
+
+#
+# From: https://help.github.com/articles/dealing-with-line-endings/
+# Accessed: 170611
+#
+
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c text
+*.h text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+
+#
+# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Common.gitattributes
+# Accessed: 170611
+# Commented out the "diff=astextplain" due to MATLAB guidance (see below)
+#
+
+#common settings that generally should always be used with your language specific settings
+
+# Auto detect text files and perform LF normalization
+# http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+* text=auto
+
+#
+# The above will handle all files NOT found below
+#
+
+# Documents
+#*.doc	 diff=astextplain
+#*.DOC	 diff=astextplain
+#*.docx diff=astextplain
+#*.DOCX diff=astextplain
+#*.dot  diff=astextplain
+#*.DOT  diff=astextplain
+#*.pdf  diff=astextplain
+#*.PDF	 diff=astextplain
+#*.rtf	 diff=astextplain
+#*.RTF	 diff=astextplain
+*.md text
+*.adoc text
+*.textile text
+*.mustache text
+*.csv text
+*.tab text
+*.tsv text
+*.sql text
+
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tif binary
+*.tiff binary
+*.ico binary
+# SVG treated as an asset (binary) by default. If you want to treat it as text,
+# comment-out the following line and uncomment the line after.
+*.svg binary
+#*.svg text
+*.eps binary
+
+#
+# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Matlab.gitattributes
+# Accessed: 170611
+#
+
+# Basic .gitattributes for a MATLAB repo.
+# This template includes Simulink and MuPAD extensions, in addition
+# to the MATLAB extensions.
+
+# Source files
+# ============
+*.m             text
+*.mu            text
+
+# Caution: *.m also matches Mathematica packages.
+
+# Binary files
+# ============
+*.p             binary
+*.mex*          binary
+*.fig           binary
+*.mat           binary
+*.mdl           binary
+*.slx           binary
+*.mdlp          binary
+*.slxp          binary
+*.sldd          binary
+*.mltbx         binary
+*.mlappinstall  binary
+*.mlpkginstall  binary
+*.mn binary
+
+#
+# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Python.gitattributes
+# Accessed: 170611
+#
+
+# Basic .gitattributes for a python repo.
+
+# Source files
+# ============
+*.pxd		text
+*.py 		text
+*.py3 		text
+*.pyw 		text
+*.pyx  		text
+
+# Binary files
+# ============
+*.db		binary
+*.p 		binary
+*.pkl 		binary
+*.pyc 		binary
+*.pyd		binary
+*.pyo 		binary
+
+# Note: .db, .p, and .pkl files are associated
+# with the python modules ``pickle``, ``dbm.*``,
+# ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
+# (among others).
+
+#
+# From: https://github.com/alexkaratarakis/gitattributes/blob/master/R.gitattributes
+# Accessed: 170611
+#
+
+# Basic .gitattributes for a R repo.
+
+# Source files
+# ============
+*.Rdata     text
+*.rdb       binary
+*.rds       binary
+*.Rd        text
+*.Rdx       binary
+*.Rmd		text
+*.R text
+
+#
+# From: https://www.mathworks.com/help/matlab/matlab_prog/set-up-git-source-control.html
+# Accessed: 170611
+# Also some custom files added
+*.mexa32 -crlf -diff -merge
+*.mexw32 -crlf -diff -merge
+*.mexmaci32 -crlf -diff -merge
+*.ppt -crlf -diff -merge
+*.pptx -crlf -diff -merge
+*.xls -crlf -diff -merge
+*.doc -crlf -diff -merge
+*.avi -crlf -diff -merge
+# See: https://git-scm.com/docs/gitattributes
+# The built-in macro attribute "binary" is equivalent to:
+# [attr]binary -diff -merge -text
+# -crlf is interpreted the same as -text
+# Thus, the below -crlf -diff -merge is the same as denoting "binary"
+#
+
+*.mlx -crlf -diff -merge
+*.mat -crlf -diff -merge
+*.fig -crlf -diff -merge
+*.p -crlf -diff -merge
+*.slx -crlf -diff -merge
+*.mdl -crlf -diff -merge
+
+*.mdlp -crlf -diff -merge
+*.slxp -crlf -diff -merge
+*.sldd -crlf -diff -merge
+*.mexa64 -crlf -diff -merge
+*.mexw64 -crlf -diff -merge
+*.mexmaci64 -crlf -diff -merge
+*.xlsx -crlf -diff -merge
+*.docx -crlf -diff -merge
+*.pdf -crlf -diff -merge
+*.jpg -crlf -diff -merge
+*.png -crlf -diff -merge
+
+#
+# From: https://github.com/scottclowe/matlab-schemer/blob/master/.gitattributes
+# Accessed: 170611
+#
+
+# Auto detect text files and perform LF normalization
+*           text=auto
+
+#
+# The above will handle all files NOT found below
+#
+
+##---------------------------------------------------
+# Common .gitattributes
+##---------------------------------------------------
+
+# Documents
+# ============
+*.txt       text
+*.md        text
+
+# Graphics
+# ============
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.tif       binary
+*.tiff      binary
+*.ico       binary
+*.svg       text
+*.eps       binary
+
+
+##---------------------------------------------------
+# Basic .gitattributes for a MATLAB repo
+##---------------------------------------------------
+
+# Source files
+# ============
+*.m         text
+*.prf       text
+
+# Binary files
+# ============
+*.p         binary
+*.mex*      binary
+*.fig       binary
+*.mat       binary
+*.mdl       binary
+*.slx binary
+
+#
+# From: https://github.com/USGS-R/wrv/blob/master/.gitattributes
+# Accessed: 170611
+# With the following additions
+README    text
+readme    text
+LICENSE   text
+license   text
+# Also commented out certain lines
+# inst/CITATION  text
+# DESCRIPTION    text
+# LICENSE.note   text
+# NAMESPACE      text
+# NEWS           text
+# src/Makevars text eol=lf
+#
+
+# See https://help.github.com/articles/dealing-with-line-endings
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Committed text files that are stored with LF and converted to native line endings on checkout.
+*.bib          text
+*.csv          text
+*.f            text
+*.inc          text
+*.kml          text
+*.md           text
+*.R            text
+*.Rd           text
+*.Rmd          text
+*.Rnw          text
+*.tex          text
+*.txt          text
+*.xml          text
+.gitattributes text
+.gitignore     text
+.Rbuildignore  text
+# inst/CITATION  text
+# DESCRIPTION    text
+# LICENSE.note   text
+# NAMESPACE      text
+# NEWS           text
+
+# Text files that should always have LF line endings on checkout.
+# src/Makevars text eol=lf
+
+# Files that are binary and should not be modified.
+*.exe binary
+*.pdf binary
+*.rda binary
+*.tif binary
+*.zip binary

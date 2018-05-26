@@ -1,0 +1,6 @@
+##
+Create text file gitignore.txt  
+Open in text editor, add rules, save, and close  
+Navigate to folder in command line  
+Rename the file in command line  
+$ ren gitignore.txt .gitignore  

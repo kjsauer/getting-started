@@ -1,0 +1,8 @@
+## Alternative Way to Join
+df['mfg_product'] = df[['mfg', 'model_type']].apply(lambda x: ''.join(x), axis=1)
+
+## Load Data Set
+df = sns.load_dataset('df')
+
+## Top 10 Oldest People Who Have a Ticket
+df[df['Ticket'] == 1].sort_values('Age')['Names'].head(10)
