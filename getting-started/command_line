@@ -16,6 +16,7 @@ pwd is present working directory
 Use tab completion
 
 ##
+Use
 $ cd [pathname]
 and
 $ dir
