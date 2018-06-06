@@ -1,0 +1,30 @@
+## Launch Prompt
+Windows: Start -> run -> cmd
+Git: Start -> run -> Git Bash
+Anaconda: Start -> run -> Anaconda (use Anaconda 2.7 to run Python 2.7)
+
+## Syntax
+$ dir
+$ cd insertfoldername
+$ cd insertfoldername
+$ ls is list
+$ ls bin
+. is current directory
+pwd is present working directory
+
+## Helpful Hints
+Use tab completion
+
+##
+$ cd [pathname]
+and
+$ dir
+In terminal to navigate folders
+Show directory:
+$ dir
+Navigate to folder:
+$ cd <foldername>
+Go up one folder:
+$ cd..
+
+## end

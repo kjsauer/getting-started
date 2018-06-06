@@ -1,0 +1,38 @@
+## Get Started
+Launch Anaconda Prompt
+$ cd fullpathname
+Otherwise navigate to folder in anaconda prompt
+Using command line aka terminal aka bash commands
+Launch jupyter notebook via
+$ jupyter notebook --no-browser
+Copy link from terminal
+Launch Moxilla Firefox
+Paste into browser
+Firefox has good jupyter notebook integration
+Unfortunately, Microsoft browsers (IE/Edge) do not
+I have not checked Google Chrome
+
+## Useful Hot Keys in Jupyter Notebook
+ctrl + '/' to comment and uncomment
+ctrl + enter to run cell
+esc to exit cell
+enter to enter cell
+m to change to markdown when in esc mode
+c to change to code when in esc mode
+No mouse is needed in Jupyter Notebook
+Vertical screen orientation recommended
+
+## Working with HTML Output Files
+Download the HTML to local computer
+Open in Chrome or Firefox browser
+
+## Thoughts on Jupyter Notebook
+Great for communication and sharing
+Not easily legible in text reader
+Solve with download as .py
+
+## Best Practice with Git
+Download as .py
+The .py folder is easier to review in a Pull Request
+
+## end

@@ -1,0 +1,19 @@
+##
+a = [1 1]
+conv(a,a)
+want to do conv(a,a,a)
+need to do conv(a,conv(a,a))
+function [x] = convm(varargin)
+x = varargin{1};
+if
+first_input_var = varargin{1}
+second_input_var = varargin{2}
+
+##
+Indexing starts with 1, not 0
+[M,N] : Rows, columns
+MATLAB starts with 1
+R starts with 1
+Python starts with 0
+
+## end

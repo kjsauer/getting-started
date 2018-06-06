@@ -1,0 +1,11 @@
+## Turn on Interactive Plotting (Pop-Up Plots) in Spyder
+Tools
+Peferences
+IPython console
+Graphics
+Graphics backend
+Backend: Automatic
+Switch inline to automatic
+
+## Comments in Spyder
+ctrl + 1 to comment

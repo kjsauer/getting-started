@@ -1,0 +1,17 @@
+## Initiate Repo in Remote Git
+Navigate to folder in Remote Git
+Launch Git bash
+$ git init --bare repo-name.git
+
+##
+Do not add to or delete from .git folders
+Instead, clone .git folders from the remote server hosting the repo
+Clone that repo into your local Git sandbox folder
+Make changes locally and sync with remote folders
+You can call your local folder of Git repos whatever you want
+I store mine in My Documents on a PC
+
+##
+Use dashes between words in repo name, not spaces or underscores
+
+## end

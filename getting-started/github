@@ -1,0 +1,16 @@
+## Create repo on GitHub; add collaborators
+GitHub -> set up New Repo
+Add gitignore, e.g., Python
+Add license, e.g., 3-clause BSD
+Go to repo settings wheel -> collaborators -> add collaborators
+Collaborators will need to accept the invitation by logging into their accounts
+
+## Connect to repo as a collaborator
+Local Computer -> C:\Users\USERNAME\Documents\GitHub
+Run Git Bash from context menu
+Otherwise need to navigate via cmd (use cd C:\)
+Git Bash
+$ git clone https://github.com/ACCOUNTNAME/REPONAME.git
+
+## Add to GitHub desktop
+GitHub Desktop -> add the newly added local GitHub folder

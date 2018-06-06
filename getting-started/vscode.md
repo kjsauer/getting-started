@@ -1,4 +1,0 @@
-## Visual Studio Code
-Comment code: ctrl + /  
-Run selected line: F8  
-Search settings for telemetry and switch to "false"  
