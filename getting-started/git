@@ -1,9 +1,16 @@
+## NB
+Always pull in changes from Remote Server hosting Git folders into Local Computer,
+Before you push from your Local Computer into the Remote Server
+aka
+Always update your Local Computer based on changes in the Remote Server,
+Before you commit Local Computer changes to Remote Server
+
 ## Initiate Repo in Remote Git
 Navigate to folder in Remote Git
 Launch Git bash
 $ git init --bare repo-name.git
 
-##
+## NB
 Do not add to or delete from .git folders
 Instead, clone .git folders from the remote server hosting the repo
 Clone that repo into your local Git sandbox folder
@@ -11,7 +18,48 @@ Make changes locally and sync with remote folders
 You can call your local folder of Git repos whatever you want
 I store mine in My Documents on a PC
 
-##
+## NB
 Use dashes between words in repo name, not spaces or underscores
+
+## For MATLAB Users
+Open MATLAB (IDE; not sure if there is MATLAB sans IDE)
+Navigate to folder via file explorer window
+Right click in window area (not on file)
+Source control
+Manage files
+Sandbox on PC is C:\Users\USERNAME\Documents\Git
+Remote is GIT_REPO_FILENAME.git
+
+## Other References
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+## Other Git Syntax
+$ git push origin master [push from local client to remote server master branch]
+$ git pull origin master [pull from remote server master branch to client]
+$ git status [get status of local client]
+$ git add filename.fileExtension [track, i.e., version control, a file]
+$ git push --all origin [???]
+$ git commit -m 'test file' --C:/Users/USERNAME/Documents/Git/GIT_PROJECT_DIR/FILENAME.m [commit a single MATLAB file]
+
+## Git GUI
+Try also the Git GUI which can be launched from the right click context menu of Git for Windows
+Edit\Options to update email address in Git GUI
+
+## NB
+Remove old branches on local machine
+https://git-scm.com/book/en/v2/Git-Branching-Branch-Management
+Navigate to git repo
+$ pwd to show present working directory
+Use $ cd to navigate to git repo
+Use $ cd + space + tab for tab completion
+Get to master branch (ignore $)
+$ git checkout master
+Pull latest and greatest from remote
+$ git pull
+Enter GitHub credentials
+Delete branches using either
+$ git branch -d ______
+or
+$ git branch -D ______
 
 ## end

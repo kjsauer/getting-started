@@ -14,3 +14,6 @@ $ git clone https://github.com/ACCOUNTNAME/REPONAME.git
 
 ## Add to GitHub desktop
 GitHub Desktop -> add the newly added local GitHub folder
+
+## GitHub
+If repo is on GitHub, log into GitHub -> settings -> email -> block email from getting shared and enable other privacy settings
