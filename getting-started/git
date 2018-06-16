@@ -1,3 +1,10 @@
+## Git for Windows
+Install Git for Windows
+Use default options during installation
+Recommend latest version (i.e., v2.12 or above)
+Earlier versions have bug with “//REMOTE_SERVER_FOLDER” where earlier versions cannot read “//”
+In earlier versions, you could only use mapped drives “MAPPED_DRIVE:/”
+
 ## NB
 Always pull in changes from Remote Server hosting Git folders into Local Computer,
 Before you push from your Local Computer into the Remote Server
@@ -5,10 +12,15 @@ aka
 Always update your Local Computer based on changes in the Remote Server,
 Before you commit Local Computer changes to Remote Server
 
-## Initiate Repo in Remote Git
+## Initiate Git Repo on Remote Non-GitHub Server
 Navigate to folder in Remote Git
 Launch Git bash
-$ git init --bare repo-name.git
+NB: Use CMD in place of bash whenever possible
+NB: Install Git for Windows to have CMD integration
+Navigate via "cd PATHNAME" in the Windows command prompt window CMD
+Can also right click --> Git Bash from context menu
+Set up Git folder via Git Bash
+$ git init --bare git-repo-name.git
 
 ## NB
 Do not add to or delete from .git folders
@@ -61,5 +73,76 @@ Delete branches using either
 $ git branch -d ______
 or
 $ git branch -D ______
+
+## Test Add File
+$ git pull origin master
+This should open a text editor
+Test commit
+$ git commit
+$ git push origin master
+
+## Add File to Repo in Git Terminal
+Now add test file into repo
+$ echo content > newFile.txt
+$ git status
+$ git add newFile.txt
+$ git status
+$ git commit --message="test commit"
+$ git status
+May need to run:
+$ git branch --unset-upstream
+
+## Check Git Repo Details
+Check user name
+$ git config user.name
+Check user email
+$ git config user.email
+
+## Update User Info
+Git bash into local repo
+$ git config --list
+Update user email
+$ git config --local user.email "YOUR.NAME@EMAILDOMAIN.com
+$ git config --local user.email "GITHUB_USERNAME@users.noreply.github.com"
+To update all repos use “global” in place of “local”
+Update user name
+$ git config --global user.name "YOUR NAME"
+
+## Set Up User Name and Email
+Navigate to local repo folder
+Right click --> Git Bash
+Or cd in using Git Bash or Windows CMD
+Review settings
+$ git config --list
+Add new settings
+$ git config --local user.name "Firstname Lastname"
+$ git config --local user.email "firstname.lastname@dnvgl.com"
+Review settings
+$ git config --list
+This command might fail if not done in Windows Command Prompt
+
+## Add example .gitattributes template file to repo
+See template file in repo intended to cover: Common, MATLAB, Python, R
+References: https://github.com/alexkaratarakis/gitattributes
+
+## Add .gitignore file to repo
+See template file in repo intended to cover: Windows, MacOS, and MATLAB
+References: https://github.com/github/gitignore/
+
+## Proceed to Upload Real Content
+Delete test file
+Upload all content
+Commit
+Sync aka Publish
+
+## NB
+Add repo to GitHub Desktop
+Commit test text file and attempt Publish
+If Publish fails and you are on VPN or DirectAccess
+Proceed to troubleshoot according to provided instructions
+May need to open git bash within the local repo folder
+$ git status
+Enter command per displayed instructions
+Repeat git status to ensure that fix works
 
 ## end
