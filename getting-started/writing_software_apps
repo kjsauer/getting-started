@@ -1,0 +1,15 @@
+## String Inputs
+Import all inputs as strings
+Convert the data type only when needed
+For example, for decimal truncation or use in numerical calculations (e.g., unit conversions)
+Then convert back to string
+
+## Rosetta Stone
+Ideally every piece of code would have a data structure Rosetta Stone (RS)
+Need cookie-cutter code to implement Rosetta Stone in standard way
+
+## Functions aka APIs
+Always write functions to take inputs with SI units
+Thereby never a question as to what the units are
+
+## end
