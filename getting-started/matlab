@@ -1,4 +1,7 @@
-##
+%% Format MATLAB Workspace
+clear; close all; clc; format long g; format compact;
+
+%%
 a = [1 1]
 conv(a,a)
 want to do conv(a,a,a)
@@ -9,7 +12,7 @@ if
 first_input_var = varargin{1}
 second_input_var = varargin{2}
 
-##
+%%
 Indexing starts with 1, not 0
 [M,N] : Rows, columns
 MATLAB starts with 1
