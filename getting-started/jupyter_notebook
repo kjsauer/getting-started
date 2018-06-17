@@ -22,6 +22,18 @@ c to change to code when in esc mode
 No mouse is needed in Jupyter Notebook
 Vertical screen orientation recommended
 
+## Jupyter Notebook Syntax and Hot Keys
+In-line figures
+$ %matplotlib inline
+$ %matplotlib qt (interactive figure window)
+Use ctrl + / to comment and uncomment
+$ %matplotlib inline (NB: Jupyter Notebook only)
+Esc + b + Enter adds new cell and puts the cursor there
+
+
+
+
+
 ## Working with HTML Output Files
 Download the HTML to local computer
 Open in Chrome or Firefox browser
