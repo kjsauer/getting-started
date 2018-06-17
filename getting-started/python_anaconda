@@ -1,3 +1,9 @@
+## todo
+better separate python from anaconda
+
+## NB
+Indexing starts with 0, not 1
+
 ## Install Anaconda
 Download and install Anaconda with latest Python available
 
@@ -27,11 +33,16 @@ import matplotlib.image as mpimg
 ## Other Assorted Imports
 %matplotlib inline
 sns.set(rc={"figure.figsize": (12, 6)})
+sns.set(context='talk', style='darkgrid', palette='colorblind')
 import datetime
 import logging
 import inspect
 import pvlib
 from pvlib.location import Location
+import pecos
+import pvmismatch
+import statsmodels as sm
+from scipy.optimize import curve_fit
 
 ## Help
 Use '?'
@@ -62,7 +73,7 @@ $ axis=1: runs horizontal across columns
 import sys
 sys.version_info
 
-## Formatting Strings
+## Advanced String Formatting (Simpler to Use %% Method)
 'hi {} the weather is {}'.format('kjs','sunny')
 'hi {name} the weather is {weather}'.format(name='kjs',weather='sunny')
 
