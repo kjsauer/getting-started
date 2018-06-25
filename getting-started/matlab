@@ -28,7 +28,7 @@ dlmwrite('fileName.csv',variableName,'delimiter',',','precision',12);
 % wrap code with try catch
 
 %% thoughts on MATLAB
-% Designed for non-software developer engineers who need to computations
+% Designed for non-software developer engineers who need to compute
 % Use for excellent exe compiler and uiimport
 % Keep MATLAB importers simple, e.g., single numeric or string input
 
