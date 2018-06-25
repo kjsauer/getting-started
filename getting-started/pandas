@@ -1,4 +1,4 @@
-## Alternative Way to Join
+## Alternate Way to Join
 df['mfg_product'] = df[['mfg', 'model_type']].apply(lambda x: ''.join(x), axis=1)
 
 ## Load Data Set

@@ -1,5 +1,5 @@
 ## todo
-Better separate python from anaconda
+separate python from anaconda
 
 ## Switch to different Anaconda Environment via command line
 $ activate py27

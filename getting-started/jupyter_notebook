@@ -30,10 +30,6 @@ Use ctrl + / to comment and uncomment
 $ %matplotlib inline (NB: Jupyter Notebook only)
 Esc + b + Enter adds new cell and puts the cursor there
 
-
-
-
-
 ## Working with HTML Output Files
 Download the HTML to local computer
 Open in Chrome or Firefox browser
