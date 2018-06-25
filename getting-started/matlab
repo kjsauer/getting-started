@@ -12,11 +12,24 @@ if
 first_input_var = varargin{1}
 second_input_var = varargin{2}
 
-%%
-Indexing starts with 1, not 0
-[M,N] : Rows, columns
-MATLAB starts with 1
-R starts with 1
-Python starts with 0
+%% indexing
+% Indexing starts with 1, not 0
+% [M,N] : Rows, columns
+% MATLAB starts with 1
+% R starts with 1
+% Python starts with 0
 
-## end
+%% output to .csv
+dlmwrite('fileName.csv',variableName,'delimiter',',','precision',12);
+
+%% exe
+% errordlg alone does not terminate code
+% use combination of "msgbox" and "error" instead
+% wrap code with try catch
+
+%% thoughts on MATLAB
+% Designed for non-software developer engineers who need to computations
+% Use for excellent exe compiler and uiimport
+% Keep MATLAB importers simple, e.g., single numeric or string input
+
+%% end

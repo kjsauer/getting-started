@@ -9,7 +9,21 @@ Ideally every piece of code would have a data structure Rosetta Stone (RS)
 Need cookie-cutter code to implement Rosetta Stone in standard way
 
 ## Functions aka APIs
-Always write functions to take inputs with SI units
-Thereby never a question as to what the units are
+Write functions to take inputs with SI units
+Thereby not a question as to what the units are
+
+## Software Design
+Fundamentals: EXE + config.csv
+EXE prompts user for path of config.csv
+EXE needs to be able to find config.csv
+config.csv has vertical columns like a database
+config.csv can have multiple rows representing different sets of inputs
+Design config.csv for SQL
+
+## Good Practice
+Unit tests
+Rosetta Stones
+config.csv files
+.exe plus runtime files
 
 ## end
