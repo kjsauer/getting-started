@@ -145,4 +145,33 @@ $ git status
 Enter command per displayed instructions
 Repeat git status to ensure that fix works
 
+## Add Test Commit File to Repo -- Example
+no .git after FILENAME unless specified
+$ cd GIT_REPO_FULLFILEPATHNAME
+$ git pull origin master
+$ echo "test commit" >> CommitTest.txt
+dot adds all
+$ git add .
+OR use
+$ git add CommitTest.txt
+$ git diff CommitTest.txt
+commit to master
+$ git commit -m "Test commit"
+$ git commit --help
+$ git push origin master
+
+## Delete Test File from Repo -- Example
+$ git status
+$ git rm CommitTest.txt
+commit to master
+$ git commit -m "Deleted test commit"
+$ git status
+$ git push origin master
+now repo should be empty again
+
+## GitHub Desktop
+If you use GitHub Desktop, you can add any local Git repo to it
+Even if it is not a repo hosted on GitHub
+This enables you to track changes in all repos with one GUI
+
 ## end
