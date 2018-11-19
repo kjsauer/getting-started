@@ -1,4 +1,4 @@
-## Git for Windows
+﻿## Git for Windows
 Install Git for Windows
 Use default options during installation
 Recommend latest version (i.e., v2.12 or above)
@@ -174,4 +174,12 @@ If you use GitHub Desktop, you can add any local Git repo to it
 Even if it is not a repo hosted on GitHub
 This enables you to track changes in all repos with one GUI
 
-## end
+## example local git folder structure: example_repo_name
+AUTHORS
+LICENSE
+README.md
+\docs (integrate w/ readthedocs)
+\example_repo_name (contains source code)
+To be continued
+.gitattributes
+.gitignore

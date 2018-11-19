@@ -1,19 +1,39 @@
-## Create repo on GitHub; add collaborators
-GitHub -> set up New Repo
+## Create repo on GitHub and add collaborators
+Go to GitHub
+Set up New Repo
 Add gitignore, e.g., Python
 Add license, e.g., 3-clause BSD
-Go to repo settings wheel -> collaborators -> add collaborators
-Collaborators will need to accept the invitation by logging into their accounts
+Go to repo
+Settings wheel
+Collaborators
+Add collaborators
+Collaborators will need to accept the invitation by logging into their GitHub accounts
 
 ## Connect to repo as a collaborator
-Local Computer -> C:\Users\USERNAME\Documents\GitHub
+Local Computer
+Go to C:\Users\USERNAME\Documents\GitHub
 Run Git Bash from context menu
-Otherwise need to navigate via cmd (use cd C:\)
+Otherwise need to navigate via cmd using cd C:\
 Git Bash
 $ git clone https://github.com/ACCOUNTNAME/REPONAME.git
 
+
+## GitHub Desktop Settings
+Ensure email displays something like kjsauer@users.noreply.github.com
+
+
 ## Add to GitHub desktop
-GitHub Desktop -> add the newly added local GitHub folder
+GitHub Desktop
+Add the newly added local GitHub folder
+
+## add to GitHub desktop
+Open GitHub Desktop
+Add the newly added local GitHub folder
 
 ## GitHub
-If repo is on GitHub, log into GitHub -> settings -> email -> block email from getting shared and enable other privacy settings
+If repo is on GitHub
+Log into GitHub
+Settings
+Email
+Block email from getting shared
+Enable other privacy settings
