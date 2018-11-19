@@ -24,9 +24,9 @@ sns.set_style('white')
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
 rcParams['font.family'] = 'sans-serif'
-rcParams['font.sans-serif'] = ['Verdana'] # choose different font!
+rcParams['font.sans-serif'] = ['Verdana'] # choose font
 import matplotlib.pyplot as plt
-plt.rcParams['axes.facecolor'] = dnvgl_pct10_cyan # change name!
+plt.rcParams['axes.facecolor'] = predefined_color_scheme_variable # choose variable
 from matplotlib.ticker import FormatStrFormatter
 import matplotlib.image as mpimg
 

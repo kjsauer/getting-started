@@ -6,7 +6,6 @@ Anaconda: Start -> run -> Anaconda (use Anaconda 2.7 to run Python 2.7)
 ## Syntax
 $ dir
 $ cd insertfoldername
-$ cd insertfoldername
 $ ls is list
 $ ls bin
 . is current directory
@@ -14,6 +13,9 @@ pwd is present working directory
 
 ## Helpful Hints
 Use tab completion
+
+##
+Basically use cd and dir on Windows
 
 ##
 Use
@@ -27,5 +29,3 @@ Navigate to folder:
 $ cd <foldername>
 Go up one folder:
 $ cd..
-
-## end

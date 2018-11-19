@@ -116,7 +116,7 @@ Review settings
 $ git config --list
 Add new settings
 $ git config --local user.name "Firstname Lastname"
-$ git config --local user.email "firstname.lastname@dnvgl.com"
+$ git config --local user.email "firstname.lastname@emailprovider.com"
 Review settings
 $ git config --list
 This command might fail if not done in Windows Command Prompt
