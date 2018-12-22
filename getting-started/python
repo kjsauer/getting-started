@@ -1,0 +1,97 @@
+## NB
+The Python described here largely uses Anaconda
+
+## ToDo
+better separate python from anaconda
+
+## NB
+Indexing starts with 0, not 1
+
+## Install Anaconda
+Download and install Anaconda with latest Python available
+
+## Recommended
+As usual, need local admin rights to download and install software programs
+Get Anaconda Python 3 (latest version)
+https://www.anaconda.com/download/#windows
+Get Python 3.x
+
+## Useful Imports
+import os
+import numpy as np
+import pandas as pd
+pd.set_option('display.height', 500)
+pd.set_option('display.max_rows', 500)
+import seaborn as sns
+sns.set_style('white')
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+rcParams['font.family'] = 'sans-serif'
+rcParams['font.sans-serif'] = ['Verdana'] # choose font
+import matplotlib.pyplot as plt
+plt.rcParams['axes.facecolor'] = predefined_color_scheme_variable # choose variable
+from matplotlib.ticker import FormatStrFormatter
+import matplotlib.image as mpimg
+
+## Other Assorted Imports
+%matplotlib inline
+sns.set(rc={"figure.figsize": (12, 6)})
+sns.set(context='talk', style='darkgrid', palette='colorblind')
+import datetime
+import logging
+import inspect
+import pvlib
+from pvlib.location import Location
+import pecos
+import pvmismatch
+import statsmodels as sm
+from scipy.optimize import curve_fit
+
+## Help
+Use '?'
+$ import numpy as np
+$ np.array?
+$ np.empty?
+
+## NB
+Create a new variable "Flag" in the data frame "df0"
+$ df0['Flag'] = df0.apply(getFlag, axis=1)
+
+## PEP 8 Guidelines
+Modules (filenames) should have short, all-lowercase names, and they can contain underscores
+Packages (directories) should have short, all-lowercase names, preferably without underscores
+Classes should use the CapWords convention
+Source:
+https://softwareengineering.stackexchange.com/questions/308972/python-file-naming-convention
+
+## Other Notable Python Syntax
+Use of loc
+$ program_flag.loc[program_flag.index == '2016-07-03 09:47:00-07:00']
+
+## Pandas Syntax
+$ axis=0: runs vertical downwards across rows
+$ axis=1: runs horizontal across columns
+
+## Check Python Version
+import sys
+sys.version_info
+
+## Advanced String Formatting (Simpler to Use %% Method)
+'hi {} the weather is {}'.format('kjs','sunny')
+'hi {name} the weather is {weather}'.format(name='kjs',weather='sunny')
+
+## Get IP Address
+curl api.ipify.org
+
+## Other Examples
+$ conda install -c anaconda scipy=0.16.0
+$ pip install seaborn
+
+## Run Anaconda the Slow Way
+Not sure why
+Open cmd
+$ cd C:\
+Navigate to (options):
+$ cd C:\Users\USERNAME\AppData\Local\Continuum\Anaconda2\Scripts\anaconda.exe
+$ cd C:\Users\USERNAME\AppData\Local\Continuum\Anaconda2\envs
+$ cd C:\Users\USERNAME\AppData\Local\Continuum\Anaconda3\envs

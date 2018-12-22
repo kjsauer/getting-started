@@ -17,10 +17,8 @@ Otherwise need to navigate via cmd using cd C:\
 Git Bash
 $ git clone https://github.com/ACCOUNTNAME/REPONAME.git
 
-
 ## GitHub Desktop Settings
 Ensure email displays something like kjsauer@users.noreply.github.com
-
 
 ## Add to GitHub desktop
 GitHub Desktop
@@ -37,3 +35,6 @@ Settings
 Email
 Block email from getting shared
 Enable other privacy settings
+
+## Other References
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/

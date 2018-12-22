@@ -1,0 +1,24 @@
+## Update Spyder
+Anaconda Prompt
+$ conda update spyder
+
+## Update Jupyter Notebook
+Anaconda Prompt
+$ conda update jupyter
+
+## Update Anaconda
+Anaconda Prompt
+$ conda update conda
+$ conda update --all [allow 15 minutes]
+
+## Update Python
+Anaconda Prompt
+Update python
+$ conda update python
+
+## Update Anaconda
+conda update conda
+conda update anaconda
+
+##
+Option to update Spyder, etc. via Anaconda Navigator

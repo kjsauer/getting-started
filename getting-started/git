@@ -1,9 +1,19 @@
-﻿## Git for Windows
+﻿## Git Bash
+Check present working directory pwd
+If needed change it
+cd C:/Users/USERNAME
+
+## Git for Windows
 Install Git for Windows
 Use default options during installation
 Recommend latest version (i.e., v2.12 or above)
 Earlier versions have bug with “//REMOTE_SERVER_FOLDER” where earlier versions cannot read “//”
-In earlier versions, you could only use mapped drives “MAPPED_DRIVE:/”
+In earlier versions, you could only use mapped drives “MAPPED_DRIVE_LETTER:/”
+
+## Confirm Git for Windows works
+After installation, launch Git for Windows Bash
+Type "pwd"
+You should see your present working directory
 
 ## NB
 Always pull in changes from Remote Server hosting Git folders into Local Computer,
@@ -22,6 +32,12 @@ Can also right click --> Git Bash from context menu
 Set up Git folder via Git Bash
 $ git init --bare git-repo-name.git
 
+## Access files via Windows File Explorer Menu / Window
+Navigate via File Explorer window
+working_dir\project_dir
+Open project_name
+working_dir\project_dir\project_name
+
 ## NB
 Do not add to or delete from .git folders
 Instead, clone .git folders from the remote server hosting the repo
@@ -34,8 +50,8 @@ I store mine in My Documents on a PC
 Use dashes between words in repo name, not spaces or underscores
 
 ## For MATLAB Users
-Open MATLAB (IDE; not sure if there is MATLAB sans IDE)
-Navigate to folder via file explorer window
+Open MATLAB (IDE)
+Navigate to folder via File Explorer Window
 Right click in window area (not on file)
 Source control
 Manage files
@@ -52,6 +68,18 @@ $ git status [get status of local client]
 $ git add filename.fileExtension [track, i.e., version control, a file]
 $ git push --all origin [???]
 $ git commit -m 'test file' --C:/Users/USERNAME/Documents/Git/GIT_PROJECT_DIR/FILENAME.m [commit a single MATLAB file]
+
+## Other Git Syntax
+push from local client to remote server master branch
+$ git push origin master
+pull from remote server master branch to client
+$ git pull origin master
+get status of local client
+$ git status
+track, i.e., version control, a file
+$ git add filename.fileExtension
+$ git push --all origin [???]
+$ git commit -m 'test file --C:/Users/[USERNAME]/Documents/Git/SolarFrontierGit/test.m [commit a single file]
 
 ## Git GUI
 Try also the Git GUI which can be launched from the right click context menu of Git for Windows
@@ -98,23 +126,21 @@ $ git config user.name
 Check user email
 $ git config user.email
 
-## Update User Info
-Git bash into local repo
+## Check / Update Git Repo User Info details
+Git bash into local repo folder
+cd in using Git Bash or Windows cmd
+Or
+Navigate to local repo folder using Windows File Explorer --> Right Click --> Git Bash
+Review username and email settings
 $ git config --list
-Update user email
+Update username and email settings
 $ git config --local user.email "YOUR.NAME@EMAILDOMAIN.com
 $ git config --local user.email "GITHUB_USERNAME@users.noreply.github.com"
 To update all repos use “global” in place of “local”
 Update user name
 $ git config --global user.name "YOUR NAME"
 
-## Set Up User Name and Email
-Navigate to local repo folder
-Right click --> Git Bash
-Or cd in using Git Bash or Windows CMD
-Review settings
-$ git config --list
-Add new settings
+## NB
 $ git config --local user.name "Firstname Lastname"
 $ git config --local user.email "firstname.lastname@emailprovider.com"
 Review settings
@@ -135,8 +161,13 @@ Upload all content
 Commit
 Sync aka Publish
 
+## Git in IDE
+Depending on the IDE, there may be an integrated Git option
+These typically enable git features like add, commit, delete, rename, etc.
+Applies to MATLAB, R, etc.
+
 ## NB
-Add repo to GitHub Desktop
+Add repos to GitHub Desktop
 Commit test text file and attempt Publish
 If Publish fails and you are on VPN or DirectAccess
 Proceed to troubleshoot according to provided instructions
@@ -172,9 +203,10 @@ now repo should be empty again
 ## GitHub Desktop
 If you use GitHub Desktop, you can add any local Git repo to it
 Even if it is not a repo hosted on GitHub
-This enables you to track changes in all repos with one GUI
+This enables you to track changes to all repos with one GUI
 
-## example local git folder structure: example_repo_name
+## Example Local Git Folder Structure
+Example Git repo name: example_repo_name
 AUTHORS
 LICENSE
 README.md
@@ -183,3 +215,82 @@ README.md
 To be continued
 .gitattributes
 .gitignore
+
+## Deleting Repo
+Deleting repo from remote does not affect local
+Deleting repo from local does not affect remote
+Removing from GitHub Desktop GUI does not affect remote
+
+## GitHub Color Scheme
+Pink is deleted
+Green is added
+Yellow is metadata written by Git
+
+## Connect to Repo in Local
+Navigate to folder in local via Git Bash or Command Prompt
+See getting-started-command-line
+In folder: type
+$ git clone "//servername/full/file/path/and/repo/name.git"
+
+## Git Clone
+Cloning a repository
+Choose or create a working directory working_dir
+Name it what you will
+working_dir, Sandbox, GitSandbox, GitWorkingDir, WorkingDir, GitLocal, etc.
+Or maybe you already have one, e.g., GitHub
+Open Windows CMD shell
+Alternatively may use Git Bash
+$ cd working_dir
+Navigate using cd and dir
+git clone command creates new code project directory in working directory
+$ git clone "mapped_drive_letter:\full\path\to\git\file\git_filename.git"
+NB: Replace all "\" with "/"
+
+## Git Branch
+To branch, use command line
+$ git branch branch_name
+Switch into branch
+$ git checkout branch_name
+Commits from this point on will track on "branch_name"
+NB: Need to further validate and improve notes after this point
+
+## Git Merge
+First add and commit everything on your_branch
+Then merge
+$ git checkout master
+$ git merge branch_name
+Try to merge any changes made by someone else in the shared repo
+Then push
+Add and commit all changes locally first
+Make local copy of any changes that have occurred in shared repo
+$ git fetch origin/master
+Then merge origin/master with master
+
+## Git Push
+To push changes back to the shared repository, use
+$ git push origin master
+This depends on "origin" being defined as it would be by git checkout
+
+## Sync workflow
+Sync
+Commit
+Sync
+
+## Definitions
+Fork: Copy repo from cloud to cloud
+Clone: Copy repo from cloud to computer
+Pull request: Pull latest repo changes from head cloud (the repo that is ahead) to base cloud
+Sync: Synchronize computer with cloud
+
+## Repo Path
+Open Windows File Explorer
+Navigate to folder containing all files on your local computer
+This is the pathname of your repo
+
+## NB
+Make sure you are working on VPN or DirectAccess if applicable
+Recommended to use Windows Command Prompt in place of Git Bash
+NB: If Command Prompt opens in P: simply type C:
+
+## Deleting Branch
+Git Prune???
