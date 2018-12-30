@@ -1,3 +1,5 @@
+# Assorted
+
 ## NB
 The Python described here largely uses Anaconda
 
@@ -95,3 +97,232 @@ Navigate to (options):
 $ cd C:\Users\USERNAME\AppData\Local\Continuum\Anaconda2\Scripts\anaconda.exe
 $ cd C:\Users\USERNAME\AppData\Local\Continuum\Anaconda2\envs
 $ cd C:\Users\USERNAME\AppData\Local\Continuum\Anaconda3\envs
+
+# PVLIB
+
+## Install
+$ conda install -c pvlib pvlib
+
+## Help
+https://pvlib-python.readthedocs.io/en/latest/
+
+# pvmismatch
+
+## Getting started with pvmismatch
+Uninstall any versions of Anaconda
+Install latest Anaconda
+Use default settings
+Open Anaconda Navigator
+Environments
+Upgrade any upgradable packages
+Environments\Root\Open Terminal
+Get ready to install packages by checking the version of the package you want:
+https://pypi.python.org/pypi/pvmismatch
+https://pypi.python.org/pypi/pvlib
+https://pypi.python.org/pypi/pecos
+pvmismatch is in Python 2.7
+Create Python 2.7 environment named py27:
+$ conda create -n py27 python=2.7 anaconda
+$ conda create -n py35 python=3.5 anaconda
+Assume 2.7 here:
+Switch to that Anaconda environment
+$ activate py27
+$ activate py35
+Check
+$ python --version
+Now install pvmismatch
+$ pip install pvmismatch
+$ conda install -c pvlib pvlib
+NB: this is still in py27 unless you have changed the path
+$ pip install pecos
+NB: same NB as previous
+Launch Spyder by typing "spyder", or
+Launch Jupyter Notebook by typing: "jupyter notebook"
+Return to root:
+$ deactivate py27
+$ deactivate py35
+
+# Spyder
+
+## Turn on Interactive Plotting (Pop-Up Plots) in Spyder
+Tools
+Peferences
+IPython console
+Graphics
+Graphics backend
+Backend: Automatic
+Switch inline to automatic
+
+## Comments in Spyder
+ctrl + 1 to comment
+
+# Updates
+
+## Update Spyder
+Anaconda Prompt
+$ conda update spyder
+
+## Update Jupyter Notebook
+Anaconda Prompt
+$ conda update jupyter
+
+## Update Anaconda
+Anaconda Prompt
+$ conda update conda
+$ conda update --all [allow 15 minutes]
+
+## Update Python
+Anaconda Prompt
+Update python
+$ conda update python
+
+## Update Anaconda
+conda update conda
+conda update anaconda
+
+##
+Option to update Spyder, etc. via Anaconda Navigator
+
+# Anaconda
+
+## todo
+separate python from anaconda
+
+## Switch to different Anaconda Environment via command line
+$ activate py27
+$ deactivate py27
+
+## Check Python version in active Anaconda Environment
+$ python --version
+
+## Update Anaconda Python
+Launch Anaconda prompt
+Windows -> Start Menu -> Anaconda Prompt
+Option to run anaconda prompt from cmd?
+
+## Update Sequence
+$ conda update conda
+$ conda update python
+$ conda update --all # allow 15-25 minutes
+$ conda update ipython (???)
+$ conda update spyder # update Spyder
+$ conda update jupyter # update Jupyter
+
+## TBD
+$ conda update anaconda
+
+## Install Spyder
+$ conda install -c anaconda spyder
+
+## Open Spyder
+$ spyder
+
+## Open Jupyter
+$ jupyter
+
+## NB
+Option to update Spyder, etc. via the Anaconda Navigator
+
+## Install a specific Python version
+$ conda install python=3.6
+
+## Create Anaconda Environment and name as py27
+$ conda search python
+$ conda create --name py27 python=2.7
+$ conda info --envs
+
+## Create Anaconda Environment
+$ conda create -n py27 python=2.7 anaconda
+$ conda create -n py35 python=3.5 anaconda
+$ conda create -n py35 python=3.6 anaconda
+
+## Switch to different Anaconda Environment via command line
+$ activate py27
+$ deactivate py27
+
+## Check Python version in active Anaconda Environment
+$ python --version
+
+# Jinja
+
+<!--Example Templating Language-->
+<h1>Welcome to insert_appname!</h1>
+{% for user in users %}
+	<div>{{ user.username }}</div>
+{% endfor %}
+
+# Jupyter Notebook
+
+## Get Started
+Launch Anaconda Prompt
+$ cd fullpathname
+Otherwise navigate to folder in anaconda prompt
+Using command line aka terminal aka bash commands
+Launch jupyter notebook via
+$ jupyter notebook --no-browser
+Copy link from terminal
+Launch Moxilla Firefox
+Paste into browser
+Firefox has good jupyter notebook integration
+Unfortunately, Microsoft browsers (IE/Edge) do not
+I have not checked Google Chrome
+
+## Useful Hot Keys in Jupyter Notebook
+ctrl + '/' to comment and uncomment
+ctrl + enter to run cell
+esc to exit cell
+enter to enter cell
+m to change to markdown when in esc mode
+c to change to code when in esc mode
+No mouse is needed in Jupyter Notebook
+Vertical screen orientation recommended
+
+## Jupyter Notebook Syntax and Hot Keys
+In-line figures
+$ %matplotlib inline
+$ %matplotlib qt (interactive figure window)
+Use ctrl + / to comment and uncomment
+$ %matplotlib inline (NB: Jupyter Notebook only)
+Esc + b + Enter adds new cell and puts the cursor there
+
+## Working with HTML Output Files
+Download the HTML to local computer
+Open in Chrome or Firefox browser
+
+## Thoughts on Jupyter Notebook
+Great for communication and sharing
+Not easily legible in text reader
+Solve with download as .py
+
+## Best Practice with Git
+Download as .py
+The .py folder is easier to review in a Pull Request
+
+## Toggle Code On and Off
+# source:
+# https://stackoverflow.com/questions/27934885/how-to-hide-code-from-cells-in-ipython-notebook-visualized-with-nbviewer
+from IPython.display import HTML
+HTML('''<script>
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script>
+<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
+
+# Pandas
+
+## Alternate Way to Join
+df['mfg_product'] = df[['mfg', 'model_type']].apply(lambda x: ''.join(x), axis=1)
+
+## Load Data Set
+df = sns.load_dataset('df')
+
+## Top Ten Oldest People Who Have a Ticket
+df[df['Ticket'] == 1].sort_values('Age')['Names'].head(10)

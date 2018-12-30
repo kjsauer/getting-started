@@ -294,3 +294,112 @@ NB: If Command Prompt opens in P: simply type C:
 
 ## Deleting Branch
 Git Prune???
+
+# Git Commits
+
+##
+git log > log0txt.txt
+git log > log0csv.csv
+
+##
+git --no-pager log > log1csv.csv
+git --no-pager log > log1txt.txt
+
+##
+git log --pretty=format:'"%H","%h","%T","%t","%P","%p","%an","%ae","%ad","%ar","%cn","%ce","%cd","%cr","%s",' --shortstat --no-merges | paste - - - > log2csv.csv
+git log --pretty=format:'"%H","%h","%T","%t","%P","%p","%an","%ae","%ad","%ar","%cn","%ce","%cd","%cr","%s",' --shortstat --no-merges | paste - - - > log2txt.txt
+
+## References
+https://stackoverflow.com/questions/10330425/how-do-i-export-a-git-log-to-a-text-file
+https://stackoverflow.com/questions/10418056/how-do-i-generate-a-git-commit-log-for-the-last-month-and-export-it-as-csv
+https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
+# Git Archive
+
+## METHOD 1
+
+### Master Branch Only
+$ git bundle create repo.bundle master
+
+### All Branches
+$ git bundle create repo.bundle --all
+
+### Lessons Learned
+Do not need ".bundle"
+
+## METHOD 2
+$ git archive --output=Archive.zip --prefix=Archive/ master
+https://stackoverflow.com/questions/2046918/backing-up-project-which-uses-git/2047141#2047141
+
+## METHOD 3
+Final
+Download git_archive_all.py
+From:
+https://raw.githubusercontent.com/Kentzo/git-archive-all/master/git_archive_all.py
+Launch Anaconda Prompt
+Switch to Python 3.3
+$ activate py33
+See: https://stackoverflow.com/questions/14783127/git-archive-export-with-submodules-git-archive-all-recursive
+Navigate to git repo path
+Run the following
+$ python "C:/Users/<computername>/Anaconda2/envs/py33/Scripts/git_archive_all.py" myarchive.zip
+
+## METHOD 4
+$ git bundle create foo master
+$ git bundle create foo-all --all
+
+### Check results
+$ git bundle list-heads foo
+$ git bundle list-heads foo-all
+
+https://stackoverflow.com/questions/1251713/backup-a-github-repository/1251717#1251717
+
+## gitignore
+Create text file gitignore.txt
+Open in text editor, add rules, save, and close
+Navigate to folder in command line
+Rename the file in command line
+$ ren gitignore.txt .gitignore
+
+# GitHub
+
+## Create repo on GitHub and add collaborators
+Go to GitHub
+Set up New Repo
+Add gitignore, e.g., Python
+Add license, e.g., 3-clause BSD
+Go to repo
+Settings wheel
+Collaborators
+Add collaborators
+Collaborators will need to accept the invitation by logging into their GitHub accounts
+
+## Connect to repo as a collaborator
+Local Computer
+Go to C:\Users\USERNAME\Documents\GitHub
+Run Git Bash from context menu
+Otherwise need to navigate via cmd using cd C:\
+Git Bash
+$ git clone https://github.com/ACCOUNTNAME/REPONAME.git
+
+## GitHub Desktop Settings
+Ensure email displays something like kjsauer@users.noreply.github.com
+
+## Add to GitHub desktop
+GitHub Desktop
+Add the newly added local GitHub folder
+
+## add to GitHub desktop
+Open GitHub Desktop
+Add the newly added local GitHub folder
+
+## GitHub
+If repo is on GitHub
+Log into GitHub
+Settings
+Email
+Block email from getting shared
+Enable other privacy settings
+
+## Other References
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
