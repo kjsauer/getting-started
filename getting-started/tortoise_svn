@@ -1,1 +1,4 @@
-NB: Always update (Local Computer based on changes in Remote Server) before you commit (Local Computer changes to Remote Server)
+## NB
+The same goes for Git + GitHub
+As for Subversion + TortoiseSVN
+Always update Local Computer based on changes in Remote Server before you commit Local Computer changes to Remote Server

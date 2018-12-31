@@ -1,0 +1,7 @@
+##
+delete line containing cursor
+$ shift+delete
+open second screen
+$ alt+shift+2
+$ alt+shift+3
+etc.

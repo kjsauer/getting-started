@@ -1,2 +1,2 @@
-## useful functions
+## Useful Functions
 =date(year,month,day)+time(hour,minute,second)

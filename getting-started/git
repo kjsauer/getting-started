@@ -200,10 +200,8 @@ $ git status
 $ git push origin master
 now repo should be empty again
 
-## GitHub Desktop
-If you use GitHub Desktop, you can add any local Git repo to it
-Even if it is not a repo hosted on GitHub
-This enables you to track changes to all repos with one GUI
+##
+See GitHub Desktop instructions below
 
 ## Example Local Git Folder Structure
 Example Git repo name: example_repo_name
@@ -382,6 +380,16 @@ Otherwise need to navigate via cmd using cd C:\
 Git Bash
 $ git clone https://github.com/ACCOUNTNAME/REPONAME.git
 
+# GitHub Desktop
+
+##
+If you use GitHub Desktop, you can add any local Git repo to it
+Even if it is not a repo hosted on GitHub
+This enables you to track changes to all repos with one GUI
+
+##
+Check GitHub Desktop settings to ensure proper GitHub-assigned email is in use
+
 ## GitHub Desktop Settings
 Ensure email displays something like kjsauer@users.noreply.github.com
 
@@ -389,7 +397,7 @@ Ensure email displays something like kjsauer@users.noreply.github.com
 GitHub Desktop
 Add the newly added local GitHub folder
 
-## add to GitHub desktop
+## Add repo to GitHub desktop
 Open GitHub Desktop
 Add the newly added local GitHub folder
 
@@ -398,7 +406,7 @@ If repo is on GitHub
 Log into GitHub
 Settings
 Email
-Block email from getting shared
+Block email from getting shared in any commit (!!!)
 Enable other privacy settings
 
 ## Other References

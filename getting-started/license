@@ -1,0 +1,14 @@
+##
+I recommend including your GitHub username, e.g.
+Copyright (c) 2018-2019 Kenneth J. Sauer (kjsauer)
+All rights reserved
+##
+Apparently no license means NOT open-source aka proprietary
+For such code, I would recommend private repositories anyway
+##
+BSD 3-clause
+Free for anyone to use for any purpose but they need to reference you
+Namely, include your license file in their code and reference to the authors
+##
+MIT
+Allows open usage w/ no constraints

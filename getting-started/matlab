@@ -27,12 +27,14 @@ dlmwrite('fileName.csv',variableName,'delimiter',',','precision',12);
 % use combination of "msgbox" and "error" instead
 % wrap code with try catch
 
-%% thoughts on MATLAB
+%% Thoughts on MATLAB
 % Designed for non-software developer engineers who need to compute
 % Use for excellent exe compiler and uiimport
 % Keep MATLAB importers simple, e.g., single numeric or string input
 
-%% end
+## Other Syntax
+end program
+$ ctrl+c
 
 # MATLAB PVLIB
 

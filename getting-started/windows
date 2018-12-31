@@ -1,0 +1,15 @@
+##
+close tab / active window
+$ ctrl+w
+close program
+$ alt+F4
+find
+$ ctrl+f
+switch screen
+$ alt+tab
+see all screens
+$ windows+tab
+switch tabs
+$ ctrl+tab
+switch tabs back
+$ ctrl+shift+tab
