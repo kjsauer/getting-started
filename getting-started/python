@@ -1,4 +1,19 @@
-# General
+# Update Sequence
+Launch Anaconda Prompt
+Windows -> Start Menu -> Anaconda Prompt
+Update Anaconda
+$ conda update conda
+$ conda update anaconda
+Allow 15-25 minutes for update all
+$ conda update --all # 
+Update Python
+$ conda update python
+Update Spyder
+$ conda update spyder
+Update Jupyter Notebook
+$ conda update jupyter
+$ conda update ipython (obsolete???)
+Option to update Spyder, etc. via Anaconda Navigator
 
 ##
 Indexing starts with 0, not 1
@@ -167,22 +182,6 @@ Switch inline to automatic
 ## Comments in Spyder
 ctrl + 1 to comment
 
-# Updates
-Launch Anaconda Prompt
-Update Anaconda
-$ conda update conda
-conda update conda
-conda update anaconda
-$ conda update --all [allow 15 minutes]
-Update Python
-$ conda update python
-Update Spyder
-$ conda update spyder
-Update Jupyter Notebook
-$ conda update jupyter
-
-##
-Option to update Spyder, etc. via Anaconda Navigator
 
 # Anaconda
 
@@ -193,20 +192,7 @@ $ deactivate py27
 ## Check Python version in active Anaconda Environment
 $ python --version
 
-## Update Anaconda Python
-Launch Anaconda prompt
-Windows -> Start Menu -> Anaconda Prompt
 
-## Update Sequence
-$ conda update conda
-$ conda update python
-$ conda update --all # allow 15-25 minutes
-$ conda update ipython (???)
-$ conda update spyder # update Spyder
-$ conda update jupyter # update Jupyter
-
-## TBD
-$ conda update anaconda
 
 ## Install Spyder
 $ conda install -c anaconda spyder
@@ -216,9 +202,6 @@ $ spyder
 
 ## Open Jupyter
 $ jupyter
-
-## NB
-Option to update Spyder, etc. via the Anaconda Navigator
 
 ## Install a specific Python version
 $ conda install python=3.6
