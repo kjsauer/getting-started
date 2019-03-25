@@ -1,11 +1,14 @@
-# Update Sequence
+# Assorted Anaconda Python
+
+## Update Sequence
 Launch Anaconda Prompt
-Windows -> Start Menu -> Anaconda Prompt
+Windows\Start Menu\Anaconda Prompt
 Update Anaconda
 $ conda update conda
+If using Anaconda
 $ conda update anaconda
 Allow 15-25 minutes for update all
-$ conda update --all # 
+$ conda update --all
 Update Python
 $ conda update python
 Update Spyder
@@ -15,13 +18,15 @@ $ conda update jupyter
 $ conda update ipython (obsolete???)
 Option to update Spyder, etc. via Anaconda Navigator
 
-##
-Indexing starts with 0, not 1
+## Miniconda
+I could not easily (w/in a few minutes) understand how to get Jupyter Notebook to work w/ Miniconda
+If using miniconda, need to manually download / maintain Spyder, Jupyter, etc. compatibilities
 
-# Assorted
+## Python Indexing
+Starts with 0, not 1
 
-##
-NB: The Python described here largely uses Anaconda
+## NB
+The Python described here largely uses Anaconda Python
 
 ## Install Anaconda
 Download and install Anaconda with latest Python available
@@ -31,7 +36,7 @@ As usual, need local admin rights to download and install software programs
 Get Anaconda Python 3 (latest version)
 https://www.anaconda.com/download/#windows
 Python 3.x
-Exploration of Miniconda is on the todo
+Exploration of Miniconda is on my todo
 
 ## Primary Imports
 import os
