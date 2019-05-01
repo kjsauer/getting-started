@@ -1,6 +1,13 @@
 # Assorted Anaconda Python
 
-## Update Sequence
+## Update
+Launch Anaconda Prompt
+$ conda update --all
+
+## Update -- unused
+conda update -n root conda
+
+## Update Sequence -- old
 Launch Anaconda Prompt
 Windows\Start Menu\Anaconda Prompt
 Update Anaconda
@@ -290,9 +297,9 @@ Download as .py for git version control (?)
 Download as .py
 The .py folder is easier to review in a Pull Request
 
-## Toggle Code On and Off
-# source:
-# https://stackoverflow.com/questions/27934885/how-to-hide-code-from-cells-in-ipython-notebook-visualized-with-nbviewer
+##
+# Purpose: Toggle code on/off
+# Source: https://stackoverflow.com/questions/27934885/how-to-hide-code-from-cells-in-ipython-notebook-visualized-with-nbviewer
 from IPython.display import HTML
 HTML('''<script>
 code_show=true; 
@@ -306,7 +313,7 @@ function code_toggle() {
 } 
 $( document ).ready(code_toggle);
 </script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
+<form action="javascript:code_toggle()"><input type="submit" value="Click to toggle code on/off."></form>''')
 
 # Pandas
 
@@ -348,3 +355,20 @@ Jupyter web browser interface will appear in present working directory
 ## Other Syntax
 end program
 $ ctrl+c
+
+##
+t = pandas.tslib.Timestamp.now()
+t
+Timestamp('2014-08-05 14:49:39.643701',tz=None)
+t.to_datetime()
+datetime.datetime(2014,8,5,14,49,39,643701)
+t.day
+5
+t.month
+t.year
+
+##
+df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
+
+##
+Append serves the same function as concat

@@ -1,2 +1,9 @@
-## Useful Functions
-=date(year,month,day)+time(hour,minute,second)
+## Function
+=date(year,month,hour)+time(hour,minute,second)
+
+## Useful Custom Date Format
+yyyy-mm-dd hh:mm:ss
+
+##
+Screen Excel for any instances of #DIV/0!
+Replace w/ NaN

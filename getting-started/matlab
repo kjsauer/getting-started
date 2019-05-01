@@ -40,3 +40,7 @@ $ ctrl+c
 
 ## Download Link
 https://pvpmc.sandia.gov/applications/pv_lib-toolbox/matlab/
+
+##
+Design MATLAB folders based on function/script co-dependencies and the MATLAB path
+Namely, what is necessary to add to the path and how when the developer runs the code

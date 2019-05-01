@@ -29,3 +29,39 @@ config.csv files
 
 ## General Principles
 99% planning; 1% execution
+
+##
+Starting a project
+Ideally work backwards
+Start w/ end functionality
+e.g., Some literal function like Box Plot
+This will drive the necessary data structures
+Make those data structures in Excel test data file
+Implement in Python, MATLAB, R, etc.
+If importing/exporting, target CSV database format
+
+##
+Start by finding the function you want
+The function drives the data structure(s) aka data frame(s)
+
+##
+How to avoid messing up a series of user actions in a GUI?
+
+## Concept
+How does MS Outlook not mess up my email when I make a series of actions? e.g., Moving emails from one folder to another
+Theory: Because it stores a time-ordered queue of every user action and gradually worked through the queue
+Apply this concept (user action time series queue) in software (GUI) development
+
+## Data Analysis
+Work w/ clean example SQL or CSV databases when possible
+Execute calculations in legible / readable code script (e.g., Python notebook)
+
+## Tests to run to familiarize w/ new software language
+Inf/0
+NaN + NaN
+5 + NaN
+NaN/0
+
+##
+When you complete a project, zip all project files and save in project folder
+Consider exporting .ipynb to .py as a secondary backup of the code
