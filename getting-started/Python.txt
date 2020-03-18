@@ -196,11 +196,11 @@ ctrl + 1 to comment
 
 # Anaconda
 
-## Switch to different Anaconda Environment via command line
+## Switch to Different Anaconda Environment via Command Line
 $ activate py27
 $ deactivate py27
 
-## Check Python version in active Anaconda Environment
+## Check Python Version in Active Anaconda Environment
 $ python --version
 
 ## Install Spyder
@@ -215,7 +215,7 @@ $ jupyter
 ## Install a specific Python version
 $ conda install python=3.6
 
-## Create Anaconda Environment and name as py27
+## Create Anaconda Environment and Name as py27
 $ conda search python
 $ conda create --name py27 python=2.7
 $ conda info --envs
@@ -225,11 +225,11 @@ $ conda create -n py27 python=2.7 anaconda
 $ conda create -n py35 python=3.5 anaconda
 $ conda create -n py35 python=3.6 anaconda
 
-## Switch to different Anaconda Environment via command line
+## Switch to Different Anaconda Environment via Command Line
 $ activate py27
 $ deactivate py27
 
-## Check Python version in active Anaconda Environment
+## Check Python Version in Active Anaconda Environment
 $ python --version
 
 # Jinja
@@ -338,7 +338,7 @@ $ cd PATH/TO/CODE/FOLDER
 type into prompt
 $ jupyter notebook
 
-## Open Jupyter Notebook on Shared / Mapped Drives via Anaconda prompt
+## Open Jupyter Notebook on Shared / Mapped Drives via Anaconda Prompt
 Not possible to navigate to shared/mapped drive via Jupyter Notebook's web browser directory user interface (UI)
 Use Anaconda Prompt and navigate to folder via cd as per the above instructions
 Also see getting-started\shell
