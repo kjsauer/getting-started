@@ -243,9 +243,17 @@ $ python --version
 	<div>{{ user.username }}</div>
 {% endfor %}
 
+# Jupyter Notebook Themes
+## List available themes
+!jt -l
+## Select particular theme
+!jt -t gruvboxd
+## Revert to original theme
+!jt -r
+
 # Jupyter Notebook
 
-## Get Started
+## Getting Started
 Launch Anaconda Prompt
 $ cd path_name
 Otherwise navigate to folder in anaconda prompt
