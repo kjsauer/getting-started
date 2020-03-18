@@ -194,7 +194,6 @@ Switch inline to automatic
 ## Comments in Spyder
 ctrl + 1 to comment
 
-
 # Anaconda
 
 ## Switch to different Anaconda Environment via command line
@@ -203,8 +202,6 @@ $ deactivate py27
 
 ## Check Python version in active Anaconda Environment
 $ python --version
-
-
 
 ## Install Spyder
 $ conda install -c anaconda spyder
