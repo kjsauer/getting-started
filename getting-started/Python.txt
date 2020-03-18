@@ -249,7 +249,7 @@ $ python --version
 ## Select particular theme
 !jt -t gruvboxd
 ## Revert to original theme
-!jt -r
+#!jt -r # start commented out to try new theme
 
 # Jupyter Notebook
 
