@@ -242,11 +242,14 @@ $ python --version
 
 # Jupyter Notebook Themes
 ## List available themes
-!jt -l # same as get_ipython().system('jt -l')
+NB: Same as $ get_ipython().system('jt -l')
+!jt -l
 ## Select particular theme
-!jt -t gruvboxd # same as get_ipython().system('jt -t gruvboxd')
+NB: Same as $ get_ipython().system('jt -t gruvboxd')
+!jt -t gruvboxd
 ## Revert to original theme
-#!jt -r # start commented out to try new theme
+NB: Start w/ this commented out to try new theme
+#!jt -r
 
 # Jupyter Notebook
 
