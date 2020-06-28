@@ -9,6 +9,7 @@ $ import sys
 $ sys.version_info
 
 ## Update Anaconda Python -- NEW
+Launch Anaconda Prompt
 $ conda update conda
 
 ## Update Anaconda Python -- old
