@@ -1,4 +1,4 @@
-# Assorted Anaconda Python
+# Assorted Anaconda Python Tips and Tricks
 
 ## Update
 Launch Anaconda Prompt
@@ -306,8 +306,8 @@ Download as .py
 The .py folder is easier to review in a Pull Request
 
 ## Toggle Code On/Off
-# Purpose: Toggle code on/off
-# Source: https://stackoverflow.com/questions/27934885/how-to-hide-code-from-cells-in-ipython-notebook-visualized-with-nbviewer
+# NB: Add to top of Python script.
+# Source: https://stackoverflow.com/questions/27934885/how-to-hide-code-from-cells-in-ipython-notebook-visualized-with-nbviewer/
 from IPython.display import HTML
 HTML('''<script>
 code_show=true; 
