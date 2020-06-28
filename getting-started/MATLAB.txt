@@ -1,3 +1,13 @@
+## Pros of MATLAB
+--Easy to build a GUI via GUIDE
+--Easy to compile an EXE
+--Minimizes software development-related concepts and tasks in favor of science and engineering development
+
+## Cons of MATLAB
+--Native data ingest and wrangling (incl. Time Series handling) does not compare to Python
+--Not nearly as deployable and ubiquitous in the greater software development world
+--NOT OPEN-SOURCE
+
 %% Format MATLAB Workspace
 clear; close all; clc; format long g; format compact;
 
@@ -44,3 +54,7 @@ https://pvpmc.sandia.gov/applications/pv_lib-toolbox/matlab/
 ##
 Design MATLAB folders based on function/script co-dependencies and the MATLAB path
 Namely, what is necessary to add to the path and how when the developer runs the code
+
+## End of Script
+Compliments of JHF
+$ disp('Congrats. The program ran completely/successfully. Crack open an ice-cold beer.')

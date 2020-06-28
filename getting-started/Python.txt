@@ -441,3 +441,7 @@ See above notes.
 ## Data Filtration
 Find/Detect Outliers and Replace w/ NaN
 https://stackoverflow.com/questions/46576147/pandas-replace-outliers-in-all-columns-with-nan/
+
+## End of Script
+Compliments of JHF
+$ print('Congrats. The program ran completely/successfully. Crack open an ice-cold beer.')
