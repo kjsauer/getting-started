@@ -1,0 +1,26 @@
+## Hot Keys
+Select email
+$ x
+Go up
+$ j
+Go down
+$ k
+Return to list/update/refresh
+$ u
+Mark as read
+$ Shift+i
+Go to Drafts
+$ g+d
+Go to All Mail
+$ g+a
+Go to Sent
+$ g+t
+Go to Inbox
+$ g+i
+Add label
+$ l
+##
+Filter out drafts from All Mail, so you can scroll up and down using "j" and "k", respectively.
+Go to All Mail
+Enter in Search Field:
+$ -label:draft
