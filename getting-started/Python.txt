@@ -1,5 +1,17 @@
 # Assorted Anaconda Python Tips and Tricks
 
+## Update Anaconda Python -- NEW
+Launch Anaconda Prompt
+$ conda update conda
+
+##
+Now navigate to your folder using "dir" and "cd <insert_folder_name>"
+See Command Line Getting Started notes.
+
+##
+Now launch Jupyter Notebook without browser.
+See below Jupyter Notebook notes (Ctrl+F: "--no-browser").
+
 ## Check Python Version from Command Line/Anaconda Prompt
 Launch Anaconda Prompt
 $ python --version
@@ -8,18 +20,14 @@ $ python --version
 $ import sys
 $ sys.version_info
 
-## Update Anaconda Python -- NEW
-Launch Anaconda Prompt
-$ conda update conda
-
-## Update Anaconda Python -- old
+## Update Anaconda Python -- OLD/OBSOLETE
 Launch Anaconda Prompt
 $ conda update --all
 
-## Update Anaconda Python -- old
+## Update Anaconda Python -- OLD/OBSOLETE
 conda update -n root conda
 
-## Update Anaconda Python -- old
+## Update Anaconda Python -- OLD/OBSOLETE
 Launch Anaconda Prompt
 Windows\Start Menu\Anaconda Prompt
 Update Anaconda
