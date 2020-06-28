@@ -46,7 +46,7 @@ Starts with 0, not 1
 ## NB
 The Python described here largely uses Anaconda Python
 
-## Install Anaconda
+## Install Anaconda Python
 Download and install Anaconda with latest Python available
 
 ## Recommended
@@ -125,7 +125,7 @@ curl api.ipify.org
 $ conda install -c anaconda scipy=0.16.0
 $ pip install seaborn
 
-## Run Anaconda the Slow Way
+## Run Anaconda Python the Slow Way
 Not sure why
 Open cmd
 $ cd C:\
@@ -145,8 +145,8 @@ https://pvlib-python.readthedocs.io/en/latest/
 # pvmismatch
 
 ## Getting started with pvmismatch
-Uninstall any versions of Anaconda
-Install latest Anaconda
+Uninstall any versions of Anaconda Python
+Install latest Anaconda Python
 Use default settings
 Open Anaconda Navigator
 Environments
@@ -224,17 +224,17 @@ $ jupyter
 ## Install a specific Python version
 $ conda install python=3.6
 
-## Create Anaconda Environment and Name as py27
+## Create Anaconda Python Environment and Name as py27
 $ conda search python
 $ conda create --name py27 python=2.7
 $ conda info --envs
 
-## Create Anaconda Environment
+## Create Anaconda Python Environment
 $ conda create -n py27 python=2.7 anaconda
 $ conda create -n py35 python=3.5 anaconda
 $ conda create -n py35 python=3.6 anaconda
 
-## Switch to Different Anaconda Environment via Command Line
+## Switch to Different Anaconda Python Environment via Command Line
 $ activate py27
 $ deactivate py27
 
