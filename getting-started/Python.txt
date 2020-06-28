@@ -437,3 +437,6 @@ See PyPI "Cheese Shop"
 
 ## Check Python Version
 See above notes.
+
+## Data Filtration; Find/Detect Outliers and Replace w/ NaN
+https://stackoverflow.com/questions/46576147/pandas-replace-outliers-in-all-columns-with-nan/
