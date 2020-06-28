@@ -103,3 +103,6 @@ Provide:
 --Unit Tests: Known inputs
 --Unit Tests Results: Known outputs 
 --Work Instructions
+
+## File Naming
+Short yet descriptive filenames are best. Bear in mind Indexing and Search. How would you search for/find the file?
