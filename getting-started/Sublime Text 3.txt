@@ -1,7 +1,7 @@
 ##
-delete line containing cursor
+Delete line containing cursor
 $ shift+delete
-open second screen
+Open second screen
 $ alt+shift+2
 $ alt+shift+3
-etc.
+Etc.
