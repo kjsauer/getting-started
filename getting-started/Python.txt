@@ -103,13 +103,6 @@ $ program_flag.loc[program_flag.index == '2016-07-03 09:47:00-07:00']
 $ axis=0: runs vertical downwards across rows
 $ axis=1: runs horizontal across columns
 
-## Check Python Version from Anaconda Prompt
-$ python --version
-
-## Check Python Version from Within Python
-$ import sys
-$ sys.version_info
-
 ## Advanced String Formatting (Simpler to Use %% Method)
 'hi {} the weather is {}'.format('kjs','sunny')
 'hi {name} the weather is {weather}'.format(name='kjs',weather='sunny')
@@ -163,8 +156,13 @@ Switch to that Anaconda environment via command line
 Activate py27 (assumes environment has been named as py27)
 $ activate py27
 $ activate py35
-Check Python version
+
+## Check Python Version from Command Line/Anaconda Prompt
 $ python --version
+
+## Check Python Version from Within Python
+$ import sys
+$ sys.version_info
 
 ##
 Now install pvmismatch
