@@ -1,4 +1,4 @@
-# Assorted Anaconda Python Tips and Tricks
+# Anaconda Python Tips and Tricks
 
 ## Update Anaconda Python -- NEW
 Launch Anaconda Prompt
@@ -382,6 +382,8 @@ Jupyter web browser interface will appear in present working directory
 end program
 $ ctrl+c
 
+# Time Series
+
 ## Timestamping
 t = pandas.tslib.Timestamp.now()
 t
@@ -411,6 +413,8 @@ df2['Second'] = pd.DatetimeIndex(df2.index).second
 
 ## Resample 5-min to Hourly
 df_hourly = df_five_min.resample('H').mean()
+
+# Assorted
 
 ## Append vs. Concat vs. Merge
 Append serves a similar function as concat; use concat when possible for simple concatenation
