@@ -1,0 +1,7 @@
+##
+Search for exact terms: Use quotes and "AND"
+$ "insert in quotes"
+$ "insert #1" AND "insert #2"
+##
+Search approximate: Use tilda (~)
+$ ~approximate term

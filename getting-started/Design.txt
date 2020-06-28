@@ -1,3 +1,5 @@
+# Getting Started: Code and Program Design Philosophy
+
 ## String Inputs
 Import all inputs as strings
 Convert the data type only when needed
@@ -65,3 +67,39 @@ NaN/0
 ##
 When you complete a project, zip all project files and save in project folder
 Consider exporting .ipynb to .py as a secondary backup of the code
+
+##
+Code
+--.ipynb
+Data
+--.csv
+--.xls
+--.xlsx
+Metadata
+--.txt
+--.yml
+--.xml
+--.json
+
+## Lessons Learned
+Use Microsoft Excel template instead of Python script; copy/paste data into it. You may also use Excel as a GUI.
+
+##
+Package ALL help documentation and ALL examples (unit tests) and ALL unit test data into the repos; yes, the repo will become large, but everything will be in ONE folder that can be easily transferred and booted up and will be ready to rock.
+
+##
+Rule: Every input should be a config file. This way others can tweak the input config files and not the code. Write code so others can get started quickly.
+
+##
+Provide:
+--_todo/Future Work
+--Analysis Templates
+--Code and Scripts
+--Data
+--Docs (incl. Help Menu)
+--Lessons Learned
+--Metadata
+--Report Templates
+--Unit Tests: Known inputs
+--Unit Tests Results: Known outputs 
+--Work Instructions
