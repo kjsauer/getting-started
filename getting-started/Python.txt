@@ -397,6 +397,8 @@ df_hourly = df_five_min.resample('H').mean()
 ## Append vs. Concat vs. Merge
 Append serves a similar function as concat; use concat when possible for simple concatenation
 
+Merge can be used when merging two spreadsheets/data frames together.
+
 ## Pandas Data Typing
 df['col_name'] = pd.to_numeric(df['col_name'],errors='coerce')
 
