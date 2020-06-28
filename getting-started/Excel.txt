@@ -9,4 +9,7 @@ Screen Excel for any instances of #DIV/0!
 Replace with NaN
 
 ##
-Use Pivot Tables
+Use Pivot Tables. Structure your data for Pivot Tables; meaning, like a database, with column headers and data in each row. Formulas in a given cell in a given row must only reference data in cells to the left in the same row.
+
+##
+Copy a cell (Ctrl+c) and hit Enter in another cell to paste. (Disclaimer: I do not presently use this).

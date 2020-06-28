@@ -19,3 +19,6 @@ Does not change token
 Until you log out
 And log back in
 Prevents data loss
+
+##
+Box Sync: Updating password on Box Cloud does not affect Box Sync. Instead, the next time you log out of Box Sync, you will have to log in with the new credentials.
