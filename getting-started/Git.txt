@@ -391,7 +391,7 @@ This enables you to track changes to all repos with one GUI
 Check GitHub Desktop settings to ensure proper GitHub-assigned email is in use
 
 ## GitHub Desktop Settings
-Ensure email displays something like kjsauer@users.noreply.github.com
+Ensure email displays something like <your_github_username>@users.noreply.github.com
 
 ## Add to GitHub desktop
 GitHub Desktop
