@@ -1,7 +1,7 @@
-todo: Explore / document more stuff
+todo: Explore/document more stuff
 
 ##
-Python w/out Anaconda
+Python without Anaconda
 Miniconda
 
 ##

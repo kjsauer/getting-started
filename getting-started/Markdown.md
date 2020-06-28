@@ -1,8 +1,6 @@
 ## KJS Notes ##
 
-!!!This content is not mine; it came with a free installation of MarkdownPad 2!!!
-
-I think both that software and this example content are useful for "getting started" w/ MD so thanks MarkdownPad 2
+!!!The below content is not mine!!! It came with a free installation of MarkdownPad 2. I think both the MarkdownPad 2 software and their below example are useful for "Getting Started" with writing in Markdown, so, thanks, MarkdownPad 2!!!
 
 ## Welcome to MarkdownPad 2 ##
 

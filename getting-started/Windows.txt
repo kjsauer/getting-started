@@ -1,15 +1,19 @@
 ##
-close tab / active window
-$ ctrl+w
-close program
-$ alt+F4
-find
-$ ctrl+f
-switch screen
-$ alt+tab
-see all screens
-$ windows+tab
-switch tabs
-$ ctrl+tab
-switch tabs back
-$ ctrl+shift+tab
+Close tab/active window
+$ Ctrl+w
+Close program
+$ Alt+F4
+Find
+$ Ctrl+f
+Switch screen
+$ Alt+Tab
+See all screens
+$ Windows+Tab
+Switch tabs
+$ Ctrl+Tab
+Switch tabs back
+$ Ctrl+Shift+Tab
+Go to Microsoft Windows Task Manager indirectly (three-finger salute #1)
+$ Ctrl+Alt+Delete
+Go to Microsoft Windows Task Manager directly (3-finger salute #2)
+$ Ctrl+Shift+Esc

@@ -32,7 +32,7 @@ Can also right click --> Git Bash from context menu
 Set up Git folder via Git Bash
 $ git init --bare git-repo-name.git
 
-## Access files via Windows File Explorer Menu / Window
+## Access files via Windows File Explorer Menu/Window
 Navigate via File Explorer window
 working_dir\project_dir
 Open project_name
@@ -126,7 +126,7 @@ $ git config user.name
 Check user email
 $ git config user.email
 
-## Check / Update Git Repo User Info details
+## Check/Update Git Repo User Info details
 Git bash into local repo folder
 cd in using Git Bash or Windows cmd
 Or
@@ -208,7 +208,7 @@ Example Git repo name: example_repo_name
 AUTHORS
 LICENSE
 README.md
-\docs (integrate w/ readthedocs)
+\docs (integrate with readthedocs)
 \example_repo_name (contains source code)
 To be continued
 .gitattributes

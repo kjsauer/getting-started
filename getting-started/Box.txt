@@ -1,19 +1,19 @@
 ##
 Box Sync uses token administration
-You initially log in w/ email and password credentials
+You initially log in with email and password credentials
 Assigns a unique ID ("token") linked to your account
 Once token is established, your email address no longer matters
 Your credentials at that point are the token, not the email address
 Your email address credentials are managed via online account
 The online account will continue to be linked to Box Sync via the token (not via an email address)
 Box Sync will continue to sync to the online repository without having to log out and log back in b/c the online repository is linked to Box Sync via the token
-If you log out of Box Sync, you will need to log back in w/ the new email address credentials
-The token does not change until you log out and back in w/ the new credentials
+If you log out of Box Sync, you will need to log back in with the new email address credentials
+The token does not change until you log out and back in with the new credentials
 This administrative design prevents data loss (e.g., if you make changes online while using Box Sync, before logging out of and back into Box Sync)
 
 ## TLDR
 Box Sync uses token administration
-Log in w/ token
+Log in with token
 Change email
 Does not change token
 Until you log out

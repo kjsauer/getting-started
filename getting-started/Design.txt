@@ -33,7 +33,7 @@ config.csv files
 ##
 Starting a project
 Ideally work backwards
-Start w/ end functionality
+Start with end functionality
 e.g., Some literal function like Box Plot
 This will drive the necessary data structures
 Make those data structures in Excel test data file
@@ -53,10 +53,10 @@ Theory: Because it stores a time-ordered queue of every user action and graduall
 Apply this concept (user action time series queue) in software (GUI) development
 
 ## Data Analysis
-Work w/ clean example SQL or CSV databases when possible
-Execute calculations in legible / readable code script (e.g., Python notebook)
+Work with clean example SQL or CSV databases when possible
+Execute calculations in legible/readable code script (e.g., Python notebook)
 
-## Tests to run to familiarize w/ new software language
+## Tests to run to familiarize with new software language
 Inf/0
 NaN + NaN
 5 + NaN
