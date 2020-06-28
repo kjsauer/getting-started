@@ -103,11 +103,12 @@ $ program_flag.loc[program_flag.index == '2016-07-03 09:47:00-07:00']
 $ axis=0: runs vertical downwards across rows
 $ axis=1: runs horizontal across columns
 
-## Check Python Version
+## Check Python Version from Anaconda Prompt
+$ python --version
+
+## Check Python Version from Within Python
 $ import sys
 $ sys.version_info
-also (i think)
-$ python --version
 
 ## Advanced String Formatting (Simpler to Use %% Method)
 'hi {} the weather is {}'.format('kjs','sunny')
