@@ -1,13 +1,24 @@
 # Assorted Anaconda Python Tips and Tricks
 
-## Update
+## Check Python Version from Command Line/Anaconda Prompt
+Launch Anaconda Prompt
+$ python --version
+
+## Check Python Version from Within Python
+$ import sys
+$ sys.version_info
+
+## Update Anaconda Python -- NEW
+$ conda update conda
+
+## Update Anaconda Python -- old
 Launch Anaconda Prompt
 $ conda update --all
 
-## Update -- unused
+## Update Anaconda Python -- old
 conda update -n root conda
 
-## Update Sequence -- old
+## Update Anaconda Python -- old
 Launch Anaconda Prompt
 Windows\Start Menu\Anaconda Prompt
 Update Anaconda
@@ -157,12 +168,8 @@ Activate py27 (assumes environment has been named as py27)
 $ activate py27
 $ activate py35
 
-## Check Python Version from Command Line/Anaconda Prompt
-$ python --version
-
-## Check Python Version from Within Python
-$ import sys
-$ sys.version_info
+## Check Python Version
+See above notes.
 
 ##
 Now install pvmismatch
@@ -178,6 +185,9 @@ $ jupyter notebook
 Return to root
 $ deactivate py27
 $ deactivate py35
+
+## Check Python Version
+See above notes.
 
 # Spyder Interactive Development Environment (IDE)
 
@@ -199,8 +209,8 @@ ctrl + 1 to comment
 $ activate py27
 $ deactivate py27
 
-## Check Python Version in Active Anaconda Environment
-$ python --version
+## Check Python Version
+See above notes.
 
 ## Install Spyder
 $ conda install -c anaconda spyder
@@ -228,8 +238,8 @@ $ conda create -n py35 python=3.6 anaconda
 $ activate py27
 $ deactivate py27
 
-## Check Python Version in Active Anaconda Environment
-$ python --version
+## Check Python Version
+See above notes.
 
 # Jinja
 
@@ -413,5 +423,4 @@ Linux comes with built-in Python
 See PyPI "Cheese Shop"
 
 ## Check Python Version
-Launch Anaconda Prompt
-$ python --version
+See above notes.
