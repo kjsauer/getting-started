@@ -1,0 +1,5 @@
+## Getting Started
+Download, install, and open RStudio
+
+## Learn R
+Install and use swirl within RStudio to learn R language
