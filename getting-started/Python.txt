@@ -414,6 +414,48 @@ df2['Second'] = pd.DatetimeIndex(df2.index).second
 ## Resample 5-min to Hourly
 df_hourly = df_five_min.resample('H').mean()
 
+# Data Filtration
+
+## Find/Detect Outliers and Replace w/ NaN
+Source: https://stackoverflow.com/questions/46576147/pandas-replace-outliers-in-all-columns-with-nan/
+threshold_outlier = 3 # manual/visual; replace "3" with custom threshold value
+dataset = pd.DataFrame(index = s['insert_variable_name'].index,
+                       data = s['insert_variable_name'].values,
+                       columns = ['insert_variable_name'])
+v = dataset
+mask = np.abs((v-v.mean(0))/v.std(0)) > threshold_outlier # statistical z-score outlier detection method
+v.loc[mask.insert_variable_name].describe()
+v.loc[mask.insert_variable_name]
+
+## Apply Low and High Pass Filters and Replace with NaN
+threshold_low_pass = 0 # manual; replace "0" with custom low pass limit/threshold
+threshold_high_pass = 100 # manual; replace "100" with custom high pass limit/threshold
+insert_variable_name = pd.DataFrame(np.where(mask,np.nan,v),dataset.index,[dataset])
+insert_variable_name[(insert_variable_name < threshold_low_pass) | (insert_variable_name > threshold_high_pass)] = np.nan
+
+plot = insert_variable_name.plot(legend=False)
+
+# Save Python Script
+
+## Save Python Script to Local via Command Line
+NB: Command line only; does not run within Jupyter Notebook Python script
+# jupyter nbconvert --to script insert_ipynb_filename.ipynb
+
+## Save Python Script to Local from Within Jupyter Notebook Python Script
+from notebooktoall.transform import transform_notebook
+transform_notebook(ipynb_file='insert_ipynb_filename.ipynb',
+                   export_list=['html','py'])
+
+## Copy and paste files of this script from local to server
+from shutil import copyfile
+src = 'insert_ipynb_filename.ipynb'
+dst = test_folder = 'C:/Users/.../insert_ipynb_filename.ipynb'
+copyfile(src,dst)
+dst = test_folder = 'C:/Users/.../insert_ipynb_filename.py'
+copyfile(src,dst)
+dst = test_folder = 'C:/Users/.../insert_ipynb_filename.html'
+copyfile(src,dst)
+
 # Assorted
 
 ## Append vs. Concat vs. Merge
@@ -437,10 +479,6 @@ See PyPI "Cheese Shop"
 
 ## Check Python Version
 See above notes.
-
-## Data Filtration
-Find/Detect Outliers and Replace w/ NaN
-https://stackoverflow.com/questions/46576147/pandas-replace-outliers-in-all-columns-with-nan/
 
 ## End of Script
 Compliments of JHF
