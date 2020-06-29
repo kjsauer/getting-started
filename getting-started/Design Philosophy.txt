@@ -104,5 +104,9 @@ Provide:
 --Unit Tests Results: Known outputs 
 --Work Instructions
 
+## Unit Test Exercise Philosophy
+Unit test: Known inputs/known outputs
+Purpose: So that an engineer can know someone/something is properly trained.
+
 ## File Naming
 Short yet descriptive filenames are best. Bear in mind Indexing and Search. How would you search for/find the file?
