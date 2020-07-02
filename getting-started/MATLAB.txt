@@ -58,3 +58,13 @@ Namely, what is necessary to add to the path and how when the developer runs the
 ## End of Script
 Compliments of JHF
 $ disp('Congrats. The program ran completely/successfully. Crack open an ice-cold beer.')
+
+## MATLAB Toolbox vs. Library
+A toolbox is typically a collection of MATLAB functions and a library a collection of Simulink blocks. Having said that, many MATLAB toolboxes also offer Simulink libraries as well, e.g. Control System Toolbox, System Identification Toolbox, Instrument Control Toolbox, etc...
+
+Source: <https://www.mathworks.com/matlabcentral/answers/8866-toolbox-vs-library/>
+
+## MATLAB Function vs. Script
+Scripts are m-files containing MATLAB statements. ... The biggest difference between scripts and functions is that functions have input and output parameters. Script files can only operate on the variables that are hard-coded into their m-file. As you can see, functions much more flexible.
+
+Source: <https://web.cecs.pdx.edu/~gerry/MATLAB/programming/scripts.html>

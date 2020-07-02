@@ -2,4 +2,9 @@
 Download, install, and open RStudio
 
 ## Learn R
-Install and use swirl within RStudio to learn R language
+Install and use swirl within RStudio to learn R 
+
+## R Package vs. Library
+In R, a package is a collection of R functions, data and compiled code. The location where the packages are stored is called the library. If there is a particular functionality that you require, you can download the package from the appropriate site and it will be stored in your library.
+
+Source: <https://stackoverflow.com/questions/26900228/what-is-the-difference-between-a-library-and-a-package-in-r/>
