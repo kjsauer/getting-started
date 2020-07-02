@@ -259,6 +259,13 @@ See above notes.
 {% endfor %}
 
 # Jupyter Notebook Themes
+
+Launch Anaconda Prompt
+$ conda install -c conda-forge jupyterthemes
+Open a Jupyter Notebook
+
+## Requirements
+NB: Make sure you have installed jupyterthemes (launch Anaconda Prompt and run $ conda install -c conda-forge jupyterthemes)
 ## List available themes
 NB: Same as $ get_ipython().system('jt -l')
 !jt -l
