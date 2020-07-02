@@ -2,6 +2,6 @@
 VS Code = Visual Studio Code
 
 ##
-Comment code: ctrl + /
+Comment code: Ctrl+"/"
 Run selected line: F8
 Search settings for telemetry and switch to "false"

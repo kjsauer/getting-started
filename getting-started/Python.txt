@@ -10,7 +10,7 @@ See Command Line Getting Started notes.
 
 ##
 Now launch Jupyter Notebook without browser.
-See below Jupyter Notebook notes (Ctrl+F: "--no-browser").
+See below Jupyter Notebook notes (Ctrl+f: "--no-browser").
 
 ## Check Python Version from Command Line/Anaconda Prompt
 Launch Anaconda Prompt
@@ -210,7 +210,7 @@ Backend: Automatic
 Switch inline to automatic
 
 ## Comments in Spyder
-ctrl + 1 to comment
+Ctrl+1 to comment
 
 # Anaconda Python
 
@@ -287,9 +287,9 @@ I have not checked Google Chrome
 
 ## Useful Hot Keys in Jupyter Notebook
 comment or uncomment a line
-$ ctrl+"/"
+$ Ctrl+"/"
 run cell
-$ ctrl+enter
+$ Ctrl+Enter
 exit cell via escape (Esc)
 enter cell via Enter
 change to markdown when in esc mode
@@ -307,7 +307,7 @@ Interactive figure window
 $ %matplotlib qt
 
 ## Jupyter Notebook Hot Keys
-Use ctrl+"/" to comment and uncomment
+Use Ctrl+"/" to comment and uncomment
 Esc+"b"+Enter escapes the active cell, adds a new cell, and puts the cursor there
 
 ## Working with HTML Output Files
@@ -379,8 +379,8 @@ Copy URL and paste into browser (e.g., Firefox)
 Jupyter web browser interface will appear in present working directory
 
 ## Other Syntax
-end program
-$ ctrl+c
+End program
+$ Ctrl+c
 
 # Time Series
 

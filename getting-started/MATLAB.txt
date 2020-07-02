@@ -43,8 +43,8 @@ dlmwrite('fileName.csv',variableName,'delimiter',',','precision',12);
 % Keep MATLAB importers simple, e.g., single numeric or string input
 
 ## Other Syntax
-end program
-$ ctrl+c
+End program
+$ Ctrl+c
 
 # MATLAB PVLIB
 
