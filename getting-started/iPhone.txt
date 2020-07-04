@@ -1,0 +1,4 @@
+## iPhone Tips and Tricks
+Swipe left on text message to Mute conversation.
+##
+While you are on sleep mode, if you receive >=3 calls from the same number, the call will go through (e.g., for emergencies).
