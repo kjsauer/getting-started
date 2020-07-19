@@ -8,3 +8,4 @@ Etc.
 
 ##
 When Sublime Text 3 is open and you have files open in it, Sublime tracks their edit status. If you move the open files on your computer, Sublime will register that the file has changed. Sublime, like Git, tracks the change status of files while they are open in Sublime and--importantly--when Sublime is open. If you have files open in Sublime and you close Sublime and then move the files on your computer and then reopen Sublime, the files will simply have disappeared from Sublime; it does not register it as a change.
+TLDR: Close Sublime Text before organizing (renaming, deleting, etc.) files.

@@ -1,4 +1,16 @@
 ##
+NB: Box Sync is depracated/antiquated/buggy/bad software.
+Box Sync is known to cause major problems on Windows and other machines.
+Major problems may occur if your Box Sync folder somehow moves (including during buggy Box Sync updates).
+It has been replaced by Box Drive.
+Abandon Box Sync and switch to Box Drive.
+
+## Box Drive
+Box Drive does not integrate with Windows Search Indexer.
+Use Ctrl+Alt+Shift+b for Box Drive Search.
+Does not download files if offline and not made available offline a priori.
+
+##
 Box Sync uses token administration
 You initially log in with email and password credentials
 Assigns a unique ID ("token") linked to your account

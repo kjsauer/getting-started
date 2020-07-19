@@ -1,4 +1,8 @@
-﻿## Git Bash
+﻿## Warnings
+Avoid syncing large (e.g., >= 1 GB) files to a Git repo (!!!).
+It can lead to crashing/major issues.
+
+## Git Bash
 Check present working directory pwd
 If needed change it
 cd C:/Users/USERNAME
