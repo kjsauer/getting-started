@@ -1,2 +1,7 @@
 ## YouTube Tips and Tricks
 Right click YouTube video to loop.
+
+## Hypothesis on ads
+The fastest way to avoid ads is to switch browser tabs and navigate to another YouTube video.
+Google--given its ever-thirsty need to serve us ads--does not want to lose the viewer.
+Analogous to gambling at a casino (more gambling = more profit to casino), more YouTube viewing = more unwanted ads that Google can serve to us.

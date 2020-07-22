@@ -19,8 +19,19 @@ Go to Inbox
 $ g+i
 Add label
 $ l
+
 ##
 Filter out drafts from All Mail, so you can scroll up and down using "j" and "k", respectively.
 Go to All Mail
 Enter in Search Field:
 $ -label:draft
+
+## Filter only messages with no user labels
+
+in:all mail has:nouserlabels
+
+## Example Queries
+
+Go to All Mail
+
+-label:draft -label:news "speech" and "graduation"

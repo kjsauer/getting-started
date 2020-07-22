@@ -9,6 +9,7 @@ Abandon Box Sync and switch to Box Drive.
 Box Drive does not integrate with Windows Search Indexer.
 Use Ctrl+Alt+Shift+b for Box Drive Search.
 Does not download files if offline and not made available offline a priori.
+When you delete on your computer, the file does not go to the recycle bin.
 
 ##
 Box Sync uses token administration
@@ -32,5 +33,9 @@ Until you log out
 And log back in
 Prevents data loss
 
-##
-Box Sync: Updating password on Box Cloud does not affect Box Sync. Instead, the next time you log out of Box Sync, you will have to log in with the new credentials.
+## Box Sync Lessons Learned
+Updating password on Box Cloud does not affect Box Sync. Instead, the next time you log out of Box Sync, you will have to log in with the new credentials.
+
+## Box Sync Warning
+If you accidentally move your Box Sync folder, you are out of luck and need to afresh again as if setting up Box Sync locally for the first time. Hence, part of why Box Sync is a buggy and now-depracated software (see above). If you for some reason move the Box Sync folder back where it belongs, it will think that these are all new files that need to be synced to the cloud. You will not affect the files on the cloud -- Box will check against those and if the match, it will make a duplicate of your files and folders with your email address in the filename or folder name, respectively. Avoid this process, especially if on a home network with slow upload speed.
+TLDR: Abandon Box Sync for Box Drive.
