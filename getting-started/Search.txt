@@ -1,0 +1,17 @@
+##
+
+Google Search
+
+DuckDuckGo (preferred for privacy reasons and fewer ads/ability to report ads)
+Advanced Search methods appear to work the same in both
+
+## Example Advanced Searches
+
+"icloud notes" site:news.ycombinator.com
+##
+Search for exact terms: Use quotes and "AND"
+$ "insert in quotes"
+$ "insert #1" AND "insert #2"
+##
+Search approximate: Use tilda (~)
+$ ~approximate term

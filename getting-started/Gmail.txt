@@ -35,3 +35,6 @@ in:all mail has:nouserlabels
 Go to All Mail
 
 -label:draft -label:news "speech" and "graduation"
+
+## Useful References
+https://support.google.com/mail/answer/7190?hl=en

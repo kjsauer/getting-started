@@ -1,4 +1,6 @@
 ## Practical Synonyms
+Bash
+Command Line
 Command Line Interface (CLI)
 Shell
 Terminal

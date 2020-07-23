@@ -1,4 +1,26 @@
 ##
+Windows aka OS
+MacOS
+Linux
+
+## Windows Work Machine
+
+Operate as if your computer will break, get stolen, or get run over by a bus at any second.
+Store NOTHING locally except:
+
+--Shortcuts to software applications (aka programs)
+
+--Software application data files (e.g., PVsyst and SAM archives; keep note of/backup archives of this)
+
+Keep GitHub synced at all times.
+
+Keep track of all software licenses/license keys (e.g., Adobe, MATLAB, NI LabVIEW, PVsyst).
+No need for the latter with open source software (!), e.g., Anaconda Python, R, etc.
+
+##
+Backup Internet Explorer bookmarks (the last I checked, they did not have a "Sync" function like Firefox)
+
+##
 Close tab/active window
 $ Ctrl+w
 Close program
