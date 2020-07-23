@@ -1,4 +1,7 @@
 ## Slack Notes
-NB: I do not condone the use of Slack. In fact, as a company, I would strongly discourage it. As a normal user, ask: Where is the data saved? What happens when you delete a message? If you do not know the answers, stay away...
+1. As a normal user, ask: Where is my data saved?
+2. What happens when you delete a message?
+If you do not know the answer, at least to the first question, attempt to avoid the use of said software program...
+
 ##  Slack Hotkeys
 Ctrl+"/" or Ctrl+"?" to see hot keys
