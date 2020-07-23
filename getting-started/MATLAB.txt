@@ -68,3 +68,8 @@ Source: <https://www.mathworks.com/matlabcentral/answers/8866-toolbox-vs-library
 Scripts are m-files containing MATLAB statements. ... The biggest difference between scripts and functions is that functions have input and output parameters. Script files can only operate on the variables that are hard-coded into their m-file. As you can see, functions much more flexible.
 
 Source: <https://web.cecs.pdx.edu/~gerry/MATLAB/programming/scripts.html>
+
+## MATLAB Compiler Lessons Learned
+Make sure ALL scripts or functions which are to be called when the EXE is run are added to the compiler.
+You will likely need to manually add files (namely, functions) to the compiler.
+Upon setting up the compiler, recommend to toggle ON the option to output a log file each time the EXE is run.
