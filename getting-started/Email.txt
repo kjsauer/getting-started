@@ -1,3 +1,6 @@
+##
+Email aka Gmail, etc.
+Much of the below pertains to Gmail (for better or worse)
 ## Hot Keys
 Select email
 $ x
@@ -38,3 +41,7 @@ Go to All Mail
 
 ## Useful References
 https://support.google.com/mail/answer/7190?hl=en
+
+## Jump to Random Email
+Use website [1] to search for find random emails in Email
+[1] https://randomwordgenerator.com/
