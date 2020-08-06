@@ -6,7 +6,7 @@
 ## Cons of MATLAB
 --Native data ingest and wrangling (incl. Time Series handling) does not compare to Python
 --Not nearly as deployable and ubiquitous in the greater software development world
---NOT OPEN-SOURCE
+--NOT OPEN-SOURCE (!!!)
 
 %% Format MATLAB Workspace
 clear; close all; clc; format long g; format compact;
@@ -56,7 +56,7 @@ Design MATLAB folders based on function/script co-dependencies and the MATLAB pa
 Namely, what is necessary to add to the path and how when the developer runs the code
 
 ## End of Script
-Compliments of JHF
+Compliments of J.H.F.
 $ disp('Congrats. The program ran completely/successfully. Crack open an ice-cold beer.')
 
 ## MATLAB Toolbox vs. Library

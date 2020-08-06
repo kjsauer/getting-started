@@ -11,6 +11,9 @@ Use Ctrl+Alt+Shift+b for Box Drive Search.
 Does not download files if offline and not made available offline a priori.
 When you delete on your computer, the file does not go to the recycle bin.
 
+## More Cons of Box Drive
+When you delete a folder that is 0 bytes locally via Box Drive, and then you try to confirm 0 bytes in Box Cloud, oftentimes the value is non-zero. I am not sure if this is due to the revision history saved in the cloud or what, but I feel it is misleading. Perhaps multiple values ought to be reported (1. Bytes displayed on PC via Box Drive, and 2. Bytes displayed in Box Cloud).
+
 ##
 Box Sync uses token administration
 You initially log in with email and password credentials

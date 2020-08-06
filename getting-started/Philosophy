@@ -106,10 +106,19 @@ Provide:
 
 ## Unit Test Exercise Philosophy
 Unit test: Known inputs/known outputs
-Purpose: So that an engineer can know someone/something is properly trained.
+Purpose(s):
+So that an engineer can know someone/something is properly trained.
+So that you can ensure an updated tool yields the same results.
 
 ## File Naming
 Short yet descriptive filenames are best. Bear in mind Indexing and Search. How would you search for/find the file?
 
 ## General Computer Usage
 Find ways to avoid using the mouse whenever possible.
+
+## Work vs. Personal
+Keep work projects separate from personal projects.
+Same GitHub account is fine.
+Work on different computers in different repos.
+When engaging in industry for learning, etc., use personal email.
+When representing a company in the engagement, use company email.

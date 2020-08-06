@@ -1,4 +1,13 @@
-﻿## Warnings
+﻿## Definitions
+Repo = Repository
+
+## Forking
+Do not fork repos unless you are going to actively develop in them.
+Otherwise, you are proliferating deprecated software (a la the automatically opt-in GitHub Arctic Archive program).
+So long as the origin of the repo still exists, there is no reason to fork it except to spread an obsolete software.
+If you need to use the code, download it as a .ZIP file.
+
+## Warnings
 Avoid syncing large (e.g., >= 1 GB) files to a Git repo (!!!).
 It can lead to crashing/major issues.
 
