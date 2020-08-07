@@ -88,7 +88,7 @@ Use Microsoft Excel template instead of Python script; copy/paste data into it. 
 Package ALL help documentation and ALL examples (unit tests) and ALL unit test data into the repos; yes, the repo will become large, but everything will be in ONE folder that can be easily transferred and booted up and will be ready to rock.
 
 ##
-Rule: Every input should be a config file. This way others can tweak the input config files and not the code. Write code so others can get started quickly.
+Rule: Every input must be a config (or data) file. This way others can tweak the input config files and not the code. Write code so others can get started quickly. Provide unit test with software program, data, and metadata, and program help menu (if needed). Provide answers as well so the user knows if the program ran correctly.
 
 ##
 Provide:
@@ -128,3 +128,10 @@ In all cases, package into one, single repository all of the necessary files req
 
 ## Standalone Application (EXE)
 tbd.
+
+## Build Auto-Image Detection Tool
+Build training GUI.
+Have algorithm make guess via artificial intelligence (AI) and machine learning (ML).
+Have operator (human) correct guess.
+This new human data is incorporated into AI/ML algorithm to improve it.
+Calculate % accuracy each time; it should improve up to some high value, e.g., >97.5% (ideally higher).
