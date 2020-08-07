@@ -122,3 +122,9 @@ Same GitHub account is fine.
 Work on different computers in different repos.
 When engaging in industry for learning, etc., use personal email.
 When representing a company in the engagement, use company email.
+
+## Documentation
+In all cases, package into one, single repository all of the necessary files required to reproduce an expected set of results (which is also contained in the repository). Consider this from the time of project onset.
+
+## Standalone Application (EXE)
+tbd.
