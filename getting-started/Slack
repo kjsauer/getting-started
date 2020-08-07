@@ -6,3 +6,7 @@ If you do not know the answer at least to the first question, probably best to a
 
 ##  Slack Hotkeys
 Ctrl+"/" or Ctrl+"?" to see hot keys
+
+## Slack Test Call
+Enter in channel (without "$")
+$ /call --test
