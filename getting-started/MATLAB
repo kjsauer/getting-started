@@ -76,3 +76,6 @@ Upon setting up the compiler, recommend to toggle ON the option to output a log 
 
 ## Variable Names
 Variable names must start with a letter (not a number) (e.g., a1, not 1a).
+
+## MATLAB Coder
+MATLAB can compile down to C. This is good for app deployment.
