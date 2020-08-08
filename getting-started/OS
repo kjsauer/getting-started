@@ -3,6 +3,9 @@ Windows aka OS
 MacOS
 Linux
 
+## Configure Windows 7 Start-up Programs
+msconfig.exe
+
 ## Windows Work Machine
 
 Operate as if your computer will break, get stolen, or get run over by a bus at any second.
@@ -39,3 +42,7 @@ Go to Microsoft Windows Task Manager indirectly (three-finger salute #1)
 $ Ctrl+Alt+Delete
 Go to Microsoft Windows Task Manager directly (3-finger salute #2)
 $ Ctrl+Shift+Esc
+
+##
+Avoid asterisks in filenames.
+Best to start variable names with a letter (not a number) (e.g., a1, not 1a).
