@@ -83,5 +83,5 @@ MATLAB can compile down to C. This is good for app deployment.
 ## Save Ouput(s) to Folder
 cd = pwd;
 outputs_folder = sprintf('Outputs_%s',datestr(now,30));
-ffname = fullfile(CD,outputs_folder);
-mkdir(ffname);
+folder_name = fullfile(CD,outputs_folder);
+mkdir(folder_name);
