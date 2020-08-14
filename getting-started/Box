@@ -5,6 +5,9 @@ Major problems may occur if your Box Sync folder somehow moves (including during
 It has been replaced by Box Drive.
 Abandon Box Sync and switch to Box Drive.
 
+## Code Integration with Box Drive
+Add folder as local when calling files into Python, MATLAB, etc.
+
 ## Box Drive
 Box Drive does not integrate with Windows Search Indexer.
 Use Ctrl+Alt+Shift+b for Box Drive Search.
