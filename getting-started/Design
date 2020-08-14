@@ -135,3 +135,11 @@ Have algorithm make guess via artificial intelligence (AI) and machine learning 
 Have operator (human) correct guess.
 This new human data is incorporated into AI/ML algorithm to improve it.
 Calculate % accuracy each time; it should improve up to some high value, e.g., >97.5% (ideally higher).
+
+## Timestamps
+Use format YYYY-MM-DD hh:mm:ss
+
+## Output File(s) Storage
+Save into pwd\Ouptuts_timestamp,
+where timestamp is updated each time.
+See MATLAB Getting Started for example.
