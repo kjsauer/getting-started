@@ -495,3 +495,9 @@ $ print('Congrats. The program ran completely/successfully. Crack open an ice-co
 Package is a collection of modules. It must contains an __init__.py file as a flag so that the python interpreter processes it as such. The __init__.py could be an empty file without causing issues. Library is a collection of packages.
 
 Source: <https://kimconnect.com/python-module-vs-package-vs-library-vs-framework/>
+
+## Save as .csv file with datetime format YYYY-MM-DD hh:mm:ss
+import os
+csv_output_pathname = 'file_pathname'
+csv_output_filename = 'filename'
+df.to_csv(os.path.join(csv_output_pathname,csv_output_filename),date_format=%Y-%m-%d %H:%M:%S')
