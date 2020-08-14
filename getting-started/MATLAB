@@ -85,3 +85,17 @@ cd = pwd;
 outputs_folder = sprintf('Outputs_%s',datestr(now,30));
 folder_name = fullfile(CD,outputs_folder);
 mkdir(folder_name);
+
+## Pre-adding Files to the Compiler
+Pre-add files to compiler so user does not need to call them in order to successfully run the compiled, standalone, EXE application.
+Add to "Files required for your application to run".
+Simply call filename directly in code.
+CD = pwd;
+if isdeployed
+	filename = fullfile('insert_filename.csv');
+else
+	filename = fullfile(CD,'insert_filename.csv');
+end
+
+## Log File
+Always output a Log File with a standalone, MATLAB, compiled EXE application (e.g., EXE_name_Log_File).
