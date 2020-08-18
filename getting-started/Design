@@ -104,6 +104,13 @@ Provide:
 --Unit Tests Results: Known outputs 
 --Work Instructions
 
+## _todo List
+Always have a _todo List that is numbered.
+1. [DONE] (hm) Make _todo list for home tasks.
+2. [DONE] (wk) Make _todo list for work tasks.
+3. (hm) Win the lottery, amass a fortune, and retire to an island getaway.
+4. [DONE] Mark items as Done when completed.
+
 ## Unit Test Exercise Philosophy
 Unit test: Known inputs/known outputs
 Purpose(s):
