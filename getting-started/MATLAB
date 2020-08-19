@@ -99,3 +99,8 @@ end
 
 ## Log File
 Always output a Log File with a standalone, MATLAB, compiled EXE application (e.g., EXE_name_Log_File).
+
+## Compiler
+Include config files external to the EXE for record in case the format changes in the future (for posterity); see section of compiler "Files installed for your end user". In contrast with the section of the compiler called "Files required for your application to run", these are not built into the EXE (the latter is where you add any and all files that need to be built into the EXE).
+
+The script in your development environment (dev env) should do exactly what the compiled EXE does. Remember to always add your path (all folders and subfolders), even if you are just compiling an EXE.

@@ -6,7 +6,7 @@ It has been replaced by Box Drive.
 Abandon Box Sync and switch to Box Drive.
 
 ## Code Integration with Box Drive
-Add folder as local when calling files into Python, MATLAB, etc.
+Add folder as local when calling files into Python, MATLAB, etc. Right click on folder(s) containing the files that need to be accessed via pathname and "Make Available Offline".
 
 ## Box Drive
 Box Drive does not integrate with Windows Search Indexer.
