@@ -104,3 +104,12 @@ Always output a Log File with a standalone, MATLAB, compiled EXE application (e.
 Include config files external to the EXE for record in case the format changes in the future (for posterity); see section of compiler "Files installed for your end user". In contrast with the section of the compiler called "Files required for your application to run", these are not built into the EXE (the latter is where you add any and all files that need to be built into the EXE).
 
 The script in your development environment (dev env) should do exactly what the compiled EXE does. Remember to always add your path (all folders and subfolders), even if you are just compiling an EXE.
+
+## Curve Fitting Tool
+Type cftool in workspace to use plotting tool (if you have this toolbox; I do not); extremely easy to lasso and remove "bad" data for the sake of expedient evaluation of performance under "normal" operating conditions (which make up the vast majority of data and, in the case of solar PV, energy harvest).
+
+## Guide
+Type "guide" in workspace to develop a GUI script that you can compile to an EXE (a la graphical programming languages like Simulink or LabVIEW, or AutoCAD; namely, drawn primarily via use of the mouse).
+
+## Errors Upon Compiling EXE
+Make sure you do not exceed the maximum file character length when you compile. This will throw a nondescript error.
