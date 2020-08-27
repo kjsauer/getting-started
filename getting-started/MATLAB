@@ -113,3 +113,6 @@ Type "guide" in workspace to develop a GUI script that you can compile to an EXE
 
 ## Errors Upon Compiling EXE
 Make sure you do not exceed the maximum file character length when you compile. This will throw a nondescript error.
+
+## GUI
+Initiate default values in script (do not pre-populate fields with text). Declare global variables to communicate b/w GUI and EXE script.
