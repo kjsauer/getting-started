@@ -119,7 +119,7 @@ Initiate default values in script (do not pre-populate fields with text). Declar
 
 ## EXE Design Sequence
 TLDR: Design EXE_CFG first and EXE_GUI second.
-1. Tool_Name_EXE_CFG: First, design the EXE to get the user inputs from the text file; parse by "=" sign using references to line numbers. CFG = Configuration aka Config aka CONFIG file.
+1. Tool_Name_EXE_CFG: First, design the EXE to get the user inputs from the text file; e.g., parse by "=" sign using references to line numbers. CFG = Configuration aka Config aka CONFIG file.
 2. Tool_Name_EXE_GUI: Next, once the CFG file is well-designed, design the EXE to get user inputs from the GUI.
 
 ## MATLAB Compiler
