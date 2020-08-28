@@ -115,4 +115,22 @@ Type "guide" in workspace to develop a GUI script that you can compile to an EXE
 Make sure you do not exceed the maximum file character length when you compile. This will throw a nondescript error.
 
 ## GUI
-Initiate default values in script (do not pre-populate fields with text). Declare global variables to communicate b/w GUI and EXE script.
+Initiate default values in script (do not pre-populate fields with text). Declare global variables to communicate between the GUI and EXE script.
+
+## EXE Design Sequence
+TLDR: Design EXE_CFG first and EXE_GUI second.
+1. Tool_Name_EXE_CFG: First, design the EXE to get the user inputs from the text file; parse by "=" sign using references to line numbers. CFG = Configuration aka Config aka CONFIG file.
+2. Tool_Name_EXE_GUI: Next, once the CFG file is well-designed, design the EXE to get user inputs from the GUI.
+
+## MATLAB Compiler
+Unfortunately, you may need to carefully and manually map and keep track of ALL the file dependencies for a given EXE program. A single script compiled into an EXE can be dependent on hundreds of other scripts, functions, and other file types (*.mat, *.csv, *.m, etc.). Depending on how you design the software (and write the main script, etc.), you may have to manually add all of these dependent files at the time of compilation. Best to design the main script as a series of script and function calls, so that it is clear to the compiler which files are required for the EXE to properly run. Nonetheless, it is probably best practice to manually keep track of file dependencies (e.g., in a CSV database).
+
+Moreover, keep track of all unique EXE deployments in a CSV database (unique ID, names, descriptions; namely, including every input to the Application Compiler including the Log File name).
+
+## Update Name of GUI
+First, sync up in Git. Then, in MATLAB:
+$ guide
+File save as. Enter the new name. It will make a new *.fig and *.m file associated with the GUI. Delete the old ones with the previous names before making any changes, test them to make sure they work right, and sync again in Git. Then go ahead and continue editing the *.fig and *.m files relating to the GUI.
+
+## MATLAB and LabVIEW
+MATLAB can be run within LabVIEW via the MathScript module.
