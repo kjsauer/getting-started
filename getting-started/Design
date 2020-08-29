@@ -30,7 +30,7 @@ config.csv files
 .exe plus runtime files
 
 ## General Principles
-99% planning; 1% execution
+99% planning (and perspiration); 1% execution (and more perspiration...and 0% genius throughout...)
 
 ##
 Starting a project
@@ -169,5 +169,11 @@ Site information .csv self-produces a map of its own location. This cellular-gen
 
 ## Timely HackerNews Advice
 Build tools around workflows, not workflows around tools.
-https://news.ycombinator.com/item?id=24244329
+<https://news.ycombinator.com/item?id=24244329>
 (I only read the headline, and I agree with it.)
+
+## Software Design Adjectives
+Design software to be simple, isolated, encapsulated, and modular.
+
+## A Lobster's Advice
+Don't marry your design after the first date. (I might add: You may not want to marry your first partner, either.) Credit not mine: <https://lobste.rs/s/rvuyep/don_t_marry_your_design_after_first_date/>
