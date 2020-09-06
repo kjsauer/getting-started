@@ -189,3 +189,30 @@ Don't marry your design after the first date. (I might add: You may not want to 
 
 ## Reason to Code (vs. Spreadsheets, etc.)
 Code does not lie; it intrinsically says what it does.
+
+## Web App Design
+Config (CFG) files into one format (e.g., .json).
+Data files into another format (e.g., .csv).
+
+## Handing off from Engineering to Operations
+One single, executable file (EXE) with a graphical user interface (GUI) is ideal for a user, technician, or operator.
+(Actually, web-deployed applications are ideal.)
+Cannot require manual modification of data files.
+Modification of config files is O-K.
+Config (CFG) files can be replaced by the GUI.
+
+## Key Files for Handoff from Engineering to Operations
+Files needed for technician's/operator's machine:
+1. Runtime and Runtime Update, if needed (e.g., MATLAB)
+2. EXE of GUI (e.g., MATLAB, LabVIEW)
+3. Downloaded data files of a given format and type in a given path.
+4. Config CFG files in a given path.
+The EXE generates an output folder in which to place output files.
+
+## Design for EXE
+An EXE can be run (called) w/ any language (e.g., Python, R, MATLAB, etc.).
+
+## Config CFG Files
+Advantage of separate config file:
+Save inputs for pre-processor for future.
+A GUI replaces the need for CFG file.
