@@ -211,6 +211,8 @@ The EXE generates an output folder in which to place output files.
 
 ## Design for EXE
 An EXE can be run (called) w/ any language (e.g., Python, R, MATLAB, etc.).
+e.g., Run EXE from Python:
+$ run('C:\asdf1\asdf2.exe')
 
 ## Config CFG Files
 Advantage of separate config file:

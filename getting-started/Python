@@ -504,3 +504,6 @@ df.to_csv(os.path.join(csv_output_pathname,csv_output_filename),date_format=%Y-%
 
 ## Python Notebooks and Git
 Problems with Python notebooks and Git: 1. Every time you open and run a Python file, Git treats it as a revision. 2. It is difficult to review revisions of a Python notebook in Git because of all the extraneous code. There are many benefits to Jupyter iPython Notebooks (primarily social: shareability and collective understanding), however, .py files and Spyder win out in these regards.
+
+## Run EXE from Python
+run('C:\asdf1\asdf2.exe')
