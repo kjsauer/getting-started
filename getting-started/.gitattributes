@@ -8,6 +8,8 @@
 # Accessed: 170611
 #
 
+# Compiled by Kenneth J. Sauer (kjsauer)
+
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
 

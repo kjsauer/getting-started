@@ -1,21 +1,20 @@
-todo: Explore/document more stuff
+# _todo Getting Started
+Kenneth J. Sauer (kjsauer)
 
-##
-Python without Anaconda
-Miniconda
-
-##
-Option to run Anaconda Prompt from cmd?
-
-##
-Anaconda Python
-TortoiseSVN
-readthedocs
-Subversion
-MATLAB
-Python
-PVLIB
-PVSAT
-Pecos
-Git
-R
+## _todo getting-started
+1. Explore/document more stuff.
+2. Python without Anaconda.
+3. Miniconda.
+4. Option to run Anaconda Prompt from cmd.
+5. Anaconda Python.
+6. TortoiseSVN.
+7. readthedocs.
+8. Subversion.
+9. MATLAB.
+10. Python.
+11. PVLIB.
+12. PVSAT.
+13. PVsyst.
+14. Pecos.
+15. Git.
+16. R.

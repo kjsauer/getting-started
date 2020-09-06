@@ -1,3 +1,6 @@
+# Getting Started: SQL
+Kenneth J. Sauer (kjsauer)
+
 ##
 CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER);
 INSERT INTO groceries VALUES (1,"Bananas", 4);
@@ -24,9 +27,9 @@ filter
 SELECT * FROM groceries WHERE aisle > 5 ORDER BY aisle;
 
 ##
-nb: need to have the order by if you are filtering
+NB: Need to have the order by if you are filtering.
 SELECT * FROM movies WHERE release_year > 2000 ORDER BY release_year;
-nb: cannot leave out the last ORDER BY part of the above
+NB: Cannot leave out the last ORDER BY part of the above.
 
 ##
 SELECT name FROM groceries;

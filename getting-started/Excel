@@ -1,3 +1,6 @@
+# Getting Started: Excel
+Kenneth J. Sauer (kjsauer)
+
 ## Function
 =date(year,month,hour)+time(hour,minute,second)
 
