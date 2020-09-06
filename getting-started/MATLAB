@@ -134,3 +134,14 @@ File save as. Enter the new name. It will make a new *.fig and *.m file associat
 
 ## MATLAB and LabVIEW
 MATLAB can be run within LabVIEW via the MathScript module.
+
+## High and Low Pass Filtration
+ind = A(:,2)>0 & A(:,1) == 1;
+A(ind,:) = NaN; % or = [];
+Source: <https://www.mathworks.com/matlabcentral/answers/412533-index-a-matrix-to-erase-or-replace-with-nan-some-arrays-that-meet-condition/>
+
+Also,
+X = randi([1 10],10,3); % example data
+TF = X(:,3) > 5; % for which rows is column 3 larger than 5
+X(TF,:) = nan; % or = []; % remove those rows
+Source: <https://www.mathworks.com/matlabcentral/answers/179379-removing-rows-from-all-columns-based-on-values-of-one-column/>

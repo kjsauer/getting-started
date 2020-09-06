@@ -177,3 +177,15 @@ Design software to be simple, isolated, encapsulated, and modular.
 
 ## A Lobster's Advice
 Don't marry your design after the first date. (I might add: You may not want to marry your first partner, either.) Credit not mine: <https://lobste.rs/s/rvuyep/don_t_marry_your_design_after_first_date/>
+
+## Software Documentation Hand-off Requirements
+1. Software program
+2. Getting Started
+3. Help Menu
+4. Functional specification (description of inputs nad outputs)
+5. Testing specification (unit aka regression test)
+6. Theory guide
+7. Practice guide
+
+## Reason to Code (vs. Spreadsheets, etc.)
+Code does not lie; it intrinsically says what it does.
