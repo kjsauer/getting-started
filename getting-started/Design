@@ -235,3 +235,9 @@ Most technical debt is B.S. It's true! Make a numbered _todo list (prioritized f
 
 ## Backing Up
 Worry about saving and properly archiving the End. Don't worry about saving the Means to the End. It helps to save the Means, but don't sweat losing it (sh!t happens). If you focus on properly saving and archiving the End, then hopefully you won't lose that and will thus avoid any associated, larger regrets.
+
+## Dev vs. Production
+Maintain a _dev environment (e.g., source code) that compiles/deployes into the production environment (e.g., compiled standalone EXE application).
+
+## _dev Workflow
+Start by gathering/collecting essential user inputs via CFG.txt file. Then add option for GUI. The CFG file forces the minimum viable set of inputs; it provides a nice, clean data specification.

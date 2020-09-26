@@ -148,3 +148,20 @@ X = randi([1 10],10,3); % example data
 TF = X(:,3) > 5; % for which rows is column 3 larger than 5
 X(TF,:) = nan; % or = []; % remove those rows
 Source: <https://www.mathworks.com/matlabcentral/answers/179379-removing-rows-from-all-columns-based-on-values-of-one-column/>
+
+## Format MATLAB workspace.
+% Format MATLAB workspace.
+close all
+clearvars -except custom_filt_flag % custom_filt_flag allows custom filter hack
+clc
+format long g
+format compact
+
+## Compiled Standalone EXE
+Critical notes for compiled MATLAB EXE:
+--Link to MATLAB Runtime installed in order to run EXE.
+<https://www.mathworks.com/products/compiler/matlab-runtime.html/>
+--INPUTTED DATA FILES CANNOT BE OPEN AT SAME TIME PROGRAM IS RUN!!!
+
+## _dev MATLAB Path
+Add all files to path before working in MATLAB and before compiling an EXE. Get used to adding files to the MATLAB path!
