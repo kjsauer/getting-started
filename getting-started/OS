@@ -1,4 +1,4 @@
-# Getting Started: OS
+# Getting Started: Operating Systems (OS)
 Kenneth J. Sauer (kjsauer)
 
 ##
@@ -49,3 +49,10 @@ $ Ctrl+Shift+Esc
 ##
 Avoid asterisks in filenames.
 Best to start variable names with a letter (not a number) (e.g., a1, not 1a).
+
+## Windows
+Manage devices via Device Manager (Windows button\Search device manager).
+e.g., Right click on USB\Power management\Do not allow computer to turn off power of device.
+
+## Windows
+Manage start-up programs via msconfig.

@@ -1,0 +1,9 @@
+# Getting Started: Web Browsers
+Kenneth J. Sauer (kjsauer)
+
+## Firefox
+Advanced settings
+Type in URL:
+$ about:config
+For example, change media.hardwaremediakeys.enabled to false.
+Restart browser to implement changes.
