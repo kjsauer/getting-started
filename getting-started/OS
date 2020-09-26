@@ -56,3 +56,6 @@ e.g., Right click on USB\Power management\Do not allow computer to turn off powe
 
 ## Windows
 Manage start-up programs via msconfig.
+
+## Windows - Remove Metadata from Photos Before Uploading to Internet and Sharing
+Before uploading any photos to the Internet, remove metadata: Right click\Properties\Details\Remove Properties and Personal Information (save version w/ all properties removed, and upload that one).
