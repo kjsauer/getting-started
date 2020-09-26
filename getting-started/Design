@@ -232,3 +232,6 @@ A GUI replaces the need for CFG file.
 ## Technical Debt
 Most technical debt is B.S. It's true! Make a numbered _todo list (prioritized for urgent *** and highly urgent !!!), and it is probably <200 items. The top priority of those (highlighted w/ both *** and !!!) is probably ten items at most at any given time. Technical debt is manageable w/ a good to-do list.
 <https://lobste.rs/s/1gzlyu/most_technical_debt_is_just_bullshit/>
+
+## Backing Up
+Worry about saving and properly archiving the End. Don't worry about saving the Means to the End. It helps to save the Means, but don't sweat losing it (sh!t happens). If you focus on properly saving and archiving the End, then hopefully you won't lose that and will thus avoid any associated, larger regrets.
