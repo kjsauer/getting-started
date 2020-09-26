@@ -156,6 +156,15 @@ See MATLAB Getting Started for example.
 EXE + CFG.txt --> GUI EXE
 GUI includes text field for path to raw input data files.
 
+## Software Design
+Docs
+--General Intro and Data Needs
+--Work Instructions
+Tool
+---README
+---EXE (launches GUI)
+---CFG.txt (replaces GUI)
+
 ##
 Before doing any project, design the END product: The folder directory, the final results table, etc. Imagine the very end result (as far as you can go). Set up the empty architecture or template and then work towards populating it as fast as possible while skipping all the details (which usually end up being irrelevant anyway). A fully populated architecture (e.g., a folder with subfolders) can be zipped into one zip file that has everything needed for anyone to reproduce it at any later time as needed. This approach even goes for something like cooking a meal. Prepare the ingredients, dishes, condiments, etc. in advance. Fill and use them all as you go. (I'm not actually suggesting the latter; it's merely for the sake of metaphor).
 
