@@ -219,3 +219,7 @@ $ run('C:\asdf1\asdf2.exe')
 Advantage of separate config file:
 Save inputs for pre-processor for future.
 A GUI replaces the need for CFG file.
+
+## Technical Debt
+Most technical debt is B.S. It's true! Make a numbered _todo list (prioritized for urgent *** and highly urgent !!!), and it is probably <200 items. The top priority of those (highlighted w/ both *** and !!!) is probably ten items at most at any given time. Technical debt is manageable w/ a good to-do list.
+<https://lobste.rs/s/1gzlyu/most_technical_debt_is_just_bullshit/>
