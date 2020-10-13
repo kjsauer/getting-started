@@ -244,3 +244,6 @@ Start by gathering/collecting essential user inputs via CFG.txt file. Then add o
 
 ## _todo aka to-do
 Maintain two "HEAD MAIN", numbered _todo lists: One for work (wk) and one for home (hm). You'll be surprised that all the items you think you have going on only boils down to roughly 300 simultaneous, concurrent projects at once (300 for work and 300 for home; come on, 600 simulataneous projects ongoing at all times...not too shabby--or stressful--at all!).
+
+## Importance of Units
+Units, units, units! Always make units well-known in the help docs, GUIs, config files, other software program inputs, code comments, etc.
