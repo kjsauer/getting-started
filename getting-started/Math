@@ -1,0 +1,16 @@
+# Getting Started: Mathematics for Engineers
+Kenneth J. Sauer (kjsauer)
+
+##
+"Difference" is a subtraction of two values.
+"Deviation" is "100*(New/Old-1). Old might be the base case.
+
+## Linear vs. Exponential Rate of Change
+Nameplate Value, ValNP = 100%;
+Production Tolerance, Vtol = 3%;
+Measurement Tolerance, Mtol = 0%;
+Column 1: Year (unitless); list years 0-25 (as an example).
+Column 2: Rate (%/year); 0.5 in every row except year 0 (which is blank).
+Column 3: dT (unitless); starts in year 1 and is the subtraction of each (in this case) year to the previous.
+Column 4: V_limit (%) linear; year zero calculation is = ValNP*(1-(Vtol+Mtol)); years 1-25 = V_limit(year prior)-V_limit(year 0)*Rate*dT;
+Column 5: V_limit (%) exponential; year zero same as linear; years 1-25 = V_limit(previous year)*(1-Rate*dT);
