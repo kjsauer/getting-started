@@ -1,20 +1,15 @@
 # Getting Started: Advanced Search
-Kenneth J. Sauer (kjsauer)
+Kenneth J. Sauer (kjsauer on GitHub)
 
-##
-Google Search (IMHO is the best search engine because it answers questions the best).
-DuckDuckGo (preferred for privacy reasons and fewer ads/ability to report ads).
-Advanced Search methods appear to work the same in both.
-Google also has a better built-in language translator tool.
-When in doubt, use Google Search because it works better and life is short.
+## DuckDuckGo vs. Google
+DuckDuckGo is theoretically preferred for privacy reasons, fewer ads, and greater ability to report ads. However, IMO Google Search is the best search engine. It answers human-phrased questions the best. Advanced Search methods appear to work the same in both. Google also has a better built-in language translator tool. When in doubt, use Google Search because it works better, and life is short.
 
-## Example Advanced Searches
+## Example Advanced Search
+Search exact phrase and site: "<insert keyword search term here w/in quotation marks>" site:news.ycombinator.com
 
-"icloud notes" site:news.ycombinator.com
-##
-Search for exact terms: Use quotes and "AND"
+Search exact terms: Use quotes and "AND"
 $ "insert in quotes"
 $ "insert #1" AND "insert #2"
-##
+
 Search approximate: Use tilda (~)
 $ ~approximate term
