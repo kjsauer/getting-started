@@ -247,3 +247,12 @@ Maintain two "HEAD MAIN", numbered _todo lists: One for work (wk) and one for ho
 
 ## Importance of Units
 Units, units, units! Always make units well-known in the help docs, GUIs, config files, other software program inputs, code comments, etc.
+
+## Data File Format
+CSV is not tied to Microsoft suite
+It can be opened in text files
+Smaller file sizes
+XLS has limit to number of rows
+XLS is only like 65,536 rows; XLSX is just over 1M (1,048,576)
+Neither Excel format can fit more than a couple years of 5-min data
+Need a programming language for that (e.g., Python, R, MATLAB, LabVIEW).
