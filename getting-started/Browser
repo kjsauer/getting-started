@@ -1,5 +1,8 @@
-# Getting Started: Web Browsers
-Kenneth J. Sauer (kjsauer)
+# Getting Started: Web Browsers incl. Firefox
+Kenneth J. Sauer (kjsauer on GitHub)
+
+## Why Firefox
+Firefox is free and open-source. It is an excellent web browser.
 
 ## Firefox
 Advanced settings
@@ -7,3 +10,6 @@ Type in URL:
 $ about:config
 For example, change media.hardwaremediakeys.enabled to false.
 Restart browser to implement changes.
+
+##
+Type "m" in Firefox Browser to mute sounds from the tab.
