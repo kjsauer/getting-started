@@ -1,10 +1,12 @@
 # Getting Started: Visual Studio Code
-Kenneth J. Sauer (kjsauer)
+Kenneth J. Sauer (kjsauer on GitHub)
 
-##
+## Acronyms
 VS Code = Visual Studio Code
 
-##
+## Settings
+Search settings for telemetry and switch to "false".
+
+## Syntax
 Comment code: Ctrl+"/"
 Run selected line: F8
-Search settings for telemetry and switch to "false"
