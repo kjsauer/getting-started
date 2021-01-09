@@ -1,6 +1,11 @@
 # Getting Started: Code and Program Architecture, Design, and Philosophy Principles
 Kenneth J. Sauer (kjsauer)
 
+## Development Environments
+Anaconda Python + Spyder + GitHub Desktop
+MATLAB + GitHub Desktop
+RStudio + GitHub Desktop
+
 ## String Inputs
 Import all inputs as strings
 Convert the data type only when needed
