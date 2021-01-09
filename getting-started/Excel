@@ -1,5 +1,5 @@
-# Getting Started: Excel
-Kenneth J. Sauer (kjsauer)
+# Getting Started: Microsoft Excel
+Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Function
 =date(year,month,hour)+time(hour,minute,second)
@@ -8,11 +8,11 @@ Kenneth J. Sauer (kjsauer)
 yyyy-mm-dd hh:mm:ss
 
 ##
-Screen Excel for any instances of #DIV/0!
-Replace with NaN
+Screen Excel for instances of #DIV/0!
+Replace w/ NaN
+
+## Pivot Tables
+Structure your data for Pivot Tables; meaning, like a database, with column headers and data in each row. Formulas in a given cell in a given row must only reference data in cells to the left in the same row.
 
 ##
-Use Pivot Tables. Structure your data for Pivot Tables; meaning, like a database, with column headers and data in each row. Formulas in a given cell in a given row must only reference data in cells to the left in the same row.
-
-##
-Copy a cell (Ctrl+c) and hit Enter in another cell to paste. (Disclaimer: I do not presently use this).
+Copy a cell (Ctrl+c) and hit Enter in another cell to paste. (Disclaimer: I do not presently use this hot key).
