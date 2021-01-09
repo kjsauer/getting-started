@@ -1,9 +1,10 @@
-# Getting Started: Email and Gmail
-Kenneth J. Sauer (kjsauer)
+# Getting Started: Email incl. Gmail
+Kenneth J. Sauer (kjsauer on GitHub)
 
 ##
 Email aka Gmail, etc.
 Much of the below pertains to Gmail (for better or worse)
+
 ## Hot Keys
 Select email
 $ x
@@ -28,25 +29,24 @@ $ l
 
 ##
 Filter out drafts from All Mail, so you can scroll up and down using "j" and "k", respectively.
+
+##
 Go to All Mail
 Enter in Search Field:
 $ -label:draft
 
 ## Filter only messages with no user labels
-
 in:all mail has:nouserlabels
 
 ## Example Queries
-
 Go to All Mail
-
 -label:draft -label:news "speech" and "graduation"
 
 ## Useful References
-https://support.google.com/mail/answer/7190?hl=en
+https://support.google.com/mail/answer/7190?hl=en/
 
 ## Jump to Random Email
-Use website [1] to search for find random emails in Email
+Use website [1] to search All Mail for random emails.
 [1] https://randomwordgenerator.com/
 
 ## Gmail
@@ -56,4 +56,4 @@ When you open a draft, make a change, and then undo it, Gmail still treats it as
 Yes to the Inbox Zero policy (personal and work).
 
 ## Gmail
-It is unclear to me why Gmail Drafts do not go to the Trash when they are deleted (!?). MS Outlook handles it this way.
+It is unclear to me why Gmail Drafts do not go to the Trash when they are deleted (!?). Microsoft Outlook handles it this way.
