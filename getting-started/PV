@@ -3,7 +3,7 @@ Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Acronyms
 DHI: Diffuse horizontal irradiance [W/m^2]
-DNI: Direct Normal Irradiance [W/m^2]
+DNI: Direct normal irradiance [W/m^2]
 GHI: Global horizontal irradiance [W/m^2]
 PV: Photovoltaics
 thetaZ: Angle of incidence of DNI beam
