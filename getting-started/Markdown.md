@@ -1,6 +1,7 @@
-## Kenneth J. Sauer's aka kjsauer's Note ##
+# Getting Started with Markdown
+Compiled by Kenneth J. Sauer (kjsauer on GitHub)
 
-!!!The below content is not mine!!! It came with a free installation of MarkdownPad 2. I think both the MarkdownPad 2 software and their below example are useful for "Getting Started" with writing in Markdown, so, thanks, MarkdownPad 2!!!
+!!!The below content is not mine!!! It came with a free installation of MarkdownPad 2. I think both the MarkdownPad 2 software and their below example are useful for "Getting Started" w/ writing in Markdown language (and associated language interpreters). Thanks, MarkdownPad 2!
 
 ## Welcome to MarkdownPad 2 ##
 
@@ -8,7 +9,7 @@
 
 ### Built exclusively for Markdown ###
 
-Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.
+Enjoy first-class Markdown support with easy access to Markdown syntax and convenient keyboard shortcuts.
 
 Give them a try:
 
