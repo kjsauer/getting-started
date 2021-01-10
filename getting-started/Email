@@ -12,7 +12,7 @@ Go up
 $ j
 Go down
 $ k
-Return to list/update/refresh
+Return to list/refresh/update
 $ u
 Mark as read
 $ Shift+i
