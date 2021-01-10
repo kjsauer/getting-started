@@ -11,5 +11,5 @@ $ about:config
 For example, change media.hardwaremediakeys.enabled to false.
 Restart browser to implement changes.
 
-##
+## Hot Keys
 Type "m" in Firefox Browser to mute sounds from the tab.
