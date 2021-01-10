@@ -191,7 +191,8 @@ Build tools around workflows, not workflows around tools.
 Design software to be simple, isolated, encapsulated, and modular.
 
 ## A Lobster's Advice
-Don't marry your design after the first date. (I might add: You may not wish to marry your first partner, either, lol.) Credit not mine: <https://lobste.rs/s/rvuyep/don_t_marry_your_design_after_first_date/>
+Don't marry your design after the first date.
+Source: <https://lobste.rs/s/rvuyep/don_t_marry_your_design_after_first_date/>
 
 ## Software Documentation Hand-off Requirements
 1. Software program
@@ -264,3 +265,6 @@ Need a programming language for that (e.g., Python, R, MATLAB, LabVIEW).
 
 ## Attention and Focus
 Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus.
+
+##
+Embrace all things KISS: Keep It Simple, Stup!d!
