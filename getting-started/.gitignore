@@ -1,7 +1,7 @@
 ##---------------------------------------------------
 ## README
 ## This applies to Git and ideally covers:
-## Windows, MacOS, MATLAB, Python, and R
+## Windows, MacOS, MATLAB, Python, and R (in this order)
 ##---------------------------------------------------
 
 ##---------------------------------------------------
@@ -10,7 +10,7 @@
 ## Accessed: 170611
 ##---------------------------------------------------
 
-# Compiled by Kenneth J. Sauer (kjsauer)
+# Compiled by Kenneth J. Sauer (kjsauer on GitHub)
 
 # Windows thumbnail cache files
 Thumbs.db
