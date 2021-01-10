@@ -1,4 +1,4 @@
-# Getting Started: Code and Program Architecture, Design, and Philosophy Principles
+# Getting Started with Code and Software Program Architecture, Design, and Philosophy Principles
 Kenneth J. Sauer (kjsauer)
 
 ## Development Environments
@@ -98,7 +98,7 @@ Rule: Every input must be a config (or data) file. This way others can tweak the
 
 ##
 Provide:
---_todo/Future Work
+--_todo/Future Work/TODO
 --Analysis Templates
 --Code and Scripts
 --Data
@@ -110,10 +110,10 @@ Provide:
 --Unit Tests Results: Known outputs 
 --Work Instructions
 
-## _todo List
-Always have a _todo List that is numbered.
-1. [DONE] (hm) Make _todo list for home tasks.
-2. [DONE] (wk) Make _todo list for work tasks.
+## _todo/TODO List
+Always have a TODO List that is numbered.
+1. [DONE] (hm) Make TODO list for home tasks.
+2. [DONE] (wk) Make TODO list for work tasks.
 3. (hm) Win the lottery, amass a fortune, and retire to an island getaway.
 4. [DONE] Mark items as Done when completed.
 
@@ -235,7 +235,7 @@ Save inputs for pre-processor for future.
 A GUI replaces the need for CFG file.
 
 ## Technical Debt
-Most technical debt is B.S. It's true! Make a numbered _todo list (prioritized for urgent *** and highly urgent !!!), and it is probably <200 items. The top priority of those (highlighted w/ both *** and !!!) is probably ten items at most at any given time. Technical debt is manageable w/ a good to-do list.
+Most technical debt is B.S. It's true! Make a numbered TODO list (prioritized for urgent *** and highly urgent !!!), and it is probably <200 items. The top priority of those (highlighted w/ both *** and !!!) is probably ten items at most at any given time. Technical debt is manageable w/ a good to-do list.
 <https://lobste.rs/s/1gzlyu/most_technical_debt_is_just_bullshit/>
 
 ## Backing Up
@@ -247,8 +247,8 @@ Maintain a _dev environment (e.g., source code) that compiles/deployes into the 
 ## _dev Workflow
 Start by gathering/collecting essential user inputs via CFG.txt file. Then add option for GUI. The CFG file forces the minimum viable set of inputs; it provides a nice, clean data specification.
 
-## _todo aka to-do
-Maintain two "HEAD MAIN", numbered _todo lists: One for work (wk) and one for home (hm). You'll be surprised that all the items you think you have going on only boils down to roughly 300 simultaneous, concurrent projects at once (300 for work and 300 for home; come on, 600 simulataneous projects ongoing at all times...not too shabby--or stressful--at all!).
+## _todo aka TODO aka to-do
+Maintain two "HEAD MAIN", numbered TODO lists: One for work (wk) and one for home (hm). You'll be surprised that all the items you think you have going on only boils down to roughly 300 simultaneous, concurrent projects at once (300 for work and 300 for home; come on, 600 simulataneous projects ongoing at all times...not too shabby--or stressful--at all!).
 
 ## Importance of Units
 Units, units, units! Always make units well-known in the help docs, GUIs, config files, other software program inputs, code comments, etc.
