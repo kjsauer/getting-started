@@ -1,6 +1,7 @@
 # README
 # This applies to Git and ideally covers:
-# Windows, MacOS, MATLAB, Python, and R
+# Windows, MacOS, MATLAB, Python, and R (not necessarily in this order).
+# TODO: Revisit/reorder order later.
 # NB: There is some known (and hopefully harmless) redundancy in this file.
 
 #
@@ -8,7 +9,7 @@
 # Accessed: 170611
 #
 
-# Compiled by Kenneth J. Sauer (kjsauer)
+# Compiled by Kenneth J. Sauer (kjsauer on GitHub)
 
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
@@ -26,19 +27,19 @@
 *.jpg binary
 
 #
-# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Common.gitattributes
+# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Common.gitattributes/
 # Accessed: 170611
-# Commented out the "diff=astextplain" due to MATLAB guidance (see below)
+# Commented out the "diff=astextplain" due to MATLAB guidance (see below).
 #
 
-#common settings that generally should always be used with your language specific settings
+# Common settings that generally should always be used with your language-specific settings.
 
-# Auto detect text files and perform LF normalization
-# http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+# Auto detect text files and perform LF normalization.
+# https://www.davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
 * text=auto
 
 #
-# The above will handle all files NOT found below
+# The above will handle all files NOT found below.
 #
 
 # Documents
@@ -76,7 +77,7 @@
 *.eps binary
 
 #
-# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Matlab.gitattributes
+# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Matlab.gitattributes/
 # Accessed: 170611
 #
 
@@ -108,7 +109,7 @@
 *.mn binary
 
 #
-# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Python.gitattributes
+# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Python.gitattributes/
 # Accessed: 170611
 #
 
@@ -137,7 +138,7 @@
 # (among others).
 
 #
-# From: https://github.com/alexkaratarakis/gitattributes/blob/master/R.gitattributes
+# From: https://github.com/alexkaratarakis/gitattributes/blob/master/R.gitattributes/
 # Accessed: 170611
 #
 
@@ -154,9 +155,9 @@
 *.R text
 
 #
-# From: https://www.mathworks.com/help/matlab/matlab_prog/set-up-git-source-control.html
+# From: https://www.mathworks.com/help/matlab/matlab_prog/set-up-git-source-control.html/
 # Accessed: 170611
-# Also some custom files added
+# Also, some custom files added.
 *.mexa32 -crlf -diff -merge
 *.mexw32 -crlf -diff -merge
 *.mexmaci32 -crlf -diff -merge
@@ -165,7 +166,7 @@
 *.xls -crlf -diff -merge
 *.doc -crlf -diff -merge
 *.avi -crlf -diff -merge
-# See: https://git-scm.com/docs/gitattributes
+# See: https://git-scm.com/docs/gitattributes/
 # The built-in macro attribute "binary" is equivalent to:
 # [attr]binary -diff -merge -text
 # -crlf is interpreted the same as -text
@@ -192,15 +193,15 @@
 *.png -crlf -diff -merge
 
 #
-# From: https://github.com/scottclowe/matlab-schemer/blob/master/.gitattributes
+# From: https://github.com/scottclowe/matlab-schemer/blob/master/.gitattributes/
 # Accessed: 170611
 #
 
 # Auto detect text files and perform LF normalization
-*           text=auto
+* text=auto
 
 #
-# The above will handle all files NOT found below
+# The above will handle all files NOT found below.
 #
 
 ##---------------------------------------------------
@@ -244,7 +245,7 @@
 *.slx binary
 
 #
-# From: https://github.com/USGS-R/wrv/blob/master/.gitattributes
+# From: https://github.com/USGS-R/wrv/blob/master/.gitattributes/
 # Accessed: 170611
 # With the following additions
 README    text
@@ -260,7 +261,7 @@ license   text
 # src/Makevars text eol=lf
 #
 
-# See https://help.github.com/articles/dealing-with-line-endings
+# See https://help.github.com/articles/dealing-with-line-endings/
 
 # Auto detect text files and perform LF normalization
 * text=auto
