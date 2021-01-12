@@ -4,7 +4,7 @@ Kenneth J. Sauer (kjsauer on GitHub)
 ## Copyright Notice
 Disclaimer (ironically): I'm not a lawyer; however, a Copyright notice makes logical sense to me. I recommend including your GitHub username in a COPYRIGHT file, e.g.:
 Copyright (c) 2018-Infinity Kenneth J. Sauer (kjsauer on GitHub). All rights reserved.
-Save in top-level repo folder (containing README.md) as "COPYRIGHT".
+Save in top-level repo folder (containing README.md) as "COPYRIGHT". You may include a title string, e.g., "# Copyright Notice for kjsauer's GitHub Repository "insert-repo-name".
 
 ## LICENSE Files
 I think I read somewhere that no LICENSE file means NOT open-source aka proprietary. For such code, I would strongly recommend private repositories. Regardless of the contents of the LICENSE file, assume that a private repo means closed-source and public means open-source. The ~100 or so different variants of LICENSE files have made the legal situation around public repos more complex. I'm not really sure if a public repo with no LICENSE file is "open-source" or not. For any public repo, simply assume that, regardless of the contents of the LICENSE file, algorithms around the world are actively mining the code and doing what they please w/out your consent (including GitHub itself, a la the "opt-out" GitHub Arctic Archive Program), possibly even profiting on your work that you have chosen to make public, regardless of the existence or content of the LICENSE file).
