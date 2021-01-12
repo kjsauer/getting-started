@@ -1,4 +1,4 @@
-﻿# Getting Started with Git and GitHub
+﻿# Getting Started with Git, GitHub, and GitHub Desktop
 Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Definitions
@@ -428,5 +428,5 @@ Enable other privacy settings
 ## Other References
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
-## Unrecognized Changes
-Capitalizations, e.g., todo to TODO are not recognized.
+## Unrecognized Changes in Commit
+Capitalizations, e.g., todo to TODO are not recognized. You need to change something in the file, commit that, and then revert it for the new capitalization to register in Git/GitHub.
