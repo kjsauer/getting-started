@@ -398,12 +398,10 @@ $ git clone https://github.com/ACCOUNTNAME/REPONAME.git
 
 # GitHub Desktop
 
-##
 If you use GitHub Desktop, you can add any local Git repo to it
 Even if it is not a repo hosted on GitHub
 This enables you to track changes to all repos with one GUI
 
-##
 Check GitHub Desktop settings to ensure proper GitHub-assigned email is in use
 
 ## GitHub Desktop Settings
@@ -430,3 +428,14 @@ https://help.github.com/articles/adding-an-existing-project-to-github-using-the-
 
 ## Unrecognized Changes in Commit
 Capitalizations, e.g., todo to TODO are not recognized. You need to change something in the file, commit that, and then revert it for the new capitalization to register in Git/GitHub.
+
+## Basic Git Repo Contents (duplicated in Getting Started w/ Design)
+repo-name folder\
+--.gitattributes
+--.gitignore
+--AUTHORS
+--COPYRIGHT
+--README.md
+--Sub-folder of same repo-name\
+--Sub-folder of same repo-name\docs\
+--TODO

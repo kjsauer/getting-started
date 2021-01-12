@@ -268,3 +268,14 @@ Promote the one computer-, one screen-, and one window-at-a-time approach for ma
 
 ##
 Embrace all things KISS: Keep It Simple, Stup!d!
+
+## Basic Git Repo Contents (duplicated in Getting Started w/ Git)
+repo-name folder\
+--.gitattributes
+--.gitignore
+--AUTHORS
+--COPYRIGHT
+--README.md
+--Sub-folder of same repo-name\
+--Sub-folder of same repo-name\docs\
+--TODO
