@@ -13,3 +13,7 @@ Ctrl+"/" or Ctrl+"?" to see hot keys
 ## Slack Test Call
 Enter in channel (without "$")
 $ /call --test
+
+## Rule of Thumb
+If it will matter after today, don't talk about it in a chat room.
+Credit not mine (see link at top): <https://news.ycombinator.com/item?id=25751808>
