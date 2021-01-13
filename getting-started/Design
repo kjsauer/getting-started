@@ -279,3 +279,6 @@ repo-name folder\
 --Sub-folder of same repo-name\
 --Sub-folder of same repo-name\docs\
 --TODO
+
+## Development Environment Philosophy
+Before doing anything (coding, cooking, ordering something online, taxes), set up your "dev environment"; namely, the environment which contains all (/only) the necessary tools needed to complete the task. Then, when you have time to focus, complete the task in the dev environment, document and comment everything, close it out (both the task & the environment), archive and/or back up what's needed, and move on.
