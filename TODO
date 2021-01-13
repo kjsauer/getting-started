@@ -2,19 +2,20 @@
 Kenneth J. Sauer (kjsauer on GitHub)
 
 ## TODO getting-started
-1. Explore and document more stuff.
+1. Explore and document more "Getting Started" content and related to-do items.
 2. Python without Anaconda.
 3. Miniconda.
 4. Option to run Anaconda Prompt from cmd.
-5. Anaconda Python.
-6. TortoiseSVN.
+5. [DONE] Anaconda Python (absorbed into Python).
+6. [DONE] TortoiseSVN (absorbed into Subversion).
 7. readthedocs.
-8. Subversion.
-9. MATLAB.
-10. Python.
+8. [DONE] Subversion/TortoiseSVN.
+9. [DONE] MATLAB.
+10. [DONE] Python.
 11. PVLIB.
 12. PVSAT.
 13. PVsyst.
 14. Pecos.
-15. Git.
-16. R.
+15. [DONE] Git.
+16. [DONE] R.
+17. Considering updating Slack to Chat.
