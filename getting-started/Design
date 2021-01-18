@@ -38,8 +38,7 @@ config.csv files
 ## General Principles
 99% planning (and perspiration); 1% execution (and more perspiration...and 0% genius throughout...)
 
-##
-Starting a project
+## Starting a Project
 Ideally work backwards
 Start with end functionality
 e.g., Some literal function like Box Plot
@@ -48,11 +47,11 @@ Make those data structures in Excel test data file
 Implement in Python, MATLAB, R, etc.
 If importing/exporting, target CSV database format
 
-##
-Start by finding the function you want
+## See Functions Early On
+Start by finding the function(s) you want
 The function drives the data structure(s) aka data frame(s)
 
-##
+## GUI Question(s)
 How to avoid messing up a series of user actions in a GUI?
 
 ## Concept
@@ -64,17 +63,18 @@ Apply this concept (user action time series queue) in software (GUI) development
 Work with clean example SQL or CSV databases when possible
 Execute calculations in legible/readable code script (e.g., Python notebook)
 
-## Tests to run to familiarize with new software language
+## Programming Language Tests
+Tests to run to familiarize with new software language:
 Inf/0
 NaN + NaN
 5 + NaN
 NaN/0
 
-##
+## Archive Projects
 When you complete a project, zip all project files and save in project folder
 Consider exporting .ipynb to .py as a secondary backup of the code
 
-##
+## File Types
 Code
 --.ipynb
 Data
@@ -90,13 +90,13 @@ Metadata
 ## Lessons Learned
 Use Microsoft Excel template instead of Python script; copy/paste data into it. You may also use Excel as a GUI.
 
-##
-Package ALL help documentation and ALL examples (unit tests) and ALL unit test data into the repos; yes, the repo will become large, but everything will be in ONE folder that can be easily transferred and booted up and will be ready to rock.
+## Repo Contents
+Package ALL critical help documentation and ALL helpful getting started examples (unit tests) and ALL essential unit test data into the repos; yes, the repo will become large, but everything will be in ONE folder that can be easily transferred and booted up and will be ready to spin up & rock.
 
-##
+## Inputs Data and Metadata
 Rule: Every input must be a config (or data) file. This way others can tweak the input config files and not the code. Write code so others can get started quickly. Provide unit test with software program, data, and metadata, and program help menu (if needed). Provide answers as well so the user knows if the program ran correctly.
 
-##
+## Empty Folder Template
 Provide:
 --_todo/Future Work/TODO
 --Analysis Templates
@@ -158,7 +158,7 @@ where timestamp is updated each time.
 See MATLAB Getting Started for example.
 
 ## Software Design
-EXE + CFG.txt --> GUI EXE
+EXE + CFG.txt -> GUI EXE
 GUI includes text field for path to raw input data files.
 
 ## Software Design
@@ -170,17 +170,18 @@ Tool
 ---EXE (launches GUI)
 ---CFG.txt (replaces GUI)
 
-##
+## Start w/ Empty Results Structure
 Before doing any project, design the END product: The folder directory, the final results table, etc. Imagine the very end result (as far as you can go). Set up the empty architecture or template and then work towards populating it as fast as possible while skipping all the details (which usually end up being irrelevant anyway). A fully populated architecture (e.g., a folder with subfolders) can be zipped into one zip file that has everything needed for anyone to reproduce it at any later time as needed. This approach even goes for something like cooking a meal. Prepare the ingredients, dishes, condiments, etc. in advance. Fill and use them all as you go. (I'm not actually suggesting the latter; it's merely for the sake of metaphor).
 
-## Always maintain four folders
+## Working Directories
+Maintain four (4) folders:
 _dev Project --personal, not shared
 Project Eng Dev --shared
 Project Training --shared
 Project Training Results --shared
 
-## NREL fancy site file
-Site information .csv self-produces a map of its own location. This cellular-genetic-like approach of embedding within something the ingredients and algorithm to make itself is quite interesting/appealing/compelling from a coding perspective (as with a biological organism), e.g., a code script that saves itelf and everything it needs to produce a given set of results into a repository. If I recall correctly, I believe this general, philosophical concept relates to the PhD thesis of Stephen Wolfram (American-British computer scientist).
+## NREL Fancy Site File
+Site information .csv self-produces a map of its own location. This cellular-genetic-like approach of embedding within something the ingredients and algorithm to make itself is quite appealing/compelling/interesting from a coding perspective (as with a biological organism), e.g., a code script that saves itself and everything it needs to produce a given set of results into a repository. If I recall correctly, I believe this general, philosophical concept relates to the PhD thesis of Stephen Wolfram (American-British computer scientist).
 
 ## Timely HackerNews Advice
 Build tools around workflows, not workflows around tools.
@@ -230,7 +231,7 @@ An EXE can be run (called) w/ any language (e.g., Python, R, MATLAB, etc.).
 e.g., Run EXE from Python:
 $ run('C:\asdf1\asdf2.exe')
 
-## Config CFG Files
+## Configuration Config CFG Files
 Advantage of separate config file:
 Save inputs for pre-processor for future.
 A GUI replaces the need for CFG file.
@@ -243,19 +244,19 @@ Most technical debt is B.S. It's true! Make a numbered TODO list (prioritized fo
 Worry about saving and properly archiving the End. Don't worry about saving the Means to the End. It helps to save the Means, but don't sweat losing it (sh!t happens). If you focus on properly saving and archiving the End, then hopefully you won't lose that and will thus avoid any associated, larger regrets.
 
 ## Dev vs. Production
-Maintain a _dev environment (e.g., source code) that compiles/deployes into the production environment (e.g., compiled standalone EXE application).
+Maintain a _dev environment (e.g., source code) that compiles/deploys into the production environment (e.g., compiled standalone EXE application).
 
 ## _dev Workflow
 Start by gathering/collecting essential user inputs via CFG.txt file. Then add option for GUI. The CFG file forces the minimum viable set of inputs; it provides a nice, clean data specification.
 
 ## _todo aka TODO aka to-do
-Maintain two "HEAD MAIN", numbered TODO lists: One for work (wk) and one for home (hm). You'll be surprised that all the items you think you have going on only boils down to roughly 300 simultaneous, concurrent projects at once (300 for work and 300 for home; come on, 600 simulataneous projects ongoing at all times...not too shabby--or stressful--at all!).
+Maintain two "HEAD MAIN", numbered TODO lists: One for work (wk) and one for home (hm). You'll be surprised that all the items you think you have going on only boils down to roughly 300 simultaneous, concurrent projects at once (300 for work and 300 for home; come on, 600 simultaneous projects ongoing at all times...not too shabby--or stressful--at all!).
 
 ## Importance of Units
 Units, units, units! Always make units well-known in the help docs, GUIs, config files, other software program inputs, code comments, etc.
 
 ## Data File Format
-CSV is not tied to Microsoft suite
+CSV is not tied to Microsoft Office Suite
 It can be opened in text files
 Smaller file sizes
 XLS has limit to number of rows
@@ -266,18 +267,19 @@ Need a programming language for that (e.g., Python, R, MATLAB, LabVIEW).
 ## Attention and Focus
 Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus.
 
-##
+## KISS
 Embrace all things KISS: Keep It Simple, Stup!d!
 
-## Basic Git Repo Contents (duplicated in Getting Started w/ Git)
+## Basic Git Repo Contents
+NB: Duplicated in Getting Started w/ Git.
 repo-name folder\
 --.gitattributes
 --.gitignore
 --AUTHORS
 --COPYRIGHT
 --README.md
---Sub-folder of same repo-name\
---Sub-folder of same repo-name\docs\
+--Subfolder of same repo-name\
+--Subfolder of same repo-name\docs\
 --TODO
 
 ## Development Environment Philosophy
