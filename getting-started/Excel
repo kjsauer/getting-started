@@ -7,12 +7,19 @@ Kenneth J. Sauer (kjsauer on GitHub)
 ## Useful Custom Date Format
 yyyy-mm-dd hh:mm:ss
 
-##
+## Cleansing Data
 Screen Excel for instances of #DIV/0!
 Replace w/ NaN
 
 ## Pivot Tables
 Structure your data for Pivot Tables; meaning, like a database, with column headers and data in each row. Formulas in a given cell in a given row must only reference data in cells to the left in the same row.
 
-##
+## Hot Keys
 Copy a cell (Ctrl+c) and hit Enter in another cell to paste. (Disclaimer: I do not presently use this hot key).
+
+## Limits of Excel
+XLS requires Microsoft Office Suite
+XLS has limit to number of rows
+XLS is only 65,536 rows; XLSX is just over 1M (1,048,576)
+Neither Excel format can fit more than a couple years of 5-min data
+Need a programming language for that (e.g., Python, R, MATLAB, LabVIEW)
