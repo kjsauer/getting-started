@@ -260,9 +260,9 @@ CSV is not tied to Microsoft Office Suite
 It can be opened in text files
 Smaller file sizes
 XLS has limit to number of rows
-XLS is only like 65,536 rows; XLSX is just over 1M (1,048,576)
+XLS is only 65,536 rows; XLSX is just over 1M (1,048,576)
 Neither Excel format can fit more than a couple years of 5-min data
-Need a programming language for that (e.g., Python, R, MATLAB, LabVIEW).
+Need a programming language for that (e.g., Python, R, MATLAB, LabVIEW)
 
 ## Attention and Focus
 Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus.
