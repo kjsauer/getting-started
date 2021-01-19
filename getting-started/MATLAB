@@ -17,28 +17,28 @@ clear; close all; clc; format long g; format compact;
 %%
 a = [1 1]
 conv(a,a)
-want to do conv(a,a,a)
-need to do conv(a,conv(a,a))
+Want to do conv(a,a,a)
+Need to do conv(a,conv(a,a))
 function [x] = convm(varargin)
 x = varargin{1};
 if
 first_input_var = varargin{1}
 second_input_var = varargin{2}
 
-%% indexing
+%% Indexing
 % Indexing starts with 1, not 0
 % [M,N] : Rows, columns
 % MATLAB starts with 1
 % R starts with 1
 % Python starts with 0
 
-%% output to .csv
+%% Output to .csv
 dlmwrite('fileName.csv',variableName,'delimiter',',','precision',12);
 
-%% exe
+%% EXE
 % errordlg alone does not terminate code
-% use combination of "msgbox" and "error" instead
-% wrap code with try catch
+% Use combination of "msgbox" and "error" instead
+% Wrap code with try catch
 
 %% Thoughts on MATLAB
 % Designed for non-software developer engineers who need to compute
@@ -49,7 +49,7 @@ dlmwrite('fileName.csv',variableName,'delimiter',',','precision',12);
 End program
 $ Ctrl+c
 
-# MATLAB PVLIB
+# PVLIB MATLAB
 
 ## Download Link
 https://pvpmc.sandia.gov/applications/pv_lib-toolbox/matlab/
@@ -68,7 +68,7 @@ A toolbox is typically a collection of MATLAB functions and a library a collecti
 Source: <https://www.mathworks.com/matlabcentral/answers/8866-toolbox-vs-library/>
 
 ## MATLAB Function vs. Script
-Scripts are m-files containing MATLAB statements. ... The biggest difference between scripts and functions is that functions have input and output parameters. Script files can only operate on the variables that are hard-coded into their m-file. As you can see, functions much more flexible.
+Scripts are m-files containing MATLAB statements...The biggest difference between scripts and functions is that functions have input and output parameters. Script files can only operate on the variables that are hard-coded into their m-file. As you can see, functions much more flexible.
 
 Source: <https://web.cecs.pdx.edu/~gerry/MATLAB/programming/scripts.html>
 
@@ -90,7 +90,7 @@ folder_name = fullfile(CD,outputs_folder);
 mkdir(folder_name);
 
 ## Pre-adding Files to the Compiler
-Pre-add files to compiler so user does not need to call them in order to successfully run the compiled, standalone, EXE application.
+Pre-add files to compiler so user does not need to call them in order to successfully run the compiled, standalone EXE application.
 Add to "Files required for your application to run".
 Simply call filename directly in code.
 CD = pwd;
@@ -149,7 +149,7 @@ TF = X(:,3) > 5; % for which rows is column 3 larger than 5
 X(TF,:) = nan; % or = []; % remove those rows
 Source: <https://www.mathworks.com/matlabcentral/answers/179379-removing-rows-from-all-columns-based-on-values-of-one-column/>
 
-## Format MATLAB workspace.
+## Format MATLAB Workspace
 % Format MATLAB workspace.
 close all
 clearvars -except custom_filt_flag % custom_filt_flag allows custom filter hack
