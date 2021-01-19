@@ -103,7 +103,7 @@ Edit\Options to update email address in Git GUI
 
 ## NB
 Remove old branches on local machine
-https://git-scm.com/book/en/v2/Git-Branching-Branch-Management
+https://git-scm.com/book/en/v2/Git-Branching-Branch-Management/
 Navigate to git repo
 $ pwd to show present working directory
 Use $ cd to navigate to git repo
@@ -165,7 +165,7 @@ This command might fail if not done in Windows Command Prompt
 
 ## Add example .gitattributes template file to repo
 See template file in repo intended to cover: Common, MATLAB, Python, R
-References: https://github.com/alexkaratarakis/gitattributes
+References: https://github.com/alexkaratarakis/gitattributes/
 
 ## Add .gitignore file to repo
 See template file in repo intended to cover: Windows, MacOS, and MATLAB
@@ -324,13 +324,13 @@ git log --pretty=format:'"%H","%h","%T","%t","%P","%p","%an","%ae","%ad","%ar","
 git log --pretty=format:'"%H","%h","%T","%t","%P","%p","%an","%ae","%ad","%ar","%cn","%ce","%cd","%cr","%s",' --shortstat --no-merges | paste - - - > log2txt.txt
 
 ## References
-https://stackoverflow.com/questions/10330425/how-do-i-export-a-git-log-to-a-text-file
-https://stackoverflow.com/questions/10418056/how-do-i-generate-a-git-commit-log-for-the-last-month-and-export-it-as-csv
-https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+https://stackoverflow.com/questions/10330425/how-do-i-export-a-git-log-to-a-text-file/
+https://stackoverflow.com/questions/10418056/how-do-i-generate-a-git-commit-log-for-the-last-month-and-export-it-as-csv/
+https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History/
 
 # Git Archive
 
-## METHOD 1
+## Git Archive Method 1
 
 ### Master Branch Only
 $ git bundle create repo.bundle master
@@ -341,11 +341,11 @@ $ git bundle create repo.bundle --all
 ### Lessons Learned
 Do not need ".bundle"
 
-## METHOD 2
+## Git Archive Method 2
 $ git archive --output=Archive.zip --prefix=Archive/ master
-https://stackoverflow.com/questions/2046918/backing-up-project-which-uses-git/2047141#2047141
+https://stackoverflow.com/questions/2046918/backing-up-project-which-uses-git/2047141#2047141/
 
-## METHOD 3
+## Git Archive Method 3
 Final
 Download git_archive_all.py
 From:
@@ -353,12 +353,12 @@ https://raw.githubusercontent.com/Kentzo/git-archive-all/master/git_archive_all.
 Launch Anaconda Prompt
 Switch to Python 3.3
 $ activate py33
-See: https://stackoverflow.com/questions/14783127/git-archive-export-with-submodules-git-archive-all-recursive
+See: https://stackoverflow.com/questions/14783127/git-archive-export-with-submodules-git-archive-all-recursive/
 Navigate to git repo path
 Run the following
 $ python "C:/Users/<computername>/Anaconda2/envs/py33/Scripts/git_archive_all.py" myarchive.zip
 
-## METHOD 4
+## Git Archive Method 4
 $ git bundle create foo master
 $ git bundle create foo-all --all
 
@@ -366,7 +366,7 @@ $ git bundle create foo-all --all
 $ git bundle list-heads foo
 $ git bundle list-heads foo-all
 
-https://stackoverflow.com/questions/1251713/backup-a-github-repository/1251717#1251717
+https://stackoverflow.com/questions/1251713/backup-a-github-repository/1251717#1251717/
 
 ## gitignore
 Create text file gitignore.txt
@@ -407,13 +407,10 @@ Check GitHub Desktop settings to ensure proper GitHub-assigned email is in use
 ## GitHub Desktop Settings
 Ensure email displays something like <your_github_username>@users.noreply.github.com
 
-## Add to GitHub desktop
-GitHub Desktop
-Add the newly added local GitHub folder
-
-## Add repo to GitHub desktop
-Open GitHub Desktop
-Add the newly added local GitHub folder
+## Add Repo to GitHub desktop
+Launch GitHub Desktop program (e.g., from Windows start menu)
+Add newly added local GitHub folder
+Or, if repo is initiated or saved in cloud (e.g., GitHub), clone from cloud
 
 ## GitHub
 If repo is on GitHub
@@ -436,6 +433,6 @@ repo-name folder\
 --AUTHORS
 --COPYRIGHT
 --README.md
---Sub-folder of same repo-name\
---Sub-folder of same repo-name\docs\
+--Subfolder of same repo-name\
+--Subfolder of same repo-name\docs\
 --TODO
