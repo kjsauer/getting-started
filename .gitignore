@@ -11,6 +11,7 @@
 ##---------------------------------------------------
 
 ##---------------------------------------------------
+## Basic .gitignore for a Microsoft Windows Git Repository
 ## Windows.gitignore
 ## https://github.com/github/gitignore/blob/master/Global/Windows.gitignore/
 ## Accessed: 170611
@@ -40,6 +41,7 @@ $RECYCLE.BIN/
 *.lnk
 
 ##---------------------------------------------------
+## Basic .gitignore for an Apple macOS Git Repository
 ## macOS.gitignore
 ## https://github.com/github/gitignore/blob/master/Global/macOS.gitignore/
 ## Accessed: 170611
@@ -74,6 +76,7 @@ Temporary Items
 .apdisk
 
 ##---------------------------------------------------
+## Basic .gitignore for a MathWorks MATLAB Git Repository
 ## MATLAB.gitignore
 ## https://github.com/github/gitignore/blob/master/Global/MATLAB.gitignore/
 ## Accessed: 170611
@@ -103,6 +106,7 @@ octave-workspace
 .autosave
 
 ##---------------------------------------------------
+## Basic .gitignore for a Python Git Repository
 ## Python.gitignore
 ## https://github.com/github/gitignore/blob/master/Python.gitignore/
 ## Accessed: 170611
@@ -213,6 +217,7 @@ ENV/
 .mypy_cache/
 
 ##---------------------------------------------------
+## Basic .gitignore for a R Git Repository
 ## R.gitignore
 ## https://github.com/github/gitignore/blob/master/R.gitignore/
 ## Accessed: 170611
