@@ -1,16 +1,20 @@
-# Getting Started with Git's .gitattributes File
-# Compiled by Kenneth J. Sauer (kjsauer on GitHub)
+##---------------------------------------------------
+## Getting Started with Git's .gitattributes File
+## Compiled by Kenneth J. Sauer (kjsauer on GitHub)
+##---------------------------------------------------
 
-# README
-# This applies to Git and ideally covers:
-# Windows, MacOS, MATLAB, Python, and R (not necessarily in this order).
-# TODO: Revisit/reorder order later.
-# NB: There is some known (and hopefully harmless) redundancy in this file.
+##---------------------------------------------------
+## README
+## This applies to Git and ideally covers:
+## Windows, MacOS, MATLAB, Python, and R (not necessarily in this order).
+## TODO: Revisit/reorder order later.
+## NB: There is some known (hopefully harmless) redundancy in this file.
+##---------------------------------------------------
 
-#
-# From: https://help.github.com/articles/dealing-with-line-endings/
-# Accessed: 170611
-#
+##---------------------------------------------------
+## From: https://help.github.com/articles/dealing-with-line-endings/
+## Accessed: 170611
+##---------------------------------------------------
 
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
