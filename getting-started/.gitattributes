@@ -87,7 +87,7 @@
 ##---------------------------------------------------
 
 ##---------------------------------------------------
-## Basic .gitattributes for a MathWorks MATLAB Git Repository Part 1
+## Basic .gitattributes for a MathWorks MATLAB Git Repository - Part 1
 ## This template includes Simulink and MuPAD extensions, in addition
 ## to the MATLAB extensions.
 ##---------------------------------------------------
@@ -240,7 +240,7 @@
 
 
 ##---------------------------------------------------
-## Basic .gitattributes for a MathWorks MATLAB Git Repository Part 2
+## Basic .gitattributes for a MathWorks MATLAB Git Repository - Part 2
 ##---------------------------------------------------
 
 # Source files
