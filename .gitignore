@@ -1,10 +1,13 @@
-# Getting Started with Git's .gitignore File
-# Compiled by Kenneth J. Sauer (kjsauer on GitHub)
+##---------------------------------------------------
+## Getting Started with Git's .gitignore File
+## Compiled by Kenneth J. Sauer (kjsauer on GitHub)
+##---------------------------------------------------
 
 ##---------------------------------------------------
 ## README
 ## This applies to Git and ideally covers:
 ## Windows, MacOS, MATLAB, Python, and R (in this order).
+## NB: There is some known (hopefully harmless) redundancy in this file.
 ##---------------------------------------------------
 
 ##---------------------------------------------------
