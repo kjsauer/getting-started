@@ -1,3 +1,6 @@
+# Getting Started with Git's .gitignore File
+# Compiled by Kenneth J. Sauer (kjsauer on GitHub)
+
 ##---------------------------------------------------
 ## README
 ## This applies to Git and ideally covers:
@@ -9,8 +12,6 @@
 ## https://github.com/github/gitignore/blob/master/Global/Windows.gitignore/
 ## Accessed: 170611
 ##---------------------------------------------------
-
-# Compiled by Kenneth J. Sauer (kjsauer on GitHub)
 
 # Windows thumbnail cache files
 Thumbs.db
