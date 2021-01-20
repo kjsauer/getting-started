@@ -31,11 +31,11 @@
 *.png binary
 *.jpg binary
 
-#
-# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Common.gitattributes/
-# Accessed: 170611
-# Commented out the "diff=astextplain" due to MATLAB guidance (see below).
-#
+##---------------------------------------------------
+## From: https://github.com/alexkaratarakis/gitattributes/blob/master/Common.gitattributes/
+## Accessed: 170611
+## Commented out the "diff=astextplain" due to MATLAB guidance (see below).
+##---------------------------------------------------
 
 # Common settings that generally should always be used with your language-specific settings.
 
@@ -81,14 +81,16 @@
 #*.svg text
 *.eps binary
 
-#
-# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Matlab.gitattributes/
-# Accessed: 170611
-#
+##---------------------------------------------------
+## From: https://github.com/alexkaratarakis/gitattributes/blob/master/Matlab.gitattributes/
+## Accessed: 170611
+##---------------------------------------------------
 
-# Basic .gitattributes for a MATLAB repo.
-# This template includes Simulink and MuPAD extensions, in addition
-# to the MATLAB extensions.
+##---------------------------------------------------
+## Basic .gitattributes for a MathWorks MATLAB Git Repository Part 1
+## This template includes Simulink and MuPAD extensions, in addition
+## to the MATLAB extensions.
+##---------------------------------------------------
 
 # Source files
 # ============
@@ -113,12 +115,14 @@
 *.mlpkginstall  binary
 *.mn binary
 
-#
-# From: https://github.com/alexkaratarakis/gitattributes/blob/master/Python.gitattributes/
-# Accessed: 170611
-#
+##---------------------------------------------------
+## From: https://github.com/alexkaratarakis/gitattributes/blob/master/Python.gitattributes/
+## Accessed: 170611
+##---------------------------------------------------
 
-# Basic .gitattributes for a python repo.
+##---------------------------------------------------
+## Basic .gitattributes for a Python Git Repository
+##---------------------------------------------------
 
 # Source files
 # ============
@@ -142,12 +146,14 @@
 # ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
 # (among others).
 
-#
-# From: https://github.com/alexkaratarakis/gitattributes/blob/master/R.gitattributes/
-# Accessed: 170611
-#
+##---------------------------------------------------
+## From: https://github.com/alexkaratarakis/gitattributes/blob/master/R.gitattributes/
+## Accessed: 170611
+##---------------------------------------------------
 
-# Basic .gitattributes for a R repo.
+##---------------------------------------------------
+## Basic .gitattributes for a R Git Repository
+##---------------------------------------------------
 
 # Source files
 # ============
@@ -159,10 +165,12 @@
 *.Rmd		text
 *.R text
 
-#
-# From: https://www.mathworks.com/help/matlab/matlab_prog/set-up-git-source-control.html/
-# Accessed: 170611
-# Also, some custom files added.
+##---------------------------------------------------
+## From: https://www.mathworks.com/help/matlab/matlab_prog/set-up-git-source-control.html/
+## Accessed: 170611
+## Also, some custom files added.
+##---------------------------------------------------
+
 *.mexa32 -crlf -diff -merge
 *.mexw32 -crlf -diff -merge
 *.mexmaci32 -crlf -diff -merge
@@ -197,10 +205,10 @@
 *.jpg -crlf -diff -merge
 *.png -crlf -diff -merge
 
-#
-# From: https://github.com/scottclowe/matlab-schemer/blob/master/.gitattributes/
-# Accessed: 170611
-#
+##---------------------------------------------------
+## From: https://github.com/scottclowe/matlab-schemer/blob/master/.gitattributes/
+## Accessed: 170611
+##---------------------------------------------------
 
 # Auto detect text files and perform LF normalization
 * text=auto
@@ -232,7 +240,7 @@
 
 
 ##---------------------------------------------------
-# Basic .gitattributes for a MATLAB repo
+## Basic .gitattributes for a MathWorks MATLAB Git Repository Part 2
 ##---------------------------------------------------
 
 # Source files
@@ -249,10 +257,12 @@
 *.mdl       binary
 *.slx binary
 
-#
-# From: https://github.com/USGS-R/wrv/blob/master/.gitattributes/
-# Accessed: 170611
-# With the following additions
+##---------------------------------------------------
+## From: https://github.com/USGS-R/wrv/blob/master/.gitattributes/
+## Accessed: 170611
+## With the following additions
+##---------------------------------------------------
+
 README    text
 readme    text
 LICENSE   text
