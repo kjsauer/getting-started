@@ -2,14 +2,22 @@
 Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Acronyms
+_Ref: At reference conditinos of global plane-of-array irradiance, cell temperature, and solar spectrum.
 DHI: Diffuse horizontal irradiance [W/m^2]
 DNI: Direct normal irradiance [W/m^2]
 GHI: Global horizontal irradiance [W/m^2]
+Gpoa: Global plane-of-array irradiance [W/m^2]
+Gpoa_Ref: Global plane-of-array irradiance at reference conditions [W/m^2]
+PmpDC: DC power [W]
+PmpDC_Ref: DC power at reference conditions [W]
 PV: Photovoltaic
 thetaZ: Angle of incidence of DNI beam
 
 ## Equations in MATLAB Syntax
 GHI = DHI + DNI.*cos(thetaZ);
+
+## Deviation in Efficiency Relative to Efficiency at Reference Conditions
+dEtaRel_Ref = [(Pmp/Pmp_Ref)*(Gpoa_Ref/Gpoa)] - 1;
 
 ## References
 
