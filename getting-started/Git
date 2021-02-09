@@ -448,3 +448,7 @@ Promote the "zero GitHub Desktop" policy--try to stay synced!
 ## Goals
 NB: Also in Getting Started with Design.
 One (meaningful) Git commit per day.
+
+## Feature Request(s): GitHub Desktop
+1. Save draft commit notes (e.g., per changed file or per combination of selected files).
+2. Ability to check off each change (check boxes) as you review down the list so you can easily keep track of what's reviewed and approved.
