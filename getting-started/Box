@@ -1,51 +1,34 @@
-# Getting Started: Box, Box Drive, and Box Sync
-Kenneth J. Sauer (kjsauer)
+# Getting Started with Box, Box Drive, and Box Sync
+Kenneth J. Sauer (kjsauer on GitHub)
+
+## Box Drive Hot Key
+Use Ctrl+Alt+Shift+b for Box Drive Search.
 
 ## Box Drive vs. Box Sync
-NB: Box Sync is depracated/defunct/antiquated/buggy/bad software.
-Box Sync is known to cause major problems on Windows and other machines.
-Major problems may occur if your Box Sync folder somehow moves (including during buggy Box Sync updates).
-It has been replaced by Box Drive.
-Abandon Box Sync and switch to Box Drive.
+NB: Box Sync is antiquated, bad, buggy, defunct, and (explicitly) deprecated software. Box Sync is known to cause major problems on Windows and other machines. e.g., Major problems may occur if your Box Sync folder somehow moves (including during buggy Box Sync updates).
+
+TLDR: Box Sync is out-of-date. It has been replaced by Box Drive. Switch from Box Sync to Box Drive to avoid major issues. That being said, of course, Box Drive also has downsides and risks--see more below.
 
 ## Code Integration with Box Drive
 Add folder as local when calling files into Python, MATLAB, etc. Right click on folder(s) containing the files that need to be accessed via pathname and "Make Available Offline".
 
 ## Box Drive
-Box Drive does not integrate with Windows Search Indexer.
-Use Ctrl+Alt+Shift+b for Box Drive Search.
-Does not download files if offline and not made available offline a priori.
-When you delete on your computer, the file does not go to the recycle bin.
-Finally, when you exit Box Drive, it gives a warning seems to encourage the user to not close (although the risk of closing remains unclear). IMHO, with the ideal design, you would be able to exit a software without any such warning or risks.
+Box Drive does not integrate with Windows Search Indexer. Box Drive does not download files if offline and not made available offline a priori. When you delete on your computer, the file does not go to the recycle bin. Finally, when you exit Box Drive, it gives a warning seems to encourage the user to not close (although the risk of closing remains unclear). IMHO, with the ideal design, you would be able to exit a software without any such warning or risks.
+
+## Unknown Risk(s) of Box Drive
+It is not clear to me what happens if the Editor of a document accidentally deletes, e.g., a top-level company folder on Box Drive. Theoretically, anything can be restored by IT; however, this may come at a price (data, etc. loss).
 
 ## More Cons of Box Drive
 When you delete a folder that is 0 bytes locally via Box Drive, and then you try to confirm 0 bytes in Box Cloud, oftentimes the value is non-zero. I am not sure if this is due to the revision history saved in the cloud or what, but I feel it is misleading. Perhaps multiple values ought to be reported (1. Bytes displayed on PC via Box Drive, and 2. Bytes displayed in Box Cloud).
 
-## Token Admin
-Box Sync uses token administration.
-You initially log in with email and password credentials.
-Assigns a unique ID ("token") linked to your account.
-Once token is established, your email address no longer matters.
-Your credentials at that point are the token, not the email address.
-Your email address credentials are managed via online account.
-The online account will continue to be linked to Box Sync via the token (not via an email address)
-Box Sync will continue to sync to the online repository without having to log out and log back in b/c the online repository is linked to Box Sync via the token.
-If you log out of Box Sync, you will need to log back in with the new email address credentials.
-The token does not change until you log out and back in with the new credentials.
-This administrative design prevents data loss (e.g., if you make changes online while using Box Sync, before logging out of and back into Box Sync).
+## Token Administration
+Box Sync uses token administration. You initially log in with email and password credentials. It assigns a unique ID ("token") linked to your account. Once token is established, your email address no longer matters. Your credentials at that point are the token, not the email address. Your email address credentials are managed via online account. The online account will continue to be linked to Box Sync via the token (not via an email address). Box Sync will continue to sync to the online repository without having to log out and log back in b/c the online repository is linked to Box Sync via the token. If you log out of Box Sync, you will need to log back in with the new email address credentials. The token does not change until you log out and back in with the new credentials. This administrative design prevents data loss (e.g., if you make changes online while using Box Sync before logging out of and back into Box Sync).
 
 ## TLDR
-Box Sync uses token administration.
-Log in with token.
-Change email.
-Does not change token.
-Until you log out.
-And log back in.
-Prevents data loss.
+Box Sync uses token administration: Log in with token -> Change email -> Does not change token until you log out and log back in -> Prevents data loss.
 
 ## Box Sync Lessons Learned
 Updating password on Box Cloud does not affect Box Sync. Instead, the next time you log out of Box Sync, you will have to log in with the new credentials.
 
 ## Box Sync Warning
-If you accidentally move your Box Sync folder, you are out of luck and need to afresh again as if setting up Box Sync locally for the first time. Hence, part of why Box Sync is a buggy and now-depracated software (see above). If you for some reason move the Box Sync folder back where it belongs, it will think that these are all new files that need to be synced to the cloud. You will not affect the files on the cloud -- Box will check against those and if the match, it will make a duplicate of your files and folders with your email address in the filename or folder name, respectively. Avoid this process, especially if on a home network with slow upload speed.
-TLDR: Abandon Box Sync for Box Drive.
+If you accidentally move your Box Sync folder, you're out of luck and need to afresh again as if setting up Box Sync locally for the first time. This is part of why Box Sync is a buggy and now-deprecated software (see above). If you for some reason move the Box Sync folder back where it belongs, it will treat them as new files that need to be synced to the cloud. You will not affect the files on the cloud--Box will check against those and if they match, it will make a duplicate of your files and folders with your email address in the filename or folder name, respectively. Avoid this process, especially if on a home network with slow upload speed.
