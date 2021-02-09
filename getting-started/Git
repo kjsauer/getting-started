@@ -4,6 +4,9 @@ Kenneth J. Sauer (kjsauer on GitHub)
 ## Definitions
 Repo = Repository
 
+## Problematic Language in Git Syntax
+NB and TODO: Need to update use of "master" to "main" or "root" as part of the necessary migration away from archaic, bad, old, and problematic language in Git Syntax to something closer to neutral. The update on Git's side is in progress; I'll update those commands in this document someday after I've verified all the commands still work.
+
 ## Forking
 Do not fork repos unless you are going to actively develop in them.
 Otherwise, you are proliferating deprecated software (a la the automatically opt-in GitHub Arctic Archive program).
@@ -38,7 +41,7 @@ aka
 Always update your Local Computer based on changes in the Remote Server,
 Before you commit Local Computer changes to Remote Server
 
-## Initiate Git Repo on Remote Non-GitHub Server
+## Initiate Git Repository on Remote Non-GitHub Server
 Navigate to folder in Remote Git
 Launch Git bash
 NB: Use CMD in place of bash whenever possible
@@ -104,9 +107,9 @@ Edit\Options to update email address in Git GUI
 ## NB
 Remove old branches on local machine
 https://git-scm.com/book/en/v2/Git-Branching-Branch-Management/
-Navigate to git repo
+Navigate to Git repo
 $ pwd to show present working directory
-Use $ cd to navigate to git repo
+Use $ cd to navigate to Git repo
 Use $ cd + space + tab for tab completion
 Get to master branch (ignore $)
 $ git checkout master
@@ -125,7 +128,7 @@ Test commit
 $ git commit
 $ git push origin master
 
-## Add File to Repo in Git Terminal
+## Add File to Repository in Git Terminal
 Now add test file into repo
 $ echo content > newFile.txt
 $ git status
@@ -136,13 +139,13 @@ $ git status
 May need to run:
 $ git branch --unset-upstream
 
-## Check Git Repo Details
+## Check Git Repository Details
 Check user name
 $ git config user.name
 Check user email
 $ git config user.email
 
-## Check/Update Git Repo User Info details
+## Check and Update Git Repository User Information Details
 Git bash into local repo folder
 cd in using Git Bash or Windows cmd
 Or
@@ -163,11 +166,11 @@ Review settings
 $ git config --list
 This command might fail if not done in Windows Command Prompt
 
-## Add example .gitattributes template file to repo
+## Add Example .gitattributes Template File to Git Repository
 See template file in repo intended to cover: Common, MATLAB, Python, R
 References: https://github.com/alexkaratarakis/gitattributes/
 
-## Add .gitignore file to repo
+## Add .gitignore File to Git Repository
 See template file in repo intended to cover: Windows, MacOS, and MATLAB
 References: https://github.com/github/gitignore/
 
@@ -192,7 +195,7 @@ $ git status
 Enter command per displayed instructions
 Repeat git status to ensure that fix works
 
-## Add Test Commit File to Repo -- Example
+## Add Test Commit File to Git Repository - Example
 no .git after FILENAME unless specified
 $ cd GIT_REPO_FULLFILEPATHNAME
 $ git pull origin master
@@ -207,19 +210,18 @@ $ git commit -m "Test commit"
 $ git commit --help
 $ git push origin master
 
-## Delete Test File from Repo -- Example
+## Delete Test File from Git Repository - Example
 $ git status
 $ git rm CommitTest.txt
-commit to master
+Commit to master
 $ git commit -m "Deleted test commit"
 $ git status
 $ git push origin master
-now repo should be empty again
+Now repo should be empty again
 
-##
 See GitHub Desktop instructions below
 
-## Example Local Git Folder Structure
+## Local Git Repository Folder Structure Example
 Example Git repo name: example_repo_name
 AUTHORS
 LICENSE
@@ -230,7 +232,7 @@ To be continued
 .gitattributes
 .gitignore
 
-## Deleting Repo
+## Deleting a Git Repository
 Deleting repo from remote does not affect local
 Deleting repo from local does not affect remote
 Removing from GitHub Desktop GUI does not affect remote
@@ -240,13 +242,13 @@ Pink is deleted
 Green is added
 Yellow is metadata written by Git
 
-## Connect to Repo in Local
+## Connect to Git Repository in Local
 Navigate to folder in local via Git Bash or Command Prompt
 See getting-started-command-line
 In folder: type
 $ git clone "//servername/full/file/path/and/repo/name.git"
 
-## Git Clone
+## Git Clone a Git Repository
 Cloning a repository
 Choose or create a working directory working_dir
 Name it what you will
@@ -296,7 +298,7 @@ Clone: Copy repo from cloud to computer
 Pull request: Pull latest repo changes from head cloud (the repo that is ahead) to base cloud
 Sync: Synchronize computer with cloud
 
-## Repo Path
+## Repository Path
 Open Windows File Explorer
 Navigate to folder containing all files on your local computer
 This is the pathname of your repo
@@ -354,7 +356,7 @@ Launch Anaconda Prompt
 Switch to Python 3.3
 $ activate py33
 See: https://stackoverflow.com/questions/14783127/git-archive-export-with-submodules-git-archive-all-recursive/
-Navigate to git repo path
+Navigate to Git repo path
 Run the following
 $ python "C:/Users/<computername>/Anaconda2/envs/py33/Scripts/git_archive_all.py" myarchive.zip
 
@@ -368,7 +370,7 @@ $ git bundle list-heads foo-all
 
 https://stackoverflow.com/questions/1251713/backup-a-github-repository/1251717#1251717/
 
-## gitignore
+## .gitignore
 Create text file gitignore.txt
 Open in text editor, add rules, save, and close
 Navigate to folder in command line
@@ -377,7 +379,7 @@ $ ren gitignore.txt .gitignore
 
 # GitHub
 
-## Create repo on GitHub and add collaborators
+## Create Repository on GitHub and Add Collaborators
 Go to GitHub
 Set up New Repo
 Add gitignore, e.g., Python
@@ -388,7 +390,7 @@ Collaborators
 Add collaborators
 Collaborators will need to accept the invitation by logging into their GitHub accounts
 
-## Connect to repo as a collaborator
+## Connect to Git Repository as a Collaborator
 Local Computer
 Go to C:\Users\USERNAME\Documents\GitHub
 Run Git Bash from context menu
@@ -407,7 +409,7 @@ Check GitHub Desktop settings to ensure proper GitHub-assigned email is in use
 ## GitHub Desktop Settings
 Ensure email displays something like <your_github_username>@users.noreply.github.com
 
-## Add Repo to GitHub desktop
+## Add Git Repository to GitHub Desktop
 Launch GitHub Desktop program (e.g., from Windows start menu)
 Add newly added local GitHub folder
 Or, if repo is initiated or saved in cloud (e.g., GitHub), clone from cloud
@@ -424,9 +426,10 @@ Enable other privacy settings
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
 ## Unrecognized Changes in Commit
-Capitalizations, e.g., todo to TODO are not recognized. You need to change something in the filename, commit that, and then revert it for the new capitalization to register in Git/GitHub.
+Capitalizations, e.g., todo to TODO are not recognized. You need to change something in the filename, commit that, and then revert it for the new capitalization to register in Git/GitHub. In general, changes to folder names are not tracked (not sure why); only files within folders.
 
-## Basic Git Repo Contents (duplicated in Getting Started w/ Design)
+## Basic Git and GitHub Repository Contents
+NB: This section is referenced in Getting Started Design.
 repo-name folder\
 --.gitattributes
 --.gitignore
@@ -436,3 +439,6 @@ repo-name folder\
 --Subfolder of same repo-name\
 --Subfolder of same repo-name\docs\
 --TODO
+
+## Attention and Focus
+Keep Git synced--after each edit--to whatever branch is appropriate. If you use the GitHub Desktop application, it will be much easier to manage changes if you sync Git and GitHub after each file is updated (instead of changing many files that are under Git version control and reviewing them as a batch process later). Of course, when work on teams, batch reviews are likely inevitable. This is primarily good practice for working individually.
