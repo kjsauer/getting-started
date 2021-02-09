@@ -18,10 +18,11 @@ Kenneth J. Sauer (kjsauer on GitHub)
 14. Pecos.
 15. [DONE] Git.
 16. [DONE] R.
-17. Consider updating Slack (and possible later TODO: MS Teams) to more generic "Chat" apps.
+17. [DONE] Consider renaming Slack to more generic "Chat" apps.
 18. Octave.
 19. Julia.
 20. Django. Django RUST framework DRF.
 21. Flask.
 22. Heroku.
 23. Docker.
+24. Add MS Teams notes to Chat.
