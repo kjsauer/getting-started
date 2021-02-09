@@ -265,7 +265,16 @@ Neither Excel format can fit more than a couple years of 5-min data
 Need a programming language for that (e.g., Python, R, MATLAB, LabVIEW)
 
 ## Attention and Focus
-Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus. Keep Git synced--after each edit--to whatever branch is appropriate. See more in Git Getting Started.
+NB: Some redundancy w/ other Getting Started files.
+
+Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus. Keep Git synced--after each edit--to whatever branch is appropriate. See more in Getting Started with Git.
+
+One screen
+Zero GitHub Desktop
+Zero inbox
+
+## Goals
+One (meaningful) Git commit per day.
 
 ## KISS
 Embrace all things KISS: Keep It Simple, Stup!d!
