@@ -1,15 +1,13 @@
-# Getting Started: Sublime Text Editor
-Kenneth J. Sauer (kjsauer)
+# Getting Started with Sublime Text Editor
+Kenneth J. Sauer (kjsauer on GitHub)
 
-##
-If you are in the middle of an unsaved text file (*.txt) open in Notepad.exe and your computer crashes, your work is lost.
-If you are in the middle of an unsaved text file (*.txt) open in Sublime Text and your computer crashes, your work is not lost.
-Thus, abandon Notepad.exe for Sublime Text.
+## Introduction
+Sublime Text (use the latest version, e.g., Sublime Text 3).
 
-##
-Sublime Text (use the latest version)
+## Sublime Text Editor vs. Notepad for Opening and Viewing Text Files
+If you are in the middle of an unsaved text file (*.txt) open in Notepad.exe and your computer crashes, your work is lost. If you are in the middle of an unsaved text file (*.txt) open in Sublime Text editor and your computer crashes, your work is not lost. Thus, switch from Notepad.exe to Sublime Text editor.
 
-##
+## Hot Keys
 Delete line containing cursor
 $ shift+delete
 Open second screen
@@ -17,6 +15,9 @@ $ alt+shift+2
 $ alt+shift+3
 Etc.
 
-##
-When Sublime Text 3 is open and you have files open in it, Sublime tracks their edit status. If you move the open files on your computer, Sublime will register that the file has changed. Sublime, like Git, tracks the change status of files while they are open in Sublime and--importantly--when Sublime is open. If you have files open in Sublime and you close Sublime and then move the files on your computer and then reopen Sublime, the files will simply have disappeared from Sublime; it does not register it as a change.
-TLDR: Close Sublime Text before organizing (renaming, deleting, etc.) files.
+Ctrl+Shift+t to reopen last-closed tab.
+
+## Observations
+When Sublime Text 3 is open and you have files open in it, Sublime Text editor tracks their edit status. If you move the open files on your computer, Sublime will register that the file has changed. Sublime, like Git, tracks the change status of files while they are open in Sublime and--importantly--when Sublime is open. If you have files open in Sublime and you close Sublime and then move the files on your computer and then reopen Sublime, the files will simply have disappeared from Sublime; it doesn't register it as a change.
+
+TLDR: Close Sublime Text editor before organizing files (e.g., deleting or renaming).
