@@ -5,7 +5,7 @@ Kenneth J. Sauer (kjsauer on GitHub)
 Repo = Repository
 
 ## Problematic Language in Git Syntax
-NB and TODO: Need to update use of "master" to "main" or "root" as part of the necessary migration away from archaic, bad, old, and problematic language in Git Syntax to something closer to neutral. The update on Git's side is in progress; I'll update those commands in this document someday after I've verified all the commands still work.
+NB and TODO: Need to update use of "master" (e.g., reminiscent of slavery and indentured servitude) to "main" or "root" as part of the necessary migration away from archaic, bad, old, and problematic language in Git Syntax to something closer to neutral. The update on Git's side is in progress; I'll update those commands in this document someday after I've verified all the commands still work.
 
 ## Forking
 Do not fork repos unless you are going to actively develop in them.
