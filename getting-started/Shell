@@ -1,25 +1,32 @@
-# Getting Started: Shell Bash Command Line
-Kenneth J. Sauer (kjsauer)
+# Getting Started with Shell Scripting, Bash Scripting, and Command Line Programming
+Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Practical Synonyms
+Anaconda Prompt - shell for running Anaconda Python
 Bash
+Bash script
 Command Line
 Command Line Interface (CLI)
+Command Prompt
 Shell
+Shell script
 Terminal
 Prompt
 
 ## Launch Prompt
-Windows: Start -> run -> cmd
-Git: Start -> run -> Git Bash
-Anaconda: Start -> run -> Anaconda (use Anaconda 2.7 to run Python 2.7)
+Windows: Start -> Run -> Type "cmd"
+
+Git (requires installation of Git, e.g., Git for Windows): Start -> All Programs -> Git Bash
+
+Anaconda Python (requires installation of Anaconda Python): Start -> All Programs -> Anaconda Prompt (to launch new Python terminals via Jupyter Notebook or Spyder) or Navigator (to set up specific environments if needed or double-check your installed vs. available versions of various software programs packaged w/ Anaconda; use Anaconda Python 2.7 to run Python 2.7)
 
 ## Helpful Hints
 Use tab completion
 
-##
-Basically use "cd <path>" to go forward in folder hierarchy and "cd.." to go back
-Use "ls" or "dir" to view contents of directory on Windows
+## Useful Tips
+Use "cd <path>" to navigate "forward" into a sub-folder of the present working directory, and use "cd.." to navigate "backwards" up a level in the file hierarchy tree.
+
+Use "ls" or "dir" to view contents of present working directory on Microsoft Windows.
 
 ## Syntax
 Launch terminal shell
@@ -34,14 +41,13 @@ Not sure
 $ ls bin
 Go up one folder in the hierarchy
 $ cd..
-Present working directory
+Present working directory (pwd)
 $ .
-Present Working Directory
+pwd
 $ pwd
 
 ## Tab Completion
-Enter first few letters (e.g., of pathname) and hit tab
-Example
+Enter first few letters (e.g., of pathname) and hit tab.
+Example:
 $ cd FOLDER_NAME\SUB_FOLDER_NAME
-Hit tab
-This should bring up the proper FOLDER_NAME
+Hit tab. This should bring up the proper FOLDER_NAME.
