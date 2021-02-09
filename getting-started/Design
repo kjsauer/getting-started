@@ -265,22 +265,13 @@ Neither Excel format can fit more than a couple years of 5-min data
 Need a programming language for that (e.g., Python, R, MATLAB, LabVIEW)
 
 ## Attention and Focus
-Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus.
+Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus. Keep Git synced--after each edit--to whatever branch is appropriate. See more in Git Getting Started.
 
 ## KISS
 Embrace all things KISS: Keep It Simple, Stup!d!
 
 ## Basic Git Repo Contents
-NB: Duplicated in Getting Started w/ Git.
-repo-name folder\
---.gitattributes
---.gitignore
---AUTHORS
---COPYRIGHT
---README.md
---Subfolder of same repo-name\
---Subfolder of same repo-name\docs\
---TODO
+NB: See Getting Started w/ Git.
 
 ## Development Environment Philosophy
 Before doing anything (coding, cooking, ordering something online, taxes), set up your "dev environment"; namely, the development environment which contains all (/only) the necessary data and tools needed to complete the task. Then, when you have time to focus, complete the task in the dev environment, document and comment everything, close it out (both the task & the environment), archive and/or back up what's needed, and move on w/ life. Maintaining a dedicated dev environment for each significant home or work life task also makes it easier to transition into and out of that task (e.g., from another task or activity) whenever you find time to focus and spend on it; namely, transitioning into and out of the dev environment becomes equated with transitioning into and out of completing the task.
