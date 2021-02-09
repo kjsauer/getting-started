@@ -442,3 +442,9 @@ repo-name folder\
 
 ## Attention and Focus
 Keep Git synced--after each edit--to whatever branch is appropriate. If you use the GitHub Desktop application, it will be much easier to manage changes if you sync Git and GitHub after each file is updated (instead of changing many files that are under Git version control and reviewing them as a batch process later). Of course, when work on teams, batch reviews are likely inevitable. This is primarily good practice for working individually.
+
+Promote the "zero GitHub Desktop" policy--try to stay synced!
+
+## Goals
+NB: Also in Getting Started with Design.
+One (meaningful) Git commit per day.
