@@ -450,5 +450,5 @@ NB: Also in Getting Started with Design.
 One (meaningful) Git commit per day.
 
 ## Feature Request(s): GitHub Desktop
-1. Save draft commit notes (e.g., per changed file or per combination of selected files).
-2. Ability to check off each change (check boxes) as you review down the list so you can easily keep track of what's reviewed and approved.
+1. Save draft commit notes in GitHub Desktop specific to each selected, changed file or combination of selected files.
+2. Add ability to check off changes (w/ check boxes) as you review the edited ("red-lined") file in GitHub Desktop, so you can easily keep track of what changes are reviewed and approved.
