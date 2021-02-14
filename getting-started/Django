@@ -1,0 +1,13 @@
+# Getting Started with Django
+Kenneth J. Sauer (kjsauer on GitHub)
+
+# Django Synoposis
+Make change to code; immediately see changes rendered in Web Browser in real-time
+
+## Django REST Framework DRF
+Sometimes, to resolve page load errors in Firefox after updating code, you need to clear the cache; other times, it's just a login issue or a bug in the code.
+Firefox\Tools\Options
+Search "Clear"
+Clear History - "Everything" (!)
+Clear Data
+Return to page and refresh to reload page
