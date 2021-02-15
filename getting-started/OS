@@ -1,32 +1,34 @@
-# Getting Started: Operating Systems (OS)
-Kenneth J. Sauer (kjsauer)
+# Getting Started with Operating Systems
+Kenneth J. Sauer (kjsauer on GitHub)
 
-##
+## Acronyms
+OS: Operating System
+
+## Scope
+NB: This is about using OS, not developing OS.
+
+## Common OS
 Windows aka OS
 MacOS
 Linux
 
 ## Configure Windows 7 Start-up Programs
-msconfig.exe
+Start -> Run -> msconfig.exe
 
-## Windows Work Machine
+## Microsoft Windows OS
+Operate as if your computer will break, get stolen, explode or spontaneously combust, fall into the sewer system, get struck by lightning (Zeus' javelin), or get run over by a bus or 18-wheeler at any second.
 
-Operate as if your computer will break, get stolen, or get run over by a bus at any second.
-Store NOTHING locally except:
-
+Store NOTHING (only-)locally except:
 --Shortcuts to software applications (aka programs)
-
---Software application data files (e.g., PVsyst and SAM archives; keep note of/backup archives of this)
+--Software application data files that are necessarily saved locally (e.g., PVsyst and SAM archives, unless you figure out how to store these in some folder(s) already synced to the "cloud"; either way, back up archives and keep track in a database, e.g., Microsoft MS Excel spreadsheet or preferably a comma-separated value .CSV file that can be opened w/out MS suite of software products).
 
 Keep GitHub synced at all times.
 
-Keep track of all software licenses/license keys (e.g., Adobe, MATLAB, NI LabVIEW, PVsyst).
-No need for the latter with open source software (!), e.g., Anaconda Python, R, etc.
+Keep track of all software licenses/license keys (e.g., Adobe, MATLAB, NI LabVIEW, PVsyst). (No need for the latter w/ open source software (!), e.g., Anaconda Python, R, etc.).
 
-##
-Backup Internet Explorer bookmarks (the last I checked, they did not have a "Sync" function like Firefox)
+Backup Internet Explorer bookmarks (the last time I checked, they didn't have a "Sync" function like Firefox).
 
-##
+## Microsoft Windows Hot Keys
 Close tab/active window
 $ Ctrl+w
 Close program
@@ -41,21 +43,27 @@ Switch tabs
 $ Ctrl+Tab
 Switch tabs back
 $ Ctrl+Shift+Tab
-Go to Microsoft Windows Task Manager indirectly (three-finger salute #1)
+Go to Microsoft Windows Task Manager indirectly (i.e., three-finger salute #1)
 $ Ctrl+Alt+Delete
-Go to Microsoft Windows Task Manager directly (3-finger salute #2)
+Go to Microsoft Windows Task Manager directly (i.e., 3-finger salute #2)
 $ Ctrl+Shift+Esc
+Microsoft finger salute #3: I can think of one (ha JK)!
 
-##
+## Microsoft Windows OS
 Avoid asterisks in filenames.
 Best to start variable names with a letter (not a number) (e.g., a1, not 1a).
 
-## Windows
-Manage devices via Device Manager (Windows button\Search device manager).
-e.g., Right click on USB\Power management\Do not allow computer to turn off power of device.
+Manage devices via MS Windows OS Device Manager (Windows button\Search device manager), e.g.:
+$ Right click on USB\Power management\Do not allow computer to turn off power of device
 
-## Windows
 Manage start-up programs via msconfig.
 
-## Windows - Remove Metadata from Photos Before Uploading to Internet and Sharing
-Before uploading any photos to the Internet, remove metadata: Right click\Properties\Details\Remove Properties and Personal Information (save version w/ all properties removed, and upload that one).
+Get familiar w/ 1.) Device Manager, and 2.) msconfig.
+
+## Remove Metadata from Photos Before Uploading to Internet and Sharing on Microsoft Windows OS
+Before uploading photos to the Internet (obv. selfies), prob. best to remove metadata first:
+$ Right click\Properties\Details\Remove Properties and Personal Information
+Save version w/ all properties removed; upload that one.
+
+## Launching Software Programs from Command Prompt
+Sometimes clicking a link does not launch the software program as desired or expected (e.g., in Microsoft Windows). In such instances, you may try navigating to Windows\Run and type the name of the software, e.g., "GitHub Desktop". Alternatively, you can search for the name of the corresponding EXE (.exe file) on your computer and type that into the MS Windows "Run" program instead (e.g., GitHubDesktop.exe).
