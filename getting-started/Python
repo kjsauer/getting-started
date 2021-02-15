@@ -487,10 +487,6 @@ If running Linux in VirtualBox, do not use Anaconda Python. Linux comes with bui
 ## Check Python Version
 See above notes.
 
-## End of Script
-# Compliments of JHF
-$ print('Congrats. The program ran completely/successfully. Crack open an ice-cold beer.')
-
 ## Python Library vs. Module vs. Package
 Package is a collection of modules. It must contains an __init__.py file as a flag so that the python interpreter processes it as such. The __init__.py could be an empty file without causing issues. Library is a collection of packages.
 

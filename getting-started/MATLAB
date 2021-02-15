@@ -58,10 +58,6 @@ https://pvpmc.sandia.gov/applications/pv_lib-toolbox/matlab/
 Design MATLAB folders based on function/script co-dependencies and the MATLAB path
 Namely, what is necessary to add to the path and how when the developer runs the code
 
-## End of Script
-Compliments of J.H.F.
-$ disp('Congrats. The program ran completely/successfully. Crack open an ice-cold beer.')
-
 ## MATLAB Toolbox vs. Library
 A toolbox is typically a collection of MATLAB functions and a library a collection of Simulink blocks. Having said that, many MATLAB toolboxes also offer Simulink libraries as well, e.g. Control System Toolbox, System Identification Toolbox, Instrument Control Toolbox, etc...
 
