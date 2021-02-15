@@ -3,19 +3,19 @@ Kenneth J. Sauer (kjsauer on GitHub)
 
 # Anaconda Python Tips and Tricks
 
-## Update Anaconda Python -- NEW
+## Update Anaconda Python
 Launch Anaconda Prompt
 $ conda update conda
 
-##
+## Navigate to Folder
 Now navigate to your folder using "dir" and "cd <insert_folder_name>"
 See Command Line Getting Started notes.
 
-##
+## Launch Jupyter Notebook
 Now launch Jupyter Notebook without browser.
 See below Jupyter Notebook notes (Ctrl+f: "--no-browser").
 
-## Check Python Version from Command Line/Anaconda Prompt
+## Check Python Version from Anaconda Prompt Command Line
 Launch Anaconda Prompt
 $ python --version
 
@@ -23,14 +23,11 @@ $ python --version
 $ import sys
 $ sys.version_info
 
-## Update Anaconda Python -- OLD/OBSOLETE
+## Update Anaconda Python
 Launch Anaconda Prompt
 $ conda update --all
+$ conda update -n root conda
 
-## Update Anaconda Python -- OLD/OBSOLETE
-conda update -n root conda
-
-## Update Anaconda Python -- OLD/OBSOLETE
 Launch Anaconda Prompt
 Windows\Start Menu\Anaconda Prompt
 Update Anaconda
@@ -45,17 +42,18 @@ Update Spyder
 $ conda update spyder
 Update Jupyter Notebook
 $ conda update jupyter
+$ conda update jupyter notebook
 $ conda update ipython (obsolete???)
 Option to update Spyder, etc. via Anaconda Navigator
 
 ## Miniconda
 I could not easily (within a few minutes) understand how to get Jupyter Notebook to work with Miniconda
-If using miniconda, need to manually download/maintain Spyder, Jupyter, etc. compatibilities
+If using miniconda, need to manually download and maintain Spyder, Jupyter, etc. compatibilities; quite a burden when trying to focus on engineering & scientific research, etc.
 
 ## Python Indexing
 Starts with 0, not 1
 
-## NB
+## Scope
 The Python described here largely uses Anaconda Python
 
 ## Install Anaconda Python
@@ -64,7 +62,7 @@ Download and install Anaconda with latest Python available
 ## Recommended
 As usual, need local admin rights to download and install software programs
 Get Anaconda Python 3 (latest version)
-https://www.anaconda.com/download/#windows
+https://www.anaconda.com/download/#windows/
 Python 3.x
 Exploration of Miniconda is on my todo
 
@@ -72,8 +70,8 @@ Exploration of Miniconda is on my todo
 import os
 import numpy as np
 import pandas as pd
-pd.set_option('display.height', 500)
-pd.set_option('display.max_rows', 500)
+pd.set_option('display.height',500)
+pd.set_option('display.max_rows',500)
 import seaborn as sns
 sns.set_style('white')
 import matplotlib.pyplot as plt
@@ -87,8 +85,8 @@ import matplotlib.image as mpimg
 
 ## Other Imports
 %matplotlib inline
-sns.set(rc={"figure.figsize": (12, 6)})
-sns.set(context='talk', style='darkgrid', palette='colorblind')
+sns.set(rc={'figure.figsize':(12,6)})
+sns.set(context='talk',style='darkgrid',palette='colorblind')
 import datetime
 import logging
 import inspect
@@ -100,7 +98,7 @@ import statsmodels as sm
 from scipy.optimize import curve_fit
 
 ## Find Help
-Use '?'
+Use "?"
 Example
 $ import numpy as np
 Make use of "?"
@@ -109,14 +107,14 @@ $ np.empty?
 
 ## NB
 Create a new variable "Flag" in the data frame "df0"
-$ df0['Flag'] = df0.apply(getFlag, axis=1)
+$ df0['Flag'] = df0.apply(getFlag,axis=1)
 
 ## PEP 8 Guidelines
 Modules (filenames) should have short, all-lowercase names, and they can contain underscores
 Packages (directories) should have short, all-lowercase names, preferably without underscores
 Classes should use the CapWords convention
 Source:
-https://softwareengineering.stackexchange.com/questions/308972/python-file-naming-convention
+https://softwareengineering.stackexchange.com/questions/308972/python-file-naming-convention/
 
 ## Other Notable Python Syntax
 Use of loc
@@ -126,9 +124,9 @@ $ program_flag.loc[program_flag.index == '2016-07-03 09:47:00-07:00']
 $ axis=0: runs vertical downwards across rows
 $ axis=1: runs horizontal across columns
 
-## Advanced String Formatting (Simpler to Use %% Method)
-'hi {} the weather is {}'.format('kjs','sunny')
-'hi {name} the weather is {weather}'.format(name='kjs',weather='sunny')
+## Advanced String Formatting (simpler to use %% method)
+'hi {} the weather is {}'.format("kjs","sunny")
+'hi {name} the weather is {weather}'.format(name="kjs",weather="sunny")
 
 ## Get IP Address
 curl api.ipify.org
@@ -165,12 +163,12 @@ Environments
 Upgrade any upgradable packages
 Environments\Root\Open Terminal
 Get ready to install packages by checking the version of the package you want:
-https://pypi.python.org/pypi/pvmismatch
-https://pypi.python.org/pypi/pvlib
-https://pypi.python.org/pypi/pecos
+https://pypi.python.org/pypi/pvmismatch/
+https://pypi.python.org/pypi/pvlib/
+https://pypi.python.org/pypi/pecos/
 pvmismatch is in Python 2.7
 
-##
+## Spin Up Python Environment
 Create new Conda Python 2.7 environment named py27:
 $ conda create -n py27 python=2.7 anaconda
 $ conda create -n py35 python=3.5 anaconda
@@ -183,7 +181,7 @@ $ activate py35
 ## Check Python Version
 See above notes.
 
-##
+## pvmismatch
 Now install pvmismatch
 $ pip install pvmismatch
 $ conda install -c pvlib pvlib
@@ -202,6 +200,9 @@ $ deactivate py35
 See above notes.
 
 # Spyder Interactive Development Environment (IDE)
+
+## Spyder Theme
+Oblivion
 
 ## Turn on Interactive Plotting (Pop-up Plots) in Spyder
 Tools
@@ -254,7 +255,6 @@ $ deactivate py27
 See above notes.
 
 # Jinja
-
 <!--Example Templating Language-->
 <h1>Welcome to insert_appname!</h1>
 {% for user in users %}
@@ -292,19 +292,19 @@ Copy URL from terminal
 Launch Moxilla Firefox
 Paste URL into browser
 Firefox has good jupyter notebook integration
-Microsoft browsers (IE/Edge) do not
+Microsoft browsers (IE, Edge) do not
 I have not checked Google Chrome
 
 ## Useful Hot Keys in Jupyter Notebook
-comment or uncomment a line
+Comment or uncomment a line
 $ Ctrl+"/"
-run cell
+Run cell
 $ Ctrl+Enter
-exit cell via escape (Esc)
-enter cell via Enter
-change to markdown when in esc mode
+Exit cell via escape (Esc)
+Enter cell via Enter
+Change to markdown when in Esc mode
 $ m
-change to code when in esc mode
+Change to code when in Esc mode
 $ c
 No mouse needed in Jupyter Notebook
 Vertical screen orientation recommended
@@ -354,7 +354,7 @@ $( document ).ready(code_toggle);
 # Pandas
 
 ## Alternate Way to Join
-df['mfg_product'] = df[['mfg', 'model_type']].apply(lambda x: ''.join(x), axis=1)
+df['mfg_product'] = df[['mfg','model_type']].apply(lambda x:''.join(x), axis=1)
 
 ## Load Data Set
 df = sns.load_dataset('df')
@@ -362,15 +362,15 @@ df = sns.load_dataset('df')
 ## Top Ten Oldest People Who Have a Ticket
 df[df['Ticket'] == 1].sort_values('Age')['Names'].head(10)
 
-## Example for Shared/Mapped Drives
+## Example for Shared or Mapped Drives
 Map network drive SHARED_DRIVE to some drive name (e.g., "X")
 Launch Anaconda prompt (Python 2.7)
 $ cd PATH/TO/CODE/FOLDER
 type into prompt
 $ jupyter notebook
 
-## Open Jupyter Notebook on Shared/Mapped Drives via Anaconda Prompt
-Not possible to navigate to shared/mapped drive via Jupyter Notebook's web browser directory user interface (UI)
+## Open Jupyter Notebook on Shared or Mapped Drives via Anaconda Prompt
+Not possible to navigate to shared or mapped drive via Jupyter Notebook's web browser directory user interface (UI)
 Use Anaconda Prompt and navigate to folder via cd as per the above instructions
 Also see getting-started\shell
 Launch Anaconda Prompt terminal
@@ -479,34 +479,39 @@ df['col_name'] = pd.to_numeric(df['col_name'],errors='coerce')
 ## Install New Python Library
 To get a new Anaconda package, try conda first
 Example: Tabula
-https://anaconda.org/conda-forge/tabula-py
+https://anaconda.org/conda-forge/tabula-py/
 
 ## Python Linux VirtualBox
-If running Linux in VirtualBox
-Do not use Anaconda Python
-Linux comes with built-in Python
-See PyPI "Cheese Shop"
+If running Linux in VirtualBox, do not use Anaconda Python. Linux comes with built-in Python. See PyPI "Cheese Shop".
 
 ## Check Python Version
 See above notes.
 
 ## End of Script
-Compliments of JHF
+# Compliments of JHF
 $ print('Congrats. The program ran completely/successfully. Crack open an ice-cold beer.')
 
-## Python Package vs. Library vs. Module
+## Python Library vs. Module vs. Package
 Package is a collection of modules. It must contains an __init__.py file as a flag so that the python interpreter processes it as such. The __init__.py could be an empty file without causing issues. Library is a collection of packages.
 
 Source: <https://kimconnect.com/python-module-vs-package-vs-library-vs-framework/>
 
 ## Save as .csv file with datetime format YYYY-MM-DD hh:mm:ss
 import os
-csv_output_pathname = 'file_pathname'
-csv_output_filename = 'filename'
-df.to_csv(os.path.join(csv_output_pathname,csv_output_filename),date_format=%Y-%m-%d %H:%M:%S')
+csv_output_pathname = 'insert_csv_output_file_pathname'
+csv_output_filename = 'insert_csv_output_filename'
+df.to_csv(os.path.join(csv_output_pathname,csv_output_filename),date_format='%Y-%m-%d %H:%M:%S')
 
 ## Python Notebooks and Git
-Problems with Python notebooks and Git: 1. Every time you open and run a Python file, Git treats it as a revision. 2. It is difficult to review revisions of a Python notebook in Git because of all the extraneous code. There are many benefits to Jupyter iPython Notebooks (primarily social: shareability and collective understanding), however, .py files and Spyder win out in these regards.
+Problems with Python notebooks and Git:
+1. Every time you open and run a Python file, Git treats it as a revision.
+2. It is difficult to review revisions of a Python notebook in Git because of all the extraneous code. There are many benefits to Jupyter iPython Notebooks (primarily social: shareability and collective understanding); however, .py files and Spyder win out in these important regards.
 
-## Run EXE from Python
+## Other Reasons to Use Git Over Jupyter Notebooks
+Easy to track changes with Git
+Variable explorer (variable editor) is essential
+
+If needed, use a Jupyter Notebook to more easily communicate what an associated Spyder .py file is doing; sometimes easier to start in Jupyter Notebook and migrate to Spyder .py file later.
+
+## Run EXE w/ Python
 run('C:\asdf1\asdf2.exe')
