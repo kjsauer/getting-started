@@ -19,6 +19,16 @@ GHI = DHI + DNI.*cos(thetaZ);
 ## Deviation in Efficiency Relative to Efficiency at Reference Conditions
 dEtaRel_Ref = [(Pmp/Pmp_Ref)*(Gpoa_Ref/Gpoa)] - 1;
 
+## PVsyst Module Quality Loss Factor MQF
+Negative adjustment factor AF as loss convention:
+af1 [%]
+af2 [%]
+...
+afN [%]
+Negative AF as gain convention:
+MQF = -1*(1-((1-af1)*(1-af2)*...*(1-afN)))
+MQF = -1*(af1+af2+...+afN)
+
 ## References
 
 ### Equations for PV Modeling
