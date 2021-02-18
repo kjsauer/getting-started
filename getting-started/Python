@@ -523,3 +523,10 @@ run('C:\asdf1\asdf2.exe')
 
 ## Remove Duplicate Timestamps (Keep First)
 df1 = df0[~df0.index.duplicated(keep='first')]
+
+## Pickle
+Pickling aka serialization aka flattening aka marshalling
+Convert any kind of Python object (list, dict, etc.) into byte streams (0s & 1s)
+import pickle
+with open(r'C:\Users\<insert_user_name>\folder\file.pkl','rb') as f:
+    data = pickle.load(f)
