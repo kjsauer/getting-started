@@ -459,3 +459,6 @@ One (meaningful) Git commit per day.
 
 ## Git Workflow
 Clone. Branch. Get in. Make your change. Get out. Pull request. Email. Done.
+
+## Naming - Developer Note
+A Git repo has dashes like-this. Folders w/in that repo have underscores like_this.
