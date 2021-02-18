@@ -288,8 +288,8 @@ Before doing anything (coding, cooking, ordering something online, taxes), set u
 ## End-of-code Snippet
 Playful end-of-code snippet to inform that code, program, or script is finished (that it ran completely).
 MATLAB:
-% Compliments of JHF
+% Shout-out to JHF
 disp('Congrats. The program ran completely. Crack open an ice-cold beer.')
 Python:
-# Compliments of JHF
+# Shout-out to JHF
 print('Congrats. The program ran completely. Crack open an ice-cold beer.')
