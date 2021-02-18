@@ -73,7 +73,7 @@ Make sure ALL scripts or functions which are to be called when the EXE is run ar
 You will likely need to manually add files (namely, functions) to the compiler.
 Upon setting up the compiler, recommend to toggle ON the option to output a log file each time the EXE is run.
 
-## Variable Names
+## Variable Naming
 Variable names must start with a letter (not a number) (e.g., a1, not 1a).
 
 ## MATLAB Coder
