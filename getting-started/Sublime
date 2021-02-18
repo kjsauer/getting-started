@@ -24,3 +24,7 @@ Ctrl+Shift+t to reopen last-closed tab.
 When Sublime Text 3 is open and you have files open in it, Sublime Text editor tracks their edit status. If you move the open files on your computer, Sublime will register that the file has changed. Sublime, like Git, tracks the change status of files while they are open in Sublime and--importantly--when Sublime is open. If you have files open in Sublime and you close Sublime and then move the files on your computer and then reopen Sublime, the files will simply have disappeared from Sublime; it doesn't register it as a change.
 
 TLDR: Close Sublime Text editor before organizing files (e.g., deleting or renaming).
+
+## Dark Mode of Left-hand Sidebar
+Switch to Adaptive.sublime-theme: Click Preferences\Theme\Select Adaptive.sublime-theme. This will change the sidebar to a dark colored background. You can manually change the sidebar style by editing Default.
+Source: <https://stackoverflow.com/questions/27931448/why-do-sublime-text-3-themes-not-affect-the-sidebar/>
