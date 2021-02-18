@@ -1,9 +1,15 @@
 # Getting Started with Math for Engineers
 Kenneth J. Sauer (kjsauer on GitHub)
 
+## Rules-of-thumb: PEMDAS
+P: Parentheses first
+E: Exponents (powers and square roots, etc.)
+MD: Multiplication and division (left-to-right)
+AS: Addition and subtraction (left-to-right)
+
 ## Deviation vs. Difference
-"Deviation" is "100*(New/Old-1). Old might be the base case.
-"Difference" is a subtraction of two values.
+Deviation = 100*(New/Old-1), where Old might be the base (aka baseline) case.
+Meanwhile, "difference" is the result of a subtraction of two values.
 
 ## Exponential vs. Linear Rate of Change
 Nameplate Value, ValNP = 100%;
