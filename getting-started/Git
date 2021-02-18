@@ -449,9 +449,13 @@ Promote the "zero GitHub Desktop" policy--try to stay synced!
 NB: Also in Getting Started with Design.
 One (meaningful) Git commit per day.
 
+## Feature Request(s): GitHub
+1. Operational Python console w/in GitHub.
+2. Automated email to notify Approver upon Pull Request.
+
 ## Feature Request(s): GitHub Desktop
 1. Save draft commit notes in GitHub Desktop specific to each selected, changed file or combination of selected files. Presently, if you close GitHub Desktop, etc. in the middle of a draft commit note, the text you wrote is gone.
-2. Add ability to check off changes (w/ check boxes) as you review the edited ("red-lined") file in GitHub Desktop, so you can easily keep track of what changes are reviewed and approved (by you) before you finally commit the updated file.
+2. Ability to check off changes (w/ check boxes) as you review the edited ("red-lined") file in GitHub Desktop, so you can easily keep track of what changes are reviewed and approved (by you) before you finally commit the updated file.
 
 ## Git Workflow
 Clone. Branch. Get in. Make your change. Get out. Pull request. Email. Done.
