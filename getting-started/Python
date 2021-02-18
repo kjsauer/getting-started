@@ -100,14 +100,14 @@ from scipy.optimize import curve_fit
 ## Find Help
 Use "?"
 Example
-$ import numpy as np
+import numpy as np
 Make use of "?"
-$ np.array?
-$ np.empty?
+np.array?
+np.empty?
 
 ## NB
 Create a new variable "Flag" in the data frame "df0"
-$ df0['Flag'] = df0.apply(getFlag,axis=1)
+df0['Flag'] = df0.apply(getFlag,axis=1)
 
 ## PEP 8 Guidelines
 Modules (filenames) should have short, all-lowercase names, and they can contain underscores
@@ -118,11 +118,11 @@ https://softwareengineering.stackexchange.com/questions/308972/python-file-namin
 
 ## Other Notable Python Syntax
 Use of loc
-$ program_flag.loc[program_flag.index == '2016-07-03 09:47:00-07:00']
+program_flag.loc[program_flag.index == '2016-07-03 09:47:00-07:00']
 
 ## Pandas Syntax
-$ axis=0: runs vertical downwards across rows
-$ axis=1: runs horizontal across columns
+axis=0: Runs vertical downwards across rows
+axis=1: Runs horizontal across columns
 
 ## Advanced String Formatting (simpler to use %% method)
 'hi {} the weather is {}'.format("kjs","sunny")
@@ -511,3 +511,6 @@ If needed, use a Jupyter Notebook to more easily communicate what an associated 
 
 ## Run EXE w/ Python
 run('C:\asdf1\asdf2.exe')
+
+## Remove Duplicate Timestamps (Keep First)
+df1 = df0[~df0.index.duplicated(keep='first')]
