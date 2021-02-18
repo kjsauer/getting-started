@@ -29,16 +29,26 @@ Keep track of all software licenses/license keys (e.g., Adobe, MATLAB, NI LabVIE
 Backup Internet Explorer bookmarks (the last time I checked, they didn't have a "Sync" function like Firefox).
 
 ## Microsoft Windows Hot Keys
-Close tab/active window
+Close active tab or window
 $ Ctrl+w
 Close program
 $ Alt+F4
+Quit program
+$ Ctrl+q
 Find
 $ Ctrl+f
-Switch screen
+Switch windows
 $ Alt+Tab
-See all screens
+Scroll through open windows
 $ Windows+Tab
+Scroll through open tabs - up
+$ Ctrl+Page Up
+Scroll through open tabs - down
+$ Ctrl+Page Down
+Move screen up
+$ Ctrl+Up
+Move screen Down
+$ Ctrl+Down
 Switch tabs
 $ Ctrl+Tab
 Switch tabs back
@@ -48,6 +58,8 @@ $ Ctrl+Alt+Delete
 Go to Microsoft Windows Task Manager directly (i.e., 3-finger salute #2)
 $ Ctrl+Shift+Esc
 Microsoft finger salute #3: I can think of one (ha JK)!
+View all open windows
+$ Four finger swipe to view all open windows
 
 ## Microsoft Windows OS
 Avoid asterisks in filenames.
@@ -73,3 +85,6 @@ In general, best to avoid starting file, folder, or variable names w/ a number (
 
 ## Naming - Developer Note
 Avoid spaces in computer username. In general, for folders involving programming, best to avoid spaces and special characters. Sometimes, lowercase and underscores are most compatible (such_as_this). Generally, asdf1 is more preferred vs. 1asdf (i.e., avoid starting file, folder, or variable name w/ a number). A Git repository (repo) name has dashes like-this. Folders w/in that repo have underscores like_this.
+
+## OS Feature Request(s)
+1. Windows Search: It would help if Ctrl+f of "holders" would find "holder(s)", i.e., ignore the parentheses.
