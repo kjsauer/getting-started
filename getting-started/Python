@@ -204,6 +204,10 @@ See above notes.
 ## Spyder Theme
 Oblivion
 
+## Spyder Tips & Trips
+Find & replace
+$ Ctrl+R
+
 ## Turn on Interactive Plotting (Pop-up Plots) in Spyder
 Tools
 Peferences
@@ -404,6 +408,10 @@ t.day
 5
 t.month
 t.year
+
+## Time Zone Localization and Conversion
+dat.index = pd.to_datetime(dat.pop('datetime'),utc=True)
+dat.index = dat.index.tz_localize('UTC',ambiguous='raise').tz_convert('US/Pacific')
 
 ## Monthly Reporting
 df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
