@@ -452,3 +452,6 @@ One (meaningful) Git commit per day.
 ## Feature Request(s): GitHub Desktop
 1. Save draft commit notes in GitHub Desktop specific to each selected, changed file or combination of selected files.
 2. Add ability to check off changes (w/ check boxes) as you review the edited ("red-lined") file in GitHub Desktop, so you can easily keep track of what changes are reviewed and approved.
+
+## Git Workflow
+Clone. Branch. Get in. Make your change. Get out. Pull request. Email. Done.
