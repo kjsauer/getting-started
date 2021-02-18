@@ -70,3 +70,6 @@ Sometimes clicking a link does not launch the software program as desired or exp
 
 ## Naming
 In general, best to avoid starting file, folder, or variable names w/ a number (e.g., use asdf1, not 1asdf).
+
+## Naming - Developer Note
+Avoid spaces in computer username. In general, for folders involving programming, best to avoid spaces and special characters. Sometimes, lowercase and underscores are most compatible (such_as_this). Generally, asdf1 is more preferred vs. 1asdf (i.e., avoid starting file, folder, or variable name w/ a number). A Git repository (repo) name has dashes like-this. Folders w/in that repo have underscores like_this.
