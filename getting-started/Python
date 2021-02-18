@@ -513,7 +513,8 @@ Problems with Python notebooks and Git:
 
 ## Other Reasons to Use Git Over Jupyter Notebooks
 Easy to track changes with Git
-Variable explorer (variable editor) is essential
+Variable explorer (variable editor) is essential (!!!)
+Spyder also has important debugging tools and insights for speeding up the code
 
 If needed, use a Jupyter Notebook to more easily communicate what an associated Spyder .py file is doing; sometimes easier to start in Jupyter Notebook and migrate to Spyder .py file later.
 
