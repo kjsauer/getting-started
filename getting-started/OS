@@ -67,3 +67,6 @@ Save version w/ all properties removed; upload that one.
 
 ## Launching Software Programs from Command Prompt
 Sometimes clicking a link does not launch the software program as desired or expected (e.g., in Microsoft Windows). In such instances, you may try navigating to Windows\Run and type the name of the software, e.g., "GitHub Desktop". Alternatively, you can search for the name of the corresponding EXE (.exe file) on your computer and type that into the MS Windows "Run" program instead (e.g., GitHubDesktop.exe).
+
+## Naming
+In general, best to avoid starting file, folder, or variable names w/ a number (e.g., use asdf1, not 1asdf).
