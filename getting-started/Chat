@@ -10,7 +10,7 @@ Slack is called Slack for a reason; it's not medium for real work (nor are other
 As a normal user, ask:
 1. Where is my data saved (e.g., chats)? How can I back up my important data if needed?
 2. What happens when you delete data (e.g., chats)?
-If you do not know the answer at least to the first question, probably best to avoid the use of said software program...or at least tread lightly with it.
+If you do not know the answer at least to the first question, it's probably best to avoid the use of said software program...or at least to tread lightly with it.
 
 ##  Slack Hotkeys
 Ctrl+"/" or Ctrl+"?" to see hot keys
@@ -21,4 +21,4 @@ $ /call --test
 
 ## Rule of Thumb
 If it will matter after today, don't talk about it in a chat room.
-Credit not mine (see link at top): <https://news.ycombinator.com/item?id=25751808>
+Credit not mine. Source: <https://news.ycombinator.com/item?id=25751808>
