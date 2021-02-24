@@ -1,19 +1,16 @@
 # Getting Started with Python
 Kenneth J. Sauer (kjsauer on GitHub)
 
-# Anaconda Python Tips and Tricks
-
-## Update Anaconda Python
-Launch Anaconda Prompt
-$ conda update conda
+## Scope
+This document mostly includes Anaconda Python tips & tricks.
 
 ## Navigate to Folder
 Now navigate to your folder using "dir" and "cd <insert_folder_name>"
 See Command Line Getting Started notes.
 
 ## Launch Jupyter Notebook
-Now launch Jupyter Notebook without browser.
-See below Jupyter Notebook notes (Ctrl+f: "--no-browser").
+First, see below notes on Spyder (the latter is preferred for it's Git integration, Variable Editor, etc.).
+You can launch Jupyter Notebook without opening in the default web browser. See below Jupyter Notebook notes (Ctrl+f: "--no-browser").
 
 ## Check Python Version from Anaconda Prompt Command Line
 Launch Anaconda Prompt
@@ -24,17 +21,13 @@ $ import sys
 $ sys.version_info
 
 ## Update Anaconda Python
-Launch Anaconda Prompt
-$ conda update --all
-$ conda update -n root conda
-
-Launch Anaconda Prompt
-Windows\Start Menu\Anaconda Prompt
-Update Anaconda
+First, launch Anaconda Prompt
+Windows > Start Menu > Anaconda Prompt
+Update Conda
 $ conda update conda
-If using Anaconda
+Update Anaconda
 $ conda update anaconda
-Allow 15-25 minutes for update all
+Update all (allow 15-25 minutes if you're far behind on updates)
 $ conda update --all
 Update Python
 $ conda update python
@@ -45,6 +38,8 @@ $ conda update jupyter
 $ conda update jupyter notebook
 $ conda update ipython (obsolete???)
 Option to update Spyder, etc. via Anaconda Navigator
+Other; not sure (I don't run this one anymore unless troubleshooting the above update prompts)
+$ conda update -n root conda
 
 ## Miniconda
 I could not easily (within a few minutes) understand how to get Jupyter Notebook to work with Miniconda
@@ -66,7 +61,7 @@ https://www.anaconda.com/download/#windows/
 Python 3.x
 Exploration of Miniconda is on my todo
 
-## Primary Imports
+## Primary Python Imports
 import os
 import numpy as np
 import pandas as pd
@@ -290,12 +285,14 @@ Launch Anaconda Prompt
 $ cd path_name
 Otherwise navigate to folder in anaconda prompt
 Using command line aka terminal aka bash commands
-Launch jupyter notebook via
+Launch Jupyter Notebook w/out browser (i.e., get link w/out opening in default web browser)
 $ jupyter notebook --no-browser
+Otherwise, launch in default web browser
+$ jupyter notebook
 Copy URL from terminal
 Launch Moxilla Firefox
 Paste URL into browser
-Firefox has good jupyter notebook integration
+Firefox has good Jupyter Notebook integration
 Microsoft browsers (IE, Edge) do not
 I have not checked Google Chrome
 
@@ -338,7 +335,7 @@ Download as .py
 The .py folder is easier to review in a Pull Request
 
 ## Toggle Code On/Off
-# NB: Add to top of Python script.
+# NB: Add to top of Python script
 # Source: https://stackoverflow.com/questions/27934885/how-to-hide-code-from-cells-in-ipython-notebook-visualized-with-nbviewer/
 from IPython.display import HTML
 HTML('''<script>
@@ -409,25 +406,60 @@ t.day
 t.month
 t.year
 
+## Convert Date Column to Python Pandas datetime Object
+df1.index = pd.to_datetime(df1.index,format='%Y-%m-d %H:%M:%S',utc=False)
+df1.index = pd.to_datetime(df1.index,format='%m-%d-%Y %H:%M',utc=False)
+
 ## Time Zone Localization and Conversion
 dat.index = pd.to_datetime(dat.pop('datetime'),utc=True)
 dat.index = dat.index.tz_localize('UTC',ambiguous='raise').tz_convert('US/Pacific')
+May need to ambiguous infer or NaT (if the latter, then drop rows w/ NaT aka not a time)
+
+## Remove Duplicate Timestamps (keep first)
+NB: Assumes index is datetime
+df1 = df0[~df0.index.duplicated(keep='first')]
+
+## List Duplicate Timestamps
+NB: Assumes index is datetime
+df1[df1.index.duplicated()]
+
+## Drop Days or Range of Days
+i.e., Drop Timestamps or Range of Timestamps
+Assumes index is datetime column of interest
+import pandas as pd
+start_remove = pd.to_datetime('1994-01-01 00:00:00')
+end_remove = pd.to_datetime('1994-01-03 23:59:00')
+df = df[(df.index < start_remove) | (df.index > end_remove)]
+Need the df = ... and need the full timestamp incl. 00:00:00
+Alternative syntax:
+from_ts = '2016-12-02 22:00:00'
+to_ts = '2016-12-03 00:00:00'
+df = df[(df['b'] < from_ts) | (df['b'] > to_ts)]
+Source: <https://stackoverflow.com/questions/44315594/remove-all-rows-between-two-timestamps-from-pandas-dataframe/>
+Alternatively, using .loc:
+df_remove = df.loc['1994-01-01':'1994-01-03']
+df_clean = df.drop(df_remove.index)
+Alternative UNTESTED:
+df = df.loc[(df.index < start_remove) | (df.index > end_remove)]
+Alternative UNTESTED:
+dropThis = pd.date_range(start_remove,end_remove,freq='5T') # 5T = 5-min
+df[~df.index.isin(dropThis)]
 
 ## Monthly Reporting
 df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
 
 ## Create Ideal Hourly Time Series
 idx = pd.date_range(start_date,end_date,freq='H',tz=None)
-df1 = df
+df1 = df.copy()
 df1.index = pd.DatetimeIndex(df1.index)
 df1 = df1.reindex(idx) # default = no fill
 df2 = df1.tz_localize(None)
-df2['Year'] = pd.DatetimeIndex(df2.index).year
-df2['Month'] = pd.DatetimeIndex(df2.index).month
-df2['Day'] = pd.DatetimeIndex(df2.index).day
-df2['Hour'] = pd.DatetimeIndex(df2.index).hour
-df2['Minute'] = pd.DatetimeIndex(df2.index).minute
-df2['Second'] = pd.DatetimeIndex(df2.index).second
+df2['Year'] = pd.DatetimeIndex(df2.index).year.astype('string')
+df2['Month'] = pd.DatetimeIndex(df2.index).month.astype('string')
+df2['Day'] = pd.DatetimeIndex(df2.index).day.astype('string')
+df2['Hour'] = pd.DatetimeIndex(df2.index).hour.astype('string')
+df2['Minute'] = pd.DatetimeIndex(df2.index).minute.astype('string')
+df2['Second'] = pd.DatetimeIndex(df2.index).second.astype('string')
 
 ## Resample 5-min to Hourly
 df_hourly = df_five_min.resample('H').mean()
@@ -509,7 +541,7 @@ df.to_csv(os.path.join(csv_output_pathname,csv_output_filename),date_format='%Y-
 ## Python Notebooks and Git
 Problems with Python notebooks and Git:
 1. Every time you open and run a Python file, Git treats it as a revision.
-2. It is difficult to review revisions of a Python notebook in Git because of all the extraneous code. There are many benefits to Jupyter iPython Notebooks (primarily social: shareability and collective understanding); however, .py files and Spyder win out in these important regards.
+2. It's difficult to review revisions of a Python notebook in Git because of all the extraneous code. There are many benefits to Jupyter iPython Notebooks (primarily social: share-ability and collective understanding); however, .py files and Spyder win out in these important regards.
 
 ## Other Reasons to Use Git Over Jupyter Notebooks
 Easy to track changes with Git
@@ -521,12 +553,19 @@ If needed, use a Jupyter Notebook to more easily communicate what an associated 
 ## Run EXE w/ Python
 run('C:\asdf1\asdf2.exe')
 
-## Remove Duplicate Timestamps (Keep First)
-df1 = df0[~df0.index.duplicated(keep='first')]
-
 ## Pickle
-Pickling aka serialization aka flattening aka marshalling
+Pickling aka serialization aka flattening aka marshaling
 Convert any kind of Python object (list, dict, etc.) into byte streams (0s & 1s)
 import pickle
 with open(r'C:\Users\<insert_user_name>\folder\file.pkl','rb') as f:
     data = pickle.load(f)
+
+# Plotting
+Use matplotlib whenever possible; get used to it; it's more flexible
+Sometimes need Pandas or Seaborn for specific, custom plots, etc.
+Seaborn allows certain types of more advanced plotting
+
+## Add 1:1 aka Identity aka Reference Line
+NB: 0 to 100 as example
+import matplotlib.pyplot as plt
+plt.plot([0,100],[0,100],color='r')
