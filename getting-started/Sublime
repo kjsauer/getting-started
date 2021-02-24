@@ -11,8 +11,23 @@ Mariana
 Switch to Adaptive.sublime-theme: Click Preferences\Theme\Select Adaptive.sublime-theme. This will change the sidebar to a dark colored background. You can manually change the sidebar style by editing Default.
 Source: <https://stackoverflow.com/questions/27931448/why-do-sublime-text-3-themes-not-affect-the-sidebar/>
 
-## Spell Check
+## Hot Keys
+Find in all open tabs
+$ Ctrl+Shift+f
+Re-open last-closed tab
+$ Ctrl+shift+t
+Switch tabs backward (toward last edited)
+$ Ctrl+tab
+Swith tabs forward
+$ Ctrl+shift+tab
+Switch tabs up
+$ Ctrl+PgUp
+Switch tabs down
+$ Ctrl+PgDn
+Spell check in open, selected tab
 $ F6
+
+You can click an open tab, hold shift, & click one (or more) other(s) to select multiple tabs. Then, e.g., press F6 to apply spell check to all open & selected tabs.
 
 ## Sublime Text Editor vs. Notepad for Opening and Viewing Text Files
 If you are in the middle of an unsaved text file (*.txt) open in Notepad.exe and your computer crashes, your work is lost. If you are in the middle of an unsaved text file (*.txt) open in Sublime Text editor and your computer crashes, your work is not lost. Thus, switch from Notepad.exe to Sublime Text editor.
