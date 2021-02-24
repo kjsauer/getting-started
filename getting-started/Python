@@ -569,6 +569,7 @@ with open(r'C:\Users\<insert_user_name>\folder\file.pkl','rb') as f:
 # Plotting
 Use matplotlib whenever possible; get used to it; it's more flexible
 Sometimes need Pandas or Seaborn for specific, custom plots, etc.
+Seems like Pandas plotting oftentimes doesn't seem to cut it (dunno; not familiar, fluent, or well-versed enough)
 Seaborn allows certain types of more advanced plotting
 
 plot = insert_variable_name.plot(legend=False)
@@ -577,3 +578,8 @@ plot = insert_variable_name.plot(legend=False)
 NB: 0 to 100 as example
 import matplotlib.pyplot as plt
 plt.plot([0,100],[0,100],color='r')
+
+## Overlay Grid-lines in Front of Data in Plot
+Display grid-lines in front of data in plot
+plt.rcParams['axes.axisbelow'] = False
+plt.grid()
