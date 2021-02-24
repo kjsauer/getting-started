@@ -14,4 +14,14 @@ Restart browser to implement changes.
 ## Hot Keys
 Type "m" in Firefox Browser to mute sounds from the tab.
 
-Ctrl+Shift+t to reopen last-closed tab.
+## Hot Keys
+Re-open last-closed tab
+$ Ctrl+shift+t
+Switch tabs backwards (towards last edited)
+$ Ctrl+tab
+Switch tabs forward
+$ Ctrl+shift+tab
+Switch tabs up
+$ Ctrl+PgUp
+Switch tabs down
+$ Ctrl+PgDn
