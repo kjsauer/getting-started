@@ -16,6 +16,8 @@ Structure your data for Pivot Tables; meaning, like a database, with column head
 
 ## Hot Keys
 Copy a cell (Ctrl+c) and hit Enter in another cell to paste. (Disclaimer: I do not presently use this hot key).
+Copy equation to right:
+$ Ctrl+r
 
 ## Limits of MS Excel
 XLS requires Microsoft Office Suite
