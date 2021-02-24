@@ -415,7 +415,7 @@ dat.index = pd.to_datetime(dat.pop('datetime'),utc=True)
 dat.index = dat.index.tz_localize('UTC',ambiguous='raise').tz_convert('US/Pacific')
 May need to ambiguous infer or NaT (if the latter, then drop rows w/ NaT aka not a time)
 
-## Remove Duplicate Timestamps (keep first)
+## Remove Duplicate Timestamps (Keep First)
 NB: Assumes index is datetime
 df1 = df0[~df0.index.duplicated(keep='first')]
 
@@ -423,7 +423,9 @@ df1 = df0[~df0.index.duplicated(keep='first')]
 NB: Assumes index is datetime
 df1[df1.index.duplicated()]
 
-## Drop Days or Range of Days
+# Data Filtration Logic
+
+## Drop Days or Range of Days (Remove Days)
 i.e., Drop Timestamps or Range of Timestamps
 Assumes index is datetime column of interest
 import pandas as pd
@@ -445,26 +447,15 @@ Alternative UNTESTED:
 dropThis = pd.date_range(start_remove,end_remove,freq='5T') # 5T = 5-min
 df[~df.index.isin(dropThis)]
 
-## Monthly Reporting
-df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
+## If any NaN in row, make whole row NaN
+import numpy as np
+df1.loc[df1.isnull().any(axis=1),:] = np.nan
 
-## Create Ideal Hourly Time Series
-idx = pd.date_range(start_date,end_date,freq='H',tz=None)
-df1 = df.copy()
-df1.index = pd.DatetimeIndex(df1.index)
-df1 = df1.reindex(idx) # default = no fill
-df2 = df1.tz_localize(None)
-df2['Year'] = pd.DatetimeIndex(df2.index).year.astype('string')
-df2['Month'] = pd.DatetimeIndex(df2.index).month.astype('string')
-df2['Day'] = pd.DatetimeIndex(df2.index).day.astype('string')
-df2['Hour'] = pd.DatetimeIndex(df2.index).hour.astype('string')
-df2['Minute'] = pd.DatetimeIndex(df2.index).minute.astype('string')
-df2['Second'] = pd.DatetimeIndex(df2.index).second.astype('string')
-
-## Resample 5-min to Hourly
-df_hourly = df_five_min.resample('H').mean()
-
-# Data Filtration
+## Apply Low and High Pass Filters and Replace with NaN
+threshold_low_pass = 0 # manual; replace "0" with custom low pass limit/threshold
+threshold_high_pass = 100 # manual; replace "100" with custom high pass limit/threshold
+insert_variable_name = pd.DataFrame(np.where(mask,np.nan,v),dataset.index,[dataset])
+insert_variable_name[(insert_variable_name < threshold_low_pass) | (insert_variable_name > threshold_high_pass)] = np.nan
 
 ## Find/Detect Outliers and Replace w/ NaN
 Source: https://stackoverflow.com/questions/46576147/pandas-replace-outliers-in-all-columns-with-nan/
@@ -477,13 +468,28 @@ mask = np.abs((v-v.mean(0))/v.std(0)) > threshold_outlier # statistical z-score 
 v.loc[mask.insert_variable_name].describe()
 v.loc[mask.insert_variable_name]
 
-## Apply Low and High Pass Filters and Replace with NaN
-threshold_low_pass = 0 # manual; replace "0" with custom low pass limit/threshold
-threshold_high_pass = 100 # manual; replace "100" with custom high pass limit/threshold
-insert_variable_name = pd.DataFrame(np.where(mask,np.nan,v),dataset.index,[dataset])
-insert_variable_name[(insert_variable_name < threshold_low_pass) | (insert_variable_name > threshold_high_pass)] = np.nan
+## Resample 5-min to Hourly
+df_hourly = df_five_min.resample('H').mean()
 
-plot = insert_variable_name.plot(legend=False)
+## Create Ideal Hourly Time Series
+idx = pd.date_range(start_date,end_date,freq='H',tz=None)
+
+## Reindex to Ideal Hourly Time Series
+df1 = df.copy()
+df1.index = pd.DatetimeIndex(df1.index)
+df1 = df1.reindex(idx) # default = no fill
+df2 = df1.tz_localize(None)
+
+## Make Year, Month, Day, Hour, Minute, and Second Columns as Strings (i.e., Data Type "String")
+df2['Year'] = pd.DatetimeIndex(df2.index).year.astype('string')
+df2['Month'] = pd.DatetimeIndex(df2.index).month.astype('string')
+df2['Day'] = pd.DatetimeIndex(df2.index).day.astype('string')
+df2['Hour'] = pd.DatetimeIndex(df2.index).hour.astype('string')
+df2['Minute'] = pd.DatetimeIndex(df2.index).minute.astype('string')
+df2['Second'] = pd.DatetimeIndex(df2.index).second.astype('string')
+
+## Monthly Reporting
+df['month'] = pd.DatetimeIndex(df['ArrivalDate']).month
 
 # Save Python Script
 
@@ -564,6 +570,8 @@ with open(r'C:\Users\<insert_user_name>\folder\file.pkl','rb') as f:
 Use matplotlib whenever possible; get used to it; it's more flexible
 Sometimes need Pandas or Seaborn for specific, custom plots, etc.
 Seaborn allows certain types of more advanced plotting
+
+plot = insert_variable_name.plot(legend=False)
 
 ## Add 1:1 aka Identity aka Reference Line
 NB: 0 to 100 as example
