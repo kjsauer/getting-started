@@ -1,8 +1,9 @@
 # Getting Started with Games Development
 Kenneth J. Sauer (kjsauer on GitHub)
 
-## Rule #1 of Calvinball (my version)
-Define the rules of the game before getting started.
+## Rule #1 of Calvinball
+Never play the game the same way twice. (OG version; see rand & random functions below)
+Define the rules of the game before getting started. (my version)
 
 ## Useful Functions
 if then
