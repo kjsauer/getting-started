@@ -29,6 +29,9 @@ Negative AF as gain convention:
 MQF = -1*(1-((1-af1)*(1-af2)*...*(1-afN)))
 MQF = -1*(af1+af2+...+afN)
 
+## Electroluminescence (EL) and Infrared (IR) Imagery
+See Getting Started w/ ImageJ.
+
 ## References
 
 ### Equations for PV Modeling
