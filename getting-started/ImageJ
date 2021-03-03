@@ -1,0 +1,14 @@
+# Getting Started with ImageJ
+Kenneth J. Sauer
+
+## Download
+https://imagej.nih.gov/ij/docs/install/windows.html
+
+## Instructions
+Open image
+$ File > Open...
+Auto-adjust brightness (multiple times if needed)
+$ Image > Adjust > Brightness/Contrast > Auto
+
+## Example Applications
+Solar PV module electroluminescence (EL) or infrared (IR) image analysis.
