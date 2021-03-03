@@ -3,3 +3,10 @@ This "getting-started" repository contains informal, unformatted, and generic "G
 
 ## Useful Tips
 I recommend using a text editor (e.g., Sublime Text) to open these text-only files.
+
+## Conventions
+$ means an action or commantd line prompt (not entirely consistent throughout), e.g.:
+Take action:  
+$ Go to File > Open Folder
+Command Line Prompt:  
+$ git commit -m 'initial commit'
