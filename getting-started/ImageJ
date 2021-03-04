@@ -7,8 +7,8 @@ https://imagej.nih.gov/ij/docs/install/windows.html
 ## Instructions
 Open image
 $ File > Open...
-Auto-adjust brightness (multiple times if needed)
-$ Image > Adjust > Brightness/Contrast > Auto
+Auto-adjust brightness
+$ Image > Adjust > Brightness/Contrast > Auto (multiple times if needed)
 
 ## Example Applications
 Solar PV module electroluminescence (EL) and infrared (IR) image analysis
