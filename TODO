@@ -6,26 +6,26 @@ Kenneth J. Sauer (kjsauer on GitHub)
 2. Python without Anaconda.
 3. Miniconda.
 4. Option to run Anaconda Prompt from cmd.
-5. Anaconda Python (absorbed into Python). Jinja absorbed into Python also. [done]
-6. TortoiseSVN (absorbed into Subversion). [done]
+5. [done] Anaconda Python (absorbed into Python). Jinja absorbed into Python also.
+6. [done] TortoiseSVN (absorbed into Subversion).
 7. readthedocs.
-8. Subversion/TortoiseSVN. [done]
-9. MATLAB. [done]
-10. Python. pvmismatch (absorbed into Python). [done]
+8. [done] Subversion/TortoiseSVN.
+9. [done] MATLAB.
+10. [done] Python. pvmismatch (absorbed into Python).
 11. PVLIB.
 12. PVSAT.
 13. PVsyst.
 14. Pecos (absorbed into Python?).
-15. Git. [done]
-16. R. [done]
-17. Consider renaming Slack to more generic "Chat" apps. [done]
+15. [done] Git.
+16. [done] R.
+17. [done] Rename Slack to more generic "Chat" apps.
 18. Octave.
 19. Julia.
-20. Django. Django RUST framework DRF. [done]
+20. [done] Django. Django RUST framework DRF.
 21. Flask.
 22. Heroku.
-23. Docker. [done]
+23. [done] Docker.
 24. Add MS Teams notes to Chat.
 25. Amazon Web Services AWS.
 26. DigitalOcean.
-27. ImageJ. [done]
+27. [done] ImageJ.
