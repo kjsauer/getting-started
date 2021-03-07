@@ -12,6 +12,9 @@ Windows aka OS
 MacOS
 Linux
 
+## Run Program as Admin
+Right click on program > Run as administrator
+
 ## Configure Windows 7 Start-up Programs
 Start -> Run -> msconfig.exe
 
@@ -70,7 +73,11 @@ $ Right click on USB\Power management\Do not allow computer to turn off power of
 
 Manage start-up programs via msconfig.
 
-Get familiar w/ 1.) Device Manager, and 2.) msconfig.
+Get familiar w/ Start > Run > one of the following commands:
+1. Device Manager (devmgmt.msc)
+2. MS Config (msconfig.exe)
+3. MS Info (msinfo32.exe)
+4. System settings (sysdm.cpl)
 
 ## Remove Metadata from Photos Before Uploading to Internet and Sharing on Microsoft Windows OS
 Before uploading photos to the Internet (obv. selfies), prob. best to remove metadata first:
