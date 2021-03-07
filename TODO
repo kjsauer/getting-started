@@ -14,7 +14,7 @@ Kenneth J. Sauer (kjsauer on GitHub)
 10. [done] Python. pvmismatch (absorbed into Python).
 11. PVLIB.
 12. PVSAT.
-13. PVsyst.
+13. PVsyst. PVWatts. NREL's SAM. PV*SOL. PlantPredict. PVDesignPro. PVFORM. Sandia PV-RPM (PVRPM).
 14. Pecos (absorbed into Python?).
 15. [done] Git.
 16. [done] R.
@@ -29,3 +29,4 @@ Kenneth J. Sauer (kjsauer on GitHub)
 25. Amazon Web Services AWS.
 26. DigitalOcean.
 27. [done] ImageJ.
+28. SMARTS (spectral irradiance). SPECTRAL2.
