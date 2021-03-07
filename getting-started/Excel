@@ -2,7 +2,7 @@
 Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Function
-=date(year,month,hour)+time(hour,minute,second)
+$ =date(year,month,hour)+time(hour,minute,second)
 
 ## Useful Custom Date Format
 yyyy-mm-dd hh:mm:ss
