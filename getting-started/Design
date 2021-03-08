@@ -183,7 +183,7 @@ Project Eng Dev --shared
 Project Training --shared
 Project Training Results --shared
 
-## NREL Fancy Site File
+## NREL Nifty Site File
 Site information .csv self-produces a map of its own location. This cellular-genetic-like approach of embedding within something the ingredients and algorithm to make itself is quite appealing/compelling/interesting from a coding perspective (as with a biological organism), e.g., a code script that saves itself and everything it needs to produce a given set of results into a repository. If I recall correctly, I believe this general, philosophical concept relates to the PhD thesis of Stephen Wolfram (American-British computer scientist).
 
 ## Build Tools to Automate Existing Workflows
