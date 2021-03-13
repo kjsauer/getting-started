@@ -1,5 +1,5 @@
 # getting-started
-This "getting-started" Git repository contains informal, unformatted, and generic "Getting Started" guides to design, programming, and software for my (Kenneth J. Sauer's aka kjsauer on GitHub's) personal reference (but they may also be useful to others getting started in related pastures).
+This "getting-started" Git repository contains informal, unformatted, and generic "Getting Started" design, programming, and software guides for my (Kenneth J. Sauer's aka kjsauer on GitHub's) personal reference (but they may also be useful to others getting started in related pastures).
 
 ## Useful Tips
 I recommend using a text editor (e.g., Sublime Text) to open these text-only files.
