@@ -14,3 +14,12 @@ Free for anyone to use for any purpose, but they need to reference you (the proc
 
 ## MIT License
 Allows open usage with no constraints. I don't know or understand why the MIT brand needs to be associated with all open-source code. See above thoughts on the LICENSE file.
+
+## Explanation by Reddit Users [deleted] & "fajro"
+Open Source means the source code is available and you can modify it.
+Clarification by fajro: Not all "Open Source" lets you modify it.
+Clarification by [deleted]:
+Free Software means the source code is available and you can modify it, PROVIDED you release it as free software.
+Free Software (aka the GPL), forces all modifications of its software to remain free. While other licenses like the BSD, Apache, MIT can allow for a corporation to [take] your source code and use it themselves.
+Sauce:
+https://www.reddit.com/r/explainlikeimfive/comments/1icitj/eli5_open_source_vs_free_software_and_why_does/
