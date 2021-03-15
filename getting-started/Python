@@ -46,7 +46,7 @@ I could not easily (within a few minutes) understand how to get Jupyter Notebook
 If using miniconda, need to manually download and maintain Spyder, Jupyter, etc. compatibilities; quite a burden when trying to focus on engineering & scientific research, etc.
 
 ## Python Indexing
-Starts with 0, not 1
+Python indexing starts with 0, not 1
 
 ## Scope
 The Python described here largely uses Anaconda Python
@@ -214,6 +214,9 @@ Switch inline to automatic
 
 ## Comments in Spyder
 Ctrl+1 to comment
+
+## Clear Workspace in Spyder
+%reset
 
 # Anaconda Python
 
@@ -583,3 +586,19 @@ plt.plot([0,100],[0,100],color='r')
 Display grid-lines in front of data in plot
 plt.rcParams['axes.axisbelow'] = False
 plt.grid()
+
+# Numpy
+# Make example Numpy array
+import numpy as np
+B = np.array([[1,2,3],
+              [4,5,6]])
+B.shape
+B[1,2] # recall that Python indices start w/ 0
+
+## Review Package Source Code
+import module
+import inspect
+src = inspect.getsource(module)
+
+## Find Path of Python Modules
+help('modules')
