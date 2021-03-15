@@ -5,8 +5,9 @@ This "getting-started" Git repository contains informal, unformatted, and generi
 I recommend using a text editor (e.g., Sublime Text) to open these text-only files.
 
 ## Conventions
-$ means an action or command line prompt (not entirely consistent throughout), e.g.:  
+"$" means an action or command line prompt (not entirely consistent throughout), e.g.:  
 Take action:  
 $ Go to File > Open Folder  
 Command Line Prompt:  
 $ git commit -m 'initial commit'
+This is especially used when the command is a one-liner (in order to differentiate it from English text).
