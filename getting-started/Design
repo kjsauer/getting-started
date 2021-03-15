@@ -131,6 +131,11 @@ So that you can ensure an updated tool yields the same results.
 ## File Naming
 Short yet descriptive filenames are best. Bear in mind Indexing and Search. How would you search for/find the file?
 
+## Matrix Indexing
+MATLAB starts with 1.
+Python starts with 0.
+R starts with 1.
+
 ## General Computer Usage
 Find ways to avoid using the mouse whenever possible.
 
