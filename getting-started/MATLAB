@@ -179,7 +179,7 @@ Source(s):
 <https://www.mathworks.com/help/matlab/ref/datestr.html>
 DateString = datestr(DateVector)
 ones((size(x,1)-1),1) % zero in first row, ones in other rows
-Time_interval = input(['Enter the time interval for the input ' ... 
+Time_interval = input(['Enter the time interval for the input '... 
     'data set (in minutes): ']);
 
 ## Import Excel Data File
