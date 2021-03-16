@@ -8,35 +8,38 @@ DNI: Direct normal irradiance [W/m^2]
 GHI: Global horizontal irradiance [W/m^2]
 Gpoa: Global plane-of-array irradiance [W/m^2]
 Gpoa_Ref: Global plane-of-array irradiance at reference conditions [W/m^2]
+Isc: Short-circuit current [Amps, or A]
+Pmp: Maximum power (e.g., power at max. power point MPP on I-V curve)
 PmpDC: DC power [W]
-PmpDC_Ref: DC power at reference conditions [W]
+PmpDC_Ref: DC power at reference conditions [Watts, or W]
 PV: Photovoltaic
 thetaZ: Angle of incidence of DNI beam
 
 ## Equations in MATLAB Syntax
 GHI = DHI + DNI.*cos(thetaZ);
+Mind your degrees vs. radians (cosd for degrees)!
 
 ## Fill Factor
 FF = (Imp*Vmp)/(Isc*Voc);
 
-## Efficieny
-Eta = (Pmp/(height*width))/Gpoa
-Height & width of PV module or system
+## Efficiency
+Eta = (Pmp/(height*width))./Gpoa
+e.g., Height & width of PV module or system
 
 ## Self-reference Irradiance
 Gpoa_Sref = Gpoa_Ref*(Isc/Isc_Ref)
 
 ## Deviation in Efficiency Relative to Efficiency at Reference Conditions
-dEtaRel_Ref = [(Pmp/Pmp_Ref)*(Gpoa_Ref/Gpoa)] - 1;
+dEtaRel_Ref = [(Pmp/Pmp_Ref).*(Gpoa_Ref./Gpoa)] - 1;
 e.g., use 
 
 ## Rules-of-thumb
 Ensure that deviations from Isc linearity are, e.g., <0.5%
-IscNorm_Ref = Isc*(Gpoa_Ref/Gpoa);
+IscNorm_Ref = Isc.*(Gpoa_Ref./Gpoa);
 IscLin = (IscNorm_Ref/Isc_Ref) - 1;
 
-## Quick-n-dirty Normalization
-Pmp = PmpRef*[1-gPmp*(Tcell-Tcell_Ref)]*(Gpoa/Gpoa_Ref)
+## Quick-n-dirty Power Normalization
+Pmp = PmpRef*[1-gPmp.*(Tcell-Tcell_Ref)].*(Gpoa/Gpoa_Ref)
 Only works well for >600 W/m^2 w/ Ref of 1,000 W/m^2
 
 ## PVsyst Module Quality Loss Factor MQF
