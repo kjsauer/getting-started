@@ -300,3 +300,8 @@ disp('Congrats. The program ran completely. Crack open an ice-cold beer.')
 Python:
 # Shout-out to JHF
 print('Congrats. The program ran completely. Crack open an ice-cold beer.')
+
+## Syntax Conventions
+Capitalize acronyms esp. of proper nouns (unless informal)
+Git repos: No CamelCase; lowercase only; dashes not underscores
+Variable names: CamelCase is O-K
