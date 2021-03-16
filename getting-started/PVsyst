@@ -2,6 +2,7 @@
 Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Acronyms
-.BTR = Battery (batterie in French) characteristics file type
-.OND = Inverter (onduleur in French) characteristics file type
-.PAN = Panel (panneau in French) characteristics file type
+.BTR: Battery (batterie in French) characteristics file type
+.OND: Inverter (onduleur in French) characteristics file type
+.PAN: Panel (panneau in French) characteristics file type
+NB: Nota bene (means "Please note" in Italian) (basically, a useful, beneficial note, e.g., to the software program user)
