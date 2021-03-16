@@ -464,3 +464,6 @@ Clone. Branch. Get in. Make your change. Get out. Pull request. Email. Done.
 
 ## Naming - Developer Note
 A Git repo has dashes like-this. Folders w/in that repo have underscores like_this.
+
+## GitHub About Section
+Add copy of GitHub's "About" section into Git repo (e.g., README.md); otherwise, it's not Git-revision- aka version-controlled.
