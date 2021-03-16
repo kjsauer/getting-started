@@ -1,6 +1,9 @@
 # Getting Started with MATLAB
 Kenneth J. Sauer (kjsauer on GitHub)
 
+## Acronyms
+MATLAB: Matrix Laboratory
+
 ## Pros of MATLAB
 --Easy to build a GUI via GUIDE
 --Easy to compile an EXE
@@ -12,7 +15,7 @@ Kenneth J. Sauer (kjsauer on GitHub)
 --NOT OPEN-SOURCE (!!!)
 
 %% Format MATLAB Workspace
-clear; close all; clc; format long g; format compact;
+clc; clear; close all; format compact; format long g;
 
 %%
 a = [1 1]
@@ -25,12 +28,11 @@ if
 first_input_var = varargin{1}
 second_input_var = varargin{2}
 
-%% Indexing
-% Indexing starts with 1, not 0
-% [M,N] : Rows, columns
-% MATLAB starts with 1
-% R starts with 1
-% Python starts with 0
+%% Conventions: Indexing
+% MATLAB matrix indexing starts with 1, not 0.
+% [R,C]: Rows, columns
+% [Row Position, Column Position]
+% (As a mnemonic device, think: RC circuit.)
 
 %% Output to .csv
 dlmwrite('fileName.csv',variableName,'delimiter',',','precision',12);
@@ -161,3 +163,45 @@ Critical notes for compiled MATLAB EXE:
 
 ## _dev MATLAB Path
 Add all files to path before working in MATLAB and before compiling an EXE. Get used to adding files to the MATLAB path!
+
+## MATLAB Import Wizard
+Manually import data from Excel using the Import Wizard.
+$ Start > Import Wizard > Create vectors using column names > Finish
+
+## Convert Excel Datetime to MATLAB Datetime
+Source(s):
+<https://web.archive.org/web/20150514103736/https://www.mathworks.com/matlabcentral/newsreader/view_thread/250465/>
+<https://www.mathworks.com/help/finance/x2mdate.html>
+MATLAB_Date = x2mdate(ExcelDateNumber,Convention)
+
+## Convert Number to String
+Source(s):
+<https://www.mathworks.com/help/matlab/ref/datestr.html>
+DateString = datestr(DateVector)
+ones((size(x,1)-1),1) % zero in first row, ones in other rows
+Time_interval = input(['Enter the time interval for the input ' ... 
+    'data set (in minutes): ']);
+
+## Import Excel Data File
+NB: xlsread is deprecated; now use readtable, readmatrix, or readcell.
+Source(s):
+<https://www.mathworks.com/help/matlab/ref/uigetfile.html>
+<https://www.mathworks.com/help/matlab/ref/xlsread.html>
+[baseFileName,folder] = uigetfile('*.xl*','Specify an Excel file')
+fullFileName = fullfile(folder,baseFileName);
+% fullFileName = input('Please enter the filename (full path): ','s');
+[num,txt,raw] = xlsread(fullFileName);
+
+## Function Layout
+Put help notes above or below function name, e.g.:
+% Option 1.
+% Blah blah help notes & comments.
+function blah = mycustomfcnname(input1,input2)
+% Option 2.
+function blah = mycustomfcnname(input1,input2)
+% Blah blah help notes & comments.
+
+## Dot Vectorization
+NB: Adding dots allows for vectorization, e.g., a vector of plane-of-array irradiance Gpoa (vs. a singular, scalar value) in the following equation for Efficiency:
+Eta = (Pmp/(height*width))./Gpoa
+e.g., Height & width of PV module or system
