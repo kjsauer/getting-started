@@ -16,8 +16,28 @@ thetaZ: Angle of incidence of DNI beam
 ## Equations in MATLAB Syntax
 GHI = DHI + DNI.*cos(thetaZ);
 
+## Fill Factor
+FF = (Imp*Vmp)/(Isc*Voc);
+
+## Efficieny
+Eta = (Pmp/(height*width))/Gpoa
+Height & width of PV module or system
+
+## Self-reference Irradiance
+Gpoa_Sref = Gpoa_Ref*(Isc/Isc_Ref)
+
 ## Deviation in Efficiency Relative to Efficiency at Reference Conditions
 dEtaRel_Ref = [(Pmp/Pmp_Ref)*(Gpoa_Ref/Gpoa)] - 1;
+e.g., use 
+
+## Rules-of-thumb
+Ensure that deviations from Isc linearity are, e.g., <0.5%
+IscNorm_Ref = Isc*(Gpoa_Ref/Gpoa);
+IscLin = (IscNorm_Ref/Isc_Ref) - 1;
+
+## Quick-n-dirty Normalization
+Pmp = PmpRef*[1-gPmp*(Tcell-Tcell_Ref)]*(Gpoa/Gpoa_Ref)
+Only works well for >600 W/m^2 w/ Ref of 1,000 W/m^2
 
 ## PVsyst Module Quality Loss Factor MQF
 Negative adjustment factor AF as loss convention:
@@ -28,6 +48,12 @@ afN [%]
 Negative AF as gain convention:
 MQF = -1*(1-((1-af1)*(1-af2)*...*(1-afN)))
 MQF = -1*(af1+af2+...+afN)
+
+## Quick-n-dirty Series Resistance Approximation
+Rs_PVsyst = (Voc-Vmp)/Imp
+
+## Quick-n-dirty Shunt Resistance Approximation
+Rsh_PVsyst = 5*Vmp/(Isc-Imp)
 
 ## Electroluminescence (EL) and Infrared (IR) Imagery
 See Getting Started w/ ImageJ.
