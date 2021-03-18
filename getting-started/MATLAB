@@ -17,7 +17,7 @@ MATLAB: Matrix Laboratory
 - Not open-source
 
 ## MATLAB vs. GNU Octave
-Unfortunately, MATLAB is neither free nor open-source software (i.e., it is commercially-sold & proprietary). However, word on the St. nowadays is you can run most MATLAB code in free & open-source GNU Octave (not sure; TBD). NB: GNU is free, not open-source, software.*
+Unfortunately, MATLAB is neither free nor open-source software (i.e., it is commercially-sold & proprietary). However, word on the St. nowadays is you can run most MATLAB code in free & open-source GNU Octave, perhaps with a bit of tweaking here & there (not sure; TBD). NB: GNU is free, not open-source, software.*
 *Richard Stallman (July 13, 2011). "Why Open Source misses the point of Free Software". Retrieved August 24, 2011.
 
 %% Format MATLAB Workspace
