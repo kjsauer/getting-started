@@ -20,9 +20,9 @@ PmpDC_Ref: DC power at reference conditions [Watts, or W]
 PTC: PVUSA Test Conditions (more field-representative test conditions than STC, esp. for the Northern California region encompassing the PVUSA field testing site in Davis, CA; Gpoa=1,000 W/m^2, Tamb=20 degC, & Wspd=1 m/s)
 PV: Photovoltaic
 STC: Standard Test Conditions (Gpoa=1,000 W/m^2, Tcell=25 degC, spectrum=AM1.5G)
-Tamb: Ambient temperature
+Tamb: Ambient temperature [degC]
 thetaZ: Angle of incidence of DNI beam
-Wspd: Wind speed
+Wspd: Wind speed [m/s]
 
 ## Equations in MATLAB Syntax
 GHI = DHI + DNI.*cos(thetaZ);
