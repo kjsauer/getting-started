@@ -7,6 +7,13 @@ E: Exponents (powers and square roots, etc.) next
 MD: Multiplication and division (left-to-right) next
 AS: Addition and subtraction (left-to-right) next
 
+## Terminology
+Scalar is single value
+Column is data vector of scalars
+Matrix is 2-D array of vectors
+Array is N-D array of vectors or matrices
+Data frame (e.g., Python, R) is like an array
+
 ## Deviation vs. Difference
 Deviation = 100*(New/Old-1), where Old might be the base (aka baseline) case.
 Meanwhile, "difference" is the result of a subtraction of two values.
