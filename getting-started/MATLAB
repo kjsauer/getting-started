@@ -5,14 +5,20 @@ Kenneth J. Sauer (kjsauer on GitHub)
 MATLAB: Matrix Laboratory
 
 ## Pros of MATLAB
---Easy to build a GUI via GUIDE
---Easy to compile an EXE
---Minimizes software development-related concepts and tasks in favor of science and engineering development
+- Easy to build a GUI via GUIDE
+- Easy to compile an EXE
+- Minimizes software development-related concepts and tasks in favor of science and engineering development
+- Not open-source; however, source code is available
 
 ## Cons of MATLAB
---Native data ingest and wrangling (incl. Time Series handling) does not compare to Python
---Not nearly as deployable and ubiquitous in the greater software development world
---NOT OPEN-SOURCE (!!!)
+- Native data ingest and wrangling (incl. Time Series handling) does not compare to Python
+- Not nearly as deployable and ubiquitous in the greater software development world
+- NOT FREE SOFTWARE (!!!)
+- Not open-source
+
+## MATLAB vs. GNU Octave
+Unfortunately, MATLAB is neither free nor open-source software (i.e., it is commercially-sold & proprietary). However, word on the St. nowadays is you can run most MATLAB code in free & open-source GNU Octave (not sure; TBD). NB: GNU is free, not open-source, software.*
+*Richard Stallman (July 13, 2011). "Why Open Source misses the point of Free Software". Retrieved August 24, 2011.
 
 %% Format MATLAB Workspace
 clc; clear; close all; format compact; format long g;
@@ -88,9 +94,9 @@ folder_name = fullfile(CD,outputs_folder);
 mkdir(folder_name);
 
 ## Pre-adding Files to the Compiler
-Pre-add files to compiler so user does not need to call them in order to successfully run the compiled, standalone EXE application.
-Add to "Files required for your application to run".
-Simply call filename directly in code.
+Pre-add files to compiler so user does not need to call them in order to successfully run the compiled, standalone EXE application
+Add to "Files required for your application to run"
+Simply call filename directly in code
 CD = pwd;
 if isdeployed
 	filename = fullfile('insert_filename.csv');
@@ -148,7 +154,7 @@ X(TF,:) = nan; % or = []; % remove those rows
 Source: <https://www.mathworks.com/matlabcentral/answers/179379-removing-rows-from-all-columns-based-on-values-of-one-column/>
 
 ## Format MATLAB Workspace
-% Format MATLAB workspace.
+% Format MATLAB workspace
 close all
 clearvars -except custom_filt_flag % custom_filt_flag allows custom filter hack
 clc
@@ -157,7 +163,7 @@ format compact
 
 ## Compiled Standalone EXE
 Critical notes for compiled MATLAB EXE:
---Link to MATLAB Runtime installed in order to run EXE.
+--Link to MATLAB Runtime installed in order to run EXE
 <https://www.mathworks.com/products/compiler/matlab-runtime.html/>
 --INPUTTED DATA FILES CANNOT BE OPEN AT SAME TIME PROGRAM IS RUN!!!
 
@@ -195,11 +201,11 @@ fullFileName = fullfile(folder,baseFileName);
 ## Function Layout
 Put help notes above or below function name, e.g.:
 % Option 1.
-% Blah blah help notes & comments.
+% Blah blah help notes & comments
 function blah = mycustomfcnname(input1,input2)
 % Option 2.
 function blah = mycustomfcnname(input1,input2)
-% Blah blah help notes & comments.
+% Blah blah help notes & comments
 
 ## Dot Vectorization
 NB: Adding dots allows for vectorization, e.g., a vector of plane-of-array irradiance Gpoa (vs. a singular, scalar value) in the following equation for Efficiency:
