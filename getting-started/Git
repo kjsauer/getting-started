@@ -221,16 +221,23 @@ Now repo should be empty again
 
 See GitHub Desktop instructions below
 
+## GitHub About Section - Copy
+Put copy of GitHub "About" section in stand-alone ABOUT file that is Git revision- & version-controlled (i.e., add a stand-alone ABOUT file to the Git repo containing a copy of GitHub's "About" section).
+
 ## Local Git Repository Folder Structure Example
 Example Git repo name: example_repo_name
-AUTHORS
-LICENSE
-README.md
-\docs (integrate with readthedocs)
-\example_repo_name (contains source code)
-To be continued
 .gitattributes
 .gitignore
+ABOUT
+AUTHORS
+COPYRIGHT (or LICENSE)
+README.md
+TODO
+\example_repo_name\
+\example_repo_name\docs (TBD: Integrate with readthedocs)
+\example_repo_name\exe (contains deployed EXE program & associated, auxiliary files)
+\example_repo_name\source (contains source code)
+To be continued...
 
 ## Deleting a Git Repository
 Deleting repo from remote does not affect local
