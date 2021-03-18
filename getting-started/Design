@@ -312,4 +312,4 @@ Variable names: CamelCase is O-K; so is camelCase (whatEver WorksFor youNyou, & 
 Various high- & low- pass filters
 If any value in row is NaN, make whole row NaN
 Longer:
-If any (column-)value in row of columns is NaN, make whole row NaN
+If any (column-)value in row of columns is NaN, make whole (entire) row NaN
