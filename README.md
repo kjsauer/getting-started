@@ -5,7 +5,7 @@ This "getting-started" Git repository contains informal, unformatted, and generi
 I recommend using a text editor (e.g., Sublime Text) to open these text-only files.
 
 ## Acronyms
-NB: Nota bene (means "Please note" in Italian) (basically, a useful, beneficial note, e.g., to the software program user) (borrowed from PVsyst; see also Getting-Started\PVsyst).
+NB: Nota bene (means "Please note" in Italian) (basically, a useful, beneficial note, e.g., to the software program user) (borrowed from PVsyst; see also Getting-Started\PVsyst)
 
 ## Conventions
 "$" means an action or command line prompt (not entirely consistent throughout), e.g.:  
