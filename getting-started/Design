@@ -306,3 +306,8 @@ Capitalize acronyms esp. of proper nouns (unless informal)
 Git repos: No CamelCase; lowercase only; dashes not underscores
 Sub-folders w/in Git repos: Lowercase only w/ underscores
 Variable names: CamelCase is O-K; so is camelCase (whatEver WorksFor youNyou, & You, & you2...just not 4you!)
+
+## Common Data Filtration Logic
+(Industry-agnostic; incidentally, as is the intention of most of Getting Started)
+Various high- & low- pass filters
+If any value in row is NaN, make whole row NaN
