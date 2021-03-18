@@ -32,7 +32,7 @@ Mind your degrees & radians (cosd's get degrees)!
 Pmp = Gpoa*(a+b*Gpoa+c*Tamb+d*Wspd)
 Supply Gpoa, Tamb, Wspd, & Pmp.
 Solve for (a,b,c,d) via multiple linear (multi-linear) regression w/ no (zero) y-intercept, i.e., force y-intercept equal to 0 (Excel can do it, too, if it can hold all your field data, w/ the Analysis ToolPak add-in under File > Options > Add-Ins; see more about Excel limits in Getting Started\Excel).
-(In MATLAB, Octave, & prob. Julia, it's as simple as X\y.)
+(In MATLAB, Octave, & prob. Julia, it's as simple as coeffs=X\y.)
 Plug in PTC conditions + (a,b,c,d) to get Pmp at PTC.
 Credit & thanks to J. Newmiller, T. Townsend, C. Whitaker, & other involved members of the OG Endecon Engineering & PVUSA teams
 
