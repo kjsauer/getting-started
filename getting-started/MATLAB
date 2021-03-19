@@ -115,7 +115,7 @@ The script in your development environment (dev env) does exactly what the compi
 ## Curve Fitting Tool
 Type cftool in workspace to use plotting tool (if you have this toolbox; I do not); extremely easy to lasso and remove "bad" data for the sake of expedient evaluation of performance under "normal" operating conditions (which make up the vast majority of data and, in the case of solar PV, energy harvest).
 
-## Guide
+## MATLAB GUIDE
 Type "guide" in workspace to develop a GUI script that you can compile to an EXE (a la graphical programming languages like Simulink or LabVIEW, or AutoCAD; namely, drawn primarily via use of the mouse).
 
 ## Errors Upon Compiling EXE
