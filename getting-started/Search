@@ -11,5 +11,5 @@ Search exact terms: Use quotes and "AND"
 $ "insert in quotes"
 $ "insert #1" AND "insert #2"
 
-Search approximate: Use tilda (~)
+Search approximate: Use tilde (~)
 $ ~approximate term
