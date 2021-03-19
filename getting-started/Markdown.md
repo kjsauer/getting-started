@@ -8,6 +8,7 @@ P.S. Another formatting option is the triple asterisk as such:
 - *One asterisk!*
 - **Two asterisks!!**
 - ***Three asterisks!!!***
+- ***Four asterisks!!!!****
 
 ## Welcome to MarkdownPad 2 ##
 
