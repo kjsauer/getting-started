@@ -2,7 +2,9 @@
 Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Synoposis of Docker
-Containerizes code environment, e.g., Python dependencies
+Manages compatibilities
+Containerizes code environments, e.g., Python dependencies
+e.g., So server-side software can run on various client-side machines, and so the server or client-side machines can call in & run various software programs or code
 
 ## From Docker Installation: getting-started
 1. Clone a Git repo:
