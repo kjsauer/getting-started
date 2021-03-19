@@ -11,8 +11,8 @@ Firefox is free and open-source. It's an excellent web browser. On the contrary,
 Advanced settings
 Type in URL:
 $ about:config
-For example, change media.hardwaremediakeys.enabled to false.
-Restart browser to implement changes.
+For example, change media.hardwaremediakeys.enabled to false
+Restart browser to implement changes
 
 ## Hot Keys
 Type "m" in Firefox Browser to mute sounds from the tab.
