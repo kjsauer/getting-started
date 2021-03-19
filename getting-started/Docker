@@ -25,4 +25,4 @@ $ docker push [userName]/docker101tutorial
 docker/getting-started - the image to use
 
 ## Debugging & Troubleshooting
-Traceback to buggy line exists (thankfully!)
+Traceback to buggy line exists (thankfully!) (e.g., see bottommost traceback)
