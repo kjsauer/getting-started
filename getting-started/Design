@@ -120,7 +120,7 @@ Always have a TODO List that is numbered.
 1. [DONE] (hm) Make TODO list for home tasks.
 2. [DONE] (wk) Make TODO list for work tasks.
 3. (hm) Win the lottery, amass a fortune, and retire to an island getaway.
-4. [DONE] Mark items as Done when completed.
+4. [DONE] Label aka tag items as Done when completed.
 
 ## Unit Test Exercise Philosophy
 Unit test: Known inputs/known outputs
@@ -215,20 +215,23 @@ Source: <https://lobste.rs/s/rvuyep/don_t_marry_your_design_after_first_date/>
 7. Practice guide
 
 ## Reason to Code (vs. Spreadsheets, etc.)
-Code does not lie; it intrinsically says what it does.
+Code doesn't lie; intrinsically, it says what it does
+Also, row limits of Excel (see Geting Stated\Excel)
+Best to leave OG data & data files untouched--import data into code & manipulate it as needed via code (again, code doesn't lie--reading it tells you exactly what you did w/ the data)
+If needed, export it in the exact format needed for the next tool or part of the analysis or reporting process; ideally, this is directly used w/out any further manipulations needed
 
 ## Web App Design
 Config (CFG) files into one format (e.g., .json).
 Data files into another format (e.g., .csv).
 
-## Handing off from Engineering to Operations
+## Handing off from Engineering to Operations (i.e., Going from "Development" to "Production")
 One single, executable file (EXE) with a graphical user interface (GUI) is ideal for a user, technician, or operator.
 (Actually, web-deployed applications are ideal.)
 Cannot require manual modification of data files.
 Modification of config files is O-K.
 Config (CFG) files can be replaced by the GUI.
 
-## Key Files for Handoff from Engineering to Operations
+## Key Files for Handoff from Engineering to Operations (i.e., Going from "Development" to "Production")
 Files needed for technician's/operator's machine:
 1. Runtime and Runtime Update, if needed (e.g., MATLAB)
 2. EXE of GUI (e.g., MATLAB, LabVIEW)
@@ -260,7 +263,7 @@ Maintain a _dev environment (e.g., source code) that compiles/deploys into the p
 Start by gathering/collecting essential user inputs via CFG.txt file. Then add option for GUI. The CFG file forces the minimum viable set of inputs; it provides a nice, clean data specification.
 
 ## _todo aka TODO aka to-do
-Maintain two "HEAD MAIN", numbered TODO lists: One for work (wk) and one for home (hm). You'll be surprised that all the items you think you have going on only boils down to roughly 300 simultaneous, concurrent projects at once (300 for work and 300 for home; come on, 600 simultaneous projects ongoing at all times...not too shabby--or stressful--at all!).
+Maintain two "MAIN", numbered TODO lists: One for work (wk) and one for home (hm). You'll be surprised that all the items you think you have going on only boils down to roughly 300 simultaneous, concurrent projects at once (300 for work and 300 for home; come on, 600 simultaneous projects ongoing at all times...not too shabby--or stressful--at all!).
 
 ## Importance of Units
 Units, units, units! Always make units well-known in the help docs, GUIs, config files, other software program inputs, code comments, etc.
@@ -305,7 +308,7 @@ print('Congrats. The program ran completely. Crack open an ice-cold beer.')
 Capitalize acronyms esp. of proper nouns (unless informal)
 Git repos: No CamelCase; lowercase only; dashes not underscores
 Sub-folders w/in Git repos: Lowercase only w/ underscores
-Variable names: CamelCase is O-K; so is camelCase (whatEver WorksFor youNyou, & You, & you2...just not 4you!)
+Variable names: CamelCase is O-K; so is camelCase (e.g., whatEver WorksFor youNyou, & You, & you2...just not 4you!)
 
 ## Common Data Filtration Logic
 (Industry-agnostic; incidentally, as is the intention of most of Getting Started)
