@@ -157,7 +157,7 @@ Build training GUI.
 Have algorithm make guess via artificial intelligence (AI) and machine learning (ML).
 Have operator (human) correct guess.
 This new human data is incorporated into AI/ML algorithm to improve it.
-Calculate % accuracy each time; it should improve up to some high value, e.g., >97.5% (ideally higher).
+Calculate % accuracy each time; it must improve up to some high value, e.g., >97.5% (ideally higher).
 
 ## Timestamps
 Use format YYYY-MM-DD hh:mm:ss
