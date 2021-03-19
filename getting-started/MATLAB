@@ -207,7 +207,7 @@ function blah = mycustomfcnname(input1,input2)
 function blah = mycustomfcnname(input1,input2)
 % Blah blah help notes & comments
 
-## Dot Vectorization
-NB: Adding dots allows for vectorization, e.g., a vector of plane-of-array irradiance Gpoa (vs. a singular, scalar value) in the following equation for Efficiency:
+## Vector Dot Division & Multiplication
+NB: Adding dots allows for vectorization, i.e., a vector of plane-of-array irradiance Gpoa (vs. a singular, scalar value) in the following equation for Efficiency:
 Eta = (Pmp/(height*width))./Gpoa
 e.g., Height & width of PV module or system
