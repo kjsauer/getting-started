@@ -129,7 +129,7 @@ So that an engineer can know someone/something is properly trained.
 So that you can ensure an updated tool yields the same results.
 
 ## File Naming
-Short yet descriptive filenames are best. Bear in mind Indexing and Search. How would you search for/find the file?
+Short yet descriptive filenames are best. Bear in mind Indexing and Search: How will you search for and find the file?
 
 ## Matrix Indexing
 MATLAB starts with 1.
@@ -150,7 +150,7 @@ When representing a company in the engagement, use company email.
 In all cases, package into one, single repository all of the necessary files required to reproduce an expected set of results (which is also contained in the repository). Consider this from the time of project onset.
 
 ## Standalone Application (EXE)
-tbd.
+TODO: TBD
 
 ## Build Auto-Image Detection Tool
 Build training GUI.
