@@ -15,5 +15,7 @@ Command Line Prompt:
 $ git commit -m 'initial commit'  
 This is especially used when the command is a one-liner (in order to differentiate it from English text).
 
-## Acronyms
-NB: Nota bene (means "Please note" in Italian) (basically, a useful, beneficial note, e.g., to the software program user) (borrowed from PVsyst; see also Getting-Started\PVsyst)
+## Acronyms & Definitions
+NB: Terms used ubiquitously in this repo  
+NB: Nota bene (means "Please note" in Italian) (basically, a useful, beneficial note, e.g., to the software program user) (borrowed from PVsyst; see also Getting-Started\PVsyst)  
+Repo: Repository, e.g., Git repo (e.g., hosted on Microsoft's GitHub cloud server)
