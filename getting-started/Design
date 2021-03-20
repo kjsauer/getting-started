@@ -304,11 +304,12 @@ Python:
 # Shout-out to JHF
 print('Congrats. The program ran completely. Crack open an ice-cold beer.')
 
-## Syntax Conventions
+## "Kennythonic" Syntax Conventions
 Capitalize acronyms esp. of proper nouns (unless informal)
 Git repos: No CamelCase; lowercase only; dashes not underscores
 Sub-folders w/in Git repos: Lowercase only w/ underscores
 Variable names: CamelCase is O-K; so is camelCase (e.g., whatEver WorksFor youNyou, & You, & you2...just not 4you!)
+In title string, capitalize words that are four (4) letters or more (credit to the APA).
 
 ## Common Data Filtration Logic
 (Industry-agnostic; incidentally, as is the intention of most of Getting Started)
