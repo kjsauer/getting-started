@@ -26,6 +26,10 @@ Switch tabs down
 $ Ctrl+PgDn
 Spell check in open, selected tab
 $ F6
+Navigate to next misspelled
+Ctrl+F6
+Previous misspelled
+Ctrl+Shift+F6
 
 You can click an open tab, hold shift, & click one (or more) other(s) to select multiple tabs. Then, e.g., press F6 to apply spell check to all open & selected tabs.
 
