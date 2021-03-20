@@ -305,6 +305,7 @@ Python:
 print('Congrats. The program ran completely. Crack open an ice-cold beer.')
 
 ## "Kennythonic" Syntax Conventions
+NB: Inspired by "Pythonic" syntax conventions
 Capitalize acronyms esp. of proper nouns (unless informal)
 Git repos: No CamelCase; lowercase only; dashes not underscores
 Sub-folders w/in Git repos: Lowercase only w/ underscores
