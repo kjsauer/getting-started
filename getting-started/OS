@@ -2,6 +2,7 @@
 Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Acronyms
+MS: Microsoft
 OS: Operating System
 
 ## Scope
@@ -18,12 +19,12 @@ Right click on program > Run as administrator
 ## Configure Windows 7 Start-up Programs
 Start -> Run -> msconfig.exe
 
-## Microsoft Windows OS
+## MS Windows OS
 Operate as if your computer will break, get stolen, explode or spontaneously combust, fall into a sewer system, get struck by lightning (Zeus' javelin), or get run over by a bus or 18-wheeler at any second.
 
 Store NOTHING (only-)locally except:
 --Shortcuts to software applications (aka programs)
---Software application data files that are necessarily saved locally (e.g., PVsyst and SAM archives, unless you figure out how to store these in some folder(s) already synced to the "cloud"; either way, back up archives and keep track in a database, e.g., Microsoft MS Excel spreadsheet or preferably a comma-separated value .CSV file that can be opened w/out MS suite of software products).
+--Software application data files that are necessarily saved locally (e.g., PVsyst and SAM archives, unless you figure out how to store these in some folder(s) already synced to the "cloud"; either way, back up archives and keep track in a database, e.g., MS Excel spreadsheet or preferably a comma-separated value .CSV file that can be opened w/out MS suite of software products).
 
 Keep GitHub synced at all times.
 
@@ -31,7 +32,7 @@ Keep track of all software licenses/license keys (e.g., Adobe, MATLAB, NI LabVIE
 
 Backup Internet Explorer bookmarks (the last time I checked, they didn't have a "Sync" function like Firefox).
 
-## Microsoft Windows Hot Keys
+## MS Windows Hot Keys
 Close active tab or window
 $ Ctrl+w
 Close program
@@ -56,15 +57,15 @@ Switch tabs
 $ Ctrl+Tab
 Switch tabs back
 $ Ctrl+Shift+Tab
-Go to Microsoft Windows Task Manager indirectly (i.e., three-finger salute #1)
+Go to MS Windows Task Manager indirectly (i.e., three-finger salute #1)
 $ Ctrl+Alt+Delete
-Go to Microsoft Windows Task Manager directly (i.e., 3-finger salute #2)
+Go to MS Windows Task Manager directly (i.e., 3-finger salute #2)
 $ Ctrl+Shift+Esc
-Microsoft finger salute #3: I can think of one (ha JK)!
+Microsoft finger salute #3: I can think of one (ha, JK)!
 View all open windows
 $ Four finger swipe to view all open windows
 
-## Microsoft Windows OS
+## MS Windows OS
 Avoid asterisks in filenames.
 Best to start variable names with a letter (not a number) (e.g., a1, not 1a).
 
@@ -79,13 +80,13 @@ Get familiar w/ Start > Run > one of the following commands:
 3. MS Info (msinfo32.exe)
 4. System settings (sysdm.cpl)
 
-## Remove Metadata from Photos Before Uploading to Internet and Sharing on Microsoft Windows OS
+## Remove Metadata from Photos Before Uploading to Internet and Sharing on MS Windows OS
 Before uploading photos to the Internet (obv. selfies), prob. best to remove metadata first:
 $ Right click\Properties\Details\Remove Properties and Personal Information
 Save version w/ all properties removed; upload that one.
 
 ## Launching Software Programs from Command Prompt
-Sometimes clicking a link does not launch the software program as desired or expected (e.g., in Microsoft Windows). In such instances, you may try navigating to Windows\Run and type the name of the software, e.g., "GitHub Desktop". Alternatively, you can search for the name of the corresponding EXE (.exe file) on your computer and type that into the MS Windows "Run" program instead (e.g., GitHubDesktop.exe).
+Sometimes clicking a link does not launch the software program as desired or expected (e.g., in MS Windows). In such instances, you may try navigating to Windows\Run and type the name of the software, e.g., "GitHub Desktop". Alternatively, you can search for the name of the corresponding EXE (.exe file) on your computer and type that into the MS Windows "Run" program instead (e.g., GitHubDesktop.exe).
 
 ## Naming
 In general, best to avoid starting file, folder, or variable names w/ a number (e.g., use asdf1, not 1asdf).
@@ -95,3 +96,6 @@ Avoid spaces in computer username. In general, for folders involving programming
 
 ## OS Feature Request(s)
 1. Windows Search: It would help if Ctrl+f of "holders" would find "holder(s)", i.e., ignore the parentheses.
+
+## MS Windows OS
+"X out" of window in upper-right corner OR by double clicking the upper-left corner (the latter is a lesser-known method).
