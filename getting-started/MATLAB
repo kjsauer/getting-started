@@ -211,3 +211,12 @@ function blah = mycustomfcnname(input1,input2)
 NB: Adding dots allows for vectorization, i.e., a vector of plane-of-array irradiance Gpoa (vs. a singular, scalar value) in the following equation for Efficiency:
 Eta = (Pmp/(height*width))./Gpoa
 e.g., Height & width of PV module or system
+
+## Other Conventions & Syntax
+Indent text w/in function
+function [y1,y2,y3] = f(x1,x2,x3)
+% The purpose of this function is...
+	y1 = x1*1;
+	y2 = x2*2;
+	y3 = x3*3;
+end
