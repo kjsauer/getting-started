@@ -1,19 +1,27 @@
 # Getting Started with Electricity for Engineers
 Kenneth J. Sauer
 
-To apply a voltage, you need two (2) terminals & one (1) ground.
+## Definitions
+I = Electrical current, in Amps [A]
+R = Electrical resistance, in ohms [ohms]
+V = Electrical voltage, in Volts [V]
 
-I = Current, in Amps [A]
-R = Resistance, in ohms [ohms]
-V = Voltage, in Volts [V]
+To apply voltage, need two (2) terminals & one (1) ground
 
 Power loss, in Watts [W] = I^2*R
 
-Resistance increases w/ temperature in copper Cu:
+Electrical resistance increases w/ temperature in copper Cu:
 
+"""
+The Temperature Coefficient of Copper (near room temperature) is +0.393 percent per degree C. This means if the temperature increases 1°C, the resistance will increase 0.393%. Examples: You have 100 feet of 20 gauge wire and its resistance is 1.015 ohms at 20° C (room temp).
 Temperature coefficient of copper:
-R = R_ref*[1+alpha*(T-T_ref)]
-
+R = R_ref*[1+alpha*(T-T_ref)], where
+R = Conductor resistance at temperature T
+R_ref = Conductor resistance at reference temperature Tref, usually 20 degC, but sometimes 0 degC
+alpha = Temperature coefficient of resistance for the conductor material
+T = Conductor temperature in degC
+Tref = Reference temperature that alpha is specified at for the conductor material
+"""
 Source: <https://www.cirris.com/learning-center/general-testing/special-topics/177-temperature-coefficient-of-copper/>
 
-So, thermal losses increase power losses in the case of Cu.
+So, thermal losses increase power losses in the case of Cu conductors.
