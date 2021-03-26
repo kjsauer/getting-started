@@ -282,7 +282,7 @@ NB: Some redundancy w/ other Getting Started files.
 
 Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus. Keep Git synced--after each edit--to whatever branch is appropriate. See more in Getting Started with Git.
 
-Full screen (F11)
+Full screen (F11) (incl. hide menu bar)
 One screen
 One window
 Zero desktop
@@ -339,4 +339,4 @@ If any (column-)value in row of columns is NaN, make whole (entire) row NaN
 Keep mathematical functions specific to the math equations. Format inputs to functions external to the functions.
 
 ## Project Management
-In project execution, there is cost, quality, and time. Choose two (2). (i.e., You cannot simultaneously have all three (3).)
+In project execution, there is cost, quality, and time. Choose two (2), i.e., you cannot simultaneously have all three (3).
