@@ -1,9 +1,11 @@
 # Getting Started with Reliability
 Kenneth J. Sauer (kjsauer on GitHub)
 
-## Recall Formula
+## Product Recall Formula
 A = Number of vehicles in the field
 B = Probable rate of failure
 C = Average out-of-court settlement
 X = A*B*C
 If X < cost of recall, don't recall
+
+Reliability is the probability of failure, e.g., at a given time, t. The goal is to figure out: How long, how much, and how often: How long will it take to fail, how often will failures occur, & how much impact will failures have?
