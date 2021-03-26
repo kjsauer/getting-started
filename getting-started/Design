@@ -318,3 +318,6 @@ Various high- & low- pass filters
 If any value in row is NaN, make whole row NaN
 Longer:
 If any (column-)value in row of columns is NaN, make whole (entire) row NaN
+
+## Design of Mathematical Functions
+Keep mathematical functions specific to the math equations. Format inputs to functions external to the functions.
