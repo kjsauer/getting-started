@@ -283,7 +283,10 @@ NB: Some redundancy w/ other Getting Started files.
 Promote the one computer-, one screen-, and one window-at-a-time approach for maintaining attention and focus. Keep Git synced--after each edit--to whatever branch is appropriate. See more in Getting Started with Git.
 
 One screen
-Zero GitHub Desktop (keep Git/GitHub synced)
+One window
+Zero desktop
+Zero GitHub (i.e., Zero GitHub Desktop, i.e., keep Git/GitHub synced)
+Zero local(-only)
 Zero inbox
 
 ## KISS
