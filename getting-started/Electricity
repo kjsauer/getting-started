@@ -8,3 +8,10 @@ R = Resistance, in ohms [ohms]
 V = Voltage, in Volts [V]
 
 Power loss, in Watts [W] = I^2*R
+
+Resistance increases w/ temperature in copper Cu:
+
+Temperature coefficient of copper:
+R = R_ref*[1+alpha*(T-T_ref)]
+
+Source: <https://www.cirris.com/learning-center/general-testing/special-topics/177-temperature-coefficient-of-copper/>
