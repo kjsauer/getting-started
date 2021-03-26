@@ -15,3 +15,5 @@ Temperature coefficient of copper:
 R = R_ref*[1+alpha*(T-T_ref)]
 
 Source: <https://www.cirris.com/learning-center/general-testing/special-topics/177-temperature-coefficient-of-copper/>
+
+So, thermal losses increase power losses in the case of Cu.
