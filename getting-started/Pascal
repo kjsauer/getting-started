@@ -1,9 +1,13 @@
 # Getting Started with Pascal
 Kenneth J. Sauer (kjsauer on GitHub)
 
-## Free Freeware & Open Source
+## Acronyms
+EXE: Executable (i.e., software program)
+GUI: Graphical User Interface
+
+## Freeware & Open Source
 Lazarus Interactive Development Environment IDE
 Free Pascal programming language
 
-## Hello World GUI EXE
-Arguably, Free Pascal + Lazarus IDE is the fastest way (i.e., programming language + environment, respectively) to develop a compiled Hello World GUI EXE.
+## Hello World EXE GUI
+Arguably, Free Pascal + Lazarus IDE is the fastest way (i.e., programming language + environment, respectively) to develop a compiled Hello World EXE GUI.
