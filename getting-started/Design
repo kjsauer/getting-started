@@ -292,6 +292,17 @@ Zero inbox
 ## KISS
 Embrace all things KISS: Keep It Simple, Stup!d!
 
+## General Coding & Writing Principles
+1. KISS
+2. Less is more
+3. Use Simple English (or Simple Whatever-language)
+
+## Grammar
+If/when you can't figure out if a word or phrase is the best one to use or not, consider if it's best to delete it altogether.
+
+## When to Edit
+Adding commentary is always good. However, when it comes to editing code, heed the following warning (i.e., take caution & tread lightly): If it ain't broke, don't fix it.
+
 ## Basic Git Repo Contents
 NB: See Getting Started w/ Git.
 
