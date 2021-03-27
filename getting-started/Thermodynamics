@@ -2,7 +2,7 @@
 Kenneth J. Sauer (kjsauer on GitHub)
 
 ## Earth's Air
-Planet Earth's air is an incompressible fluid (generally speaking, for practical calculations & day-to-day life).
+Planet Earth's air's an incompressible fluid (generally speaking, for practical calculations & day-to-day life).
 """
 For air, when flow velocity is 100 m/s or less, the air is treated as an incompressible fluid, and when the velocity is greater than 100 m/s, the air is treated as compressible fluid.
 """
