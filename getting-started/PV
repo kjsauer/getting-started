@@ -26,7 +26,7 @@ RI: Reporting Interval (e.g., data is collected in the field & rolled into, e.g.
 RP: Reporting Period (e.g., 5-min RI data is evaluated each month for ASTM E2848 Power Capacity; in this case, the RP is monthly)
 STC: Standard Test Conditions (Gpoa=1,000 W/m^2, Tcell=25 degC, spectrum=IEC 60904-3 AM1.5G)
 Tamb: Ambient temperature [degC]
-thetaZ: Angle of incidence of DNI beam [degrees or radians, depending on which convention you're working with]
+thetaZ: Angle of incidence of DNI beam [degrees or radians, depending on which convention you're working with--see more below]
 Wspd: Wind speed [m/s]
 
 ## Equations in MATLAB Syntax
