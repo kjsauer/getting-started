@@ -20,7 +20,7 @@ Pmp: Maximum power (e.g., power at max. power point MPP on I-V curve)
 PmpDC: DC power [W]
 PmpDC_Ref: DC power at reference conditions [Watts, or W]
 PTC: PVUSA Test Conditions (more field-representative test conditions than STC, esp. for the Northern California region encompassing the PVUSA field testing site in Davis, CA; Gpoa=1,000 W/m^2, Tamb=20 degC, & Wspd=1 m/s; namely, Tmod is not close to the STC case of 25 degC in the field, so it does not work well to extrapolate the data to STC)
-PV: Photovoltaic
+PV: Photovoltaic (often used as adjective adj.; noun is often the plural form photovoltaics)
 RC: Reporting Condition (e.g., RCs are often STC for indoor performance evaluation in a laboratory with a flash tester and PTC for outdoor field performance evaluation in the installed, field-operating condition)
 RI: Reporting Interval (e.g., data is collected in the field & rolled into, e.g., 5-min averages; in this case, the RI is 5-min; note that data collection using DAS aka DAQ)
 RP: Reporting Period (e.g., 5-min RI data is evaluated each month for ASTM E2848 Power Capacity; in this case, the RP is monthly)
