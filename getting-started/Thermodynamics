@@ -1,0 +1,9 @@
+# Getting Started with Thermodynamics for Engineers
+Kenneth J. Sauer
+
+## Earth's Air
+Planet Earth's air is an incompressible fluid.
+"""
+For air, when flow velocity is 100 m/s or less, the air is treated as an incompressible fluid, and when the velocity is greater than 100 m/s, the air is treated as compressible fluid.
+"""
+Source: <https://www.cradle-cfd.com/media/column/a149/>
