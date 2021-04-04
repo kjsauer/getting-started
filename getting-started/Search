@@ -1,6 +1,9 @@
 # Getting Started with Advanced Search Engine Searching
 Kenneth J. Sauer (kjsauer on GitHub)
 
+## Definitions
+Dorking: "The science of" advanced searching, i.e., "the use of search engines to find very specific data" (source: <https://news.ycombinator.com/item?id=24101889>)
+
 ## DuckDuckGo vs. Google
 DuckDuckGo is theoretically preferred for privacy reasons, fewer ads, and greater ability to report ads. However, IMO Google Search is the best search engine. It answers human-phrased questions the best. Advanced Search methods appear to work the same in both. Google also has a better built-in language translator tool. When in doubt, use Google Search because it works better, and life is short.
 
@@ -13,3 +16,18 @@ $ "insert #1" AND "insert #2"
 
 Search approximate: Use tilde (~)
 $ ~approximate term
+
+## Tips & Tricks
+Look up word definition
+$ Define + <insert_word_or_phrase>
+Look up word translation
+$ Translate + <insert_word_or_phrase>
+Search specific website:
+$ advanced google search site:news.ycombinator.com
+Exact phrase in quotes (""), exclude w/ minus ("-"), fill missing w/ asterisk ("*"), and find similar (related) w/ tilde ("~")
+$ "stuck in my *" -head -ways -brain -teeth ~head
+Two words
+$ "word1" AND" "word2"
+
+## Google Advanced Search
+Google Advanced Search GUI: <https://www.google.com/advanced_search?hl=en&fg=1/>
