@@ -21,7 +21,9 @@ Unfortunately, MATLAB is neither free nor open-source software (i.e., it is comm
 *Richard Stallman (July 13, 2011). "Why Open Source misses the point of Free Software". Retrieved August 24, 2011.
 
 %% Format MATLAB Workspace
-clc; clear; close all; format compact; format long g;
+clc; clear; close
+format compact;
+format long g;
 
 %%
 a = [1 1]
