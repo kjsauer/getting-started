@@ -10,3 +10,6 @@ B = Probable rate of failure
 C = Average out-of-court settlement
 X = A*B*C
 If X < cost of recall, don't recall
+
+## Test Design
+Is this a test that is waiting for a problem?
