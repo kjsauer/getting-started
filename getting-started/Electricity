@@ -10,6 +10,8 @@ To apply voltage, you need two (2) terminals & one (1) ground.
 
 Power loss, in Watts [W] = I^2*R
 
+Power losses due to wire resistance (aka line loss) scales as the square of the current (i.e., current-squared). (Source: http://www.bsharp.org/physics/transmission)
+
 Electrical resistance increases w/ temperature in copper Cu:
 
 """
