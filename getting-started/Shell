@@ -45,6 +45,8 @@ Present working directory (pwd)
 $ .
 pwd
 $ pwd
+Abort program (end present code run) - often used in general in running code
+$ Ctrl+c
 
 ## Tab Completion
 Enter first few letters (e.g., of pathname) and hit tab
