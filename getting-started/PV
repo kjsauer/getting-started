@@ -83,6 +83,10 @@ Rs_PVsyst = (Voc-Vmp)/Imp
 ## Quick-n-dirty Shunt Resistance Approximation
 Rsh_PVsyst = 5*Vmp/(Isc-Imp)
 
+## Impacts of Resistance
+Rs -> No impact on Voc
+Rsh -> No impact on Isc (but quickly changes with >0 V)
+
 ## Electroluminescence (EL) and Infrared (IR) Imagery
 See Getting Started w/ ImageJ.
 
