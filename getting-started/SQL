@@ -1,5 +1,5 @@
 # Getting Started with SQL
-Kenneth J. Sauer (kjsauer on GitHub)
+Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## Example SQL Commands and Queries
 CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER);

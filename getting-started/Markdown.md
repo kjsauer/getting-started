@@ -1,5 +1,5 @@
 # Getting Started with Markdown
-Compiled by Kenneth J. Sauer (kjsauer on GitHub)
+Compiled by Kenneth J. Sauer (@kjsauer on GitHub)
 
 !!!The below content is not mine!!! It came with a free installation of MarkdownPad 2. I think both the MarkdownPad 2 software and their below example are useful for "Getting Started" w/ writing in Markdown language (and associated language interpreters). Thanks, MarkdownPad 2!
 

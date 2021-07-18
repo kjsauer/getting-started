@@ -1,5 +1,5 @@
 # Getting Started with Reliability
-Kenneth J. Sauer (kjsauer on GitHub)
+Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## Loose Definitions
 Reliability is the probability of failure, e.g., at a given time, t. The goal is to figure out: How long, how much, and how often? (i.e., How long will it take to fail, how much impact will failures have, & how often will failures occur?)

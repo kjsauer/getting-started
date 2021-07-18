@@ -1,5 +1,5 @@
 # Getting Started with Microsoft Excel
-Kenneth J. Sauer (kjsauer on GitHub)
+Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## Function
 $ =date(year,month,hour)+time(hour,minute,second)

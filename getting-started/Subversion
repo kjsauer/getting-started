@@ -1,5 +1,5 @@
 # Getting Started with Subversion and TortoiseSVN
-Kenneth J. Sauer (kjsauer on GitHub)
+Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## NB
 Same rule-of-thumb goes for Git + GitHub as for Subversion + TortoiseSVN: Always update Local Computer based on changes in Remote Server before you commit Local Computer changes to Remote Server
