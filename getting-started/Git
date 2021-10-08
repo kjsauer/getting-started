@@ -474,3 +474,10 @@ A Git repo has dashes like-this. Folders w/in that repo have underscores like_th
 
 ## GitHub About Section
 Add copy of GitHub's "About" section into Git repo (e.g., README.md); otherwise, it's not Git-revision- aka version-controlled.
+
+## Rename Repository Repo (incl. GitHub Desktop)
+Make sure you're all synced up
+Rename online (www.github.com) > Repo > Settings > Options
+Remove repo from GitHub Desktop
+Rename in File Explorer
+Re-add renamed local repository to GitHub Desktop
