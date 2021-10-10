@@ -324,7 +324,7 @@ NB: Inspired by "Pythonic" syntax conventions
 Capitalize acronyms esp. of proper nouns (unless informal)
 Git repos: No CamelCase; lowercase only; dashes not underscores
 Sub-folders w/in Git repos: Lowercase only w/ underscores
-Variable names: CamelCase is O-K; so is camelCase (e.g., whatEver WorksFor youNyou, & You, & you2...just not 4you!)
+Variable names: PascalCase is O-K; so is camelCase (e.g., whatEver WorksFor youNyou, & You, & you2...just not 4you!)
 In title string, capitalize words that are four (4) letters or more (credit to the APA).
 Periods are not needed in code commentary (code needs perfect syntax in order to run properly; comments do not need perfect syntax in order to serve their intended purpose--namely, to help a developer or user understand what the code's doing; in fact, sometimes it's better to reduce punctuations & spacings in order to keep the codebase as small as possible in computer memory).
 
