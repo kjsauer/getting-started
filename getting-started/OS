@@ -101,3 +101,11 @@ Avoid spaces in computer username. In general, for folders involving programming
 
 ## MS Windows OS
 "X out" of window by single-clicking upper-right corner OR by double clicking upper-left corner (the latter is a lesser-known method)
+
+## Choosing Windows Login Username
+Keep it short, so you're less likely to hit filename character limit.
+DON'T USE SPACES, so you don't have problems w/ Anaconda Python installation.
+Don't use capital letters, so you don't have problems w/ Linux installation (i.e., case-sensitive).
+Don't use a single letter, so you don't conflict or confuse w/ assigned drive letter.
+Don't use something that will confuse people who open files & view authorship, e.g., "Me".
+In conclusion, example username meeting all criteria: "xyz"
