@@ -1,0 +1,11 @@
+# Getting Started with Excel Visual Basic VBA
+Kenneth J. Sauer (@kjsauer on GitHub)
+
+##
+File > Options > Customize Ribbon > Add Developer tab
+##
+Open VBA development environment
+Alt + F11
+##
+Run Macro
+Alt + F8 > Select Macro > Run
