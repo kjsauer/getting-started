@@ -1,4 +1,4 @@
-# Getting Started with Excel Visual Basic VBA
+# Getting Started with Microsoft MS Excel Visual Basic VBA
 Kenneth J. Sauer (@kjsauer on GitHub)
 
 ##
@@ -9,3 +9,35 @@ Alt + F11
 ##
 Run Macro
 Alt + F8 > Select Macro > Run
+
+## Multiply Two Columns of Equal Length into Third Column of Equal Length
+Need to use FOR loop!
+Think of it like how you would execute it in the spreadsheet (need equation in each cell of third column; add first, then drag down for the rest)
+
+## Hot Key to Comment Out or Uncomment Line of Code in MS Excel VBA
+"""Now you can select a single line or a block of code and press Alt+C on your keyboard to comment. To enable the same option for uncommenting a code, you can repeat the whole process for Uncomment Block command. The shortcut for uncommenting is ALT+U."""
+Source: https://www.automateexcel.com/vba/comment/
+
+## Continue Onto Next Line of Code in MS Excel VBA
+a + _
+b + _
+c
+
+## Git Version Control MS Excel VBA
+File > Export File - export copy of code to version control module as .bas file
+
+## Multiple Linear Regression in Excel VBA
+Sub GetRegressionStatistics()
+Dim rY As Range, rX As Range
+Dim vStat As Variant
+
+Set rY = Range("YRange")
+Set rX = Application.Union(Range("X1Range"), Range("X2Range"), Range("X3Range"))
+
+vStat = Application.WorksheetFunction.LinEst(rY, rX, True, True)
+
+MsgBox "Degrees of Freedom: " & vStat(4, 1) & vbNewLine & _
+       "Sum Square for Regression: " & vStat(5, 1)
+
+End Sub
+Source: https://www.mrexcel.com/board/threads/multiple-linear-regression-in-vba.347468/
