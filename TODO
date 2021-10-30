@@ -6,29 +6,29 @@ Kenneth J. Sauer (@kjsauer on GitHub)
 2. Python without Anaconda.
 3. Miniconda.
 4. Option to run Anaconda Prompt from cmd.
-5. [Done] Anaconda Python (absorbed into Python). Jinja absorbed into Python also.
-6. [Done] TortoiseSVN (absorbed into Subversion).
+5. [done] Anaconda Python (absorbed into Python). Jinja absorbed into Python also.
+6. [done] TortoiseSVN (absorbed into Subversion).
 7. readthedocs.
-8. [Done] Subversion/TortoiseSVN.
-9. [Done] MATLAB.
-10. [Done] Python.
-11. [Done] pvmismatch (absorbed into Python).
+8. [done] Subversion/TortoiseSVN.
+9. [done] MATLAB.
+10. [done] Python.
+11. [done] pvmismatch (absorbed into Python).
 12. PVLIB.
 13. PVSAT.
 14. PVsyst. PVWatts. NREL's SAM. PV*SOL. PlantPredict. PVDesignPro. PVFORM. Sandia PV-RPM (PVRPM).
 15. Pecos (absorbed into Python?).
-16. [Done] Git.
-17. [Done] R.
-18. [Done] Rename Slack to more generic "Chat" apps.
+16. [done] Git.
+17. [done] R.
+18. [done] Rename Slack to more generic "Chat" apps.
 19. Octave.
 20. Julia.
-21. [Done] Django. Django RUST framework DRF.
+21. [done] Django. Django RUST framework DRF.
 22. Flask.
 23. Heroku.
-24. [Done] Docker.
+24. [done] Docker.
 25. Add MS Teams notes to Chat.
 26. Amazon Web Services AWS.
 27. DigitalOcean.
-28. [Done] ImageJ.
+28. [done] ImageJ.
 29. SMARTS (spectral irradiance). SMARTS2. SPECTRAL2.
-30. [Done] Lazarus + Free Pascal.
+30. [done] Lazarus + Free Pascal.
