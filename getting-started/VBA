@@ -1,13 +1,14 @@
 # Getting Started with Microsoft MS Excel Visual Basic VBA
 Kenneth J. Sauer (@kjsauer on GitHub)
 
-##
-File > Options > Customize Ribbon > Add Developer tab
-##
-Open VBA development environment
+## Add Developer Tab to Microsoft MS Excel
+Microsoft MS Excel > File > Options > Customize Ribbon > Add Developer tab
+No changes to Trust Settings needed
+
+## Open VBA Development Environment
 Alt + F11
-##
-Run Macro
+
+## Run Macro
 Alt + F8 > Select Macro > Run
 
 ## Multiply Two Columns of Equal Length into Third Column of Equal Length
@@ -41,3 +42,30 @@ MsgBox "Degrees of Freedom: " & vStat(4, 1) & vbNewLine & _
 
 End Sub
 Source: https://www.mrexcel.com/board/threads/multiple-linear-regression-in-vba.347468/
+
+## Use of NaN in VBA
+Application.WorksheetFunction.IsNA(1)
+
+## Logic
+True is -1 (!!!)
+False is 0
+
+## Indexing
+Vector/array/matrix indexing starts w/ 0, not 1!
+However, first row in Excel worksheet is row 1!
+
+## Calling Excel Functions from Within Functions
+Outside function:
+$ Application.WorksheetFunction.FcnName(...)
+Inside function:
+$ Application.FcnName(...)
+Source: https://software-solutions-online.com/unable-to-get-match-property-of-worksheetfunction/
+
+## Activate Worksheet in Code
+Worksheet("Insert Name").Activate
+Source: https://developerpublish.com/active-sheet-select-sheet-in-excel-vba/
+
+## Debugging - How to View Workspace Variables in Excel VBA?
+Add to code:
+$ Debug.Print myVariable
+View in Immediate Window (View > Immediate Window)
