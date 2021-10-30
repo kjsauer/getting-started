@@ -1,5 +1,5 @@
 # getting-started
-Personal "Getting Started": Design, programming, and software guides
+Personal "Getting Started" design, programming, and software guides
 
 ## Introduction
 This "getting-started" Git repository contains informal, unformatted, and generic "Getting Started" design, programming, and software guides for my (Kenneth J. Sauer's aka @kjsauer on GitHub's) personal reference (however, they may also be useful to others getting started in related pastures).
