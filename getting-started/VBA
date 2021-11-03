@@ -1,6 +1,9 @@
 # Getting Started with Microsoft MS Excel Visual Basic VBA
 Kenneth J. Sauer (@kjsauer on GitHub)
 
+## NB
+Here, "Excel" refers to Microsoft's Excel (MS Excel). VBA refers to Visual Basic - the code language which comes prepackaged w/ Excel.
+
 ## Add Developer Tab to Microsoft MS Excel
 Microsoft MS Excel > File > Options > Customize Ribbon > Add Developer tab
 No changes to Trust Settings needed
@@ -69,3 +72,9 @@ Source: https://developerpublish.com/active-sheet-select-sheet-in-excel-vba/
 Add to code:
 $ Debug.Print myVariable
 View in Immediate Window (View > Immediate Window)
+
+## Convert Variable to Range in Excel VBA
+Use vector array (vs. scalar value or matrix) here as example only:
+First, must save variable array (e.g., vector array of doubles, variants, etc.) into (i.e., print to) an actual Excel spreadsheet tab (e.g., table of values)
+Then, read back out as desired range
+Need to do in a FOR loop (in Excel VBA) over full length of array!
