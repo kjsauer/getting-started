@@ -15,7 +15,7 @@ Alt + F11
 Alt + F8 > Select Macro > Run
 
 ## Multiply Two Columns of Equal Length into Third Column of Equal Length
-Need to use FOR loop!
+Need to use FOR loop
 Think of it like how you would execute it in the spreadsheet (need equation in each cell of third column; add first, then drag down for the rest)
 
 ## Hot Key to Comment Out or Uncomment Line of Code in MS Excel VBA
@@ -54,8 +54,8 @@ True is -1 (!!!)
 False is 0
 
 ## Indexing
-Vector/array/matrix indexing starts w/ 0, not 1!
-However, first row in Excel worksheet is row 1!
+Vector/array/matrix indexing starts w/ 0, not 1
+However, first row in Excel worksheet is row 1
 
 ## Calling Excel Functions from Within Functions
 Outside function:
@@ -77,7 +77,7 @@ View in Immediate Window (View > Immediate Window)
 Use vector array (vs. scalar value or matrix) here as example only:
 First, must save variable array (e.g., vector array of doubles, variants, etc.) into (i.e., print to) an actual Excel spreadsheet tab (e.g., table of values)
 Then, read back out as desired range
-Need to do in a FOR loop (in Excel VBA) over full length of array!
+Need to do in a FOR loop (in Excel VBA) over full length of array
 
 ## Hot Key(s) to Run Program
 Don't use Ctrl+r to run program. This is already taken (to fill in cells horizontally from left to right, similar to Ctrl+d for the vertical direction, from top to bottom -> See Getting Started Excel)
