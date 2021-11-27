@@ -340,3 +340,6 @@ Keep mathematical functions specific to the math equations. Format inputs to fun
 
 ## Project Management
 In project execution, there is cost, quality, and time. Choose two (2), i.e., you cannot simultaneously have all three (3).
+
+## Hypothesis
+All programming languages effectively can do the same things, i.e., it's likely you can achieve the same end goals regardless of what language you choose. Some languages come w/ different functions than others. These built-in functions make certain tasks more convenient for the user (so the user doesn't have to write them from scratch). Choose the language for the built-in functions you think you will use.
