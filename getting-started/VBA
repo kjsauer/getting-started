@@ -4,6 +4,11 @@ Kenneth J. Sauer (@kjsauer on GitHub)
 ## NB
 Here, "Excel" refers to Microsoft's Excel (MS Excel). VBA refers to Visual Basic - the coding (aka programming) language which comes prepackaged w/ Excel.
 
+## General Conventions
+[Row, Column] aka [R, C]
+VBA header row is row 0
+Index starts w/ 0
+
 ## Add Developer Tab to Microsoft MS Excel
 Microsoft MS Excel > File > Options > Customize Ribbon > Add Developer tab
 No changes to Trust Settings needed
@@ -19,6 +24,8 @@ Need to use FOR loop
 Think of it like how you would execute it in the spreadsheet (need equation in each cell of third column; add first, then drag down for the rest)
 
 ## Hot Key to Comment Out or Uncomment Line of Code in MS Excel VBA
+Comment in code is preceded by a single quotation mark ('), e.g.:
+' this is a comment
 """Now you can select a single line or a block of code and press Alt+C on your keyboard to comment. To enable the same option for uncommenting a code, you can repeat the whole process for Uncomment Block command. The shortcut for uncommenting is ALT+U."""
 Source: https://www.automateexcel.com/vba/comment/
 
@@ -85,3 +92,33 @@ Instead, use Ctrl+Shift+r (i.e., Ctrl+R w/ capital "R")
 
 ## Data Typing
 Data type everything (all variables) using Dim
+
+## If Zero 0 in Row, Delete Row
+Have a loop through all the rows stepping backwards. Let's say you have a variable lastrow and your data starts on row 2 (headers). Your sheet [of] imported data is referenced by "myws".
+For i = lastrow to 2 step -1
+If myws.Cells(i, 16).Value < 0.01 AND myws.Cells(i, 16).Value > -0.01 Then
+myws.Rows(i).Delete
+End if
+Next i
+Stepping backwards makes it so your count doesn't get messed up if you delete rows.
+Source 1: https://www.reddit.com/r/excel/comments/8nkmrv/vba_delete_row_if_value_in_cell_is_01_and_01/
+Source 2: https://www.reddit.com/r/excel/comments/7utu16/code_not_deleting_all_blank_sections/dtn313k/?context=3/
+
+## Select Non-zero Values in Column
+Set varName = Worksheets("myWSname").Range("A1", Range("A1").End(xlDown)) '.Select
+Source: https://support.microsoft.com/en-us/topic/how-to-select-ranges-using-visual-basic-for-applications-novice-examples-cfc560b1-3dfc-bda7-a0da-a3cbed6abcab
+
+## Error: Can't Assign to Array
+Need to set equality in a For loop
+Instead of:
+A = B
+Use:
+For ii = 0 To N
+A(ii, 1) = B(ii, 1)
+Next ii
+
+## Virtually Place Cursor Into Cell
+"Select" is like putting the cursor into a cell.
+Sheet1.Range("A1").Select
+Same as:
+Worksheet("Sheet1").Range("A1").Select
