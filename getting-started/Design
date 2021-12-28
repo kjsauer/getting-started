@@ -343,3 +343,9 @@ In project execution, there is cost, quality, and time. Choose two (2), i.e., yo
 
 ## Hypothesis
 All programming languages effectively can do the same things, i.e., it's likely you can achieve the same end goals regardless of what language you choose. Some languages come w/ different functions than others. These built-in functions make certain tasks more convenient for the user (so the user doesn't have to write them from scratch). Choose the language for the built-in functions you think you will use.
+
+## Programming
+"Coding is basically just ifs and for loops."
+Source: https://twitter.com/ID_AA_Carmack/status/1466934223831506951/
+Paraphrased (long): Programming is just if statements & for loops plus a whole (heck of a) lot of (syntactic) frustration.
+Paraphrased (short): Programming is 1% if statements & for loops & 99% frustration.
