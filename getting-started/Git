@@ -14,7 +14,7 @@ So long as the origin of the repo still exists, there is no reason to fork it ex
 If you need to use the code, download it as a .ZIP file.
 
 ## Warnings
-Avoid syncing large (e.g., >= 1 GB) files to a Git repo (!!!).
+Avoid syncing large (e.g., >= 1 GB) files to a Git repo (!).
 It can lead to crashing/major issues.
 
 ## Git Bash
@@ -426,7 +426,7 @@ If repo is on GitHub
 Log into GitHub
 Settings
 Email
-Block email from getting shared in any commit (!!!)
+Block email from getting shared in any commit (!)
 Enable other privacy settings
 
 ## Other References
