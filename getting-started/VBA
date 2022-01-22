@@ -2,7 +2,7 @@
 Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## NB
-Here, "Excel" refers to Microsoft's Excel (MS Excel). VBA refers to Visual Basic - the coding (aka programming) language which comes prepackaged w/ Excel.
+Here, "Excel" refers to Microsoft's Excel (MS Excel). VBA refers to Visual Basic, the coding (aka programming) language which comes prepackaged w/ Excel.
 
 ## General Conventions
 [Row, Column] aka [R, C]
@@ -57,7 +57,7 @@ Source: https://www.mrexcel.com/board/threads/multiple-linear-regression-in-vba.
 Application.WorksheetFunction.IsNA(1)
 
 ## Logic
-True is -1 (!!!)
+True is -1 (!)
 False is 0
 
 ## Indexing
@@ -95,11 +95,11 @@ Data type everything (all variables) using Dim
 
 ## If Zero 0 in Row, Delete Row
 Have a loop through all the rows stepping backwards. Let's say you have a variable lastrow and your data starts on row 2 (headers). Your sheet [of] imported data is referenced by "myws".
-For i = lastrow to 2 step -1
-If myws.Cells(i, 16).Value < 0.01 AND myws.Cells(i, 16).Value > -0.01 Then
-myws.Rows(i).Delete
+For ii = lastrow to 2 step -1
+If myws.Cells(ii, 16).Value < 0.01 AND myws.Cells(ii, 16).Value > -0.01 Then
+myws.Rows(ii).Delete
 End if
-Next i
+Next ii
 Stepping backwards makes it so your count doesn't get messed up if you delete rows.
 Source 1: https://www.reddit.com/r/excel/comments/8nkmrv/vba_delete_row_if_value_in_cell_is_01_and_01/
 Source 2: https://www.reddit.com/r/excel/comments/7utu16/code_not_deleting_all_blank_sections/dtn313k/?context=3/
@@ -122,3 +122,22 @@ Next ii
 Sheet1.Range("A1").Select
 Same as:
 Worksheet("Sheet1").Range("A1").Select
+
+## VBA Indexing
+"Next ii" in the For Loop adds 1 to the index beyond the range of for loop (For ii = 0 to N), so indexing (ii) ends at N+1
+
+## Debugging aka Troubleshooting VBA Code
+Debug/troubleshoot using:
+1. Breakpoints + Local Window
+2. Debug.Print + Immediate Window
+
+## Clear Contents from Cell(s) w/out Clearing Formatting
+Worksheets("Sheet1").Range("A1:G37").ClearContents
+Source: https://stackoverflow.com/questions/11137636/can-i-clear-cell-contents-without-changing-styling/
+
+## Delete Contents from Cell(s) incl. Formatting
+range("A3", Range("A" & Columns("A").SpecialCells(xlCellTypeLastCell).Row)).Delete
+That will delete A3 through the last cell in column A, regardless of any blanks in the column.
+range("A3", range("A3").End(xlDown)).Delete
+That will delete from A3 down to the first blank cell after A3 in column A.
+Source: https://stackoverflow.com/questions/7655393/clear-contents-of-a-column/19884369/
