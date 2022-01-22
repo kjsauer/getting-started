@@ -202,7 +202,7 @@ Credit not mine. Source: <https://news.ycombinator.com/item?id=24244329>
 Design software to be simple, isolated, encapsulated, and modular.
 
 ## A Lobster's Advice
-Don't marry your design after the first date.
+Don't marry your design after the first date. (NB: This likely applies to other aspects of life also!)
 Source: <https://lobste.rs/s/rvuyep/don_t_marry_your_design_after_first_date/>
 
 ## Software Documentation Hand-off Requirements
@@ -216,7 +216,7 @@ Source: <https://lobste.rs/s/rvuyep/don_t_marry_your_design_after_first_date/>
 
 ## Reason to Code (vs. Spreadsheets, etc.)
 Code doesn't lie; intrinsically, it says what it does
-Also, row limits of Excel (see Geting Stated\Excel)
+Also, row limits of Excel (see Getting Started\Excel)
 Best to leave OG data & data files untouched--import data into code & manipulate it as needed via code (again, code doesn't lie--reading it tells you exactly what you did w/ the data)
 If needed, export it in the exact format needed for the next tool or part of the analysis or reporting process; ideally, this is directly used w/out any further manipulations needed
 
@@ -245,9 +245,9 @@ e.g., Run EXE from Python:
 $ run('C:\asdf1\asdf2.exe')
 
 ## Configuration Config CFG Files
-Advantage of separate config file:
-Save inputs for pre-processor for future.
-A GUI replaces the need for CFG file.
+Advantages of separate config file:
+- Save inputs to preprocessor for future
+- GUI replaces the need for CFG file
 
 ## Technical Debt
 Most technical debt is B.S. It's true! Make a numbered TODO list (prioritized for urgent *** and highly urgent !!!), and it is probably <200 items. The top priority of those (highlighted w/ both *** and !!!) is probably ten items at most at any given time. Technical debt is manageable w/ a good to-do list.
@@ -304,7 +304,7 @@ If/when you can't figure out if a word or phrase is the best one to use or not, 
 ## When to Edit
 Adding commentary is always good. However, when it comes to editing code, heed the following warning (i.e., take caution & tread lightly): If it ain't broke, don't fix it.
 
-## Basic Git Repo Contents
+## Basic Git Repository Contents
 NB: See Getting Started w/ Git.
 
 ## Development Environment Philosophy
@@ -326,7 +326,7 @@ Git repos: No CamelCase; lowercase only; dashes not underscores
 Sub-folders w/in Git repos: Lowercase only w/ underscores
 Variable names: PascalCase is O-K; so is camelCase (e.g., whatEver WorksFor youNyou, & You, & you2...just not 4you!)
 In title string, capitalize words that are four (4) letters or more (credit to the APA).
-Periods are not needed in code commentary (code needs perfect syntax in order to run properly; comments do not need perfect syntax in order to serve their intended purpose--namely, to help a developer or user understand what the code's doing; in fact, sometimes it's better to reduce punctuations & spacings in order to keep the codebase as small as possible in computer memory).
+Periods are not needed in code commentary (code needs perfect syntax in order to run properly; comments do not need perfect syntax in order to serve their intended purpose--namely, to help a developer or user understand what the code's doing; in fact, sometimes it's better to reduce punctuation & spacing in order to keep the codebase as simply & small as possible in computer memory).
 
 ## Common Data Filtration Logic
 (Industry-agnostic; incidentally, as is the intention of most of Getting Started)
@@ -349,3 +349,6 @@ All programming languages effectively can do the same things, i.e., it's likely 
 Source: https://twitter.com/ID_AA_Carmack/status/1466934223831506951/
 Paraphrased (long): Programming is just if statements & for loops plus a whole (heck of a) lot of (syntactic) frustration.
 Paraphrased (short): Programming is 1% if statements & for loops & 99% frustration.
+
+## Best Indexing Variable Name
+Use ii, jj, & kk. It's easier to find w/ Ctrl+f than i, j, & k.
