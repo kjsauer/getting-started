@@ -13,7 +13,7 @@ MATLAB: Matrix Laboratory (i.e., data matrix, not Neo Matrix. A bit less excitin
 ## Cons of MATLAB
 - Native data ingest and wrangling (incl. Time Series handling) does not compare to Python
 - Not nearly as deployable and ubiquitous in the greater software development world
-- NOT FREE SOFTWARE (!!!)
+- NOT FREE SOFTWARE (!)
 - Not open-source
 
 ## MATLAB vs. GNU Octave
