@@ -109,3 +109,6 @@ Don't use capital letters, so you don't have problems w/ Linux installation (i.e
 Don't use a single letter, so you don't conflict or confuse w/ assigned drive letter.
 Don't use something that will confuse people who open files & view authorship, e.g., "Me".
 In conclusion, example username meeting all criteria: "xyz"
+
+## Access Temp Folder on Windows Machine
+File Explorer > %TEMP%
