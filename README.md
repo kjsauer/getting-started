@@ -2,7 +2,7 @@
 Personal "Getting Started" design, programming, and software guides
 
 ## Introduction
-This "getting-started" Git repository contains informal, unformatted, and generic "Getting Started" design, programming, and software guides for my (Kenneth J. Sauer's aka @kjsauer on GitHub's) personal reference (however, they may also be useful to others getting started in related pastures).
+This "getting-started" Git repository contains informal, unformatted, and generic "Getting Started" design, programming, and software guides for my (Kenneth J. Sauer's aka @kjsauer on GitHub's) personal reference. However, they may also be useful to others getting started in related pastures.
 
 ## Tips
 I recommend using a text editor (e.g., Sublime Text) to open these text-only files.
@@ -17,5 +17,5 @@ This is especially used when the command is a one-liner (in order to differentia
 
 ## Acronyms & Definitions
 Terms used ubiquitously in this repo  
-NB: Nota bene (means "Please note" in Italian) (basically, a useful, beneficial note, e.g., to the software program user) (borrowed from PVsyst; see also Getting-Started\PVsyst)  
+NB: Nota bene (means "Please note" in Italian) (basically, a useful, beneficial note, e.g., to the software program user) (borrowed from PVsyst; see also getting-started\PVsyst)  
 Repo: Repository, e.g., Git repo (e.g., hosted on Microsoft's GitHub cloud server)
