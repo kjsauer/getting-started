@@ -110,3 +110,8 @@ y = m*x + b
 U = Uc + Uv*v
 1. Uc [W/m^2/degC]
 2. Uv [W/m^2/degC/m/s]
+
+## Liquidated Damages LDs - Power Capacity Test
+LDs ($) based on (Pmp_Mes_W/Pmp_Mod_W)*Pmp_NP_Contract (W)*System_Price($/W), or
+LDs ($) based on (Pmp_Mes_W/Pmp_Mod_W)*System_Price($)
+Subtract these from the 100% nameplate NP case, i.e., (Pmp_Mes_W/Pmp_Mod_W)=1
