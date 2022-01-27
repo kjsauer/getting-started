@@ -115,3 +115,10 @@ U = Uc + Uv*v
 LDs ($) based on (Pmp_Mes_W/Pmp_Mod_W)*Pmp_NP_Contract (W)*System_Price($/W), or
 LDs ($) based on (Pmp_Mes_W/Pmp_Mod_W)*System_Price($)
 Subtract these from the 100% nameplate NP case, i.e., (Pmp_Mes_W/Pmp_Mod_W)=1
+
+## Clearness Index CI
+Clearness index is the ratio of GHI to extraterrestrial irradiance on the plane parallel to the ground, i.e.,
+clearness_index = GHI / (GHI_ET * cosd(zenith))
+More specifically, the argument min_cos_zenith is present to prevent dividing by 0:
+clearness_index = GHI / (GHI_ET * max(cosd(zenith), min_cos_zenith))
+Source: Sandia PVLIB
