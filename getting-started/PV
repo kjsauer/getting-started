@@ -94,3 +94,19 @@ See Getting Started w/ ImageJ.
 
 ### Equations for PV Modeling
 See https://pvpmc.sandia.gov/
+
+## Sauer #1 Rule of Data Filtration of Time Series Data
+1. If NaN in any row, remove row
+2. Apply this rule after every data filtration (removal) step
+
+## Sauer Two Lines Filter
+1. Plot Power Pmp vs. Global Plane-of-array Irradiance Gpoa (Pmp vs. Gpoa)
+2. Draw two diagonal lines around data cloud
+y = m*x + b
+3. Remove any data outside of these lines
+4. Now see above Sauer #1 rule of data filtration
+
+## PV Thermal Model (e.g., PVsyst)
+U = Uc + Uv*v
+1. Uc [W/m^2/degC]
+2. Uv [W/m^2/degC/m/s]
