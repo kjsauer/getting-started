@@ -2,10 +2,10 @@
 Personal "Getting Started" design, programming, and software guides
 
 ## Introduction
-This "getting-started" Git repository contains informal, unformatted, and generic "Getting Started" design, programming, and software guides for my (Kenneth J. Sauer's aka @kjsauer on GitHub's) personal reference. However, they may also be useful to others getting started in related pastures.
+This "getting-started" Git repository hosted on GitHub contains generic, informal, and unformatted "Getting Started" design, programming, and software guides for my (Kenneth J. Sauer's aka @kjsauer on GitHub's) personal reference. However, these guides may also be useful to others getting started in related pastures.
 
 ## Tips
-I recommend using a text editor (e.g., Sublime Text) to open these text-only files.
+I recommend using a text editor (e.g., Sublime Text) to open & view these text-only files.
 
 ## Conventions
 "$" means an action or command line prompt (not entirely consistent throughout), e.g.:  
