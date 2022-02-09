@@ -487,3 +487,6 @@ Git history is preserved
 When you turn a GitHub account into an organization owned by a company or institution, all existing code collaborators - incl. those who previously had "Admin" rights - are given "Write", not "Admin", access. This includes a GitHub USER (individual) who is the designated administrator of the organization account.
 It's possible that if a given GitHub USER (individual) is designated as the owner of the organization (rather than a company or institution name), that USER retains "Admin" rights over all repositories of the new organization for which they were previously a code collaborator (not sure).
 In general, assume existing collaborators who had "Admin" rights are downgraded to "Write" access after the repository moves from a GitHub individual's into an organization account.
+
+## Most Basic Git/GitHub Contribution Workflow
+Create new branch off OG branch -> Add/change/update code on new branch -> Commit changes in new branch -> Pull request (i.e., pull updated code from new branch back into OG branch from which this new branch was created)
