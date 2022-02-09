@@ -1,0 +1,22 @@
+# Getting Started with Hacker News
+Kenneth J. Sauer (@kjsauer on GitHub)
+
+## Google Search
+$ julia vs. matlab vs. python site:news.ycombinator.com
+
+## Unblock IP Address
+When you click on too many Hacker News articles (links), their website algorithm blocks (bans) your IP address. Here's how you unblock (unban) it:
+
+1. Look up IP address (IPv4) while on the affected (banned) network connection:
+$ https://whatismyipaddress.com/
+2. Navigate to the following URL via web browser:
+$ https://news.ycombinator.com/unban?ip=<insert_ip_address_here>
+Leave out <>, e.g.,
+$ https://news.ycombinator.com/unban?ip=XX.XX.XXX.XXX
+Fill in X's with IP address from #1 above.
+
+Responses:
+"sorry" if it doesn't work
+"unbanned" if it works
+
+If you get "sorry", try inputting the URL in #2 above into your web browser while on a different network connection, e.g., iPhone Hotspot (Wi-Fi).
