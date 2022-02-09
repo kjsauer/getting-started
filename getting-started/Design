@@ -352,3 +352,6 @@ Paraphrased (short): Programming is 1% if statements & for loops & 99% frustrati
 
 ## Best Indexing Variable Name
 Use ii, jj, & kk. It's easier to find w/ Ctrl+f than i, j, & k.
+
+## Most Basic Workflow for All Jobs, Tasks, & Work
+Check out X, do what you have to do to X (make your change or whatever), commit change of X (into some sort of documented form/system), & check X back in. Done. Don't make things any more complex than they need to be. Going "above & beyond" is not getting the job done better than sticking to the most basic task & moving from one task to the next in this fashion.
