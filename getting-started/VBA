@@ -86,7 +86,8 @@ First, must save variable array (e.g., vector array of doubles, variants, etc.) 
 Then, read back out as desired range
 Need to do in a FOR loop (in Excel VBA) over full length of array
 
-## Hot Key(s) to Run Program
+## Add Hot Key(s) to Run Program
+Developer -> Macros -> Select Macro -> Options
 Don't use Ctrl+r to run program. This is already taken (to fill in cells horizontally from left to right, similar to Ctrl+d for the vertical direction, from top to bottom -> See Getting Started Excel)
 Instead, use Ctrl+Shift+r (i.e., Ctrl+R w/ capital "R")
 
@@ -126,10 +127,16 @@ Worksheet("Sheet1").Range("A1").Select
 ## VBA Indexing
 "Next ii" in the For Loop adds 1 to the index beyond the range of for loop (For ii = 0 to N), so indexing (ii) ends at N+1
 
+## Debugging/Troubleshooting: Watches Window
+1. Drop breakpoint somewhere in code
+2. Drag expression (from somewhere above breakpoint) into Watches Window (using mouse) to evaluate expression
+
 ## Debugging aka Troubleshooting VBA Code
 Debug/troubleshoot using:
 1. Breakpoints + Local Window
 2. Debug.Print + Immediate Window
+3. Breakpoints + Immediate Window
+4. Breakpoints + Mouse Drag + Watches Window
 
 ## Clear Contents from Cell(s) w/out Clearing Formatting
 Worksheets("Sheet1").Range("A1:G37").ClearContents
