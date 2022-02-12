@@ -347,8 +347,9 @@ All programming languages effectively can do the same things, i.e., it's likely 
 ## Programming
 "Coding is basically just ifs and for loops."
 Source: https://twitter.com/ID_AA_Carmack/status/1466934223831506951/
-Paraphrased (long): Programming is just if statements & for loops plus a whole (heck of a) lot of (syntactic) frustration.
-Paraphrased (short): Programming is 1% if statements & for loops & 99% frustration.
+Paraphrased mine (long): Programming is just if statements & for loops plus a whole (heck of a) lot of (syntactic) frustration.
+Paraphrased mine (short): Programming consists of 1% if statements & for loops and 99% frustration.
+Paraphrased mine, w/ additions: Programming consists of For Loops, If Statements, linear algebra, logic, & language syntax.
 
 ## Best Indexing Variable Name
 Use ii, jj, & kk. It's easier to find w/ Ctrl+f than i, j, & k.
