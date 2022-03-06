@@ -7,3 +7,6 @@ Planet Earth's air is an incompressible fluid (generally speaking, for practical
 For air, when flow velocity is 100 m/s or less, the air is treated as an incompressible fluid, and when the velocity is greater than 100 m/s, the air is treated as compressible fluid.
 """
 Source: <https://www.cradle-cfd.com/media/column/a149/>
+
+## Efficiency
+Efficiency (%) = Energy Out/Energy In
