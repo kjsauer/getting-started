@@ -1,8 +1,9 @@
 # Getting Started with Python
 Kenneth J. Sauer (@kjsauer on GitHub)
 
-## Scope
+## NB/Scope
 This document mostly includes Anaconda Python tips & tricks.
+Mostly run on Windows machine (w/ Windows OS)
 
 ## Navigate to Folder
 Now navigate to your folder using "dir" and "cd <insert_folder_name>"
@@ -602,3 +603,29 @@ src = inspect.getsource(module)
 
 ## Find Path of Python Modules
 help('modules')
+
+## Self-install Python Program via Pip
+$ pip install .
+Refers to setup.py document for list of Python package requirements
+
+## Run Script in Anaconda Python Prompt
+python python_script_name.py --input <add_input_string_here_wout_brackets>
+
+## Run Script in Spyder via Command Line
+run python_script_name.py --input <add_input_string_here_wout_brackets>
+
+## Run Script in Spyder w/ Breakpoints for Code Troubleshooting
+Use Run Settings
+Add to command line options: --input <add_input_string_here_wout_brackets>
+
+## runfile (Abbreviated Version)
+runfile('C:/Users/<your_computer_name>/Documents/GitHub/<your_repo_name>/python_script_name.py', args='--input C:/Users/<enter_username>/Enter/Input/File/Folder/Directory/Here/input_file_name.csv')
+
+## runfile (Full Version)
+runfile('C:/Users/<your_computer_name>/Documents/GitHub/<your_repo_name>/python_script_name.py', args='--input C:/Users/<enter_username>/Enter/Input/File/Folder/Directory/Here/input_file_name.csv', wdir='C:/Users/<your_computer_name>/Documents/GitHub/<your_repo_name>')
+
+## Troubleshooting w/ Breakpoints (e.g., in Spyder)
+Use debugfile, not runfile (!) (replace the above runfile w/ debugfile)
+
+## debugfile (Abbreviated Version)
+debugfile('C:/Users/<your_computer_name>/Documents/GitHub/<your_repo_name>/python_script_name.py', args='--input C:/Users/<enter_username>/Enter/Input/File/Folder/Directory/Here/Control/input_file_name.csv')
