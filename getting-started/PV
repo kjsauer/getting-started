@@ -4,7 +4,7 @@ Kenneth J. Sauer (@kjsauer on GitHub)
 ## Acronyms
 _Ref: At reference conditions of global plane-of-array irradiance, cell temperature, and solar spectrum
 devEtaRel_Ref: Deviation in PV cell or module efficiency relative to reference test conditions (e.g., STC)
-DAQ: Often used synonymously w/ DAS; sometimes refers specifically to a sub-component of the DAS such as the main computer running the DAQ software (or the DAQ software itself, for that matter)
+DAQ: Often used synonymously with DAS; sometimes refers specifically to a sub-component of the DAS such as the main computer running the DAQ software (or the DAQ software itself, for that matter)
 DAS: Data Acquisition System; the holistic system for collecting (recording) measurement data, e.g., in the field
 DHI: Diffuse horizontal irradiance [W/m^2]
 DNI: Direct normal irradiance [W/m^2]
@@ -12,35 +12,41 @@ GHI: Global horizontal irradiance [W/m^2]
 Gpoa: Global plane-of-array irradiance [W/m^2]
 Gpoa_Ref: Global plane-of-array irradiance at reference conditions [W/m^2]
 Gpoa_Sref: Self-reference irradiance derived from a PV device's Isc [W/m^2]
-IEC 60904-3 AM1.5G: Standard global (G) solar spectrum historically associated w/ air mass AM ratio 1.5 (air mass is a geometrical calculation, whereas spectrum is W/m^2/lambda, where lambda is the wavelength of light, in nm) (synonyms of spectrum: spectral irradiance, spectral irradiance distribution, & spectrally-resolved irradiance)
+IEC 60904-3 AM1.5G: Standard global (G) solar spectrum historically associated with air mass AM ratio 1.5 (air mass is a geometrical calculation, whereas spectrum is W/m^2/lambda, where lambda is the wavelength of light, in nm) (synonyms of spectrum: spectral irradiance, spectral irradiance distribution, & spectrally-resolved irradiance)
 Isc: Short-circuit current [Amps, or A]
 IscLin: Deviation from Isc linearity (when assuming a unity 1:1 relationship b/w Isc & irradiance, which applies to so-called "linear" PV devices)
 IscNorm_Ref: Isc normalized to reference conditions of spectrum, irradiance, & temperature (e.g., STC)
+NREL: National Renewable Energy Laboratory
+NSRDB: National Solar Radiation Database
 Pmp: Maximum power (e.g., power at max. power point MPP on I-V curve)
 PmpDC: DC power [W]
 PmpDC_Ref: DC power at reference conditions [Watts, or W]
 PTC: PVUSA Test Conditions (more field-representative test conditions than STC, esp. for the Northern California region encompassing the PVUSA field testing site in Davis, CA; Gpoa=1000 W/m^2, Tamb=20 degC, & Wspd=1 m/s; namely, Tmod is not close to the STC case of 25 degC in the field, so it does not work well to extrapolate the data to STC)
 PV: Photovoltaic (often used as adjective adj.; noun is often the plural form photovoltaics)
 RC: Reporting Condition (e.g., RCs are often STC for indoor performance evaluation in a laboratory with a flash tester and PTC for outdoor field performance evaluation in the installed, field-operating condition)
-RI: Reporting Interval (e.g., data is collected in the field & rolled into, e.g., 5-min averages; in this case, the RI is 5-min; note that data collection using DAS aka DAQ)
-RP: Reporting Period (e.g., 5-min RI data is evaluated each month for ASTM E2848 Power Capacity; in this case, the RP is monthly)
+RI: Reporting Interval (e.g., data is collected in the field & rolled into, e.g., 5-min averages; in this example, the RI is 5-min; note that data collection via DAS aka DAQ)
+RP: Reporting Period (e.g., 5-min RI data is evaluated each month for ASTM E2848-13 Power Capacity; in this example, the RP is monthly)
+SAM: System Advisor Model
 STC: Standard Test Conditions (Gpoa=1000 W/m^2, Tcell=25 degC, spectrum=IEC 60904-3 AM1.5G)
 Tamb: Ambient temperature [degC]
 thetaZ: Angle of incidence of DNI beam [degrees or radians, depending on which convention you're working with--see more below]
+TGY: Typical GHI Year
+TMY: Typical Meteorological Year
 Wspd: Wind speed [m/s]
 
 ## Equations in MATLAB Syntax
 GHI = DHI + DNI.*cos(thetaZ);
 Mind your degrees & radians (cosd's get degrees)!
+In general, as always, mind your units (degC vs. degF vs. Kelvin; kW vs MW vs. W; etc.).
 
-## ASTM E2848 PVUSA Regression
+## ASTM E2848-13 PVUSA Regression
 Pmp = Gpoa*(a+b*Gpoa+c*Tamb+d*Wspd)
 Supply Gpoa, Tamb, Wspd, & Pmp.
-Solve for (a,b,c,d) via multiple linear (multi-linear) regression w/ no (zero) y-intercept, i.e., force y-intercept equal to 0 (Excel can do it, too, if it can hold all your field data, w/ the Analysis ToolPak add-in under File > Options > Add-Ins; see more about Excel limits in Getting Started\Excel).
+Solve for (a,b,c,d) via multiple linear (multi-linear) regression with no (aka zero) y-intercept, i.e., force y-intercept equal to 0 (Excel can do it, too, assuming it can hold all your PV system operational time series data, via the Analysis ToolPak add-in under File > Options > Add-Ins; see more about Excel data limits in Getting Started\Excel).
 (In MATLAB, Octave, & prob. Julia, it's as simple as coeffs=X\y.)
 Plug in PTC conditions + (a,b,c,d) to get Pmp at PTC.
 Credit & thanks to J. Newmiller, T. Townsend, C. Whitaker, & other involved members of the OG Endecon Engineering & PVUSA teams
-You can also derive custom reporting conditions for each reporting period RP following ASTM E2939 (instead of plugging in fixed PTC conditions regardless of time of year).
+You can also derive custom reporting conditions for each reporting period RP following ASTM E2939-13 (instead of plugging in fixed PTC conditions regardless of time of year).
 
 ## Fill Factor
 FF = (Imp*Vmp)/(Isc*Voc);
@@ -64,8 +70,8 @@ If deviations, exceed this, troubleshoot the test system (which incl. not just t
 
 ## Quick-n-dirty Power Normalization
 Pmp = PmpRef*[1-gPmp.*(Tcell-Tcell_Ref)].*(Gpoa/Gpoa_Ref)
-Only starts working well for >600 W/m^2 w/ Ref of 1000 W/m^2
-(In general, best to avoid irradiance & temperature extrapolations & derive reporting conditions based on the predicted or actual, measured weather that occurred & then use data w/in 20% of that so you're only interpolating).
+Only starts working well for >600 W/m^2 with Ref of 1000 W/m^2
+(In general, best to avoid irradiance & temperature extrapolations & derive reporting conditions based on the predicted or actual, measured weather that occurred & then use data within 20% of that so you're only interpolating).
 
 ## PVsyst Module Quality Loss Factor MQF
 Negative adjustment factor AF as loss convention:
@@ -88,23 +94,26 @@ Rs -> No impact on Voc
 Rsh -> No impact on Isc (but quickly changes with >0 V)
 
 ## Electroluminescence (EL) and Infrared (IR) Imagery
-See Getting Started w/ ImageJ.
+See Getting Started with ImageJ.
 
 ## References
 
 ### Equations for PV Modeling
 See https://pvpmc.sandia.gov/
 
-## Sauer #1 Rule of Data Filtration of Time Series Data
+## Sauer Rule #1 of PV Time Series Data Filtration
 1. If NaN in any row, remove row
-2. Apply this rule after every data filtration (removal) step
+2. Apply this rule after every data filtration (aka removal) step.
+Applies to, e.g.:
+- Solar resource/weather time series data
+- PV system operational time series data
 
-## Sauer Two Lines Filter
+## Sauer Two Lines (2-lines) Filter
 1. Plot Power Pmp vs. Global Plane-of-array Irradiance Gpoa (Pmp vs. Gpoa)
 2. Draw two diagonal lines around data cloud
 y = m*x + b
 3. Remove any data outside of these lines
-4. Now see above Sauer #1 rule of data filtration
+4. Now see above Sauer Rule #1 of PV Time Series Data Filtration
 
 ## PV Thermal Model (e.g., PVsyst)
 U = Uc + Uv*v
@@ -125,8 +134,7 @@ Source: Sandia PVLIB
 
 ## Capacity Factor CF
 Capacity Factor = The energy generated by the power plant during the year divided by the energy it could have generated if it had run at its full capacity throughout the entire year (8,760 hours)
-e.g.,
-Last year Nellis Air Force Base produced 31,467,000 kWh/yr. The system has a nameplate DC capacity of 14.2MW. Using a 22.4% derate factor as an example, the system has a nameplate AC capacity of 11.0MW.
+e.g., Last year Nellis Air Force Base produced 31,467,000 kWh/yr. The system has a nameplate DC capacity of 14.2MW. Using a 22.4% derate factor as an example, the system has a nameplate AC capacity of 11.0MW.
 Capacity Factor = (31,467 MWh/yr) / (11.0MWac * 8,760 hrs/yr) * 100 = 32.7%
 Source: GreenVolts, Inc.’s Comments on the Draft Staff Report Entitled "Comparative Costs of California Central Station Electricity Generation." (Aug. 31, 2009) (https://efiling.energy.ca.gov/GetDocument.aspx?tn=53078&DocumentContentId=8967/)
 See more: https://groups.google.com/g/pvlib-python/c/byjI6aAskDI/m/jgh_JXpdAAAJ?utm_medium=email&utm_source=footer&pli=1/
@@ -137,7 +145,69 @@ EPE: EVA/Polyester PET/EVA
 ## Degradation Rate Analysis
 Evaluate trendlines via robust linear regression of the following metrics:
 1. Power-based:
-1a. ASTM E2848 Power vs. Time (constant reporting conditions RCs throughout the year, e.g., PVUSA Test Conditions PTC)
-1b. Power Performance Index PPI (Mes. vs. Mod. Energy) vs. Time (RCs may change seasonally w/ this approach, e.g., following ASTM E2939)
+1a. ASTM E2848-13 Power vs. Time (constant reporting conditions RCs throughout the year, e.g., PVUSA Test Conditions PTC)
+1b. Power Performance Index PPI (Mes. vs. Mod. Energy) vs. Time (OK if RCs change seasonally with this approach, e.g., following ASTM E2939-13)
 2. Energy-based: Energy Performance Index EPI (Mes. vs. Mod Energy) vs. Time
 3. Performance Ratio-based: Incidence Angle Modifier IAM- & Module Temperature-adjusted Performance Ratio PR vs. Time
+
+## Primary Reasons for PV Energy Underproduction
+1. Low solar resource (e.g., difference from a priori, long-term projections)
+2. Unavailability (e.g., full or partial downtime of all or part(s) of the PV system)
+3. Underperformance (e.g., problem with component(s), difference from nameplate aka nominal ratings)
+
+## Time Conventions of Popular PV Time Series Data Resources & Simulation Software Programs
+"""
+label : str
+'left', 'right', or 'center'. For data that is averaged, defines if
+            the timestamp refers to the left edge, the right edge, or the
+            center of the averaging interval, for purposes of calculating
+            sunposition. For example, TMY3 data is right-labeled, so 11 AM data
+            represents data from 10 to 11, and sun position is calculated
+            at 10:30 AM.  Currently SAM and PVSyst use left-labeled interval
+            data and NSRDB uses centered.
+label : str
+            'left', 'right', or 'center'. For data that is averaged, defines if
+            the timestamp refers to the left edge, the right edge, or the 
+            center of the averaging interval. SolarGis default style is center,
+            unless user requests a right label.
+"""
+Source: Bifacial Radiance Documentation by Silvana Ayala GitHub
+<https://github.com/NREL/bifacial_radiance/blob/main/bifacial_radiance/main.py/>
+
+NB: While instantaneously captured satellite images are indeed themselves considered center-of-interval, I *believe* the NSRDB time convention for solar resource/weather data reporting is end-of-hour (needs confirmation).
+
+### 30-min. NREL's NSRDB PSM Weather Data Inputted Into NREL's SAM
+-> 2020-01-01 8:00 into same; subhourly evaluated at timestamp
+-> 2020-01-01 8:30 into same; subhourly evaluated at timestamp
+
+### 30-min. NREL's NSRDB PSM Weather Data Inputted Into NREL's SAM [Timestamp GHI] -> 30-min. NREL's SAM Simulation Outputs [Timestamp GHI]
+2020-01-01 8:00 35 W/m^2 -> 2020-01-01 8:00 35 W/m^2
+2020-01-01 8:30 97 W/m^2 -> 2020-01-01 8:30 97 W/m^2
+2020-01-01 9:00 196 W/m^2 -> 2020-01-01 9:00 196 W/m^2
+2020-01-01 9:30 288 W/m^2 -> 2020-01-01 9:30 288 W/m^2
+
+### 60-min. NREL's NSRDB PSM Weather Data Inputted Into NREL's SAM
+-> 2020-01-01 8:30 into 2020-01-01 8:00
+
+### 60-min. NREL's NSRDB PSM Weather Data Inputted Into NREL's SAM [Timestamp GHI] -> 60-min. NREL's SAM Simulation Outputs [Timestamp GHI]
+2020-01-01 7:30 5 W/m^2 -> 2020-01-01 7:00 5 W/m^2
+2020-01-01 8:30 97 W/m^2 -> 2020-01-01 8:00 97 W/m^2
+2020-01-01 9:30 288 W/m^2 -> 2020-01-01 9:00 288 W/m^2
+2020-01-01 10:30 414 W/m^2 -> 2020-01-01 10:00 414 W/m^2
+
+### NREL's SAM
+-> Sun position calc. at middle of interval if hourly (1-hr.) data; outputted at reported timestamp
+-> Sun position calc. at timestamp if subhourly (5-min.) data; outputted at reported timestamp
+
+### More Information on NREL's SAM
+https://sam.nrel.gov/forum/forum-general/913-change-in-start-hour-from-1-am-to-midnight-in-the-change-from-version-2014-1-14-to-2014-11-24.html
+https://sam.nrel.gov/forum/forum-general/4015-time-conventions-in-sam.html/
+
+### NREL's TMY2 & TMY3
+-> Reportedly "right-labeled"
+
+### PVLIB
+-> Models at timestamp; outputted at reported timestamp
+
+### PVsyst
+-> Sun position calc. at middle of interval if hourly (1-hr.) data; outputted at reported timestamp
