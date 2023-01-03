@@ -55,3 +55,10 @@ Show minimap via View > Show Minimap (makes for easy scrolling, by clicking on i
 When Sublime Text 3 is open and you have files open in it, Sublime Text editor tracks their edit status. If you move the open files on your computer, Sublime will register that the file has changed. Sublime, like Git, tracks the change status of files while they are open in Sublime and--importantly--when Sublime is open. If you have files open in Sublime and you close Sublime and then move the files on your computer and then reopen Sublime, the files will simply have disappeared from Sublime; it doesn't register it as a change.
 
 TLDR: Close Sublime Text editor before organizing files (e.g., deleting or renaming).
+
+## Visual Basic Syntax Highlighting
+Choose ASP
+
+## Feature Requests
+1. When Sublime Text Editor updates, need to preserve which files & what (potentially unfinished/unsaved) work you had open at the time. This is one of the main advantages/benefits/features over Notepad, & it's presently not the expected case when Sublime Text Editor updates.
+2. Allow Sublime to read text aloud (preferably incl. different parts for different characters, like for a screenplay or playwright script).
