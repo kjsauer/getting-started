@@ -62,3 +62,10 @@ Choose ASP
 ## Feature Requests
 1. When Sublime Text Editor updates, need to preserve which files & what (potentially unfinished/unsaved) work you had open at the time. This is one of the main advantages/benefits/features over Notepad, & it's presently not the expected case when Sublime Text Editor updates.
 2. Allow Sublime to read text aloud (preferably incl. different parts for different characters, like for a screenplay or playwright script).
+
+## Disable Shift+Delete Hotkey as Cut
+Preferences > Key Bindings
+[
+    { "keys": ["shift+delete"], "command": "noop" }
+]
+Source: https://forum.sublimetext.com/t/disable-a-default-hotkey/10994/
