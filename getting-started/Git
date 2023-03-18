@@ -500,3 +500,10 @@ In general, assume existing collaborators who had "Admin" rights are downgraded 
 
 ## Most Basic Git/GitHub Contribution Workflow
 Create new branch off OG branch -> Add/change/update code on new branch -> Commit changes in new branch -> Pull request (i.e., pull updated code from new branch back into OG branch from which this new branch was created)
+
+## Avoid GitHub Markdown Formatting in GitHub Issues
+Add "<pre>" before pasting text, then Preview to ensure that it worked.
+If not, try inserting a code block instead via single quotes, e.g.:
+`Insert
+text
+here.`
