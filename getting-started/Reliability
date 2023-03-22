@@ -11,5 +11,5 @@ C = Average out-of-court settlement
 X = A*B*C
 If X < cost of recall, don't recall
 
-## Test Design
-Is this a test that is waiting for a problem?
+## New Reliability Test
+Key question during design phase: Is this a test that's waiting for a problem?
