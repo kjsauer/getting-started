@@ -1,0 +1,15 @@
+# Getting Started with Risk
+Kenneth J. Sauer (@kjsauer on GitHub)
+
+## Risk and Risk Matrices
+A risk matrix is a matrix that is used during risk assessment to define the level of risk by considering the category of probability or likelihood against the category of consequence severity. This is a simple mechanism to increase visibility of risks and assist management decision making.
+Source #1: https://en.wikipedia.org/wiki/Risk_matrix
+Source #2: https://web.archive.org/web/20180714183028/http://www.juliantalbot.com/single-post/2018/07/31/Whats-right-with-risk-matrices/
+
+My additions:
+Risk = Impact x Likelihood x Severity
+Category of probability of likelihood = Likelihood
+Category of consequence severity: Impact x Severity
+
+## See Other
+Risk is closely related to reliability. Please see other, related post: Getting-Started\Reliability
