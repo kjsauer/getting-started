@@ -48,6 +48,15 @@ Plug in PTC conditions + (a,b,c,d) to get Pmp at PTC.
 Credit & thanks to J. Newmiller, T. Townsend, C. Whitaker, & other involved members of the OG Endecon Engineering & PVUSA teams
 You can also derive custom reporting conditions for each reporting period RP following ASTM E2939-13 (instead of plugging in fixed PTC conditions regardless of time of year).
 
+## Sauer Two-Step Linear Least Squares Regression Method TSLLS
+If you're going to use {Gpoa, Tmod} for a capacity test instead of {Gpoa, Tamb, & Wspd}, which I don't recommend, then you need to use a different regression-based equation in Ref. [1]. One paper which references Ref. [1] refers to the equation/model as "a two-step linear least squares TSLLS [regression] method" [2] for analyzing PV module and system DC or AC power as a function of plane-of-array POA irradiance Gpoa and module backsheet temperature Tmod.
+
+Pmp = Gpoa*(k1 + k2*Tmod)
+
+[1] Kenneth J. Sauer, Real-world Challenges and Opportunities in Degradation Rate Analysis for Commercial PV Systems, IEEE Photovoltaic Specialists Conference Jun 2011 (See poster corresponding to paper here: https://www.slideshare.net/KennethSauer/degradation-rate-analysis-for-commercial-pv-systems/)
+
+[2] Sairaj Arandhakar, Nalin Chaudhary, Shobha Rani Depuru, Rajesh Kumar Dubey, and Muralidhar Nayak Bhukya, Analysis and Implementation of Robust Metaheuristic Algorithm to Extract Essential Parameters of Solar Cell, IEEE Access Dec 2021
+
 ## Fill Factor
 FF = (Imp*Vmp)/(Isc*Voc);
 
