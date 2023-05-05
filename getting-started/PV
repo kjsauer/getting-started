@@ -48,6 +48,9 @@ Plug in PTC conditions + (a,b,c,d) to get Pmp at PTC.
 Credit & thanks to J. Newmiller, T. Townsend, C. Whitaker, & other involved members of the OG Endecon Engineering & PVUSA teams
 You can also derive custom reporting conditions for each reporting period RP following ASTM E2939-13 (instead of plugging in fixed PTC conditions regardless of time of year).
 
+## Measurement Apparatus
+For commercial (practical) PV capacity testing, use only dome-shaped, broadband, thermopile pyranometers to collect your necessary POA irradiance data (and even for your GHI). Also, a diffuse horizontal irradiance DHI sensor (e.g., Delta-T SPN1 Sunshine Pyranometer) is highly recommended and sometimes necessary for any advanced PV operational data analysis. e.g., NREL's System Advisor Model SAM requires both GHI and DHI for transpositions to POA. PVsyst allows GHI-only transpositions, but the uncertainty is higher (sometimes significantly).
+
 ## Sauer Two-Step Linear Least Squares Regression Method TSLLS
 If you're going to use {Gpoa, Tmod} for a capacity test instead of {Gpoa, Tamb, & Wspd}, which I don't recommend, then you need to use a different regression-based equation in Ref. [1]. One paper which references Ref. [1] refers to the equation/model as "a two-step linear least squares TSLLS [regression] method" [2] for analyzing PV module and system DC or AC power as a function of plane-of-array POA irradiance Gpoa and module backsheet temperature Tmod.
 
