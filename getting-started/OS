@@ -67,7 +67,7 @@ $ Four finger swipe to view all open windows
 Full screen
 $ F11
 
-## MS Windows OS
+## Microsoft MS Windows Operating System OS
 Avoid asterisks in filenames.
 Best to start variable names with a letter (not a number) (e.g., a1, not 1a).
 
@@ -81,6 +81,8 @@ Get familiar w/ Start > Run > one of the following commands:
 2. MS Config (msconfig.exe)
 3. MS Info (msinfo32.exe)
 4. System settings (sysdm.cpl)
+
+Make sure your Task Scheduler isn't running any unnecessary or unwanted tasks.
 
 ## Remove Metadata from Photos Before Uploading to Internet and Sharing on MS Windows OS
 Before uploading photos to the Internet (obv. selfies), prob. best to remove metadata first:
