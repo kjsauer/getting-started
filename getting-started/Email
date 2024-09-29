@@ -60,3 +60,6 @@ It's unclear to me why Gmail Drafts don't go into the Trash when they're deleted
 
 ## Attention and Focus
 Promote the zero inbox policy. Make a "_todo" folder where you can put anything that involves a necessary "action".
+
+## Apple iCloud - Hide My Email
+Doesn't work if you're sending the email FROM the email address that it's set up to forward TO, i.e., email must come FROM an alternate email address.

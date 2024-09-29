@@ -1,5 +1,8 @@
-# Getting Started with Code and Software Program Architecture, Design, and Philosophy Principles
+# Getting Started with Design
 Kenneth J. Sauer (@kjsauer on GitHub)
+
+## Scope
+Design principles and philosophy of code and software program architecture
 
 ## Acronyms & Terms
 Varname = Variable name
@@ -356,3 +359,6 @@ Use ii, jj, & kk. It's easier to find w/ Ctrl+f than i, j, & k.
 
 ## Most Basic Workflow for All Jobs, Tasks, & Work
 Check out X, do what you have to do to X (make your change or whatever), commit change of X (into some sort of documented form/system), & check X back in. Done. Don't make things any more complex than they need to be. Going "above & beyond" is not getting the job done better than sticking to the most basic task & moving from one task to the next in this fashion.
+
+## Software Design - Core Features, Core Principles
+Essential design features to target/essential design principles: Modular, encapsulated, flexible, extensible

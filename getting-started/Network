@@ -9,3 +9,7 @@ Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## Resource(s)
 https://testmy.net/
+
+## List Devices on Network
+To see all of the devices connected to your network, type arp -a in a Command Prompt window. This will show you the allocated IP addresses and the MAC addresses of all connected devices.
+Source: https://www.pcwdld.com/how-to-scan-network-for-ip-addresses/

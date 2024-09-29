@@ -28,3 +28,18 @@ Switch tabs up
 $ Ctrl+PgUp
 Switch tabs down
 $ Ctrl+PgDn
+
+## Document Failed to Download
+If document fails to download,
+Ctrl+Alt+Del
+Set priority of browser to High.
+
+## File Naming Conventions
+Web browsers have problems with spaces. Spaces will automatically be replaced with plus (+) signs.
+Better to replace spaces with underscores (not dashes):
+“””
+In Unix environments, it is generally recommended to replace spaces in filenames with underscores (_), rather than dots (.) or dashes (-). This is because underscores are more commonly used and supported by Unix utilities and programming languages.
+“””
+Source: https://forum.squarespace.com/topic/246912-downloading-images-assets/
+Source: https://www.reddit.com/r/photoshop/comments/k57wb9/underscore_and_hyphens_in_file_names/
+Source: https://www.reddit.com/r/Gentoo/comments/13xbiln/naming_convention_for_files/

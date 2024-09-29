@@ -1,6 +1,9 @@
 # Getting Started with Operating Systems
 Kenneth J. Sauer (@kjsauer on GitHub)
 
+## Scope
+Focus is on software (fundamental to use) of computers.
+
 ## Acronyms
 MS: Microsoft
 OS: Operating System
@@ -192,3 +195,11 @@ Control Panel: Navigate to "System and Security," then "System," and select "Dev
 
 ## Warning: Empty Directories
 NOTE: Empty directories may not really be empty; adjust View Settings to display protected Hidden files and folders.
+
+## Antivirus Malware Virus Scanning
+Use MalwareBytes
+Offline installer
+https://downloads.malwarebytes.com/file/mb4_offline
+(Find latest download link online through a reputable website)
+Source: https://www.reddit.com/r/Malwarebytes/comments/16rb7ml/when_are_we_going_to_get_a_new_offline_installer/
+Source: https://forums.malwarebytes.com/topic/298150-full-offline-installer-for-mb-v4529-rel-17-may-2023/
