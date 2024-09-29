@@ -337,34 +337,34 @@ https://stackoverflow.com/questions/10330425/how-do-i-export-a-git-log-to-a-text
 https://stackoverflow.com/questions/10418056/how-do-i-generate-a-git-commit-log-for-the-last-month-and-export-it-as-csv/
 https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History/
 
-# Git Archive
+## Git Archive (Archiving a Git/GitHub Repo)
 
-## Git Archive Links
+### Git Archive - Links
 https://git-scm.com/docs/git-archive/
 https://www.atlassian.com/git/tutorials/export-git-archive/
 https://www.atlassian.com/git/tutorials/export-git-archive/
 
-## Git Bundle Links
+### Git Bundle - Links
 https://git-scm.com/docs/git-bundle/
 https://git-scm.com/book/en/v2/Git-Tools-Bundling/
 https://stackoverflow.com/questions/11792671/how-to-git-bundle-a-complete-repo/
 
-## Git Archive Method 1
+### Git Archive - Method 1
 
-### Master Branch Only
+#### Master (Main) Branch Only
 $ git bundle create repo.bundle master
 
-### All Branches
+#### All Branches
 $ git bundle create repo.bundle --all
 
-### Lessons Learned
+#### Lessons Learned
 Do not need ".bundle"
 
-## Git Archive Method 2
+### Git Archive - Method 2
 $ git archive --output=Archive.zip --prefix=Archive/ master
 https://stackoverflow.com/questions/2046918/backing-up-project-which-uses-git/2047141#2047141/
 
-## Git Archive Method 3
+### Git Archive - Method 3
 Final
 Download git_archive_all.py
 From:
@@ -377,11 +377,11 @@ Navigate to Git repo path
 Run the following
 $ python "C:/Users/<computername>/Anaconda2/envs/py33/Scripts/git_archive_all.py" myarchive.zip
 
-## Git Archive Method 4
+### Git Archive - Method 4
 $ git bundle create foo master
 $ git bundle create foo-all --all
 
-### Check results
+#### Check results
 $ git bundle list-heads foo
 $ git bundle list-heads foo-all
 
