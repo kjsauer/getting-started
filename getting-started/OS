@@ -114,3 +114,78 @@ In conclusion, example username meeting all criteria: "xyz"
 
 ## Access Temp Folder on Windows Machine
 File Explorer > %TEMP%
+
+## Send to Compressed (zipped) folder - Access Denied - Windows 7
+Solution:
+"""
+$ takeown /f %temp% /r /d y
+$ icacls %temp% /reset
+$ icacls %temp% /inheritance:r
+$ icacls %temp% /grant %username%:(OI)(CI)F /T /C
+$ icacls %temp% /grant Administrators:(OI)(CI)F /T /C
+$ icacls %temp% /grant SYSTEM:(OI)(CI)F /T /C
+$ md %temp%\Low
+$ icacls %temp%\Low /setintegritylevel (OI)(CI)low
+"""
+Main sources:
+1. https://www.reddit.com/r/WindowsHelp/comments/1d9hbck/access_denied_when_compressing_folders_to_zip/
+2. https://www.winhelponline.com/blog/fix-zipped-folder-access-denied-unable-complete-operation/
+Other sources:
+1. https://www.minitool.com/news/compressed-folder-access-denied.html
+2. https://www.minitool.com/news/fix-access-denied-windows.html
+
+## File and Folder Creation Dates
+"Folder [and file] dates are inherently fragile."
+Source: https://resource.dopus.com/t/restoring-modified-timestamps-on-dropbox-folders/33113
+Thus, if you care about it, make sure to put it into the file or folder name itself, e.g., YYMMDD (or YYYYMMDD).
+
+## Reset File Extension File Association - Windows 7
+Source: https://websistent.com/delete-file-association-windows-7/
+
+## Check Size of Folder Excl. Hidden Files & Folders
+dir /s dir_name
+
+## Check Size of Folder Incl. Hidden Files & Folders
+dir /a/s dir_name
+
+## Disk Formatting
+Windows: Format as NTFS
+Mac: Format as TBD
+Linux: Format as TBD
+Mixed Windows/Mac/Linux: Format as exFAT
+
+## Transfer files without paying attention to pathname length [Source1] [Source2]
+Copy:
+$ robocopy pathname_from pathname_to /e
+Copy, ignore errors, log only files that fail to copy:
+$ robocopy pathname_from pathname_to /e /r:0 /w:0 /b /nfl /ndl /xj
+Cut/paste (leaves empty folder structure behind):
+$ robocopy pathname_from pathname_to /e /mov
+Cut/past (doesn't leave empty folder structure behind):
+$ robocopy pathname_from pathname_to /e /move
+
+## Note: Hidden Directory
+When copying files from the root of one drive into a non-root (e.g., folder) of another, the copied file may appear as HIDDEN using the above robocopy commands. To fix this, run the following command:
+$ attrib -h -s C:\D_backup
+Source: https://stackoverflow.com/questions/6584402/after-robocopy-the-copied-directory-and-files-are-not-visible-on-the-destinatio
+(Alternatively, right click on folder -> Properties -> Uncheck "Hidden")
+### Source1
+Robust Copy (robocopy)
+Source: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy
+### Source2
+Jonathan Johnson
+jonathanjohnson0724Thai Pepper
+Aug 2020
+Use the /R, /W, and /B options.
+/R:3 means retry trhee times – default is one million.
+/W:5 means wait five seconds between retries – default is 30 seconds.
+You can also specify /R:0 for don’t retry, and /W:0 to not wait between retries.
+Of course, this means that files that can’t be copied won’t be copied, but at least it won’t sit there forever doing nothing. To clean up the output so that it only reports files that it errors on, use /NFL (no file listing) and /NDL (no directory listing). I often also use /XJ (exclude junction points and symbolic links).
+If running with admin rights, the /B option copies in backup mode, which overrides restrictive permissions. (More specifically, it allows you to utilize the SeBackupPrivilege and SeRestorePrivilege rights if granted to your user account by the operating system.)
+Source: https://community.spiceworks.com/t/robocopy-ignore-errors/772705/3
+
+## Force remove directory (e.g., Recycle Bin)
+$ rmdir /s /q pathname_to_remove
+
+## Windows
+Control Panel: Navigate to "System and Security," then "System," and select "Device Manager." Run Command: Press 'Windows + R' on your keyboard, type "devmgmt. msc", and hit Enter.

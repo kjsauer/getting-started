@@ -9,3 +9,13 @@ It is easy to build (construct) a computer. Choosing good parts is more challeng
 
 ## Safe Mode
 Start Lenovo ThinkPad computer in safe mode: Tap F8 during start-up
+
+## Computer Repair - Replace Dead CMOS Battery
+Unplug everything
+Ground self on metal
+Take out CMOS
+Hold power button for one minute
+Turn on
+May need to boot twice
+Enter setup
+Set the time and date
