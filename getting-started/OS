@@ -189,3 +189,6 @@ $ rmdir /s /q pathname_to_remove
 
 ## Windows
 Control Panel: Navigate to "System and Security," then "System," and select "Device Manager." Run Command: Press 'Windows + R' on your keyboard, type "devmgmt. msc", and hit Enter.
+
+## Warning: Empty Directories
+NOTE: Empty directories may not really be empty; adjust View Settings to display protected Hidden files and folders.
