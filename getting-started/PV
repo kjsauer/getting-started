@@ -223,3 +223,11 @@ https://sam.nrel.gov/forum/forum-general/4015-time-conventions-in-sam.html/
 
 ### PVsyst
 -> Sun position calc. at middle of interval if hourly (1-hr.) data; outputted at reported timestamp
+
+## Definitions (applicable to IEC WG1)
+Insolation: A subset of irradiation for only sunlight
+Irradiation: Radiation from any light source (sun, nuclear explosion, light bulb, etc.)
+Irradiance: Intensity of irradiation in W/m^2
+Illumination: Measured in lux, not applicable to solar PV
+Diffuse horizontal irradiance is in the Electropedia.
+Some people prefer the term Insolation instead of Irradiation to distinguish that it is irradiance integrated over time in the portion of solar spectrum of interest to PV (excluding x-ray irradiation, gamma ray irradiation, etc.).

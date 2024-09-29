@@ -203,3 +203,19 @@ https://downloads.malwarebytes.com/file/mb4_offline
 (Find latest download link online through a reputable website)
 Source: https://www.reddit.com/r/Malwarebytes/comments/16rb7ml/when_are_we_going_to_get_a_new_offline_installer/
 Source: https://forums.malwarebytes.com/topic/298150-full-offline-installer-for-mb-v4529-rel-17-may-2023/
+
+## Record (Windows 10 and above)
+Windows + G
+
+## Open File Explorer (Windows)
+Windows + e
+
+## Command Prompt - Linux
+Sort files by timestamp:
+$ ls -lt
+Source(s):
+https://www.freecodecamp.org/news/how-to-search-for-files-from-the-linux-command-line/
+https://linuxhandbook.com/sort-ls-by-date-time/
+
+Go up a folder:
+$ cd ../
