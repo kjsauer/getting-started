@@ -507,3 +507,23 @@ If not, try inserting a code block instead via single quotes, e.g.:
 `Insert
 text
 here.`
+
+## Check Out (Git Checkout) via Command Line
+If you cannot merge a pull request automatically here, you have the option of checking it out via command line to resolve conflicts and perform a manual merge.
+
+Step 1: From your project repository, bring in the changes and test.
+$ git fetch origin
+$ git checkout -b insert_branch_name_w_updates origin/insert_branch_name_w_updates
+$ git merge insert_branch_name_2_update
+
+Step 2: Merge the changes and update on GitHub.
+$ git checkout insert_branch_name_2_update
+$ git merge --no-ff insert_branch_name_w_updates
+$ git push origin insert_branch_name_2_update
+
+## Check Status of One Branch vs. Top-level Branch from Which It Came
+For local branches: git rev-list --left-right --count master...test-branch
+For remote branches: git rev-list --left-right --count origin/master...origin/test-branch
+
+## Git Admin: Managing Admin in Organization's Git Repository Repo
+https://docs.github.com/en/organizations/managing-organization-settings/restricting-repository-creation-in-your-organization/

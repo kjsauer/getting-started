@@ -14,7 +14,7 @@ Gpoa_Ref: Global plane-of-array irradiance at reference conditions [W/m^2]
 Gpoa_Sref: Self-reference irradiance derived from a PV device's Isc [W/m^2]
 IEC 60904-3 AM1.5G: Standard global (G) solar spectrum historically associated with air mass AM ratio 1.5 (air mass is a geometrical calculation, whereas spectrum is W/m^2/lambda, where lambda is the wavelength of light, in nm) (synonyms of spectrum: spectral irradiance, spectral irradiance distribution, & spectrally-resolved irradiance)
 Isc: Short-circuit current [Amps, or A]
-IscLin: Deviation from Isc linearity (when assuming a unity 1:1 relationship b/w Isc & irradiance, which applies to so-called "linear" PV devices)
+IscLin: Deviation from Isc linearity (when assuming unity - i.e., a unity 1:1 relationship - between Isc & irradiance, which applies to so-called "linear" PV devices)
 IscNorm_Ref: Isc normalized to reference conditions of spectrum, irradiance, & temperature (e.g., STC)
 NREL: National Renewable Energy Laboratory
 NSRDB: National Solar Radiation Database
@@ -231,3 +231,11 @@ Irradiance: Intensity of irradiation in W/m^2
 Illumination: Measured in lux, not applicable to solar PV
 Diffuse horizontal irradiance is in the Electropedia.
 Some people prefer the term Insolation instead of Irradiation to distinguish that it is irradiance integrated over time in the portion of solar spectrum of interest to PV (excluding x-ray irradiation, gamma ray irradiation, etc.).
+
+## PV Equations
+Deviation in Efficiency Relative to STC:
+dEtaRel_STC = 100*((Pmp/Pmp_STC)*(G_STC/G)-1)
+
+## Solar Photovoltaics PV in a Nutshell (in semi-simple English)
+1. A single "particle" (in quantum mechanics QM, a "particle" is a vibration in a field - in this case, the relevant field is the electromagnetic field) of sunlight ("photon") enters the PV module and strikes the silicon solar PV cell, knocking loose an electron off the semiconductor material.
+2. An electric field, created from the n- and p-doped layers being in contact with one another, acts as a magnet to attract the loose electron to the metal contacts (which form the electrical circuit), where the electric current (electricity) then flows through the circuit to the electrical load (e.g., light bulb).

@@ -629,3 +629,20 @@ Use debugfile, not runfile (!) (replace the above runfile w/ debugfile)
 
 ## debugfile (Abbreviated Version)
 debugfile('C:/Users/<your_computer_name>/Documents/GitHub/<your_repo_name>/python_script_name.py', args='--input C:/Users/<enter_username>/Enter/Input/File/Folder/Directory/Here/Control/input_file_name.csv')
+
+## Get Name of User Logged In on Controlling Terminal of Process
+os.getlogin() method in Python is used to 
+$ import os
+$ os.getlogin()
+
+## Read Excel File(s) Using pandas Package
+Use pandas for reading .xls (pd.read_excel); example for multiple .xls files in directory in filename-alphabetical order:
+path = 'insert_path_name_to_file_directory'
+files = os.listdir(path)
+files_xls = [i for i in files if i.endswith('.xls')]
+df0 = pd.DataFrame()
+for i in files_xls:
+fn_idx = os.path.join(path,i)
+df_idx = pd.read_excel(fn_idx)
+df0 = df0.append(df_idx)
+df0.head()

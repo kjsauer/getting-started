@@ -219,3 +219,9 @@ https://linuxhandbook.com/sort-ls-by-date-time/
 
 Go up a folder:
 $ cd ../
+
+## Application Data Folder (Windows)
+Open file explorer -> %appdata%
+
+## Remove File Metadata for Public Sharing (Windows)
+Right click file > Properties > Details > Remove Properties and Personal Information > Create a copy with all possible properties removed > OK

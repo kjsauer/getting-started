@@ -222,3 +222,44 @@ function [y1,y2,y3] = f(x1,x2,x3)
 	y2 = x2*2;
 	y3 = x3*3;
 end
+
+## Gauge R&R aka Gage R&R Study
+% gage R&R
+% Simulate a measurement system by randomly generating the operators,
+% parts, and the measurements, y , operators do on the parts.
+rng(1234,'twister')               % for reproducibility
+y = randn(100,1);                 % measurements
+part = ceil(3*rand(100,1));       % parts
+operator = ceil(2*rand(100,1));   % operators
+% Conduct a gage R&R study for this system using a mixed ANOVA model
+% without interactions.
+gagerr(y,{part, operator},'randomoperator',true)
+Source (w/ slight modifications): https://web.archive.org/web/20240419230139/https://www.mathworks.com/help/stats/gagerr.html
+
+## Clear Workspace
+Preferred: clear all; close all; clc
+Other (not preferred):
+clc close clear
+clc; clear; close
+clc; clear; close all
+
+## Clear vs. clearvars
+Mind your clear vs. clearvars:
+clearvars -except <insert_what_you_wish_to_keep>
+
+## Carriage Return In String
+\n
+
+## If Statements
+Or -> Use "|"
+And -> Use "&"
+Logic Or -> Use "||"
+Logic And -> Use "&&"
+
+## Graphical User Interface GUI
+Adjust settings:
+Tools > GUI Options... > Proportional
+NOTE: If you update filename, you need to update all the active fields in the GUI to reflect the proper filenames - these will not show up in a Ctrl+F Find All search.
+
+## Active Filepath Directory
+Add entire active repo folder directory (incl. sub-folders) to MATLAB path before working with or running in MATLAB Interactive Development Environment IDE.
