@@ -2,35 +2,36 @@
 Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## getting-started TODO
-1. Explore and document more "Getting Started" content and related to-do items.
-2. Python without Anaconda.
-3. Miniconda.
-4. Option to run Anaconda Prompt from cmd.
-5. [done] Anaconda Python (absorbed into Python). Jinja absorbed into Python also.
-6. [done] TortoiseSVN (absorbed into Subversion).
-7. readthedocs.
-8. [done] Subversion/TortoiseSVN.
-9. [done] MATLAB.
-10. [done] Python.
-11. [done] pvmismatch (absorbed into Python).
-12. PVLIB.
-13. PVSAT.
-14. PVsyst. PVWatts. NREL's SAM. PV*SOL. PlantPredict. PVDesignPro. PVFORM. Sandia PV-RPM (PVRPM).
-15. Pecos (absorbed into Python?).
-16. [done] Git.
-17. [done] R.
+1. Explore and document more "Getting Started" content and related to-do (_TODO, TODO) items.
+2. Python without Anaconda (i.e., split Anaconda Python from Python, i.e., add "Anaconda").
+3. Add Miniconda.
+4. Document option to run Anaconda Prompt from cmd.
+5. [done] Add Anaconda Python (absorbed into Python). Jinja absorbed into Python also. Separate out?
+6. [done] Add TortoiseSVN (absorbed into Subversion).
+7. Add readthedocs.
+8. [done] Add Subversion/TortoiseSVN.
+9. [done] Add MATLAB.
+10. [done] Add Python.
+11. [done] Add pvmismatch (absorbed into Python). Separate out?
+12. Add PVLIB.
+13. Add PVSAT.
+14. Add PVsyst, PVWatts, NREL's System Advisor Model SAM, PV*SOL, PlantPredict, PVDesignPro, PVFORM, Sandia PV-RPM (PVRPM).
+15. Add Pecos (absorbed into Python? separate out?).
+16. [done] Add Git.
+17. [done] Add R.
 18. [done] Rename Slack to more generic "Chat" apps.
-19. Octave.
-20. Julia.
-21. [done] Django. Django RUST framework DRF.
-22. Flask.
-23. Heroku.
-24. [done] Docker.
+19. Add Octave.
+20. Add Julia.
+21. [done] Add Django and Django RUST Framework DRF.
+22. Add Flask.
+23. Add Heroku.
+24. [done] Add Docker.
 25. Add Microsoft MS Teams notes to Chat.
-26. Amazon Web Services AWS.
-27. DigitalOcean.
-28. [done] ImageJ.
-29. SMARTS (spectral irradiance). SMARTS2. SPECTRAL2.
-30. [done] Lazarus + Free Pascal.
+26. Add Amazon Web Services AWS.
+27. Add DigitalOcean.
+28. [done] Add ImageJ.
+29. Add SMARTS (spectral irradiance), SMARTS2, and SPECTRAL2.
+30. [done] Add Lazarus + Free Pascal.
 31. Split GitHub Desktop and GitHub from Git.
+32. Add Raspberry Pi (raspberry-pi).
 END
