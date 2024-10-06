@@ -1,23 +1,24 @@
 # Getting Started with License Files and Licensing
 Kenneth J. Sauer (@kjsauer on GitHub)
 
-## Copyright Notice
+## Thoughts on Copyright Notice
 Disclaimer (ironically): I'm not a lawyer; however, a Copyright Notice makes logical sense to me. I recommend including your GitHub username in a COPYRIGHT file as well as a descriptive title string, e.g., see this Getting Started repo's COPYRIGHT file as example; as such, save in top-level repo folder (same folder location containing README.md) as "COPYRIGHT".
 
-## LICENSE Files
-I think I read somewhere that no LICENSE file means NOT open-source aka proprietary. For such code, I'd strongly recommend private repositories. Regardless of the contents of the LICENSE file, assume that a private repo means closed-source and public means open-source. The ~100 or so different variants of LICENSE files have made the legal situation around public repos more complex. I'm not really sure if a public repo with no LICENSE file is "open-source" or not. For any public repo, simply assume that, regardless of the contents of the LICENSE file, algorithms around the world are actively mining the code and doing what they please w/out your consent (including GitHub itself, a la the "opt-out" GitHub Arctic Archive Program), possibly even profiting on your work that you have chosen to make public, regardless of the existence or content of the LICENSE file).
+## Thoughts on LICENSE File
+No LICENSE file means NOT open-source aka proprietary [1]. For such code, I'd strongly recommend private repositories. Regardless of the contents of the LICENSE file, assume that a private repo means closed-source and public means open-source. The ~100 or so different variants of LICENSE files have made the legal situation around public repos more complex. I'm not really sure if a public repo with no LICENSE file is "open-source" or not. For any public repo, simply assume that, regardless of the contents of the LICENSE file, algorithms around the world are actively mining the code and doing what they please w/out your consent (including GitHub itself, a la the "opt-out" GitHub Arctic Archive Program), possibly even profiting on your work that you have chosen to make public, regardless of the existence or content of the LICENSE file).
+[1] https://choosealicense.com/no-permission/ 
 
-## BSD 3-clause License
+## Thoughts on BSD 3-clause License
 Free for anyone to use for any purpose, but they need to reference you (the proclaimed author(s) of the source code). Namely, include their license file in your code and reference the authors.
 
-## MIT License
+## Thoughts on MIT License
 Allows open usage with no constraints. I don't know or understand why the MIT brand needs to be associated with all open-source code. See above thoughts on the LICENSE file.
 
-## Explanation by Reddit Users [deleted] & "fajro"
+## Explanation of License by Reddit Users [deleted] & "fajro"
 Open Source means the source code is available and you can modify it.
 Clarification by fajro: Not all "Open Source" lets you modify it.
 Clarification by [deleted]:
 Free Software means the source code is available and you can modify it, PROVIDED you release it as free software.
 Free Software (aka the GPL), forces all modifications of its software to remain free. While other licenses like the BSD, Apache, MIT can allow for a corporation to [take] your source code and use it themselves.
-Sauce:
+"Sauce":
 https://www.reddit.com/r/explainlikeimfive/comments/1icitj/eli5_open_source_vs_free_software_and_why_does/
