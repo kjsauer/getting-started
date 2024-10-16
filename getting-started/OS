@@ -164,7 +164,7 @@ Copy, ignore errors, log only files that fail to copy:
 $ robocopy pathname_from pathname_to /e /r:0 /w:0 /b /nfl /ndl /xj
 Cut/paste (leaves empty folder structure behind):
 $ robocopy pathname_from pathname_to /e /mov
-Cut/past (doesn't leave empty folder structure behind):
+Cut/paste (doesn't leave empty folder structure behind):
 $ robocopy pathname_from pathname_to /e /move
 
 ## Note: Hidden Directory
@@ -225,3 +225,47 @@ Open file explorer -> %appdata%
 
 ## Remove File Metadata for Public Sharing (Windows)
 Right click file > Properties > Details > Remove Properties and Personal Information > Create a copy with all possible properties removed > OK
+
+## Root Admin Account Username
+root
+
+## Navigate to Root Folder (macOS)
+Recent versions of Mac OS X and macOS have started to hide the root folder from users (the root folder is the folder at the root of your hard drive). To make the root folder appear, follow these steps:
+anywhere on the Desktop, enter Command+Shift+G, then type / and hit return. This will take you to root (Macintosh HD)
+drag & drop Macintosh HD into the Finder sidebar.
+You may also want to display Macintosh HD on your Desktop. In this case, open the Finder menu and choose « Preferences ». Under the « General » tab check the box next to « Hard disks ». This will show Macintosh HD.
+Source: https://corpling.hypotheses.org/clsr/forcing-the-root-directory-to-appear-on-mac-os/
+
+## Stop Auto-restart (Windows)
+Change Active Hours to 5 PM to 11 AM
+Go to:
+$ gpedit.msc
+“Computer Configuration > Administrative Templates > Windows Components > Windows Update”
+Change all applicable settings
+Source: https://winbuzzer.com/2021/09/14/how-to-stop-automatic-restart-in-windows-10-after-a-windows-update-xcxwbt/
+Turn off auto-restart:
+Turn off auto-restart for updates during active hours -> Enabled
+Always automatically restart at the scheduled time -> Disabled
+No auto-restart with logged on users for scheduled automatic updates installations -> Enabled
+
+## Navigation/Basic Keyboard Shortcuts
+Go to most recent or right a tab:
+$ Ctrl+Tab
+Go to most previous or left a tab:
+$ Ctrl+Shift+Tab
+Open last window:
+$ Ctrl+Shift+n
+Open last tab:
+$ Ctrl+Shift+t
+Undo:
+$ Ctrl+z undo (if fortunately/luckily available)
+Redo:
+$ Ctrl+y redo (if fortunately/luckily available)
+Select all:
+$ Ctrl+a
+
+## Disable Telemetry (Microsoft MS Windows 10 Win10)
+Press the Windows key + R on your keyboard. Type “services.msc” in the Run dialog box and click OK. This will open the Services window.
+Scroll down and locate “Connected User Experiences and Telemetry”. Double-click on it to open its Properties.
+In the Properties window, go to the General tab and change the Startup type to “Disabled”. Click Apply and then OK to save the changes.
+Source: https://www.process.st/how-to/disable-microsoft-compatibility-telemetry/
