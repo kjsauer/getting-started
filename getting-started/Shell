@@ -54,7 +54,7 @@ Example:
 $ cd FOLDER_NAME\SUB_FOLDER_NAME
 Hit tab. This'll bring up the proper FOLDER_NAME.
 
-## Find Home Directory - Windows OS
+## Find Home Directory (Windows OS)
 Open Windows PowerShell
 Go to home directory:
 $ cd ~
