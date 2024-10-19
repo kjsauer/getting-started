@@ -3,3 +3,60 @@ Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## Standard Deviation
 The units of standard deviation are the same as the units of the data itself.
+
+## Useful Equations
+Zn*sigma = X_i/sqrt(n)
+Zn*sigma*sqrt(n) = X_i
+Zn*sigma*sqrt(n) - X_i
+sigma/X_i= 1/Zn*sqrt(n)
+
+## Useful Notes
+2-sigma does not equal 95% CI
+95% CI is 1.96-sigma, not 2-sigma
+2-sigma is 95.45% CI
+In other words:
+2-sigma represents ~95.4% of the normal (Gaussian) distribution
+1.96-sigma represents 95% of the normal (Gaussian) distribution
+In other words:
+2*sigma is more than 1.96*sigma
+That's why it's 95.45% and not 95%.
+1.96*sigma is p95 (exactly 95%)
+Oftentimes, people conflate p95 with 2*sigma
+
+## Useful Distinctions
+Bayesian statistics vs. Frequentist statistics
+Frequentist involves hypothesis testing
+Bayesian involves learnings which are constantly updated.
+
+## Useful Rules of Thumb (Frequentist Statistics)
+If p is low, reject the H0
+
+## Useful Conversions
+Convert from P95 to 1-sigma uncertainty: Divide by 1.96
+
+## Key Residual Deviation Metrics
+mae = mean(abs(residuals));
+mbe = mean(residuals);
+sse = sum(residuals.^2);
+rmsd = sqrt(mean(residuals.^2));
+rss = sqrt(sse);
+rss = sqrt(sum(residuals.^2));
+
+## Statistical Interpretations - Confidence Intervals CIs
+95% CI:
+If two (2) statistical (stochastic) values are outside the CI95 range of one another, it's safe to consider them different.
+e.g., Timestamp +/- CI95
+If two (2) timestamps are outside the CI95 range of one another, it's safe to call them different.
+
+## Statistical Significance
+Statistical significance is intimately tied to statistical power.
+Statistical significance implies that you have sufficient statistical power.
+Considering/reporting statistical significance w/out statistical power leads to egregious scientific mistakes (e.g., 50% of psychology-related papers being scientifically "wrong", e.g., non-reproducible).
+
+## Acronyms/Definitions
+CI = Confidence Interval
+SE = Standard Error
+95% CI of the Mean = Mean +/- 1.96*SE
+Source: https://www.youtube.com/watch?v=AQy11Hfp_dU/
+
+Confidence that the true population mean is somewhere w/in the confidence interval CI is determined (estimated) by the sample statistics.
