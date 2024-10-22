@@ -151,11 +151,12 @@ dir /s dir_name
 ## Check Size of Folder Incl. Hidden Files & Folders
 dir /a/s dir_name
 
-## Disk Formatting
-Windows: Format as NTFS
-Mac: Format as TBD
-Linux: Format as TBD
-Mixed Windows/Mac/Linux: Format as exFAT
+## External Hard Drive Disk Formatting and Native File Systems
+Windows: Format as New Technology File System NTFS; native file system is NTFS
+Mac: Format as exFAT (no file size limit) or FAT32 (4 GB file size limit); native file system is Apple File System APFS
+Linux: Format as NTFS*, exFAT*, FAT32, or EXT4; native file system is Fourth Extended File System ext4 (EXT4)
+*May need to download and install packages to read and write to NTFS and exFAT
+Mixed Windows/Mac/Linux: Format as exFAT (or FAT32)
 
 ## Transfer files without paying attention to pathname length [Source1] [Source2]
 Copy:
