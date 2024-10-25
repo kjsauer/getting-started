@@ -131,19 +131,19 @@ $ md %temp%\Low
 $ icacls %temp%\Low /setintegritylevel (OI)(CI)low
 """
 Main sources:
-1. https://www.reddit.com/r/WindowsHelp/comments/1d9hbck/access_denied_when_compressing_folders_to_zip/
-2. https://www.winhelponline.com/blog/fix-zipped-folder-access-denied-unable-complete-operation/
+1. <https://www.reddit.com/r/WindowsHelp/comments/1d9hbck/access_denied_when_compressing_folders_to_zip/>
+2. <https://www.winhelponline.com/blog/fix-zipped-folder-access-denied-unable-complete-operation/>
 Other sources:
-1. https://www.minitool.com/news/compressed-folder-access-denied.html
-2. https://www.minitool.com/news/fix-access-denied-windows.html
+1. <https://www.minitool.com/news/compressed-folder-access-denied.html>
+2. <https://www.minitool.com/news/fix-access-denied-windows.html>
 
 ## File and Folder Creation Dates
 "Folder [and file] dates are inherently fragile."
-Source: https://resource.dopus.com/t/restoring-modified-timestamps-on-dropbox-folders/33113
+Source: <https://resource.dopus.com/t/restoring-modified-timestamps-on-dropbox-folders/33113>
 Thus, if you care about it, make sure to put it into the file or folder name itself, e.g., YYMMDD (or YYYYMMDD).
 
 ## Reset File Extension File Association - Windows 7
-Source: https://websistent.com/delete-file-association-windows-7/
+Source: <https://websistent.com/delete-file-association-windows-7/>
 
 ## Check Size of Folder Excl. Hidden Files & Folders
 dir /s dir_name
@@ -171,11 +171,11 @@ $ robocopy pathname_from pathname_to /e /move
 ## Note: Hidden Directory
 When copying files from the root of one drive into a non-root (e.g., folder) of another, the copied file may appear as HIDDEN using the above robocopy commands. To fix this, run the following command:
 $ attrib -h -s C:\D_backup
-Source: https://stackoverflow.com/questions/6584402/after-robocopy-the-copied-directory-and-files-are-not-visible-on-the-destinatio
+Source: <https://stackoverflow.com/questions/6584402/after-robocopy-the-copied-directory-and-files-are-not-visible-on-the-destinatio>
 (Alternatively, right click on folder -> Properties -> Uncheck "Hidden")
 ### Source1
 Robust Copy (robocopy)
-Source: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy
+Source: <https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy>
 ### Source2
 Jonathan Johnson
 jonathanjohnson0724Thai Pepper
@@ -186,7 +186,7 @@ Use the /R, /W, and /B options.
 You can also specify /R:0 for don’t retry, and /W:0 to not wait between retries.
 Of course, this means that files that can’t be copied won’t be copied, but at least it won’t sit there forever doing nothing. To clean up the output so that it only reports files that it errors on, use /NFL (no file listing) and /NDL (no directory listing). I often also use /XJ (exclude junction points and symbolic links).
 If running with admin rights, the /B option copies in backup mode, which overrides restrictive permissions. (More specifically, it allows you to utilize the SeBackupPrivilege and SeRestorePrivilege rights if granted to your user account by the operating system.)
-Source: https://community.spiceworks.com/t/robocopy-ignore-errors/772705/3
+Source: <https://community.spiceworks.com/t/robocopy-ignore-errors/772705/3>
 
 ## Force remove directory (e.g., Recycle Bin)
 $ rmdir /s /q pathname_to_remove
@@ -200,10 +200,10 @@ NOTE: Empty directories may not really be empty; adjust View Settings to display
 ## Antivirus Malware Virus Scanning
 Use MalwareBytes
 Offline installer
-https://downloads.malwarebytes.com/file/mb4_offline
+<https://downloads.malwarebytes.com/file/mb4_offline>
 (Find latest download link online through a reputable website)
-Source: https://www.reddit.com/r/Malwarebytes/comments/16rb7ml/when_are_we_going_to_get_a_new_offline_installer/
-Source: https://forums.malwarebytes.com/topic/298150-full-offline-installer-for-mb-v4529-rel-17-may-2023/
+Source: <https://www.reddit.com/r/Malwarebytes/comments/16rb7ml/when_are_we_going_to_get_a_new_offline_installer/>
+Source: <https://forums.malwarebytes.com/topic/298150-full-offline-installer-for-mb-v4529-rel-17-may-2023/>
 
 ## Record (Windows 10 and above)
 Windows + G
@@ -215,8 +215,8 @@ Windows + e
 Sort files by timestamp:
 $ ls -lt
 Source(s):
-https://www.freecodecamp.org/news/how-to-search-for-files-from-the-linux-command-line/
-https://linuxhandbook.com/sort-ls-by-date-time/
+<https://www.freecodecamp.org/news/how-to-search-for-files-from-the-linux-command-line/>
+<https://linuxhandbook.com/sort-ls-by-date-time/>
 
 Go up a folder:
 $ cd ../
@@ -235,7 +235,7 @@ Recent versions of Mac OS X and macOS have started to hide the root folder from 
 anywhere on the Desktop, enter Command+Shift+G, then type / and hit return. This will take you to root (Macintosh HD)
 drag & drop Macintosh HD into the Finder sidebar.
 You may also want to display Macintosh HD on your Desktop. In this case, open the Finder menu and choose « Preferences ». Under the « General » tab check the box next to « Hard disks ». This will show Macintosh HD.
-Source: https://corpling.hypotheses.org/clsr/forcing-the-root-directory-to-appear-on-mac-os/
+Source: <https://corpling.hypotheses.org/clsr/forcing-the-root-directory-to-appear-on-mac-os/>
 
 ## Stop Auto-restart (Windows)
 Change Active Hours to 5 PM to 11 AM
@@ -243,7 +243,7 @@ Go to:
 $ gpedit.msc
 “Computer Configuration > Administrative Templates > Windows Components > Windows Update”
 Change all applicable settings
-Source: https://winbuzzer.com/2021/09/14/how-to-stop-automatic-restart-in-windows-10-after-a-windows-update-xcxwbt/
+Source: <https://winbuzzer.com/2021/09/14/how-to-stop-automatic-restart-in-windows-10-after-a-windows-update-xcxwbt/>
 Turn off auto-restart:
 Turn off auto-restart for updates during active hours -> Enabled
 Always automatically restart at the scheduled time -> Disabled
@@ -269,4 +269,28 @@ $ Ctrl+a
 Press the Windows key + R on your keyboard. Type “services.msc” in the Run dialog box and click OK. This will open the Services window.
 Scroll down and locate “Connected User Experiences and Telemetry”. Double-click on it to open its Properties.
 In the Properties window, go to the General tab and change the Startup type to “Disabled”. Click Apply and then OK to save the changes.
-Source: https://www.process.st/how-to/disable-microsoft-compatibility-telemetry/
+Source: <https://www.process.st/how-to/disable-microsoft-compatibility-telemetry/>
+
+## Useful Commands and Hotkeys - macOS
+Cut:
+$ Command+x
+Copy:
+$ Command+c
+Paste:
+$ Command+v
+Delete file permanently (from Trash):
+$ Control+Click -> Delete immediately
+
+## Default Users - macOS
+Staff is the default user group for you that is assigned for files and folders that do not have admin group membership. For example if you install an application by drag and drop it automatically takes on the following privileges:
+Owner=you with r/w
+Group=staff (which is just you) with r/w
+Everyone with read-only
+An application installed via the Apple package installer takes on the default privileges of the Applications folder which are:
+Owner=system with r/w
+Group=admin with read only
+Everyone with read-only
+A good rule to follow is "Don't change permissions unless you really know what you are doing." If you have permissions problems related to system files installed by the OS X installer, then use Disk Utility to repair permissions.
+The "admin" group consists of all users who have administrator accounts. Removing the Everyone entry will not give you any rights and should not be done.
+Another good rule: "Leave well enough alone."
+Source: <https://discussions.apple.com/thread/2362727>
