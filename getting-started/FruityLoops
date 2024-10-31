@@ -1,0 +1,21 @@
+# Getting Started with FruityLoops (aka FL Studio)
+Kenneth J. Sauer (@kjsauer on GitHub)
+
+## Export Settings
+- Export both WAV and MP3
+- Leave vs. cut remainder depends on your preferences for the song (experiment with both options as needed)
+- WAV bit depth: 24Bit int
+- Stereo
+- MP3 bitrate: Maximum (320kbps)
+- Resampling: 512-point sinc
+- HQ for all plugins ON
+- Disable maximum polyphony ON
+- Dithering ON
+- Save playlist markers OFF
+- Split mixer tracks OFF
+- Save loop markers OFF
+- Trim PDC silence ON
+- Save note markers OFF
+- Enable insert effects ON
+- Save tempo information ON
+- Enable master effects ON
