@@ -2,7 +2,7 @@
 Personal "Getting Started" computer, design, programming, software, and other guides
 
 ## Introduction
-This "getting-started" Git repository hosted on GitHub contains generic, informal, and unformatted "Getting Started" computer, design, programming, software, and other guides for my (Kenneth J. Sauer's aka @kjsauer on GitHub's) quick, personal reference across all Internet-connected devices. However, these guides may also be useful to others getting started in related pastures.
+This "getting-started" Git repository hosted on GitHub contains generic, informal, and unformatted "Getting Started" computer, design, programming, software, and other guides for my (Kenneth J. Sauer's aka @kjsauer on GitHub's) quick, personal reference across Internet-connected devices. However, these guides may also be useful to others getting started in related pastures.
 
 ## Tips
 I recommend using a text editor (e.g., Sublime Text) to open & view these text-only files.
