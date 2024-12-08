@@ -1,0 +1,7 @@
+# Getting Started with Notepad++
+Kenneth J. Sauer (@kjsauer on GitHub)
+
+## Add Spellcheck
+Plugins > Plugins Admin > DSpellcheck > Install
+Plugins > DSpellCheck > Change Current Language > Download Languages... > English (for example) > Install
+Plugins > DSpellCheck > Change Current Language > Select English (for example)
