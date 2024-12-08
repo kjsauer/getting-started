@@ -54,7 +54,13 @@ Example:
 $ cd FOLDER_NAME\SUB_FOLDER_NAME
 Hit tab. This'll bring up the proper FOLDER_NAME.
 
-## Find Home Directory (Windows OS)
+## Find Home Directory [Windows OS]
 Open Windows PowerShell
 Go to home directory:
 $ cd ~
+
+## Open Command Prompt in Specific Filepath [Windows OS]
+Open file explorer > Type "cmd" in Filepath Address bar
+
+## Shortcuts
+Within prompt (terminal), use "." to select the path that you are currently in within the terminal window (i.e., the terminal's present path)
