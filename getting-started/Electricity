@@ -27,3 +27,12 @@ Tref = Reference temperature that alpha is specified at for the conductor materi
 Source: <https://www.cirris.com/learning-center/general-testing/special-topics/177-temperature-coefficient-of-copper/>
 
 So, thermal losses increase power losses in the case of Cu conductors.
+
+## High Quality Transformers - Ohmic Losses
+MVT:
+- 0.2% Iron Core (No Load)
+- 0.9% Copper Winding (Load)
+HVT:
+- 0.1% Iron Core (No Load)
+- 0.4% Copper Winding (Load)
+Source: Mike Behnke, BEW Engineering
