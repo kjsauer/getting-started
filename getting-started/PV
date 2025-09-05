@@ -239,3 +239,10 @@ dEtaRel_STC = 100*((Pmp/Pmp_STC)*(G_STC/G)-1)
 ## Solar Photovoltaics PV in a Nutshell (in semi-simple English)
 1. A single "particle" (in quantum mechanics QM, a "particle" is a vibration in a field - in this case, the relevant field is the electromagnetic field) of sunlight ("photon") enters the PV module and strikes the silicon solar PV cell, knocking loose an electron off the semiconductor material.
 2. An electric field, created from the n- and p-doped layers being in contact with one another, acts as a magnet to attract the loose electron to the metal contacts (which form the electrical circuit), where the electric current (electricity) then flows through the circuit to the electrical load (e.g., light bulb).
+
+## Capacity Testing - Modeled/Measured Data Adjustments
+Note: The "name of the game" in solar PV capacity testing (and energy testing also) is making "apples-to-apples" comparisons.
+Availability -> Set model to 100%
+Degradation Rate -> Set model to 0 %/year
+Power Factor PF -> Adjust measurements to modeled PF
+Soiling -> Set model to 100% (or Actual Soiling, based on on-site soiling station data)
