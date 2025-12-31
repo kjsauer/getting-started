@@ -255,3 +255,4 @@ Vmp_Ref = Vmp_Eff + k*ln(G_Ref/G_Eff) [logarithmic scaling]
 For c-Si, k is typically 0.02-0.03 V (per ln unit) (per PV cell).
 For a 144-cell, half-cut cell PV module design, you have 72 cells in series.
 Thus, for this example, an estimate for k_string is: 72 * (0.025) = 1.8 V (per ln unit) (per PV cell string), with the typical range being 1.5 - 2.0 V (per ln unit) (for the PV module as a whole, given the two (2) PV cell strings are wired in parallel).
+Note: For n-HJT, k may be lower than 1.5 (<1.4, e.g., even as low as 0.5-1.0 range, or lower). For non-standard c-Si technologies, it might be best to attempt to characterize k using multiple measurements and a regression-based approach, or apply some other approach (e.g., King/Sandia SAPM w/ coefficients that perhaps Sandia can provide).
