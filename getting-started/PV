@@ -249,6 +249,7 @@ Soiling -> Set model to 100% (or Actual Soiling, based on on-site soiling statio
 
 ## I-V Curve Translations to Reference Conditions (e.g., STC)
 NB: These formulas assume Imp_Eff and Vmp_Eff are already corrected to T_Ref (aka Tcell_Ref).
+NB: These equations are approximations only.
 Imp_Ref = Imp_Eff * (G_Ref/G_Eff) [linear scaling]
 Vmp_Ref = Vmp_Eff * k*ln(G_Ref/G_Eff) [logarithmic scaling]
 (Now multiply Imp_Ref x Vmp_Ref to get Pmp_Ref.)
