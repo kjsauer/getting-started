@@ -228,9 +228,14 @@ https://sam.nrel.gov/forum/forum-general/4015-time-conventions-in-sam.html/
 Insolation: A subset of irradiation for only sunlight
 Irradiation: Radiation from any light source (sun, nuclear explosion, light bulb, etc.)
 Irradiance: Intensity of irradiation in W/m^2
-Illumination: Measured in lux, not applicable to solar PV
+Illumination: Measured in lux, specific to visible light portion of the solar spectrum as weighted by the human eye, not applicable to solar PV (except perhaps in specific use cases, such as glint and glare studies)
 Diffuse horizontal irradiance is in the Electropedia.
 Some people prefer the term Insolation instead of Irradiation to distinguish that it is irradiance integrated over time in the portion of solar spectrum of interest to PV (excluding x-ray irradiation, gamma ray irradiation, etc.).
+I think the better rule of thumb for solar PV is this:
+Irradiance: Instantaneous W/m^2 (numerical/quantitative/can be used prescriptively)
+Irradiation: Irradiance integrated over some period of time (numerical/quantitative/can be used prescriptively)
+Insolation: Generic term for exposing PV devices to sunlight (non-numerical/qualitative/generally descriptive)
+Illumination: Used in specific use cases, like glint and glare studies, which involve a human eye weighting of visible light spectra
 
 ## PV Equations
 Deviation in Efficiency Relative to STC:
