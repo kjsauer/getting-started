@@ -241,11 +241,12 @@ dEtaRel_STC = 100*((Pmp/Pmp_STC)*(G_STC/G)-1)
 2. An electric field, created from the n- and p-doped layers being in contact with one another, acts as a magnet to attract the loose electron to the metal contacts (which form the electrical circuit), where the electric current (electricity) then flows through the circuit to the electrical load (e.g., light bulb).
 
 ## Capacity Testing - Modeled/Measured Data Adjustments
-Note: The "name of the game" in solar PV capacity testing (and energy testing also) is making "apples-to-apples" comparisons.
+NB: The "name of the game" in solar PV capacity testing (and energy testing also) is making "apples-to-apples" comparisons.
 Availability -> Set model to 100%
 Degradation Rate -> Set model to 0 %/year
 Power Factor PF -> Adjust measurements to modeled PF
 Soiling -> Set model to 100% (or Actual Soiling, based on on-site soiling station data)
+Wind stow, diffuse optimization, and post-processing parameters may need to be removed from the pro forma capacity test model also. Apples-to-apples!
 
 ## I-V Curve Translations to Reference Conditions (e.g., STC)
 NB: These formulas assume Imp_Eff and Vmp_Eff are already corrected to T_Ref (aka Tcell_Ref). These formulas are approximations only.
@@ -255,4 +256,5 @@ Vmp_Ref = Vmp_Eff + k*ln(G_Ref/G_Eff) [logarithmic scaling]
 For c-Si, k is typically 0.02-0.03 V (per ln unit) (per PV cell).
 For a 144-cell, half-cut cell PV module design, you have 72 cells in series.
 Thus, for this example, an estimate for k_string is: 72 * (0.025) = 1.8 V (per ln unit) (per PV cell string), with the typical range being 1.5 - 2.0 V (per ln unit) (for the PV module as a whole, given the two (2) PV cell strings are wired in parallel).
-Note: For n-HJT, k may be lower than 1.5 (<1.4, e.g., even as low as 0.5-1.0 range, or lower). For non-standard c-Si technologies, it might be best to attempt to characterize k using multiple measurements and a regression-based approach, or apply some other approach (e.g., King/Sandia SAPM w/ coefficients specific to those formulas that perhaps Sandia can provide). For p-PERC, k=1.8 should be a good assumption (typical range being 1.4-2.2 V per ln unit, or 1.5-2.2 V*ln^-1). For n-TOPCon, the typical range might be 1.2-1.8 V per ln unit (V*ln^-1).
+NB: For n-HJT, k may be lower than 1.5 (<1.4, e.g., even as low as 0.5-1.0 range, or lower). For non-standard c-Si technologies, it might be best to attempt to characterize k using multiple measurements and a regression-based approach, or apply some other approach (e.g., King/Sandia SAPM w/ coefficients specific to those formulas that perhaps Sandia can provide). For p-PERC, k=1.8 should be a good assumption (typical range being 1.4-2.2 V per ln unit, or 1.5-2.2 V*ln^-1). For n-TOPCon, the typical range might be 1.2-1.8 V per ln unit (V*ln^-1).
+NB: Adjusted power is lower for a lower value of k!
