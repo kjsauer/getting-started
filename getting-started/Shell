@@ -64,3 +64,669 @@ Open file explorer > Type "cmd" in Filepath Address bar
 
 ## Shortcuts
 Within prompt (terminal), use "." to select the path that you are currently in within the terminal window (i.e., the terminal's present path)
+
+## Syntax (cont'd)
+Source: https://12days.cmdchallenge.com
+display list contents in directory
+$ ls
+extract text from file
+$ grep PATTERN <file> (Example: grep laugh night-b4-fishmas.txt)
+display 1st 3 lines of file
+$ head -n 3 night-b4-fishmas.txt
+display last 4 lines of file
+$ tail -n 4 night-b4-fishmas.txt
+display lines that start w/ "The"
+$ grep -i "^the" night-b4-fishmas.txt (NB: -i is for case-insensitive; ^ anchors search to start of sentence where "The" would be capitalized)
+alternatively:
+$ grep "The" night-b4-fishmas.txt (NB: grep is case-sensitive)
+display lines that end in "!"
+$ grep '!$' night-b4-fishmas.txt.txt (NB: $ anchors search to end of sentence where "!" would be found)
+alternatively:
+$ grep \!$ night-b4-fishmas.txt.txt (NB: ! is a special character, so you either need to put it in quotes, like above, or precede it w/ "\")
+display files that start w/ "Santa"
+$ ls Santa*
+display files that start w/ "Santa" and "santa"
+$ ls [Ss]anta*
+move files to destination directory
+$ mv file1 file2 file3 destination/
+move all files in Elves/ directory to destination directory named Workshop/
+$ mv Elves/* Workshop/
+find all files and directories
+$ find .
+find only files
+$ find . -type f
+sort file contents in dictionary order
+$ soft filename.txt
+find files name "hello"
+$ find . -name "hello" -type f
+find string "elephant" in files called "hello"
+$ find . -name "hello" -type f -exec grep elephant {} \; (NB: {} substitutes for the filename; \; is an escaped ; that ends the executed command)
+print contents of file
+$ cat night-b4-fishmas.txt
+
+## Assorted Shell Commands
+The below list of commands (Courses #1-12) are further compliments of: https://12days.cmdchallenge.com
+
+### Shell Course #1
+$ ls
+$ dir
+$ echo *
+$ ls night-b4-fishmas.txt
+$ ls *
+$ ls -r
+$ ls .
+$ ls -A
+$ ls -N  night-b4-fishmas.txt
+$ ls -1
+$ ls -N night-b4-fishmas.txt
+$ echo "$(ls)"
+$ ls n*
+$ ls -t
+$ ls # remember kids, always clean up your inputs <script>console.log('this might be dangerous');</script>
+$ ls -u
+$ ls -h
+$ echo ***
+$ ls -N
+$ ls -a *
+$ echo night-b4-fishmas.txt
+$ ls -L
+$ ls *txt
+$ echo **
+$ ls night-b4-fishmas.txt*
+$ ls ./
+$ ls *.txt
+$ echo `ls`
+$ ls && wall
+$ sleep 3 && ls
+$ echo "night-b4-fishmas.txt"
+$ ls | grep -E "(skruffl_was_here|night-b4-fishmas)" | awk '{print $NF}'
+$ ls -l | grep -E "(skruffl_was_here|night-b4-fishmas)" | awk '{print $NF}'
+$ ls **
+$ ls -F
+$ ls -p
+$ ls **/*
+$ ls | sort
+$ ls # yolo
+$ grep -lr x
+$ ls #freegaza
+$ echo "$(ls .)"
+$ perl -e 'exec "ls";'
+$ lsattr | sed 's%^[^ ]* \./%%'
+$ dir *
+$ ls -A1
+$ ls;#lsy
+$ ls -Ltr
+$ ls | cat
+$ cd / | ls
+
+### Shell Course #2
+$ grep laugh night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep laugh
+$ grep "laugh" night-b4-fishmas.txt
+$ grep -i laugh night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep "laugh"
+$ grep laugh *
+$ grep 'laugh' night-b4-fishmas.txt
+$ grep "laugh" *
+$ cat night-b4-fishmas.txt | grep 'laugh'
+$ cat night-b4-fishmas.txt | grep -i laugh
+$ grep -i "laugh" night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt|grep laugh
+$ cat * | grep laugh
+$ grep -i laugh *
+$ grep 'laugh' *
+$ grep laugh *.txt
+$ cat night-b4-fishmas.txt |grep laugh
+$ grep laugh night*
+$ grep -i Laugh night-b4-fishmas.txt
+$ grep laugh ./night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -i "laugh"
+$ grep -i 'laugh' night-b4-fishmas.txt
+$ grep laugh  night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt| grep laugh
+$ grep laugh ./*
+$ grep laugh < night-b4-fishmas.txt
+$ grep "laugh" ./night-b4-fishmas.txt
+$ cat * | grep "laugh"
+$ grep -i "Laugh" night-b4-fishmas.txt
+$ grep laugh ni*
+$ grep laugh n*
+$ grep -i "laugh" *
+$ grep "laugh" ./*
+$ grep -e laugh night-b4-fishmas.txt
+$ grep "laugh" *.txt
+$ grep "laugh" < night-b4-fishmas.txt
+$ grep -r "laugh" *
+$ cat night-b4-fishmas.txt|grep "laugh"
+$ cat night-b4-fishmas.txt|grep -i laugh
+$ cat ./night-b4-fishmas.txt | grep laugh
+$ grep -rh laugh
+$ grep laugh *txt
+$ cat night-b4-fishmas.txt |grep "laugh"
+$ cat night-b4-fishmas.txt | grep -i Laugh
+$ cat night-b4-fishmas.txt | grep -i "Laugh"
+$ grep -r laugh *
+$ grep  laugh night-b4-fishmas.txt
+$ grep "laugh"  night-b4-fishmas.txt
+$ grep -i laugh  night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -i 'laugh'
+
+### Shell Course #3
+$ head -n 3 night-b4-fishmas.txt
+$ head -3 night-b4-fishmas.txt
+$ head -n3 night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | head -n 3
+$ head -3 *
+$ head -n 3 *
+$ cat night-b4-fishmas.txt | head -3
+$ head night-b4-fishmas.txt -n 3
+$ head -n3 *
+$ cat night-b4-fishmas.txt | head -n3
+$ head -n 3  night-b4-fishmas.txt
+$ head -n 3 *.txt
+$ head -n 3 night*
+$ cat * | head -n 3
+$ head -3 *.txt
+$ head -3  night-b4-fishmas.txt
+$ head -n 3 ./night-b4-fishmas.txt
+$ head -3 night*
+$ head night-b4-fishmas.txt -n3
+$ head -n 3 n*
+$ sed 3q night-b4-fishmas.txt
+$ head -n 3 < night-b4-fishmas.txt
+$ head -n 3 ./*
+$ cat night-b4-fishmas.txt|head -3
+$ head --lines=3 night-b4-fishmas.txt
+$ head -3 ./*
+$ head -n3 *.txt
+$ sed -n 1,3p night-b4-fishmas.txt
+$ head -n3 night*
+$ head -n3  night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt|head -n 3
+$ head --lines 3 night-b4-fishmas.txt
+$ cat * | head -3
+$ head -3 ni*
+$ head * -n 3
+$ head -n 3 "night-b4-fishmas.txt"
+$ head -3 n*
+$ head -n3 n*
+$ head -3 *txt
+$ cat night-b4-fishmas.txt |head -n3
+$ cat night* | head -n 3
+$ head -3 ./night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt |head -3
+$ cat night-b4-fishmas.txt| head -3
+$ echo "$(<night-b4-fishmas.txt)"|head -n3
+$ head -n3 ./night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt|head -n3
+$ sed -n '1,3p' night-b4-fishmas.txt
+$ cat "night-b4-fishmas.txt" | head -n 3
+$ head -n  3 night-b4-fishmas.txt
+
+### Shell Course #4
+$ tail -n 4 night-b4-fishmas.txt
+$ tail -4 night-b4-fishmas.txt
+$ tail -n4 night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | tail -n 4
+$ tail -4 *
+$ tail -n 4 *
+$ cat night-b4-fishmas.txt | tail -4
+$ tail night-b4-fishmas.txt -n 4
+$ tail -n4 *
+$ cat night-b4-fishmas.txt | tail -n4
+$ tail -n 4 *.txt
+$ tail -n 4  night-b4-fishmas.txt
+$ cat * | tail -n 4
+$ tail -n 5 night-b4-fishmas.txt
+$ tail -4 *.txt
+$ tail -n 4 n*
+$ tail -n 4 night*
+$ tail -4  night-b4-fishmas.txt
+$ tail -n -4 night-b4-fishmas.txt
+$ tail -4 night*
+$ tail -n 4 ./night-b4-fishmas.txt
+$ tail -n 4 < night-b4-fishmas.txt
+$ tail night-b4-fishmas.txt -n4
+$ tail  -n 4 night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt|tail -4
+$ tail -n 4 ./*
+$ tail -n4 *.txt
+$ cat night-b4-fishmas.txt|tail -n 4
+$ tail --lines=4 night-b4-fishmas.txt
+$ tail * -n 4
+$ tail -n4 night*
+$ tail --lines 4 night-b4-fishmas.txt
+$ tail -4 ni*
+$ tail -n4  night-b4-fishmas.txt
+$ echo "$(<night-b4-fishmas.txt)"|tail -n4
+$ tail -5 *
+$ tail -4 *txt
+$ cat * | tail -4
+$ tail -5 night-b4-fishmas.txt
+$ tail -4 ./night-b4-fishmas.txt
+$ tail -4 ./*
+$ cat night-b4-fishmas.txt |tail -n 4
+$ tail -n 4 "night-b4-fishmas.txt"
+$ cat night-b4-fishmas.txt |tail -4
+$ cat night-b4-fishmas.txt|tail -n4
+$ tail -4 n*
+$ tail -n-4 night-b4-fishmas.txt
+$ tail -n4 < night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt| tail -n 4
+$ tail -n4 n*
+
+### Shell Course #5
+$ grep -i "^the" night-b4-fishmas.txt
+$ grep -i '^the' night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -i "^the"
+$ grep -i ^the night-b4-fishmas.txt
+$ grep The *
+$ grep "^The" night-b4-fishmas.txt
+$ grep -i "^the" night-b4-fishmas.txt | head -n 5
+$ grep -i "^the" *
+$ grep The night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep "^The"
+$ grep ^The night-b4-fishmas.txt
+$ grep "The" night-b4-fishmas.txt
+$ grep '^The' night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep "The"
+$ grep -i '^the' night-b4-fishmas.txt | head -n 5
+$ grep -i "^the" night-b4-fishmas.txt | head -5
+$ cat night-b4-fishmas.txt | grep -i '^the'
+$ grep -i "^The" night-b4-fishmas.txt
+$ grep -i '^the' *
+$ cat night-b4-fishmas.txt | grep '^The'
+$ cat night-b4-fishmas.txt | grep -i "^the" | head -n 5
+$ cat night-b4-fishmas.txt | grep The
+$ cat night-b4-fishmas.txt | grep ^The
+$ grep -E "^The" night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -i ^the
+$ grep -i '^the' night-b4-fishmas.txt | head -5
+$ grep -i ^the *
+$ grep -iE '^the' night-b4-fishmas.txt
+$ grep -E '^The' night-b4-fishmas.txt
+$ grep -e "^The" night-b4-fishmas.txt
+$ egrep -i '^the' night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -E "^The"
+$ egrep -i "^the" night-b4-fishmas.txt
+$ grep -i '^the' night-b4-fishmas.txt | head -n5
+$ grep -Ei '^the' night-b4-fishmas.txt
+$ grep -i "^the" night-b4-fishmas.txt | head -n5
+$ grep -iE "^the" night-b4-fishmas.txt
+$ grep "The" *
+$ grep -Ei "^the" night-b4-fishmas.txt
+$ grep -i ^the night-b4-fishmas.txt | head -5
+$ cat night-b4-fishmas.txt | grep -i '^the' | head -n 5
+$ cat night-b4-fishmas.txt | grep -e "^The"
+$ grep -e '^The' night-b4-fishmas.txt
+$ grep -i ^the night-b4-fishmas.txt | head -n 5
+$ grep 'The' night-b4-fishmas.txt
+$ grep -i "^the"  night-b4-fishmas.txt
+$ grep -ie "^the" night-b4-fishmas.txt
+$ grep '^[Tt]he' night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep 'The'
+$ grep "^The" *
+
+### Shell Course #6
+$ grep '!$' night-b4-fishmas.txt
+$ grep "!$" night-b4-fishmas.txt
+$ grep -i "!$" night-b4-fishmas.txt
+$ grep \!$ night-b4-fishmas.txt
+$ grep -i '!$' night-b4-fishmas.txt
+$ grep "!" night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -i "!$"
+$ grep ! *
+$ grep -i "!" night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep "!$"
+$ grep !$ night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep "!"
+$ grep "\!$" night-b4-fishmas.txt
+$ grep -i "\!$" night-b4-fishmas.txt
+$ grep ! night-b4-fishmas.txt
+$ grep '!$' *
+$ grep "!$" *
+$ cat night-b4-fishmas.txt | grep '!$'
+$ grep -E '!$' night-b4-fishmas.txt
+$ grep -E "!$" night-b4-fishmas.txt
+$ grep '\!$' night-b4-fishmas.txt
+$ grep '!' night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -i '!$'
+$ grep -i "!$" night-b4-fishmas.txt | head -n 6
+$ grep -e "!$" night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep !$
+$ grep -i !$ night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep !
+$ grep '!$' night-b4-fishmas.txt | head -n 6
+$ egrep '!$' night-b4-fishmas.txt
+$ grep -i \!$ night-b4-fishmas.txt
+$ grep !$ *
+$ grep -i "!$" *
+$ grep "!$" night-b4-fishmas.txt | head -n 6
+$ grep -e '!$' night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -E "!$"
+$ grep -i '\!$' night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -i "!"
+$ cat night-b4-fishmas.txt | grep -i "\!$"
+$ grep "!" *
+$ grep '!$' night-b4-fishmas.txt | head -6
+$ grep -i '!$' night-b4-fishmas.txt | head -n 6
+$ cat night-b4-fishmas.txt | grep '!'
+$ grep -i '!$' *
+$ egrep "!$" night-b4-fishmas.txt
+$ grep -E "\!$" night-b4-fishmas.txt
+$ grep  "!$" night-b4-fishmas.txt
+$ grep -E '\!$' night-b4-fishmas.txt
+$ grep -iE '!$' night-b4-fishmas.txt
+$ cat night-b4-fishmas.txt | grep -i !$
+
+### Shell Course #7
+$ ls Santa*
+$ ls [Ss]anta*
+$ ls | grep Santa
+$ ls | grep "^Santa"
+$ ls | grep "Santa"
+$ ls | grep -i "^Santa"
+$ find . -name "Santa*"
+$ ls | grep ^Santa
+$ ls | grep '^Santa'
+$ find . -name 'Santa*'
+$ ls | grep -i "^santa"
+$ find . -type f -name "Santa*"
+$ ls Santa* | head -n 7
+$ find -name "Santa*"
+$ ls | grep 'Santa'
+$ find Santa*
+$ find . -type f -name 'Santa*'
+$ ls | grep -i '^Santa'
+$ ls | grep -i santa
+$ ls S*
+$ ls Santa* | head -7
+$ find -name 'Santa*'
+$ ls [sS]anta*
+$ ls | grep -E '^Santa'
+$ ls | grep -E "^Santa"
+$ ls | grep "^Santa" | head -n 7
+$ ls | grep -i '^santa'
+$ ls | grep -e "^Santa"
+$ find -type f -name "Santa*"
+$ ls | grep -i "santa"
+$ ls -1 | grep Santa
+$ ls | grep -i ^santa
+$ find . -iname "Santa*"
+$ ls San*
+$ ls Sant*
+$ ls -1 Santa*
+$ ls |grep Santa
+$ ls | grep -i "^Santa" | head -n 7
+$ ls Santa* | head -n7
+$ find . -iname "santa*"
+$ ls  Santa*
+$ ls | grep -i ^Santa
+$ ls | grep -i "Santa"
+$ find ./ -name "Santa*"
+$ find -type f -name 'Santa*'
+$ ls ./Santa*
+$ ls -d Santa*
+$ ls|grep Santa
+$ ls | grep "Santa*"
+$ ls | grep '^Santa' | head -n 7
+
+### Shell Course #8
+$ mv Elves/* Workshop/
+$ mv Elves/* Workshop
+$ mv Elves/* Workshop/.
+$ mv ./Elves/* ./Workshop
+$ mv ./Elves/* ./Workshop/
+$ mv Elves/* ./Workshop
+$ mv Elves/* ./Workshop/
+$ find Elves -type f -exec mv {} Workshop \;
+$ find Elves -type f -exec mv {} Workshop/ \;
+$ find Elves/ -type f -exec mv {} Workshop/ \;
+$ mv  Elves/* Workshop/
+$ find . -name Elves | mv Elves/* Workshop/
+$ mv  Elves/* Workshop
+$ mv Elves/*  Workshop/
+$ mv ./Elves/* Workshop/
+$ mv ./Elves/* Workshop
+$ mv -t Workshop Elves/*
+$ find Elves/ -type f -exec bash -c 'mv "$1" Workshop/' - {} \;
+$ ls Elves/ | mv Elves/* Workshop/
+$ find . -type f -exec mv {} Workshop/ \;
+$ find ./Elves -type f -exec mv {} ./Workshop \;
+$ mv Elves/* Workshop*
+$ mv Elves/* -t Workshop/
+$ mv Elves/*  Workshop
+$ mv Elves/* -t Workshop
+$ mv Elves/*   Workshop/
+$ mv "Elves"/* Workshop/
+$ mv E*/* W*/
+$ mv Elves/* Work*
+$ find ./Elves -type f -exec mv {} Workshop \;
+$ ls Elves | xargs -I x mv './Elves/x' Workshop
+$ find ./Elves -type f -exec mv {} Workshop/ \;
+$ mv [Ee]lves/* Workshop/
+$ cd Elves; mv * ../Workshop
+$ ls Elves/| mv Elves/* Workshop
+$ mv Elves/* Workshop && ls Workshop
+$ mv -v Elves/* Workshop/
+$ mv -i Elves/* Workshop/
+$ mv ./Elves/* ./Workshop/.
+$ mv elves Elves/* Workshop/
+$ mv ./Elves/* -t ./Workshop
+$ cd Elves && mv * ../Workshop
+$ find ./Elves -type f | mv Elves/* Workshop/
+$ find Elves/ -type f -exec mv {} Workshop \;
+$ ls Elves | xargs -I x mv "./Elves/x" Workshop
+$ find ./ -type f -name '*' -exec mv '{}' ./Workshop \;
+$ mv -f Elves/* Workshop
+$ mv ls Elves/* Workshop/
+$ mv -t Workshop/ Elves/*
+$ cd Elves;mv * ../Workshop
+
+### Shell Course #9
+$ find . -type f
+$ find -type f
+$ find ./ -type f
+$ find * -type f
+$ find . -type f -print
+$ find . -type f -exec basename {} \;
+$ find . -type f -printf "%f\n"
+$ find . -type f -name "*"
+$ find -type f -name "*"
+$ ls Vixen && cd North\ Pole && ls D* && ls Blixem && cd Stable && ls && cd .. && ls Santa*/Santa*
+$ find . -type f -printf '%f\n'
+$ find  -type f
+$ find .  -type f
+$ find . -type  f
+$ find / -name "*reindeer*" -exec ls -Rp {} + | grep -v '/' | grep .
+$ find . -empty
+$ find -type f -printf '%f\n'
+$ find . -type f | head -9
+$ find -type f | head -n 9
+$ find . -type f | head -n 9
+$ find -type f -exec basename {} \;
+$ IFS=$'\n' ; for i in `find . -type f ` ; do echo `basename $i`;done
+$ find . -type 'f'
+$ find . -type "f"
+$ find . -not -type d
+$ find -type f -print
+$ find -type f -printf "%f\n"
+$ find ./* -type f
+$ find . -type f | head
+$ find "$(pwd)" -type f
+$ find . -name '*' -type f
+$ find . -name "*" -type f
+$ find -type  f
+$ find -type f -ls
+$ find . -type f -ls
+$ find . -type f | cat
+$ find . -type f | grep S*
+$ find . -type f -name '*'
+$ find -type f -path '**/*'
+$ find . -maxdepth 9 -type f
+$ find * -type f -printf "%f\n"
+$ find . -type f -name "[A-Z]*"
+$ find . -type f -exec ls {} \;
+$ ls -Rp | grep -v '[/\.]' | sort
+$ find -type f -exec basename '{}' \;
+$ find -type f | rev | cut -d/ -f1 | rev
+$ find . -type f | awk -F/ '{print $NF}'
+$ find $PWD -type f -exec basename {} \; | sort | uniq | awk "NF==1"
+$ find  . -type f
+$ find  -type f -name "*"
+
+### Shell Course #10
+$ sort lords.txt
+$ cat lords.txt | sort
+$ cat lords.txt|sort
+$ sort *
+$ sort < lords.txt
+$ cat lords.txt |sort
+$ cat lords.txt | sort -u
+$ cat lords.txt| sort
+$ cat lords.txt | sort -n
+$ sort <lords.txt
+$ cat ./lords.txt | sort
+$ sort -u lords.txt
+$ sort ./lords.txt
+$ cat lords.txt | sort | head -n 10
+$ sort l*
+$ cat lords.txt | sort -d
+$ sort lords.txt | head -n 10
+$ cat * | sort
+$ sort  lords.txt
+$ sort -h ./lords.txt
+$ cat lords.txt | sort -h
+$ sort -d lords.txt
+$ cat lords.txt | sort | head -10
+$ sort lords*
+$ sort -h lords.txt
+$ cat lords* | sort
+$ head -n 10 lords.txt | sort
+$ find . -type f -exec sort {} \;
+$ <lords.txt sort
+$ sort -n lords.txt
+$ sort -k2 lords.txt
+$ sort lords.txt | cat
+$ cat lords.txt | sort -k2
+$ sort lords.txt | head -10
+$ cat lords.txt | sort | uniq
+$ echo "$(<lords.txt)" | sort
+$ cat lords.txt | uniq | sort
+$ cat $(find -type f | sort) | sort
+$ sort <*
+$ sort lo*
+$ head lords.txt | sort
+$ cat lords.txt|sort -k2
+$ find . -type f | xargs sort
+$ cat lords.txt | sort | head
+$ cat *|sort
+$ sort -u < lords.txt
+$ sort -k2,2 lords.txt
+$ cat lords.txt|sort -h
+$ cat  lords.txt | sort
+$ cat lords.txt  | sort
+
+### Shell Course #11
+$ find . -name "piper" -type f -exec grep piping {} \;
+$ grep -hr p p*
+$ find . -name piper -type f -exec grep piping {} \;
+$ cat place-for-pipers/*/piper | grep piping
+$ grep -hR piping place*
+$ cat place-for-pipers/*/* | grep piping
+$ find place-for-pipers -type f -exec grep piping {} \;
+$ find . -name piper -exec grep piping {} \;
+$ find . -type f -name "piper" -exec grep piping {} \;
+$ find . -name 'piper' -type f -exec grep piping {} \;
+$ find . -name "piper" -exec grep piping {} \;
+$ find . -type f -name piper -exec grep piping {} \;
+$ find . -name "piper" -type f -exec grep "piping" {} \;
+$ grep -hr piping p*
+$ find place-for-pipers -type f -exec cat {} \; | grep piping
+$ grep -hr piping place-for-pipers
+$ find place-for-pipers -type f | xargs cat | grep piping
+$ find -name "piper" -type f -exec grep piping {} \;
+$ grep -h piping place-for-pipers/*/piper
+$ cat ***/***/* | grep pip
+$ grep -hr piping place*
+$ find -name "piper" -exec grep piping {} \;
+$ cat place-for-pipers/*/piper|grep piping
+$ cat place-for-pipers/*/piper | grep "piping"
+$ find . -type f -name 'piper' -exec grep piping {} \;
+$ grep -hr pi p*
+$ cat place-for-pipers/*/* | grep pip
+$ cat place-for-pipers/*/piper | grep pip
+$ find -name piper -exec grep piping {} \;
+$ cat place-for-pipers/*/* | grep "piping"
+$ cat place-for-pipers/**/piper | grep piping
+$ find . -name 'piper' -exec grep piping {} \;
+$ grep -hr pip p*
+$ find . -name "piper" -exec grep "piping" {} \;
+$ cat */*/* | grep pip
+$ find ./place-for-pipers -type f -exec grep piping {} \;
+$ grep -hr "piping" **/piper
+$ find . -name piper | xargs cat | grep piping
+$ find -type f -name piper -exec grep piping {} \;
+$ find . -type f -name 'piper' -exec grep 'piping' {} \;
+$ grep -hr "piping" place-for-pipers
+$ find . -type f -name "piper" -exec grep "piping" {} \;
+$ grep -rh "piping " place-for-pipers
+$ find -name piper -type f -exec grep piping {} \;
+$ ls ./place-for-pipers | xargs -I x grep 'piping' './place-for-pipers/x/piper'
+$ rgrep -h  pip place*
+$ grep -h piping place-for-pipers/*/*
+$ find -name "piper" -exec cat {} \; | grep pip
+$ find -name "piper" -type f -exec grep "piping" {} \;
+$ find -type f -name "piper" -exec cat {} \; | grep piping
+
+### Shell Course #12
+$ cat twelve-days-of-shell.txt
+$ cat *
+$ echo "$(<twelve-days-of-shell.txt)"
+$ cat t*
+$ cat twelve*
+$ grep . twelve-days-of-shell.txt
+$ cat tw*
+$ cat twe*
+$ echo "$(< twelve-days-of-shell.txt)"
+$ cat  twelve-days-of-shell.txt
+$ cat twel*
+$ find . -name twelve-days-of-shell.txt -type f -exec cat {} \;
+$ echo "$(<twelve*)"
+$ uniq twelve-days-of-shell.txt
+$ cat twelve*.txt
+$ find * -name "twelve-days-of-shell.txt" -type f -exec cat twelve-days-of-shell.txt \;
+$ cat *.txt
+$ cat "twelve-days-of-shell.txt"
+$ cat **/*twelve-days-of-shell.txt
+$ printf "%s" "$(<twelve-days-of-shell.txt)"
+$ cat ./*
+$ cat ./twelve-days-of-shell.txt
+$ cat 'twelve-days-of-shell.txt'
+$ find /  -name twelve* | xargs cat
+$ grep " " twelve-days-of-shell.txt
+$ cat twelve-days-of-shell.txt | head -n 1000
+$ cat *t
+$ <* cat
+$ cat *txt
+$ cat $(ls)
+$ echo "$(<t*)"
+$ cat ./twelve*
+$ cat twelve-d*
+$ echo "$(< twelve-*)"
+$ cat twelve-days-of-shell.txt;
+$ find . -type f -exec cat {} \;
+$ head -20 twelve-days-of-shell.txt
+$ head -n 16 twelve-days-of-shell.txt
+$ tail -n 100 twelve-days-of-shell.txt
+$ find -name "twelve-days-of-shell.txt" -exec cat {} \;
+$ cat t*.txt
+$ cat tw*txt
+$ cat tw*.txt
+$ cat twel*.txt
+$ grep . twelve*
+$ cat twelve-da*.txt
+$ tail -n 10000 twelve*
+$ for say in 0#; do cat *; done
+$ cat * >/tmp/hahaha && cat /tmp/*
+$ tail -n 20 twelve-days-of-shell.txt
