@@ -297,3 +297,11 @@ A good rule to follow is "Don't change permissions unless you really know what y
 The "admin" group consists of all users who have administrator accounts. Removing the Everyone entry will not give you any rights and should not be done.
 Another good rule: "Leave well enough alone."
 Source: <https://discussions.apple.com/thread/2362727>
+
+## Windows OS - Bypass Microsoft Account Upon Setting Up PC
+When you get to Microsoft Sign-in screen, open CMD via Shift+F10 and type:
+$ start ms-cxh:localonly
+
+## Windows: Verify Admin Rights
+Open Command Prompt:
+$ net localgroup administrators
