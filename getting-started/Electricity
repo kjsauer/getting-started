@@ -40,5 +40,7 @@ HVT:
 Source: Mike Behnke, BEW Engineering
 
 ## Power Factor PF
-Power Factor (PF) = Real Power (P)/Apparent Power (S)
+P is real (kW), Q is reactive (kVAR), S is apparent (kVA)
+Power Factor PF is cos(phi)
+Power Factor PF (unitless) = Real Power P (kW)/Apparent Power (kVA)
 PF = P/S
