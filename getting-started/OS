@@ -11,8 +11,8 @@ OS: Operating System
 ## Scope
 NB: This is about using OS, not developing OS.
 
-## Common OS
-Windows aka OS
+## Common OS [Tags]
+Windows aka PC
 MacOS
 Linux
 
@@ -35,7 +35,7 @@ Keep track of all software licenses/license keys (e.g., Adobe, MATLAB, NI LabVIE
 
 Backup Internet Explorer bookmarks (the last time I checked, they didn't have a "Sync" function like Firefox).
 
-## MS Windows Hot Keys
+## MS Windows Hot Keys [Windows]
 Close active tab or window
 $ Ctrl+w
 Close program
@@ -90,7 +90,7 @@ Get familiar w/ Start > Run > one of the following commands:
 
 Make sure your Task Scheduler isn't running any unnecessary or unwanted tasks.
 
-## Remove Metadata from Photos Before Uploading to Internet and Sharing on MS Windows OS
+## Remove Metadata from Photos Before Uploading to Internet and Sharing on MS Windows OS [Windows]
 Before uploading photos to the Internet (obv. selfies), prob. best to remove metadata first:
 $ Right click\Properties\Details\Remove Properties and Personal Information
 Save version w/ all properties removed; upload that one.
@@ -110,7 +110,7 @@ Avoid spaces in computer username. In general, for folders involving programming
 ## MS Windows OS
 "X out" of window by single-clicking upper-right corner OR by double clicking upper-left corner (the latter is a lesser-known method)
 
-## Choosing Windows Login Username
+## Choosing Windows Login Username [Windows]
 Keep it short, so you're less likely to hit filename character limit.
 DON'T USE SPACES, so you don't have problems w/ Anaconda Python installation.
 Don't use capital letters, so you don't have problems w/ Linux installation (i.e., case-sensitive).
@@ -118,10 +118,10 @@ Don't use a single letter, so you don't conflict or confuse w/ assigned drive le
 Don't use something that will confuse people who open files & view authorship, e.g., "Me".
 In conclusion, example username meeting all criteria: "xyz"
 
-## Access Temp Folder on Windows Machine
+## Access Temp Folder on Windows Machine [Windows]
 File Explorer > %TEMP%
 
-## Send to Compressed (zipped) folder - Access Denied - Windows 7
+## Send to Compressed (zipped) folder - Access Denied - Windows 7 [Windows]
 Solution:
 """
 $ takeown /f %temp% /r /d y
@@ -208,13 +208,13 @@ Offline installer
 Source: <https://www.reddit.com/r/Malwarebytes/comments/16rb7ml/when_are_we_going_to_get_a_new_offline_installer/>
 Source: <https://forums.malwarebytes.com/topic/298150-full-offline-installer-for-mb-v4529-rel-17-may-2023/>
 
-## Record (Windows 10 and above)
+## Record (Windows 10 and above) [Windows]
 Windows + G
 
-## Open File Explorer (Windows)
+## Open File Explorer [Windows]
 Windows + e
 
-## Command Prompt - Linux
+## Command Prompt [Linux]
 Sort files by timestamp:
 $ ls -lt
 Source(s):
@@ -224,7 +224,7 @@ Source(s):
 Go up a folder:
 $ cd ../
 
-## Application Data Folder (Windows)
+## Application Data Folder [Windows]
 Open file explorer -> %appdata%
 
 ## Remove File Metadata for Public Sharing (Windows)
@@ -233,14 +233,14 @@ Right click file > Properties > Details > Remove Properties and Personal Informa
 ## Root Admin Account Username
 root
 
-## Navigate to Root Folder (macOS)
+## Navigate to Root Folder [macOS]
 Recent versions of Mac OS X and macOS have started to hide the root folder from users (the root folder is the folder at the root of your hard drive). To make the root folder appear, follow these steps:
 anywhere on the Desktop, enter Command+Shift+G, then type / and hit return. This will take you to root (Macintosh HD)
 drag & drop Macintosh HD into the Finder sidebar.
 You may also want to display Macintosh HD on your Desktop. In this case, open the Finder menu and choose « Preferences ». Under the « General » tab check the box next to « Hard disks ». This will show Macintosh HD.
 Source: <https://corpling.hypotheses.org/clsr/forcing-the-root-directory-to-appear-on-mac-os/>
 
-## Stop Auto-restart (Windows)
+## Stop Auto-restart [Windows]
 Change Active Hours to 5 PM to 11 AM
 Go to:
 $ gpedit.msc
@@ -268,13 +268,13 @@ $ Ctrl+y redo (if fortunately/luckily available)
 Select all:
 $ Ctrl+a
 
-## Disable Telemetry (Microsoft MS Windows 10 Win10)
+## Disable Telemetry (Microsoft MS Windows 10 Win10) [Windows]
 Press the Windows key + R on your keyboard. Type “services.msc” in the Run dialog box and click OK. This will open the Services window.
 Scroll down and locate “Connected User Experiences and Telemetry”. Double-click on it to open its Properties.
 In the Properties window, go to the General tab and change the Startup type to “Disabled”. Click Apply and then OK to save the changes.
 Source: <https://www.process.st/how-to/disable-microsoft-compatibility-telemetry/>
 
-## Useful Commands and Hotkeys - macOS
+## Useful Commands and Hotkeys [macOS]
 Cut:
 $ Command+x
 Copy:
@@ -284,7 +284,7 @@ $ Command+v
 Delete file permanently (from Trash):
 $ Control+Click -> Delete immediately
 
-## Default Users - macOS
+## Default Users [macOS]
 Staff is the default user group for you that is assigned for files and folders that do not have admin group membership. For example if you install an application by drag and drop it automatically takes on the following privileges:
 Owner=you with r/w
 Group=staff (which is just you) with r/w
@@ -298,10 +298,14 @@ The "admin" group consists of all users who have administrator accounts. Removin
 Another good rule: "Leave well enough alone."
 Source: <https://discussions.apple.com/thread/2362727>
 
-## Windows OS - Bypass Microsoft Account Upon Setting Up PC
+## Bypass Microsoft Account Upon Setting Up PC [Windows]
 When you get to Microsoft Sign-in screen, open CMD via Shift+F10 and type:
 $ start ms-cxh:localonly
 
-## Windows: Verify Admin Rights
+## Verify Admin Rights [Windows]
 Open Command Prompt:
 $ net localgroup administrators
+
+## Launch MS Office with No Account [Windows]
+Windows+R:
+outlook.exe /PIM NoEmail and click OK.
