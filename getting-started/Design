@@ -2,7 +2,7 @@
 Kenneth J. Sauer (@kjsauer on GitHub)
 
 ## Scope
-Design principles and philosophy of code and software program architecture
+Design principles and philosophy of code, programming, and software program architecture
 
 ## Acronyms & Terms
 Varname = Variable name
@@ -362,3 +362,6 @@ Check out X, do what you have to do to X (make your change or whatever), commit 
 
 ## Software Design - Core Features, Core Principles
 Essential design features to target/essential design principles: Modular, encapsulated, flexible, extensible
+
+## Brooks's Law (From "The Mythical (Hu)Man-Month")
+Adding programmers to speed up a software project only makes it later.
