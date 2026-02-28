@@ -170,6 +170,8 @@ Cut/paste (leaves empty folder structure behind):
 $ robocopy pathname_from pathname_to /e /mov
 Cut/paste (doesn't leave empty folder structure behind):
 $ robocopy pathname_from pathname_to /e /move
+Copy from USB flash drive to local computer:
+$ robocopy "USB_DriveLetter:" "C:\Users\<username>\Desktop\DestinationFolder" /E /ZB /R:3 /W:5 /MT:32 /XJ /ETA
 
 ## Note: Hidden Directory
 When copying files from the root of one drive into a non-root (e.g., folder) of another, the copied file may appear as HIDDEN using the above robocopy commands. To fix this, run the following command:
