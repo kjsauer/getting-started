@@ -69,3 +69,6 @@ Preferences > Key Bindings
     { "keys": ["shift+delete"], "command": "noop" }
 ]
 Source: https://forum.sublimetext.com/t/disable-a-default-hotkey/10994/
+
+## Add Pilcrow (Spaces)
+Add to settings: "draw_white_space": "all"
