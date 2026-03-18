@@ -164,7 +164,7 @@ https://pypi.python.org/pypi/pvlib/
 https://pypi.python.org/pypi/pecos/
 pvmismatch is in Python 2.7
 
-## Spin Up Python Environment
+## Spin Up Anaconda Python Environment
 Create new Conda Python 2.7 environment named py27:
 $ conda create -n py27 python=2.7 anaconda
 $ conda create -n py35 python=3.5 anaconda
@@ -250,7 +250,17 @@ $ conda create -n py27 python=2.7 anaconda
 $ conda create -n py35 python=3.5 anaconda
 $ conda create -n py35 python=3.6 anaconda
 
-## Switch to Different Anaconda Python Environment via Command Line
+## Basic Anaconda Environment Commands
+Create new conda environment:
+$ conda create --name insert_conda_env_name
+Activate new conda environment:
+$ conda activate insert_conda_env_name
+Return to base conda environment:
+$ conda deactivate
+List conda environments:
+$ conda env list
+
+## Switch to Different Anaconda Python Environment via Anaconda Prompt Command Line
 $ activate py27
 $ deactivate py27
 
@@ -646,3 +656,6 @@ fn_idx = os.path.join(path,i)
 df_idx = pd.read_excel(fn_idx)
 df0 = df0.append(df_idx)
 df0.head()
+
+## Run Script from Anaconda Prompt
+$ python C:\Users\<username>\Desktop\myscript.py
