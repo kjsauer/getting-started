@@ -1,3 +1,2 @@
-# Block all bots from accessing all content on the site
 User-agent: *
 Disallow: /
