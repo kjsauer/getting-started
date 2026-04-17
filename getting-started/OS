@@ -311,3 +311,6 @@ $ net localgroup administrators
 ## Launch MS Office with No Account [Windows]
 Windows+R:
 outlook.exe /PIM NoEmail and click OK.
+
+## Change PW on Remote Desktop - Windows
+Ctrl+Alt+End
