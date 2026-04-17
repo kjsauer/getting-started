@@ -11,8 +11,11 @@ Firefox is free and open-source. It's an excellent web browser. On the contrary,
 Advanced settings
 Type in URL:
 $ about:config
-For example, change media.hardwaremediakeys.enabled to false
-Restart browser to implement changes
+For example:
+browser.tabs.dragDrop.pinInteractionCue.delayMS -> 5000 (or 50000) (help prevent tab grouping)
+browser.tabs.splitView.enabled -> false (turn off split view)
+media.hardwaremediakeys.enabled -> false
+Restart browser to implement changes.
 
 ## Hot Keys
 Type "m" in Firefox Browser to mute sounds from the tab.
