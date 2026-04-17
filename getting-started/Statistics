@@ -64,3 +64,6 @@ Confidence that the true population mean is somewhere w/in the confidence interv
 ## Sampling Protocols
 ASNI/ISO/MIL
 e.g., ISO 2859-1:1999 Standard, Inspection Level S4
+
+## Exceedance Probability (Gaussian/Normal Distribution)
+pXX = p50 +/- (StDev aka Standard Uncertainty * z_score_pXX)
