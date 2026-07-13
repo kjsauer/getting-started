@@ -263,3 +263,10 @@ For a 144-cell, half-cut cell PV module design, you have 72 cells in series.
 Thus, for this example, an estimate for k_string is: 72 * (0.025) = 1.8 V (per ln unit) (per PV cell string), with the typical range being 1.5 - 2.0 V (per ln unit) (for the PV module as a whole, given the two (2) PV cell strings are wired in parallel).
 NB: For n-HJT, k may be lower than 1.5 (<1.4, e.g., even as low as 0.5-1.0 range, or lower). For non-standard c-Si technologies, it might be best to attempt to characterize k using multiple measurements and a regression-based approach, or apply some other approach (e.g., King/Sandia SAPM w/ coefficients specific to those formulas that perhaps Sandia can provide). For p-PERC, k=1.8 should be a good assumption (typical range being 1.4-2.2 V per ln unit, or 1.5-2.2 V*ln^-1). For n-TOPCon, the typical range might be 1.2-1.8 V per ln unit (V*ln^-1).
 NB: Adjusted power is lower for a lower value of k!
+
+## Isc & Voc Eqns
+1Sun is the Reference Irradiance (at STC)
+Irradiance is the Measured Irradiance
+Isc = Isc(1Sun)*Irradiance
+Voc = Voc(1Sun)+((n*k*T)/q)*ln(Irradiance)
+Source: https://pvqataskforceqarating.pbworks.com/w/file/fetch/154371375/PVQAT%20TG8%20Meeting-Karim%20Medjoubi%20Long%20Term%20Stability%20and%20Metastable%20Perovskites.mp4
