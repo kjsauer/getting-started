@@ -369,3 +369,9 @@ Adding programmers to speed up a software project only makes it later.
 ## Remember Conway's Law
 A (software) system reflects the people who built it.
 Source:  How to Use AI with Security and Sovereignty | The Python Exchange April 2026 (https://www.youtube.com/watch?v=yMla8Ji0Gqc)
+
+## Version Control
+vX_Y_Z, where:
+X is major technical
+Y is slight technical
+Z is mostly editorial
