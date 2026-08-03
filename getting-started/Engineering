@@ -1,6 +1,9 @@
 # Getting Started with Engineering
 Kenneth J. Sauer (@kjsauer on GitHub)
 
+## See Also
+Getting Started\Design
+
 ## Most Important Topics of Continuous Learning & Study
 Microsoft MS Excel (e.g., Trace Dependents, Trace Precedents)
 PVsyst (for Solar PV Engineers)
@@ -10,3 +13,6 @@ Statistics (e.g., Minitab, JMP; Exceedence Probabilities, Uncertainty Analysis)
 
 ## Engineering Mantras
 Process mindset!
+
+## Applying the Engineering Model Appropriately
+You must apply a model (scientific, engineering, financial, etc.) precisely as the model is intended to be applied, unless you (ideally together with the author of said model) can show/prove that that you remain in the model's domain(s) of [model] applicability, esp. when "stretching" the model to its atypical limits or edge cases, e.g., in the event of "stress testing" or generally experimenting with the model. Otherwise, you risk misapplying the model according to the author's specific(ally-instructed) intention(s). This advice should be broadly applicable to any model, however, its importance (arguably) may be most likely overlooked in instances of empirical models (often) with highly specific and limited/precise domain(s) of [model] applicability.
