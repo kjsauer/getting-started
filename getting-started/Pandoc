@@ -1,0 +1,7 @@
+# Getting Started with Pandoc
+Kenneth J. Sauer (@kjsauer on GitHub)
+
+## Check Pandoc Install Version & Location
+Open Command Prompt:
+$ pandoc --version
+$ where.exe pandoc
