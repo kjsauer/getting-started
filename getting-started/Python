@@ -659,3 +659,12 @@ df0.head()
 
 ## Run Script from Anaconda Prompt
 $ python C:\Users\<username>\Desktop\myscript.py
+
+## Find Pathname to Python Executable
+Launch Anaconda Prompt:
+$ python
+$ import sys
+$ print(sys.executable)
+or
+Launch Command Prompt:
+$ where python
