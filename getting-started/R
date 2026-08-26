@@ -10,3 +10,25 @@ Install and use swirl within RStudio to learn R.
 ## R Package vs. Library
 In R, a package is a collection of R functions, data and compiled code. The location where the packages are stored is called the library. If there is a particular functionality that you require, you can download the package from the appropriate site and it will be stored in your library.
 Source: <https://stackoverflow.com/questions/26900228/what-is-the-difference-between-a-library-and-a-package-in-r/>
+
+## .Rmd Files
+You "Knit" a .Rmd file.
+
+## Find R Executable
+Run in RStudio:
+$ file.path(R.home("bin"), "Rscript.exe")
+
+## Check for R Packages
+$ install.packages('rmarkdown')
+$ system.file(package = "rmarkdown")
+$ rmarkdown::pandoc_available()
+$ rmarkdown::find_pandoc()
+$ rmarkdown::find_pandoc(cache = FALSE)
+$ Sys.getenv("RSTUDIO_PANDOC")
+$ getwd()
+$ Sys.which("pandoc")
+
+## Check if File or Folder Exists
+$ dir.exists("folder_name") # folder name
+$ file.exists("folder_name/filename.R") # filename
+$ list.files("folder_name", full.names = TRUE)
