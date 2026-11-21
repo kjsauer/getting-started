@@ -29,8 +29,21 @@ $ "stuck in my *" -head -ways -brain -teeth ~head
 Two words
 $ "word1" AND" "word2"
 
-## Google Advanced Search
+## Google Search - Advanced
 Google Advanced Search GUI: <https://www.google.com/advanced_search?hl=en&fg=1/>
 
 ## Google Search - Web Search without AI
 Make homepage: https://www.google.com/search?q=%s&udm=14
+
+## Google Search - Hot Keys (Hotkeys)
+$ "/" to go to search field
+
+## Google Search - Advanced
+Search before date:
+$ before:2019-04-19
+Search after date:
+$ after:2019-04-19
+
+## Google Search - Advanced 
+Search a Specific Website, e.g., MyIEC:
+$ author_last_name site:www.iec.ch
