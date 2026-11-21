@@ -29,3 +29,7 @@ Column 2: Rate (%/year); 0.5 in every row except year 0 (which is blank);
 Column 3: dT (unitless); starts in year 1 and is the subtraction of each (in this case) year to the previous;
 Column 4: V_limit (%) linear; year zero calculation is = ValNP*(1-(Ptol+Mtol)); years 1-25 = V_limit(year_prior) - V_limit(year_0)*Rate*dT;
 Column 5: V_limit (%) exponential; year zero same as linear; years 1-25 = V_limit(year_prior)*(1-Rate*dT);
+
+## Percentages
+"Percentage points" means the absolute difference between two percentages.
+Investigating absolute percentage-point and relative percent differences can catch different issues.
